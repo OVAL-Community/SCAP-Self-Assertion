@@ -1,8 +1,10 @@
 # SCAP Self Assertion
-This repository provides self assertion checklists and test content content designed to allow vendors to document their support of NIST's SCAP specifications.
+This repository provides self assertion checklists and test content content designed to allow vendors to document their product's support of NIST's Security Content Automation Protocol (SCAP) specifications.
 
 ##  SCAP 1.4 Product Self Assertions
-List of Products that have completed SCAP 1.4 Self Assertion, based on NIST SP 800-126 Revision 4 
+List of Products that have completed SCAP 1.4 Self Assertion, based on NIST SP 800-126 Revision 4. 
+
+https://csrc.nist.gov/Projects/security-content-automation-protocol/scap-releases/scap-1-4
 
 | Date    | URL | Logo | Product Vendor  | Product Name | Product Version | SCAP Implementation | Checklist | Test Results |
 | -------- | ----- | ----------- | ----------- | ----| -------  | ------  | ---- | ------|
