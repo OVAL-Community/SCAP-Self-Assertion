@@ -1,0 +1,1 @@
+Install and perform scans with all content that is supported by the application being tested.  All content should install and run without errors.
