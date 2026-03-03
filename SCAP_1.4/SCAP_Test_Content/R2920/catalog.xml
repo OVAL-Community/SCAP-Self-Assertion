@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testBundle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" bundleId="G2.r2920" bundleVersion="1" xsi:noNamespaceSchemaLocation="scap-validation-catalog-schema.xsd">
+	<bundleName>R2920 Datastream</bundleName>
+	<bundleGuiName>R2920 Datastream</bundleGuiName>
+	<testSuite version="1" suiteId="G2.R2920">
+		<suiteName>Configuration 1</suiteName>
+		<guiName>Configuration 1</guiName>
+		<schema>independent</schema>
+		<datastreamFile>r2920-datastream.xml</datastreamFile>
+		<cpeOvalFilename>r2920-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>r2920-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>r2920-oval.xml</ovalFilename>
+		<xccdfFilename>r2920-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist.validation_profile_r2920</xccdfProfile>
+
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_1" expectedResult="fail" oval_definition_id="oval:nist.validation.r2920:def:1"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_2" expectedResult="fail" oval_definition_id="oval:nist.validation.r2920:def:2"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_3" expectedResult="fail" oval_definition_id="oval:nist.validation.r2920:def:3"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_4" expectedResult="pass" oval_definition_id="oval:nist.validation.r2920:def:4"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_5" expectedResult="pass" oval_definition_id="oval:nist.validation.r2920:def:5"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_6" expectedResult="fail" oval_definition_id="oval:nist.validation.r2920:def:6"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_7" expectedResult="fail" oval_definition_id="oval:nist.validation.r2920:def:7"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_8" expectedResult="fail" oval_definition_id="oval:nist.validation.r2920:def:8"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_9" expectedResult="fail" oval_definition_id="oval:nist.validation.r2920:def:9"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_10" expectedResult="fail" oval_definition_id="oval:nist.validation.r2920:def:10"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_11" expectedResult="pass" oval_definition_id="oval:nist.validation.r2920:def:11"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_12" expectedResult="pass" oval_definition_id="oval:nist.validation.r2920:def:12"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_13" expectedResult="pass" oval_definition_id="oval:nist.validation.r2920:def:13"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_14" expectedResult="pass" oval_definition_id="oval:nist.validation.r2920:def:14"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_15" expectedResult="pass" oval_definition_id="oval:nist.validation.r2920:def:15"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_16" expectedResult="fail" oval_definition_id="oval:nist.validation.r2920:def:16"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_17" expectedResult="pass" oval_definition_id="oval:nist.validation.r2920:def:17"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_18" expectedResult="fail" oval_definition_id="oval:nist.validation.r2920:def:18"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_19" expectedResult="pass" oval_definition_id="oval:nist.validation.r2920:def:19"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_20" expectedResult="fail" oval_definition_id="oval:nist.validation.r2920:def:20"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_21" expectedResult="pass" oval_definition_id="oval:nist.validation.r2920:def:21"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_22" expectedResult="fail" oval_definition_id="oval:nist.validation.r2920:def:22"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_23" expectedResult="pass" oval_definition_id="oval:nist.validation.r2920:def:23"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_24" expectedResult="fail" oval_definition_id="oval:nist.validation.r2920:def:24"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_25" expectedResult="pass" oval_definition_id="oval:nist.validation.r2920:def:25"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_26" expectedResult="fail" oval_definition_id="oval:nist.validation.r2920:def:26"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_27" expectedResult="pass" oval_definition_id="oval:nist.validation.r2920:def:27"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_28" expectedResult="fail" oval_definition_id="oval:nist.validation.r2920:def:28"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_29" expectedResult="pass" oval_definition_id="oval:nist.validation.r2920:def:29"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_30" expectedResult="fail" oval_definition_id="oval:nist.validation.r2920:def:30"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_31" expectedResult="pass" oval_definition_id="oval:nist.validation.r2920:def:31"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_32" expectedResult="fail" oval_definition_id="oval:nist.validation.r2920:def:32"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_33" expectedResult="pass" oval_definition_id="oval:nist.validation.r2920:def:33"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_34" expectedResult="fail" oval_definition_id="oval:nist.validation.r2920:def:34"/>
+			<result definition="xccdf_gov.nist_rule_validation.r2920_rule_35" expectedResult="pass" oval_definition_id="oval:nist.validation.r2920:def:35"/>
+		</expectedResults>
+	</testSuite>
+</testBundle>

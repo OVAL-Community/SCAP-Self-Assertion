@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testBundle bundleId="G2.r2930" bundleVersion="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="scap-validation-catalog-schema.xsd">
+	<bundleName>R2930</bundleName>
+	<bundleGuiName>R2930 Test</bundleGuiName>
+
+	<testSuite version="1" suiteId="G2.xccdf_gov.nist_profile_r2930-win">
+		<suiteName>R2930 Data Stream - scap_gov.nist_datastream_r2930-Windows</suiteName>
+		<guiName>R2930 Data Stream - Win profile1</guiName>
+		<schema>microsoft windows</schema>
+		<datastreamFile>r2930-win-datastream.xml</datastreamFile>
+		<cpeOvalFilename>scap_gov.nist_comp_r2930-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>scap_gov.nist_comp_r2930-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>scap_gov.nist_comp_r2930-oval.xml</ovalFilename>
+		<xccdfFilename>scap_gov.nist_comp_r2930-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist_profile_r2930-win</xccdfProfile>
+		<!--<preparation ordered="false" platform="TODO">
+			<command commandType="shell" order="1" revision="1">
+				<command>TODO</command>
+			</command>
+		</preparation>-->
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48024r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4149"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48251r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4081"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48063r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4170"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48053r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4210"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48034r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4142"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48057r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4154"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48064r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:3939"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48077r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4165"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48198r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4221"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48508r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4190"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48083r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4207"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48062r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4215"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48070r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4195"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48055r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4152"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48042r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4173"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48201r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4224"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48199r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4222"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48081r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4204"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48160r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4197"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48079r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4193"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48080r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4199"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48167r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4146"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48076r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4156"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48052r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4211"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48073r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4143"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48086r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4214"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48168r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4147"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48259r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4220"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48075r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4155"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48197r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4219"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48018r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4212"/>
+			<result definition="xccdf_gov.nist_rule_security_patches_up_to_date" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930.patch:def:1"/>
+			<result definition="xccdf_gov.nist_rule_security_patches_up_to_date" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930.patch:def:2"/>
+			<result definition="xccdf_gov.nist_rule_security_patches_up_to_date" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930.patch:def:3"/>
+			<result definition="xccdf_gov.nist_rule_security_patches_up_to_date" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930.patch:def:4"/>
+			<result definition="xccdf_gov.nist_rule_security_patches_up_to_date" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930.patch:def:5"/>
+		</expectedResults>
+	</testSuite>
+	
+	<testSuite version="1" suiteId="G2.xccdf_gov.nist_profile_r2930-win10">
+		<suiteName>R2930 Data Stream - scap_gov.nist_datastream_r2930-Windows</suiteName>
+		<guiName>R2930 Data Stream - Win profile1</guiName>
+		<schema>microsoft windows</schema>
+		<datastreamFile>r2930-win-datastream.xml</datastreamFile>
+		<cpeOvalFilename>scap_gov.nist_comp_r2930-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>scap_gov.nist_comp_r2930-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>scap_gov.nist_comp_r2930-oval.xml</ovalFilename>
+		<xccdfFilename>scap_gov.nist_comp_r2930-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist_profile_r2930-win</xccdfProfile>
+		<!--<preparation ordered="false" platform="TODO">
+			<command commandType="shell" order="1" revision="1">
+				<command>TODO</command>
+			</command>
+		</preparation>-->
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48024r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4149"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48251r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4081"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48063r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4170"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48053r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4210"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48034r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4142"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48057r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4154"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48064r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:3939"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48077r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4165"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48198r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4221"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48508r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4190"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48083r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4207"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48062r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4215"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48070r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4195"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48055r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4152"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48042r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4173"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48201r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4224"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48199r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4222"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48081r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4204"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48160r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4197"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48079r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4193"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48080r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4199"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48167r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4146"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48076r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4156"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48052r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4211"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48073r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4143"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48086r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4214"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48168r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4147"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48259r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4220"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48075r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4155"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48197r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4219"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-48018r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-win:def:4212"/>
+			<result definition="xccdf_gov.nist_rule_security_patches_up_to_date" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930.patch:def:1"/>
+			<result definition="xccdf_gov.nist_rule_security_patches_up_to_date" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930.patch:def:2"/>
+			<result definition="xccdf_gov.nist_rule_security_patches_up_to_date" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930.patch:def:3"/>
+			<result definition="xccdf_gov.nist_rule_security_patches_up_to_date" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930.patch:def:4"/>
+			<result definition="xccdf_gov.nist_rule_security_patches_up_to_date" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930.patch:def:5"/>
+		</expectedResults>
+	</testSuite>
+	
+	<testSuite version="1" suiteId="G2.xccdf_gov.nist_profile_r2930-rhel">
+		<suiteName>R2930 Data Stream - scap_gov.nist_datastream_r2930-RHEL</suiteName>
+		<guiName>R2930 Data Stream - RHEL profile1</guiName>
+		<schema>unix</schema>
+		<datastreamFile>r2930-rhel-datastream.xml</datastreamFile>
+		<cpeOvalFilename>scap_gov.nist_comp_r2930-rhel-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>scap_gov.nist_comp_r2930-rhel-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>scap_gov.nist_comp_r2930-rhel-oval.xml</ovalFilename>
+		<xccdfFilename>scap_gov.nist_comp_r2930-rhel-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist_profile_r2930-rhel</xccdfProfile>
+		<!--<preparation ordered="false" platform="TODO">
+			<command commandType="shell" order="1" revision="1">
+				<command>TODO</command>
+			</command>
+		</preparation>-->
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50237r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:621"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50238r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:159"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50243r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1012"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50248r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:739"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50249r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:727"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50250r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:554"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50251r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:969"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50255r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1183"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50256r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:161"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50257r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1181"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50258r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1177"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50259r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:325"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50261r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1030"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50263r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:497"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50266r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:893"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50267r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1042"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50269r3_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:3055"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50270r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:865"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50272r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:3090"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50273r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:939"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50275r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:445"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50277r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:525"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50278r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1095"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50279r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:617"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50280r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:651"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50282r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:453"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50283r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:937"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50288r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:3042"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50290r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:971"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50291r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:960"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50292r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:301"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50293r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:644"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50295r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:510"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50296r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:773"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50298r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:2996"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50299r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1143"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50300r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:308"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50301r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:926"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50302r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:3126"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50303r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:3115"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50304r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:3080"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50305r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:781"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50312r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:238"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50313r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:828"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50314r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:257"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50315r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:746"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50316r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1105"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50317r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:244"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50318r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1167"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50319r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:964"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50321r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:874"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50322r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:874"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50323r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:310"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50324r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1155"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50325r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:556"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50326r4_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:845"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50327r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:490"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50328r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:125"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50329r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:702"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50330r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:649"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50331r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1061"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50332r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:292"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50333r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:472"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50334r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1153"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50335r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:292"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50336r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:272"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50337r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:292"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50338r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:857"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50339r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:292"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50340r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:527"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50342r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:619"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50343r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:879"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50344r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:854"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50345r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:540"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50346r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:276"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50347r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:197"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50348r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:494"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50349r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1019"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50351r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:904"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50353r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:450"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50355r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:748"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50356r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:828"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50357r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:714"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50358r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:751"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50359r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:205"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50360r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:322"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50362r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:434"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50364r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1170"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50366r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:305"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50369r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:268"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50370r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1141"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50371r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:474"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50372r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1032"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50373r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:523"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50374r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:719"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50375r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:488"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50376r4_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1147"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50377r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1088"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50378r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1003"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50379r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:863"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50380r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:907"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50381r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:461"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50382r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:869"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50383r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:142"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50384r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:508"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50385r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:143"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50386r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1078"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50387r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:3000"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50388r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:604"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50389r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:3105"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50390r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:470"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50391r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:153"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50392r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:221"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50393r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:2992"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50395r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:220"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50399r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:826"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50401r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:606"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50402r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1109"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50403r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1179"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50404r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:468"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50405r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:631"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50406r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:818"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50407r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:661"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50408r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:210"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50409r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:3037"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50411r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:3014"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50412r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:3052"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50413r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:3020"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50414r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:3074"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50415r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:3109"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50416r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:3082"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50417r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:3103"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50419r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:754"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50421r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:174"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50422r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:665"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50423r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:121"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50428r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:852"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50430r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:598"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50431r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:157"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50434r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:924"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50435r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1093"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50436r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:542"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50437r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1059"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50439r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:669"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50440r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:477"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50441r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:283"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50442r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:327"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50443r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1165"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50445r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:132"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50446r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:396"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50447r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:380"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50448r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:558"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50449r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:183"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50450r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:663"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50451r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1080"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50452r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:240"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50457r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:763"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50470r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:165"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50472r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:274"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50473r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:941"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50475r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:688"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50476r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:3072"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50477r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1175"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50480r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:208"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50481r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:548"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50485r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:112"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50488r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1005"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50489r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:3883"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50492r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:418"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50493r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:3054"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50495r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:3054"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50498r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:570"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50500r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:194"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-50502r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:1049"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-65547r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:3446"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-65573r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:3032"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-65579r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:629"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-66089r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:867"/>
+			<result definition="xccdf_gov.nist_rule_r2930_SV-68627r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-rhel:def:667"/>
+			<result definition="xccdf_gov.nist_rule_security_patches_up_to_date" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930.patch:def:1"/>
+			<result definition="xccdf_gov.nist_rule_security_patches_up_to_date" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930.patch:def:2"/>
+			<result definition="xccdf_gov.nist_rule_security_patches_up_to_date" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930.patch:def:3"/>
+			<result definition="xccdf_gov.nist_rule_security_patches_up_to_date" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930.patch:def:4"/>
+			<result definition="xccdf_gov.nist_rule_security_patches_up_to_date" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930.patch:def:5"/>
+		</expectedResults>
+	</testSuite>
+	
+	<testSuite version="1" suiteId="G2.xccdf_gov.nist_profile_r2930-macos">
+		<suiteName>R2930 Data Stream - scap_gov.nist_datastream_r2930-MACOS</suiteName>
+		<guiName>R2930 Data Stream - MACOS profile1</guiName>
+		<schema>unix</schema>
+		<datastreamFile>r2930-macos-datastream.xml</datastreamFile>
+		<cpeOvalFilename>scap_gov.nist_comp_r2930-macos-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>scap_gov.nist_comp_r2930-macos-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>scap_gov.nist_comp_r2930-macos-oval.xml</ovalFilename>
+		<xccdfFilename>scap_gov.nist_comp_r2930-macos-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist_profile_r2930-macos</xccdfProfile>
+		<!--<preparation ordered="false" platform="TODO">
+			<command commandType="shell" order="1" revision="1">
+				<command>TODO</command>
+			</command>
+		</preparation>-->
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50237r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:621"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50238r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:159"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50243r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1012"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50248r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:739"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50249r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:727"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50250r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:554"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50251r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:969"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50255r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1183"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50256r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:161"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50257r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1181"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50258r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1177"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50259r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:325"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50261r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1030"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50263r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:497"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50266r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:893"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50267r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1042"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50269r3_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:3055"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50270r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:865"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50272r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:3090"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50273r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:939"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50275r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:445"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50277r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:525"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50278r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1095"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50279r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:617"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50280r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:651"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50282r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:453"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50283r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:937"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50288r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:3042"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50290r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:971"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50291r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:960"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50292r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:301"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50293r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:644"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50295r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:510"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50296r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:773"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50298r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:2996"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50299r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1143"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50300r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:308"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50301r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:926"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50302r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:3126"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50303r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:3115"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50304r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:3080"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50305r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:781"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50312r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:238"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50313r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:828"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50314r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:257"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50315r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:746"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50316r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1105"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50317r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:244"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50318r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1167"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50319r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:964"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50321r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:874"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50322r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:874"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50323r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:310"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50324r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1155"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50325r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:556"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50326r4_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:845"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50327r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:490"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50328r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:125"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50329r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:702"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50330r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:649"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50331r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1061"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50332r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:292"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50333r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:472"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50334r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1153"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50335r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:292"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50336r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:272"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50337r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:292"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50338r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:857"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50339r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:292"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50340r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:527"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50342r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:619"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50343r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:879"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50344r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:854"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50345r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:540"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50346r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:276"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50347r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:197"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50348r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:494"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50349r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1019"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50351r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:904"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50353r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:450"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50355r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:748"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50356r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:828"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50357r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:714"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50358r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:751"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50359r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:205"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50360r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:322"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50362r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:434"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50364r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1170"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50366r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:305"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50369r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:268"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50370r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1141"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50371r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:474"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50372r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1032"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50373r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:523"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50374r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:719"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50375r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:488"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50376r4_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1147"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50377r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1088"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50378r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1003"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50379r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:863"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50380r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:907"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50381r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:461"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50382r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:869"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50383r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:142"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50384r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:508"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50385r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:143"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50386r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1078"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50387r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:3000"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50388r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:604"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50389r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:3105"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50390r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:470"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50391r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:153"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50392r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:221"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50393r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:2992"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50395r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:220"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50399r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:826"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50401r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:606"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50402r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1109"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50403r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1179"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50404r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:468"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50405r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:631"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50406r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:818"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50407r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:661"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50408r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:210"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50409r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:3037"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50411r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:3014"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50412r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:3052"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50413r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:3020"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50414r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:3074"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50415r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:3109"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50416r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:3082"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50417r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:3103"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50419r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:754"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50421r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:174"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50422r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:665"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50423r2_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:121"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50428r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:852"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50430r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:598"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50431r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:157"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50434r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:924"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50435r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1093"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50436r3_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:542"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50437r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1059"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50439r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:669"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50440r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:477"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50441r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:283"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50442r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:327"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50443r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1165"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50445r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:132"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50446r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:396"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50447r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:380"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50448r1_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:558"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50449r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:183"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50450r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:663"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50451r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1080"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50452r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:240"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50457r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:763"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50470r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:165"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50472r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:274"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50473r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:941"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50475r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:688"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50476r2_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:3072"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50477r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1175"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50480r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:208"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50481r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:548"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50485r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:112"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50488r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1005"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50489r3_rule" expectedResult="fail" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:3883"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50492r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:418"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50493r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:3054"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50495r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:3054"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50498r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:570"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50500r2_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:194"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-50502r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:1049"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-65547r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:3446"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-65573r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:3032"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-65579r1_rule" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:629"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-66089r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:867"/>
+			<result definition="xccdf_gov.nist_rule_r2930_macos_SV-68627r1_rule" expectedResult="notselected" oval_definition_id="oval:gov.nist.validation.r2930-macos:def:667"/>
+			<result definition="xccdf_gov.nist_rule_security_patches_up_to_date" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930.patch:def:1"/>
+			<result definition="xccdf_gov.nist_rule_security_patches_up_to_date" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930.patch:def:2"/>
+			<result definition="xccdf_gov.nist_rule_security_patches_up_to_date" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930.patch:def:3"/>
+			<result definition="xccdf_gov.nist_rule_security_patches_up_to_date" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930.patch:def:4"/>
+			<result definition="xccdf_gov.nist_rule_security_patches_up_to_date" expectedResult="pass" oval_definition_id="oval:gov.nist.validation.r2930.patch:def:5"/>
+		</expectedResults>
+	</testSuite>
+
+</testBundle>

@@ -1,0 +1,1506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessment-results xmlns="http://csrc.nist.gov/ns/decima/results/1.0" start="2020-07-31T12:12:02.43-04:00" end="2020-07-31T12:12:05.8-04:00">
+  <subjects>
+    <subject id="sub1">
+      <href>file:/C:/utilities/scapval-1.3.4-FINAL/SCAP1.3-VTC/requirements/R3005-02/r3005-datastream-02.xml</href>
+      <source>file:/C:/utilities/scapval-1.3.4-FINAL/SCAP1.3-VTC/requirements/R3005-02/r3005-datastream-02.xml</source>
+    </subject>
+  </subjects>
+  <requirements>
+    <requirement href="classpath:requirements/scapval-scap-1.3-requirements.xml" />
+  </requirements>
+  <results>
+    <base-requirement id="RES-126">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-126-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+      <derived-requirement id="RES-126-2">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+      <derived-requirement id="RES-126-3">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+      <derived-requirement id="RES-126-4">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+      <derived-requirement id="RES-126-5">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-133">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-133-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-134">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-134-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-136">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-136-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+      <derived-requirement id="RES-136-2">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-137">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-137-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-138">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-138-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-179">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-179-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-180">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-180-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-181">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-181-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-182">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-182-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-235">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-235-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-253">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-253-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+      <derived-requirement id="RES-253-2">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-255">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-255-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-258">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-258-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-260">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-260-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-271">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-271-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-299">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-299-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-300">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-300-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+      <derived-requirement id="RES-300-2">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+      <derived-requirement id="RES-300-3">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-301">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-301-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-304">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-304-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-306">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-306-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-307">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-307-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-309">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-309-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-311">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-311-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-312">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-312-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-313">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-313-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-315">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-315-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-316">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-316-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-318">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-318-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-319">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-319-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-320">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-320-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-321">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-321-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-322">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-322-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-323">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-323-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-363">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-363-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+      <derived-requirement id="RES-363-2">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-364">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-364-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-365">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-365-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-366">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-366-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-367">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-367-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-369">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-369-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-370">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-370-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+      <derived-requirement id="RES-370-2">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-371">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-371-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-388">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-388-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-389">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-389-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-390">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-390-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-391">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-391-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+      <derived-requirement id="RES-391-2">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-392">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-392-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-42">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-42-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-44">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-44-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-68">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-68-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-69">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-69-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="RES-70">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="RES-70-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-10">
+      <status>PASS</status>
+      <derived-requirement id="SRC-10-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-118">
+      <status>PASS</status>
+      <derived-requirement id="SRC-118-1">
+        <status>PASS</status>
+      </derived-requirement>
+      <derived-requirement id="SRC-118-2">
+        <status>PASS</status>
+      </derived-requirement>
+      <derived-requirement id="SRC-118-3">
+        <status>NOT_APPLICABLE</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-119">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-119-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-125">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-125-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-131">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-131-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-149">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-149-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-15">
+      <status>PASS</status>
+      <derived-requirement id="SRC-15-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-150">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-150-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-151">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-151-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-152">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-152-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-154">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-154-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-169">
+      <status>PASS</status>
+      <derived-requirement id="SRC-169-1">
+        <status>PASS</status>
+      </derived-requirement>
+      <derived-requirement id="SRC-169-2">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-171">
+      <status>PASS</status>
+      <derived-requirement id="SRC-171-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-175">
+      <status>PASS</status>
+      <derived-requirement id="SRC-175-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-2">
+      <status>PASS</status>
+      <derived-requirement id="SRC-2-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-206">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-206-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-207">
+      <status>WARNING</status>
+      <derived-requirement id="SRC-207-1">
+        <status>WARNING</status>
+        <test test-id-ref="scap-general-oval-def-rule-compliance-cce">
+          <status>FAIL</status>
+          <message>'oval-def:definition oval:nist.validation.r3005:def:1'</message>
+          <location line="276" column="90" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*[local-name()='oval_definitions' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='definitions' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='definition' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]" />
+        </test>
+        <test test-id-ref="scap-general-oval-def-rule-compliance-cce">
+          <status>FAIL</status>
+          <message>'oval-def:definition oval:nist.validation.r3005:def:2'</message>
+          <location line="285" column="90" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*[local-name()='oval_definitions' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='definitions' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='definition' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][2]" />
+        </test>
+        <test test-id-ref="scap-general-oval-def-rule-compliance-cce">
+          <status>FAIL</status>
+          <message>'oval-def:definition oval:nist.validation.r3005:def:3'</message>
+          <location line="294" column="90" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*[local-name()='oval_definitions' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='definitions' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='definition' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][3]" />
+        </test>
+        <test test-id-ref="scap-general-oval-def-rule-compliance-cce">
+          <status>FAIL</status>
+          <message>'oval-def:definition oval:nist.validation.r3005:def:4'</message>
+          <location line="303" column="90" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*[local-name()='oval_definitions' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='definitions' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='definition' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][4]" />
+        </test>
+        <test test-id-ref="scap-general-oval-def-rule-compliance-cce">
+          <status>FAIL</status>
+          <message>'oval-def:definition oval:nist.validation.r3005:def:5'</message>
+          <location line="312" column="90" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*[local-name()='oval_definitions' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='definitions' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='definition' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][5]" />
+        </test>
+        <test test-id-ref="scap-general-oval-def-rule-compliance-cce">
+          <status>FAIL</status>
+          <message>'oval-def:definition oval:nist.validation.r3005:def:6'</message>
+          <location line="321" column="90" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*[local-name()='oval_definitions' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='definitions' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='definition' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][6]" />
+        </test>
+        <test test-id-ref="scap-general-oval-def-rule-compliance-cce">
+          <status>FAIL</status>
+          <message>'oval-def:definition oval:nist.validation.r3005:def:7'</message>
+          <location line="330" column="90" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*[local-name()='oval_definitions' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='definitions' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='definition' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][7]" />
+        </test>
+        <test test-id-ref="scap-general-oval-def-rule-compliance-cce">
+          <status>FAIL</status>
+          <message>'oval-def:definition oval:nist.validation.r3005:def:8'</message>
+          <location line="339" column="90" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*[local-name()='oval_definitions' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='definitions' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='definition' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][8]" />
+        </test>
+        <test test-id-ref="scap-general-oval-def-rule-compliance-cce">
+          <status>FAIL</status>
+          <message>'oval-def:definition oval:nist.validation.r3005:def:9'</message>
+          <location line="348" column="90" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*[local-name()='oval_definitions' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='definitions' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='definition' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][9]" />
+        </test>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-208">
+      <status>PASS</status>
+      <derived-requirement id="SRC-208-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-209">
+      <status>PASS</status>
+      <derived-requirement id="SRC-209-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-210">
+      <status>PASS</status>
+      <derived-requirement id="SRC-210-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-211">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-211-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-212">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-212-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-213">
+      <status>PASS</status>
+      <derived-requirement id="SRC-213-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-214">
+      <status>PASS</status>
+      <derived-requirement id="SRC-214-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-215">
+      <status>PASS</status>
+      <derived-requirement id="SRC-215-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-216">
+      <status>PASS</status>
+      <derived-requirement id="SRC-216-1">
+        <status>PASS</status>
+      </derived-requirement>
+      <derived-requirement id="SRC-216-2">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-227">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-227-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-228">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-228-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-229">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-229-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-230">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-230-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-236">
+      <status>PASS</status>
+      <derived-requirement id="SRC-236-1">
+        <status>PASS</status>
+      </derived-requirement>
+      <derived-requirement id="SRC-236-2">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-242">
+      <status>PASS</status>
+      <derived-requirement id="SRC-242-1">
+        <status>PASS</status>
+      </derived-requirement>
+      <derived-requirement id="SRC-242-2">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-248">
+      <status>PASS</status>
+      <derived-requirement id="SRC-248-1">
+        <status>PASS</status>
+      </derived-requirement>
+      <derived-requirement id="SRC-248-2">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-25">
+      <status>PASS</status>
+      <derived-requirement id="SRC-25-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-251">
+      <status>WARNING</status>
+      <derived-requirement id="SRC-251-1">
+        <status>WARNING</status>
+        <test test-id-ref="scap-general-xccdf-rule-cve-cce-cpe">
+          <status>FAIL</status>
+          <message>'xccdf:Rule xccdf_gov.nist_rule_validation.r3005_rule_1'</message>
+          <location line="106" column="114" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='Benchmark' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='Rule' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]" />
+        </test>
+        <test test-id-ref="scap-general-xccdf-rule-cve-cce-cpe">
+          <status>FAIL</status>
+          <message>'xccdf:Rule xccdf_gov.nist_rule_validation.r3005_rule_2'</message>
+          <location line="128" column="114" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='Benchmark' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='Rule' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][2]" />
+        </test>
+        <test test-id-ref="scap-general-xccdf-rule-cve-cce-cpe">
+          <status>FAIL</status>
+          <message>'xccdf:Rule xccdf_gov.nist_rule_validation.r3005_rule_3'</message>
+          <location line="144" column="85" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='Benchmark' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='Rule' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][3]" />
+        </test>
+        <test test-id-ref="scap-general-xccdf-rule-cve-cce-cpe">
+          <status>FAIL</status>
+          <message>'xccdf:Rule xccdf_gov.nist_rule_validation.r3005_rule_4'</message>
+          <location line="160" column="85" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='Benchmark' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='Rule' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][4]" />
+        </test>
+        <test test-id-ref="scap-general-xccdf-rule-cve-cce-cpe">
+          <status>FAIL</status>
+          <message>'xccdf:Rule xccdf_gov.nist_rule_validation.r3005_rule_5'</message>
+          <location line="181" column="84" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='Benchmark' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='Rule' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][5]" />
+        </test>
+        <test test-id-ref="scap-general-xccdf-rule-cve-cce-cpe">
+          <status>FAIL</status>
+          <message>'xccdf:Rule xccdf_gov.nist_rule_validation.r3005_rule_6'</message>
+          <location line="190" column="85" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='Benchmark' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='Rule' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][6]" />
+        </test>
+        <test test-id-ref="scap-general-xccdf-rule-cve-cce-cpe">
+          <status>FAIL</status>
+          <message>'xccdf:Rule xccdf_gov.nist_rule_validation.r3005_rule_7'</message>
+          <location line="201" column="85" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='Benchmark' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='Rule' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][7]" />
+        </test>
+        <test test-id-ref="scap-general-xccdf-rule-cve-cce-cpe">
+          <status>FAIL</status>
+          <message>'xccdf:Rule xccdf_gov.nist_rule_validation.r3005_rule_8'</message>
+          <location line="223" column="102" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='Benchmark' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='Rule' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][8]" />
+        </test>
+        <test test-id-ref="scap-general-xccdf-rule-cve-cce-cpe">
+          <status>FAIL</status>
+          <message>'xccdf:Rule xccdf_gov.nist_rule_validation.r3005_rule_9'</message>
+          <location line="235" column="97" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='Benchmark' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='Rule' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][9]" />
+        </test>
+        <test test-id-ref="scap-general-xccdf-rule-cve-cce-cpe">
+          <status>FAIL</status>
+          <message>'xccdf:Rule xccdf_gov.nist_rule_validation.r3005_rule_10'</message>
+          <location line="248" column="98" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='Benchmark' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='Rule' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][10]" />
+        </test>
+      </derived-requirement>
+      <derived-requirement id="SRC-251-2">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-257">
+      <status>PASS</status>
+      <derived-requirement id="SRC-257-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-262">
+      <status>PASS</status>
+      <derived-requirement id="SRC-262-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-263">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-263-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-265">
+      <status>PASS</status>
+      <derived-requirement id="SRC-265-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-266">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-266-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-267">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-267-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-275">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-275-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-276">
+      <status>PASS</status>
+      <derived-requirement id="SRC-276-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-278">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-278-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-279">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-279-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-280">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-280-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-281">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-281-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-282">
+      <status>NOT_APPLICABLE</status>
+      <derived-requirement id="SRC-282-1">
+        <status>NOT_APPLICABLE</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-284">
+      <status>NOT_APPLICABLE</status>
+      <derived-requirement id="SRC-284-1">
+        <status>NOT_APPLICABLE</status>
+      </derived-requirement>
+      <derived-requirement id="SRC-284-2">
+        <status>NOT_APPLICABLE</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-285">
+      <status>NOT_APPLICABLE</status>
+      <derived-requirement id="SRC-285-1">
+        <status>NOT_APPLICABLE</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-286">
+      <status>NOT_APPLICABLE</status>
+      <derived-requirement id="SRC-286-1">
+        <status>NOT_APPLICABLE</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-287">
+      <status>NOT_APPLICABLE</status>
+      <derived-requirement id="SRC-287-1">
+        <status>NOT_APPLICABLE</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-288">
+      <status>NOT_APPLICABLE</status>
+      <derived-requirement id="SRC-288-1">
+        <status>NOT_APPLICABLE</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-289">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-289-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-290">
+      <status>NOT_APPLICABLE</status>
+      <derived-requirement id="SRC-290-1">
+        <status>NOT_APPLICABLE</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-3">
+      <status>PASS</status>
+      <derived-requirement id="SRC-3-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+      <derived-requirement id="SRC-3-2">
+        <status>PASS</status>
+      </derived-requirement>
+      <derived-requirement id="SRC-3-3">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-30">
+      <status>PASS</status>
+      <derived-requirement id="SRC-30-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-31">
+      <status>PASS</status>
+      <derived-requirement id="SRC-31-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-314">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-314-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-317">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-317-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-324">
+      <status>PASS</status>
+      <derived-requirement id="SRC-324-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-325">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-325-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-327">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-327-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-329">
+      <status>PASS</status>
+      <derived-requirement id="SRC-329-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-33">
+      <status>PASS</status>
+      <derived-requirement id="SRC-33-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-330">
+      <status>PASS</status>
+      <derived-requirement id="SRC-330-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+      <derived-requirement id="SRC-330-2">
+        <status>PASS</status>
+      </derived-requirement>
+      <derived-requirement id="SRC-330-3">
+        <status>PASS</status>
+        <test>
+          <status>WARNING</status>
+          <message>'Warning: The 'cpe:/' prefix (CPE URI binding) is allowed within an @idref attribute, but the CPE Formatted String binding is preferred. See the XCCDF 1.2.1 specification, Section 6.2.5. - TEST: false()'</message>
+          <location line="729" column="59" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][5]/*[local-name()='Tailoring' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='Profile' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='platform' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]" />
+        </test>
+        <test>
+          <status>WARNING</status>
+          <message>'Warning: The 'cpe:/' prefix (CPE URI binding) is allowed within an @idref attribute, but the CPE Formatted String binding is preferred. See the XCCDF 1.2.1 specification, Section 6.2.5. - TEST: false()'</message>
+          <location line="730" column="65" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][5]/*[local-name()='Tailoring' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='Profile' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='platform' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][2]" />
+        </test>
+        <test>
+          <status>WARNING</status>
+          <message>'Warning: The 'cpe:/' prefix (CPE URI binding) is allowed within an @idref attribute, but the CPE Formatted String binding is preferred. See the XCCDF 1.2.1 specification, Section 6.2.5. - TEST: false()'</message>
+          <location line="731" column="60" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][5]/*[local-name()='Tailoring' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='Profile' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='platform' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][3]" />
+        </test>
+        <test>
+          <status>WARNING</status>
+          <message>'Warning: The 'Benchmark' element has no platform specified, which implies the benchmark applies to all platforms. Applicable platforms should be indicate if possible. See the XCCDF 1.2.1 specification, Section 6.2.5. - TEST: false()'</message>
+          <location line="65" column="104" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='Benchmark' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]" />
+        </test>
+        <test>
+          <status>WARNING</status>
+          <message>'Warning: All 'check' elements have non-empty @selector attribute values. This means that, by default, no 'check' element is used. To designate a default, remove the @selector from the desired default element. See the XCCDF 1.2.1 specification, Section 6.4.4.4. - TEST: false()'</message>
+          <location line="160" column="85" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='Benchmark' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='Rule' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][4]" />
+        </test>
+        <test>
+          <status>INFORMATIONAL</status>
+          <message>'DEPRECATED TEST: macos:plist510_test ID: oval:gov.nist.validation.cpe.oval:tst:1102 - TEST: true()'</message>
+          <location line="631" column="139" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][3]/*[local-name()='oval_definitions' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='tests' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='plist510_test' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#macos'][1]" />
+        </test>
+        <test>
+          <status>INFORMATIONAL</status>
+          <message>' DEPRECATED OBJECT: macos:plist510_object ID: oval:gov.nist.validation.cpe.oval:obj:1102 - TEST: true()'</message>
+          <location line="647" column="166" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][3]/*[local-name()='oval_definitions' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='objects' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='plist510_object' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#macos'][1]" />
+        </test>
+        <test>
+          <status>INFORMATIONAL</status>
+          <message>'DEPRECATED STATE: macos:plist510_state ID: oval:gov.nist.validation.cpe.oval:ste:110201 - TEST: true()'</message>
+          <location line="669" column="209" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][3]/*[local-name()='oval_definitions' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='states' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='plist510_state' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#macos'][1]" />
+        </test>
+        <test>
+          <status>INFORMATIONAL</status>
+          <message>'DEPRECATED STATE: macos:plist510_state ID: oval:gov.nist.validation.cpe.oval:ste:110202 - TEST: true()'</message>
+          <location line="672" column="194" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][3]/*[local-name()='oval_definitions' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='states' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*[local-name()='plist510_state' and namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#macos'][2]" />
+        </test>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-331">
+      <status>PASS</status>
+      <derived-requirement id="SRC-331-1">
+        <status>PASS</status>
+      </derived-requirement>
+      <derived-requirement id="SRC-331-2">
+        <status>PASS</status>
+      </derived-requirement>
+      <derived-requirement id="SRC-331-3">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-332">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-332-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-333">
+      <status>PASS</status>
+      <derived-requirement id="SRC-333-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-334">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-334-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-338">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-338-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-339">
+      <status>PASS</status>
+      <derived-requirement id="SRC-339-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-341">
+      <status>PASS</status>
+      <derived-requirement id="SRC-341-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-343">
+      <status>PASS</status>
+      <derived-requirement id="SRC-343-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-345">
+      <status>PASS</status>
+      <derived-requirement id="SRC-345-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-346">
+      <status>PASS</status>
+      <derived-requirement id="SRC-346-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-348">
+      <status>PASS</status>
+      <derived-requirement id="SRC-348-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-349">
+      <status>PASS</status>
+      <derived-requirement id="SRC-349-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-358">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-358-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-360">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-360-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-376">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-376-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-377">
+      <status>PASS</status>
+      <derived-requirement id="SRC-377-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-379">
+      <status>PASS</status>
+      <derived-requirement id="SRC-379-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-380">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-380-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-381">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-381-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-38">
+      <status>PASS</status>
+      <derived-requirement id="SRC-38-1">
+        <status>PASS</status>
+      </derived-requirement>
+      <derived-requirement id="SRC-38-2">
+        <status>PASS</status>
+      </derived-requirement>
+      <derived-requirement id="SRC-38-3">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-4">
+      <status>PASS</status>
+      <derived-requirement id="SRC-4-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-5">
+      <status>PASS</status>
+      <derived-requirement id="SRC-5-1">
+        <status>PASS</status>
+      </derived-requirement>
+      <derived-requirement id="SRC-5-2">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-52">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-52-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-54">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-54-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-71">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-71-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-72">
+      <status>PASS</status>
+      <derived-requirement id="SRC-72-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-74">
+      <status>PASS</status>
+      <derived-requirement id="SRC-74-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-8">
+      <status>PASS</status>
+      <derived-requirement id="SRC-8-1">
+        <status>PASS</status>
+      </derived-requirement>
+      <derived-requirement id="SRC-8-2">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="SRC-9">
+      <status>PASS</status>
+      <derived-requirement id="SRC-9-1">
+        <status>PASS</status>
+      </derived-requirement>
+      <derived-requirement id="SRC-9-2">
+        <status>PASS</status>
+      </derived-requirement>
+      <derived-requirement id="SRC-9-3">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-110">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-110-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-141">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-141-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-202">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-202-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-218">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-218-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-232">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-232-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-233">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-233-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-254">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-254-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-269">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-269-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-270">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-270-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-283">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-283-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-291">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-291-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-293">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-293-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-294">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-294-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-295">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-295-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-296">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-296-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-297">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-297-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-298">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-298-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-308">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-308-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-310">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-310-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-335">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-335-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-336">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-336-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-337">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-337-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-340">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-340-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-342">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-342-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-344">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-344-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-347">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-347-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-350">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-350-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-352">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-352-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-353">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-353-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-354">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-354-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-356">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-356-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-357">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-357-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-359">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-359-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-361">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-361-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-362">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-362-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-368">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-368-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-378">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-378-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-382">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="SRC-382-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-383">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-383-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-384">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-384-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-385">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-385-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-386">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-386-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="TOOL-387">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="TOOL-387-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="A-10">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="A-10-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="A-15">
+      <status>PASS</status>
+      <derived-requirement id="A-15-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="A-16">
+      <status>PASS</status>
+      <derived-requirement id="A-16-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="A-17">
+      <status>PASS</status>
+      <derived-requirement id="A-17-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="A-18">
+      <status>NOT_APPLICABLE</status>
+      <derived-requirement id="A-18-1">
+        <status>NOT_APPLICABLE</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="A-21">
+      <status>INFORMATIONAL</status>
+      <derived-requirement id="A-21-1">
+        <status>INFORMATIONAL</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="A-22">
+      <status>INFORMATIONAL</status>
+      <derived-requirement id="A-22-1">
+        <status>INFORMATIONAL</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="A-23">
+      <status>NOT_TESTED</status>
+      <derived-requirement id="A-23-1">
+        <status>NOT_TESTED</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="A-25">
+      <status>PASS</status>
+      <derived-requirement id="A-25-1">
+        <status>PASS</status>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="A-26">
+      <status>WARNING</status>
+      <derived-requirement id="A-26-1">
+        <status>WARNING</status>
+        <test test-id-ref="scap-general-xccdf-rule-attributes-exists">
+          <status>FAIL</status>
+          <message>' - TEST: exists(@selected) and exists(@weight) and exists(@role) and exists(@severity)'</message>
+          <location line="106" column="114" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='Benchmark' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='Rule' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]" />
+        </test>
+        <test test-id-ref="scap-general-xccdf-rule-attributes-exists">
+          <status>FAIL</status>
+          <message>' - TEST: exists(@selected) and exists(@weight) and exists(@role) and exists(@severity)'</message>
+          <location line="128" column="114" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='Benchmark' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='Rule' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][2]" />
+        </test>
+        <test test-id-ref="scap-general-xccdf-rule-attributes-exists">
+          <status>FAIL</status>
+          <message>' - TEST: exists(@selected) and exists(@weight) and exists(@role) and exists(@severity)'</message>
+          <location line="144" column="85" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='Benchmark' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='Rule' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][3]" />
+        </test>
+        <test test-id-ref="scap-general-xccdf-rule-attributes-exists">
+          <status>FAIL</status>
+          <message>' - TEST: exists(@selected) and exists(@weight) and exists(@role) and exists(@severity)'</message>
+          <location line="160" column="85" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='Benchmark' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='Rule' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][4]" />
+        </test>
+        <test test-id-ref="scap-general-xccdf-rule-attributes-exists">
+          <status>FAIL</status>
+          <message>' - TEST: exists(@selected) and exists(@weight) and exists(@role) and exists(@severity)'</message>
+          <location line="181" column="84" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='Benchmark' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='Rule' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][5]" />
+        </test>
+        <test test-id-ref="scap-general-xccdf-rule-attributes-exists">
+          <status>FAIL</status>
+          <message>' - TEST: exists(@selected) and exists(@weight) and exists(@role) and exists(@severity)'</message>
+          <location line="190" column="85" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='Benchmark' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='Rule' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][6]" />
+        </test>
+        <test test-id-ref="scap-general-xccdf-rule-attributes-exists">
+          <status>FAIL</status>
+          <message>' - TEST: exists(@selected) and exists(@weight) and exists(@role) and exists(@severity)'</message>
+          <location line="201" column="85" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='Benchmark' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='Rule' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][7]" />
+        </test>
+        <test test-id-ref="scap-general-xccdf-rule-attributes-exists">
+          <status>FAIL</status>
+          <message>' - TEST: exists(@selected) and exists(@weight) and exists(@role) and exists(@severity)'</message>
+          <location line="223" column="102" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='Benchmark' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='Rule' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][8]" />
+        </test>
+        <test test-id-ref="scap-general-xccdf-rule-attributes-exists">
+          <status>FAIL</status>
+          <message>' - TEST: exists(@selected) and exists(@weight) and exists(@role) and exists(@severity)'</message>
+          <location line="235" column="97" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='Benchmark' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='Rule' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][9]" />
+        </test>
+        <test test-id-ref="scap-general-xccdf-rule-attributes-exists">
+          <status>FAIL</status>
+          <message>' - TEST: exists(@selected) and exists(@weight) and exists(@role) and exists(@severity)'</message>
+          <location line="248" column="98" subject-ref="sub1" xpath="/*[local-name()='data-stream-collection' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='component' and namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*[local-name()='Benchmark' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*[local-name()='Rule' and namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][10]" />
+        </test>
+      </derived-requirement>
+    </base-requirement>
+    <base-requirement id="A-27">
+      <status>NOT_APPLICABLE</status>
+      <derived-requirement id="A-27-1">
+        <status>NOT_APPLICABLE</status>
+      </derived-requirement>
+    </base-requirement>
+  </results>
+</assessment-results>
