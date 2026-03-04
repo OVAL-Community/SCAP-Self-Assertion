@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions
+  xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5"  
+  xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"  
+  xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
+  xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" 
+  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/independent-definitions-schema.xsd
+  	http://oval.mitre.org/XMLSchema/oval-definitions-5#windows  https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/windows-definitions-schema.xsd
+  	http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-definitions-schema.xsd
+  	http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-common-schema.xsd" >
+	<generator>
+		<oval:product_name>Oval Test Content</oval:product_name>
+		<oval:schema_version>5.12.2</oval:schema_version>
+		<oval:timestamp>2026-03-02T12:05:51</oval:timestamp>
+		<terms_of_use>Portions of this document were developed at Naval Information Warfare Center Atlantic by employees of the Federal Government in the course of their official duties. Pursuant to title 17 Section 105 of the United States Code this software is not subject to copyright protection and is in the public domain. The Government assumes no responsibility whatsoever for its use by other parties, and the software is provided "AS IS" without warranty or guarantee of any kind, express or implied, including, but not limited to, the warranties of merchantability and of fitness for a particular purpose. In no event shall the Government be liable for any claim, damages or other liability, whether in an action of contract, tort or other dealings in the software. The Government has no obligation hereunder to provide maintenance, support, updates, enhancements, or modifications. We would appreciate acknowledgement if the software is used. This software can be redistributed and/or modified freely provided that any derivative works bear some notice that they are derived from it, and any modified versions bear some notice that they have been modified.</terms_of_use>
+	</generator>
+	<definitions>
+		<definition id="oval:navy.navwar.niwcatlantic.scc.test:def:1" version="1" class="compliance">
+			<metadata>
+				<title>Evaluate to true if the win-def:Userrights_test is properly supported</title>
+				<description>This definition is intended to evalutate the interpreter properly supports the win-def:Userrights_test</description>
+			</metadata>
+			<notes>
+				<note>It is important to note that the values used in this test definition are specific to a particular machine, and may not necessarily apply to your system. As a result, in order to have the
+				definition return a result of 'true', you must either change these values to the ones found on your particular system, or you must configure your system to use these values.</note>
+			</notes>
+			<criteria operator="AND">
+				<criterion comment="Test SE_ASSIGNPRIMARYTOKEN_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:1"/>
+				<criterion comment="Test SE_AUDIT_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:2"/>
+				<criterion comment="Test SE_BACKUP_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:3"/>
+				<criterion comment="Test SE_CHANGE_NOTIFY_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:4"/>
+				<criterion comment="Test SE_CREATE_GLOBAL_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:5"/>
+				<criterion comment="Test SE_CREATE_PAGEFILE_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:6"/>
+				<criterion comment="Test SE_CREATE_PERMANENT_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:7"/>
+				<criterion comment="Test SE_CREATE_SYMBOLIC_LINK_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:8"/>
+				<criterion comment="Test SE_CREATE_TOKEN_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:9"/>
+				<criterion comment="Test SE_DEBUG_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:10"/>
+				<criterion comment="Test SE_ENABLE_DELEGATION_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:11"/>
+				<criterion comment="Test SE_IMPERSONATE_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:12"/>
+				<criterion comment="Test SE_INC_BASE_PRIORITY_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:13"/>
+				<criterion comment="Test SE_INCREASE_QUOTA_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:14"/>
+				<criterion comment="Test SE_INC_WORKING_SET_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:15"/>
+				<criterion comment="Test SE_LOAD_DRIVER_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:16"/>
+				<criterion comment="Test SE_LOCK_MEMORY_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:17"/>
+				<criterion comment="Test SE_MACHINE_ACCOUNT_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:18"/>
+				<criterion comment="Test SE_MANAGE_VOLUME_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:19"/>
+				<criterion comment="Test SE_PROF_SINGLE_PROCESS_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:20"/>
+				<criterion comment="Test SE_RELABEL_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:21"/>
+				<criterion comment="Test SE_REMOTE_SHUTDOWN_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:22"/>
+				<criterion comment="Test SE_RESTORE_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:23"/>
+				<criterion comment="Test SE_SECURITY_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:24"/>
+				<criterion comment="Test SE_SHUTDOWN_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:25"/>
+				<criterion comment="Test SE_SYNC_AGENT_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:26"/>
+				<criterion comment="Test SE_SYSTEM_ENVIRONMENT_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:27"/>
+				<criterion comment="Test SE_SYSTEM_PROFILE_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:28"/>
+				<criterion comment="Test SE_SYSTEMTIME_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:29"/>
+				<criterion comment="Test SE_TAKE_OWNERSHIP_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:30"/>
+				<criterion comment="Test SE_TCB_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:31"/>
+				<criterion comment="Test SE_TIME_ZONE_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:32"/>
+				<criterion comment="Test SE_TRUSTED_CREDMAN_ACCESS_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:33"/>
+				<criterion comment="Test SE_UNDOCK_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:34"/>
+				<criterion comment="Test SE_UNSOLICITED_INPUT_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:35"/>
+				<criterion comment="Test SE_BATCH_LOGON_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:36"/>
+				<criterion comment="Test SE_DENY_BATCH_LOGON_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:37"/>
+				<criterion comment="Test SE_DENY_INTERACTIVE_LOGON_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:38"/>
+				<criterion comment="Test SE_DENY_NETWORK_LOGON_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:39"/>
+				<criterion comment="Test SE_DENY_REMOTE_INTERACTIVE_LOGON_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:40"/>
+				<criterion comment="Test SE_DENY_SERVICE_LOGON_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:41"/>
+				<criterion comment="Test SE_INTERACTIVE_LOGON_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:42"/>
+				<criterion comment="Test SE_NETWORK_LOGON_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:43"/>
+				<criterion comment="Test SE_REMOTE_INTERACTIVE_LOGON_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:44"/>
+				<criterion comment="Test SE_SERVICE_LOGON_NAME privilege" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:45"/>
+				<criterion comment="Test if include filters work as expected" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:100"/>
+				<criterion comment="Test if exclude filters work as expected" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:101"/>
+			</criteria>
+		</definition>
+	</definitions>
+	<tests>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:1" version="1" comment="Test SE_ASSIGNPRIMARYTOKEN_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:1"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:2" version="1" comment="Test SE_AUDIT_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:2"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:3" version="1" comment="Test SE_BACKUP_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:3"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:4" version="1" comment="Test SE_CHANGE_NOTIFY_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:4"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:5" version="1" comment="Test SE_CREATE_GLOBAL_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:5"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:6" version="1" comment="Test SE_CREATE_PAGEFILE_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:6"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:7" version="1" comment="Test SE_CREATE_PERMANENT_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:7"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:8" version="1" comment="Test SE_CREATE_SYMBOLIC_LINK_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:8"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:9" version="1" comment="Test SE_CREATE_TOKEN_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:9"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:10" version="1" comment="Test SE_DEBUG_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:10"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1"/>
+		</userright_test>
+				<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:11" version="1" comment="Test SE_ENABLE_DELEGATION_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:11"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:12" version="1" comment="Test SE_IMPERSONATE_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:12"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:13" version="1" comment="Test SE_INC_BASE_PRIORITY_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:13"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:14" version="1" comment="Test SE_INCREASE_QUOTA_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:14"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:15" version="1" comment="Test SE_INC_WORKING_SET_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:15"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:16" version="1" comment="Test SE_LOAD_DRIVER_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:16"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:17" version="1" comment="Test SE_LOCK_MEMORY_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:17"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:18" version="1" comment="Test SE_MACHINE_ACCOUNT_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:18"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:19" version="1" comment="Test SE_MANAGE_VOLUME_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:19"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:20" version="1" comment="Test SE_PROF_SINGLE_PROCESS_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:20"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:21" version="1" comment="Test SE_RELABEL_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:21"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:22" version="1" comment="Test SE_REMOTE_SHUTDOWN_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:22"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:23" version="1" comment="Test SE_RESTORE_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:23"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:24" version="1" comment="Test SE_SECURITY_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:24"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:25" version="1" comment="Test SE_SHUTDOWN_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:25"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:26" version="1" comment="Test SE_SYNC_AGENT_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:26"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:27" version="1" comment="Test SE_SYSTEM_ENVIRONMENT_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:27"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:28" version="1" comment="Test SE_SYSTEM_PROFILE_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:28"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:29" version="1" comment="Test SE_SYSTEMTIME_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:29"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:30" version="1" comment="Test SE_TAKE_OWNERSHIP_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:30"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:31" version="1" comment="Test SE_TCB_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:31"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:32" version="1" comment="Test SE_TIME_ZONE_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:32"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:33" version="1" comment="Test SE_TRUSTED_CREDMAN_ACCESS_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:33"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:34" version="1" comment="Test SE_UNDOCK_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:34"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:35" version="1" comment="Test SE_UNSOLICITED_INPUT_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:35"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:36" version="1" comment="Test SE_BATCH_LOGON_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:26"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:37" version="1" comment="Test SE_DENY_BATCH_LOGON_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:37"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:38" version="1" comment="Test SE_DENY_INTERACTIVE_LOGON_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:38"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:39" version="1" comment="Test SE_DENY_NETWORK_LOGON_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:39"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:40" version="1" comment="Test SE_DENY_REMOTE_INTERACTIVE_LOGON_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:40"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:41" version="1" comment="Test SE_DENY_SERVICE_LOGON_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:41"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:3"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:42" version="1" comment="Test SE_INTERACTIVE_LOGON_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:42"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:3"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:43" version="1" comment="Test SE_NETWORK_LOGON_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:43"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:3"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:44" version="1" comment="Test SE_REMOTE_INTERACTIVE_LOGON_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:44"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:3"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:45" version="1" comment="Test SE_SERVICE_LOGON_NAME privilege" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:45"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:3"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:100" version="1" comment="Test include filters" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:100"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:3"/>
+		</userright_test>
+		<userright_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:101" version="1" comment="Test exclude filters" check_existence="any_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:101"/>
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:3"/>
+		</userright_test>
+	</tests>
+	<objects>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:1" version="1" comment="SE_ASSIGNPRIMARYTOKEN_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_ASSIGNPRIMARYTOKEN_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:2" version="1" comment="SE_AUDIT_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_AUDIT_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:3" version="1" comment="SE_BACKUP_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_BACKUP_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:4" version="1" comment="SE_CHANGE_NOTIFY_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_CHANGE_NOTIFY_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:5" version="1" comment="SE_CREATE_GLOBAL_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_CREATE_GLOBAL_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:6" version="1" comment="SE_CREATE_PAGEFILE_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_CREATE_PAGEFILE_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:7" version="1" comment="SE_CREATE_PERMANENT_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_CREATE_PERMANENT_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:8" version="1" comment="SE_CREATE_SYMBOLIC_LINK_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_CREATE_SYMBOLIC_LINK_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:9" version="1" comment="SE_CREATE_TOKEN_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_CREATE_TOKEN_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:10" version="1" comment="SE_DEBUG_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_DEBUG_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:11" version="1" comment="SE_ENABLE_DELEGATION_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_ENABLE_DELEGATION_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:12" version="1" comment="SE_IMPERSONATE_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_IMPERSONATE_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:13" version="1" comment="SE_INC_BASE_PRIORITY_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_INC_BASE_PRIORITY_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:14" version="1" comment="SE_INCREASE_QUOTA_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_INCREASE_QUOTA_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:15" version="1" comment="SE_INC_WORKING_SET_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_INC_WORKING_SET_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:16" version="1" comment="SE_LOAD_DRIVER_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_LOAD_DRIVER_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:17" version="1" comment="SE_LOCK_MEMORY_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_LOCK_MEMORY_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:18" version="1" comment="SE_MACHINE_ACCOUNT_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_MACHINE_ACCOUNT_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:19" version="1" comment="SE_MANAGE_VOLUME_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_MANAGE_VOLUME_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:20" version="1" comment="SE_PROF_SINGLE_PROCESS_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_PROF_SINGLE_PROCESS_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:21" version="1" comment="SE_RELABEL_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_RELABEL_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:22" version="1" comment="SE_REMOTE_SHUTDOWN_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_REMOTE_SHUTDOWN_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:23" version="1" comment="SE_RESTORE_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_RESTORE_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:24" version="1" comment="SE_SECURITY_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_SECURITY_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:25" version="1" comment="SE_SHUTDOWN_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_SHUTDOWN_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:26" version="1" comment="SE_SYNC_AGENT_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_SYNC_AGENT_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:27" version="1" comment="SE_SYSTEM_ENVIRONMENT_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_SYSTEM_ENVIRONMENT_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:28" version="1" comment="SE_SYSTEM_PROFILE_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_SYSTEM_PROFILE_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:29" version="1" comment="SE_SYSTEMTIME_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_SYSTEMTIME_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:30" version="1" comment="SE_TAKE_OWNERSHIP_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_TAKE_OWNERSHIP_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:31" version="1" comment="SE_TCB_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_TCB_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:32" version="1" comment="SE_TIME_ZONE_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_TIME_ZONE_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:33" version="1" comment="SE_TRUSTED_CREDMAN_ACCESS_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_TRUSTED_CREDMAN_ACCESS_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:34" version="1" comment="SE_UNDOCK_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_UNDOCK_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:35" version="1" comment="SE_UNSOLICITED_INPUT_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_UNSOLICITED_INPUT_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:36" version="1" comment="SE_BATCH_LOGON_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_BATCH_LOGON_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:37" version="1" comment="SE_DENY_BATCH_LOGON_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_DENY_BATCH_LOGON_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:38" version="1" comment="SE_DENY_INTERACTIVE_LOGON_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_DENY_INTERACTIVE_LOGON_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:39" version="1" comment="SE_DENY_NETWORK_LOGON_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_DENY_NETWORK_LOGON_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:40" version="1" comment="SE_DENY_REMOTE_INTERACTIVE_LOGON_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_DENY_REMOTE_INTERACTIVE_LOGON_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:41" version="1" comment="SE_DENY_SERVICE_LOGON_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_DENY_SERVICE_LOGON_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:42" version="1" comment="SE_INTERACTIVE_LOGON_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_INTERACTIVE_LOGON_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:43" version="1" comment="SE_NETWORK_LOGON_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_NETWORK_LOGON_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:44" version="1" comment="SE_REMOTE_INTERACTIVE_LOGON_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_REMOTE_INTERACTIVE_LOGON_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:45" version="1" comment="SE_SERVICE_LOGON_NAME privilege" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_SERVICE_LOGON_NAME</userright>
+		</userright_object>
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:100" version="1" comment="List all SE_IMPERSONATE_NAME, filters to just to LOCAL SERVICE" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_IMPERSONATE_NAME</userright>
+			<filter xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" action="include">oval:navy.navwar.niwcatlantic.scc.test:ste:100</filter>
+		</userright_object>	
+		<userright_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:101" version="1" comment="List all SE_IMPERSONATE_NAME, excluding NETWORK SERVICE" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<userright>SE_IMPERSONATE_NAME</userright>
+			<filter xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" action="exclude">oval:navy.navwar.niwcatlantic.scc.test:ste:101</filter>
+		</userright_object>			
+	</objects>
+	<states>
+		<userright_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:1" version="1" comment=".* sid allowed" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<!-- Each collected trustee_sid item entity is compared against the pattern below. -->
+			<trustee_sid operation="pattern match" entity_check="all">.*</trustee_sid>
+		</userright_state>
+		<userright_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:2" version="1" comment=".* name allowed" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<!-- Each collected trustee_sid item entity is compared against the pattern below. -->
+			<trustee_name operation="pattern match" entity_check="all">.*</trustee_name>
+		</userright_state>
+		<userright_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:3" version="1" comment=".* name allowed" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<!-- Each collected trustee_sid item entity is compared against the pattern below. -->
+			<trustee_name operation="pattern match" entity_check="all">.*</trustee_name>
+			<trustee_sid operation="pattern match" entity_check="all">.*</trustee_sid>
+		</userright_state>			
+		<userright_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:100" version="1" comment="After filtering, only NETWORK SERVICE should have this permission" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<!-- Each collected trustee_sid item entity is compared against the pattern below. -->
+			<trustee_name operation="equals" entity_check="all">NETWORK SERVICE</trustee_name>
+		</userright_state>
+		<userright_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:101" version="1" comment="After filtering, NETWORK SERVICE should not have this permission" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<!-- Each collected trustee_sid item entity is compared against the pattern below. -->
+			<trustee_name operation="equals" entity_check="all">NETWORK SERVICE</trustee_name>
+		</userright_state>
+	</states>
+</oval_definitions>

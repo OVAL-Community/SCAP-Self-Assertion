@@ -1,0 +1,7 @@
+Test content is needed for the following OVAL 5.12.2 aws tests
+
+< api_test >
+< apicontent_test >
+< credentialreportuser_test >
+< credentialreportkey_test >
+< credentialreportcert_test >

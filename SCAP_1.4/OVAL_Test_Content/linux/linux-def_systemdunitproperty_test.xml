@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:unix-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" xmlns:linux-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux"
+xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/independent-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#unix https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/unix-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#linux https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/linux-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-common-schema.xsd">
+	<generator>
+		<oval:product_name>Oval Test Content</oval:product_name>
+		<oval:schema_version>5.12.2</oval:schema_version>
+		<oval:timestamp>2026-03-02T12:05:51</oval:timestamp>
+		<terms_of_use>Portions of this document were developed at Naval Information Warfare Center Atlantic by employees of the Federal Government in the course of their official duties. Pursuant to title 17 Section 105 of the United States Code this software is not subject to copyright protection and is in the public domain. The Government assumes no responsibility whatsoever for its use by other parties, and the software is provided "AS IS" without warranty or guarantee of any kind, express or implied, including, but not limited to, the warranties of merchantability and of fitness for a particular purpose. In no event shall the Government be liable for any claim, damages or other liability, whether in an action of contract, tort or other dealings in the software. The Government has no obligation hereunder to provide maintenance, support, updates, enhancements, or modifications. We would appreciate acknowledgement if the software is used. This software can be redistributed and/or
+		modified freely provided that any derivative works bear some notice that they are derived from it, and any modified versions bear some notice that they have been modified.</terms_of_use>
+	</generator>
+	<definitions>
+		<definition class="compliance" version="1" id="oval:navy.navwar.niwcatlantic.scc.test:def:1">
+			<metadata>
+				<title>Evaluate to true if the linux-def_systemunitproperty_test is properly supported.</title>
+				<description></description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:1" comment="Test that systemdunitproperty test is supported with unit operation of 'equals' and property operation of 'equals'." />
+				<criterion test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:2" comment="Test that systemdunitproperty test is supported with unit operation of 'not equals' and property operation of 'equals'." />
+				<criterion test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:3" comment="Test that systemdunitproperty test is supported with unit operation of 'pattern match' and property operation of 'equals'." />
+				<criterion test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:4" comment="Test that systemdunitproperty test is supported with unit operation of 'equals' and property operation of 'pattern match'." />
+			</criteria>
+		</definition>
+	</definitions>
+	<tests>
+		<systemdunitproperty_test check_existence="only_one_exists" version="1" id="oval:navy.navwar.niwcatlantic.scc.test:tst:1" check="all" comment="Test that systemdunitproperty test is supported with unit operation of 'equals' and property operation of 'equals'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:1" />
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1" />
+		</systemdunitproperty_test>
+		<systemdunitproperty_test check_existence="at_least_one_exists" version="1" id="oval:navy.navwar.niwcatlantic.scc.test:tst:2" check="all" comment="Test that systemdunitproperty test is supported with unit operation of 'not equal' and property operation of 'equals'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:2" />
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2" />
+		</systemdunitproperty_test>
+		<systemdunitproperty_test check_existence="at_least_one_exists" version="1" id="oval:navy.navwar.niwcatlantic.scc.test:tst:3" check="all" comment="Test that systemdunitproperty test is supported with unit operation of 'pattern match' and property operation of 'equals'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:3" />
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:3" />
+		</systemdunitproperty_test>
+		<systemdunitproperty_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:4" check="at least one" check_existence="all_exist" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" comment="Test that systemdunitproperty test is supported with unit operation of 'equals' and property operation of 'pattern match'." version="1">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:4" />
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:3" />
+		</systemdunitproperty_test>
+	</tests>
+	<objects>
+		<systemdunitproperty_object comment="Retrieve the LoadState of unit 'home.mount'." version="1" id="oval:navy.navwar.niwcatlantic.scc.test:obj:1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+			<unit>home.mount</unit>
+			<property>LoadState</property>
+		</systemdunitproperty_object>
+		<systemdunitproperty_object comment="Retrieve the UnitFileState of unit 'home.mount'." version="1" id="oval:navy.navwar.niwcatlantic.scc.test:obj:2" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+			<unit operation="not equal">home.mount</unit>
+			<property>UnitFileState</property>
+		</systemdunitproperty_object>
+		<systemdunitproperty_object comment="Retrieve the UnitFileState of unit 'home.mount' with operation of 'pattern match'." version="1" id="oval:navy.navwar.niwcatlantic.scc.test:obj:3" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+			<unit operation="pattern match">^home\.mount$</unit>
+			<property>UnitFileState</property>
+		</systemdunitproperty_object>
+		<systemdunitproperty_object comment="Retrieve the UnitFileState with operation of 'pattern match' for unit 'home.mount'." version="1" id="oval:navy.navwar.niwcatlantic.scc.test:obj:4" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+			<unit>home.mount</unit>
+			<property operation="pattern match">Unit[Ff]ile[Ss]tate</property>
+		</systemdunitproperty_object>
+	</objects>
+	<states>
+		<systemdunitproperty_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:1" comment="Confirm a reasonable value (loaded or not-found) is reported." version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+			<value operation="pattern match">(loaded|not-found)</value>
+		</systemdunitproperty_state>
+		<systemdunitproperty_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:2" comment="Confirm unit 'home.mount' is not included in object results." version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+			<unit operation="not equal">home.mount</unit>
+		</systemdunitproperty_state>
+		<systemdunitproperty_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:3" comment="Confirm unit 'home.mount' is included in object results." version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+			<unit operation="equals">home.mount</unit>
+			<property>UnitFileState</property>
+			<value>generated</value>
+		</systemdunitproperty_state>
+	</states>
+</oval_definitions>

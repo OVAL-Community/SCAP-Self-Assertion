@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:unix-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" xmlns:linux-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux"
+xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/independent-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#unix https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/unix-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#linux https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/linux-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-common-schema.xsd">
+	<generator>
+		<oval:product_name>Oval Test Content NIWC Version</oval:product_name>
+		<oval:schema_version>5.12.2</oval:schema_version>
+		<oval:timestamp>2026-03-02T12:05:51</oval:timestamp>
+		<terms_of_use>Portions of this document were developed at Naval Information Warfare Center Atlantic by employees of the Federal Government in the course of their official duties. Pursuant to title 17 Section 105 of the United States Code this software is not subject to copyright protection and is in the public domain. The Government assumes no responsibility whatsoever for its use by other parties, and the software is provided "AS IS" without warranty or guarantee of any kind, express or implied, including, but not limited to, the warranties of merchantability and of fitness for a particular purpose. In no event shall the Government be liable for any claim, damages or other liability, whether in an action of contract, tort or other dealings in the software. The Government has no obligation hereunder to provide maintenance, support, updates, enhancements, or modifications. We would appreciate acknowledgement if the software is used. This software can be redistributed and/or
+		modified freely provided that any derivative works bear some notice that they are derived from it, and any modified versions bear some notice that they have been modified.</terms_of_use>
+	</generator>
+	<definitions>
+		<definition id="oval:navy.navwar.niwcatlantic.scc.rhel7:def:1" version="1" class="compliance">
+			<metadata>
+				<title>Evaluate to true if the independent shellcommand test is properly supported</title>
+				<description>This definition is intended to evalutate to true if the interpreter properly supports the independent shellcommand test.</description>
+			</metadata>
+			<notes>
+				<note>This test definition requires the presence of target files in /opt/support.  For more information, see the accompanying README.</note>
+			</notes>
+			<criteria>
+				<criterion test_ref="oval:navy.navwar.niwcatlantic.scc:tst:1" comment="Simple execution of a system command, 'ls -l'." />
+				<criterion test_ref="oval:navy.navwar.niwcatlantic.scc:tst:2" comment="Employ an object pattern to filter STDOUT results." />
+				<criterion test_ref="oval:navy.navwar.niwcatlantic.scc:tst:3" comment="Employ an object pattern to capture a sub-expression." />
+			</criteria>
+		</definition>
+	</definitions>
+	<tests>
+		<shellcommand_test id="oval:navy.navwar.niwcatlantic.scc:tst:1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" version="1" comment="Simple execution of a system command, 'ls -l'." check_existence="at_least_one_exists" check="all">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc:obj:1" />
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc:ste:1" />
+		</shellcommand_test>
+		<shellcommand_test id="oval:navy.navwar.niwcatlantic.scc:tst:2" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" version="1" comment="Employ an object pattern to filter STDOUT results." check_existence="at_least_one_exists" check="all">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc:obj:2" />
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc:ste:2" />
+		</shellcommand_test>
+		<shellcommand_test id="oval:navy.navwar.niwcatlantic.scc:tst:3" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" version="1" comment="Employ an object pattern to capture a sub-expression." check_existence="at_least_one_exists" check="all">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc:obj:3" />
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc:ste:3" />
+		</shellcommand_test>
+	</tests>
+	<objects>
+		<shellcommand_object id="oval:navy.navwar.niwcatlantic.scc:obj:1" version="1" comment="Run 'ls -l' against installed support files." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+			<shell>bash</shell>
+			<command>ls -l /opt/support/txt/*</command>
+		</shellcommand_object>
+		<shellcommand_object id="oval:navy.navwar.niwcatlantic.scc:obj:2" version="1" comment="Run 'ls -l' against installed support files with an object pattern." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+			<shell>bash</shell>
+			<command>ls -l /opt/support/txt/*</command>
+			<pattern>Document</pattern>
+		</shellcommand_object>
+		<shellcommand_object id="oval:navy.navwar.niwcatlantic.scc:obj:3" version="1" comment="Run 'ls -l' against installed support files with an object pattern containing a subexpression capture." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+			<shell>bash</shell>
+			<command>ls -l /opt/support/txt/*</command>
+			<pattern>Docu(men)t</pattern>
+		</shellcommand_object>
+	</objects>
+	<states>
+		<shellcommand_state id="oval:navy.navwar.niwcatlantic.scc:ste:1" version="1" comment="Confirm existence of text support files." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+			<exit_status datatype="int">0</exit_status>
+			<stdout_line operation="pattern match" entity_check="at least one">.*build\.win32\.txt</stdout_line>
+		</shellcommand_state>
+		<shellcommand_state id="oval:navy.navwar.niwcatlantic.scc:ste:2" version="1" comment="Confirm collection of only those lines containing the word 'Document'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+			<exit_status datatype="int">0</exit_status>
+			<stdout_line operation="pattern match" entity_check="at least one">Document</stdout_line>
+		</shellcommand_state>
+		<shellcommand_state id="oval:navy.navwar.niwcatlantic.scc:ste:3" version="1" comment="Confirm capture of subexpression, 'men'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+			<exit_status datatype="int">0</exit_status>
+			<subexpression>men</subexpression>
+		</shellcommand_state>
+	</states>
+</oval_definitions>
