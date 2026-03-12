@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions
+  xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5"  
+  xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"  
+  xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
+  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/independent-definitions-schema.xsd
+  	http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-definitions-schema.xsd
+  	http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-common-schema.xsd" >	
+	<generator>
+		<oval:product_name>Oval Test Content</oval:product_name>
+		<oval:schema_version>5.12.2</oval:schema_version>
+		<oval:timestamp>2026-03-02T12:05:51</oval:timestamp>
+    <terms_of_use>NOTE: MITRE Content may be modified from original by NIWC Atlantic. Copyright (c) 2002-2011, The MITRE Corporation. All rights reserved. The contents of this file are subject to the license described in terms.txt.</terms_of_use>
+	</generator>
+  <definitions>
+    <definition id="oval:org.mitre.oval.test:def:95" version="1" class="miscellaneous">
+      <metadata>
+        <title>Test to ensure that OVAL results from the product include references such as CVE, CCE, CCI</title>
+        <description></description>
+		<reference ref_id="CVE-ABC-123" ref_url="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-21098" source="CVE" />
+		<reference ref_id="CCE-123-XZY" source="http://cce.mitre.org" />
+        <reference source="DISA" ref_id="V-12345" ref_url="http://iase.disa.mil"/>
+        <reference source="CCI" ref_id="CCI-12345" ref_url="http://iase.disa.mil/cci"/>
+	  </metadata>
+      <criteria operator="AND">
+        <criterion comment="Test that the family_object is supported." test_ref="oval:org.mitre.oval.test:tst:906"/>
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <family_test id="oval:org.mitre.oval.test:tst:906" version="1" comment="Test that the family_object is supported." check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+      <object object_ref="oval:org.mitre.oval.test:obj:427"/>
+      <state state_ref="oval:org.mitre.oval.test:ste:429"/>
+    </family_test>
+  </tests>
+  <objects>
+    <family_object id="oval:org.mitre.oval.test:obj:427" version="1" comment="This variable_object represents the family that the operating system belongs to." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"/>
+  </objects>
+  <states>
+    <family_state id="oval:org.mitre.oval.test:ste:429" version="1" comment="This variable_state represents any family that is in the EntityStateFamilyType (ios, macos, unix, windows)." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+      <family operation="pattern match" var_check="all" var_ref="oval:org.mitre.oval.test:var:403"/>
+    </family_state>
+  </states>
+  <variables>
+    <constant_variable id="oval:org.mitre.oval.test:var:403" version="2" comment="This variable contains a regular expression that matches the regular expression '(vmware_infrastructure|panos|junos|aws|iosxe|ios|macos|unix|windows)'." datatype="string">
+      <value>(vmware_infrastructure|panos|junos|aws|iosxe|ios|macos|unix|windows)</value>
+    </constant_variable>
+  </variables>
+</oval_definitions>
