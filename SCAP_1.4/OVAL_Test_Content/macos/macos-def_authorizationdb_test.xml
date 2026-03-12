@@ -26,38 +26,42 @@
         <note>It is important to note that the values used in this test definition are specific to a particular machine, and may not necessarily apply to your system. As a result, in order to have the definition return a result of 'true', you must either change these values to the ones found on your particular system, or you must configure your system to use these values.</note>
       </notes>
              <criteria>
-                <criterion comment="Test that the accountinfo_object is supported with the right_name entity equal to some value." test_ref="oval:test:tst:1" />
-                <criterion comment="Test that the accountinfo_object is supported with the right_name entity matches a regular expression." test_ref="oval:test:tst:2" />
+                <criterion comment="Test that the authorizationdb_object is supported with the right_name entity equal to some value." test_ref="oval:test:tst:1" />
+                <criterion comment="Test that the authorizationdb_object is supported with the right_name entity not equal to some value." test_ref="oval:test:tst:2" />
+                <criterion comment="Test that the authorizationdb_object is supported with the right_name entity matching some value." test_ref="oval:test:tst:3" />
             </criteria>
         </definition> 
     </definitions> 
     <tests>
-      <authorizationdb_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" check="all" check_existence="only_one_exists" comment="Test that the accountinfo_object is supported with the right_name entity equal to some value." id="oval:test:tst:1" version="2">
+      <authorizationdb_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" check="all" check_existence="only_one_exists" comment="Test that the authorizationdb_object is supported with the right_name entity equal to some value." id="oval:test:tst:1" version="2">
             <object object_ref="oval:test:obj:1" />
              <state state_ref="oval:test:ste:1" />
         </authorizationdb_test>
-      <authorizationdb_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" check="all" check_existence="only_one_exists" comment="Test that the accountinfo_object is supported with the right_name matches a regular expression." id="oval:test:tst:2" version="2">
+      <authorizationdb_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" check="all" check_existence="at_least_one_exists" comment="Test that the authorizationdb_object is supported with the right_name entity not equal to some value." id="oval:test:tst:2" version="2">
             <object object_ref="oval:test:obj:2" />
-             <state state_ref="oval:test:ste:2" />
+        </authorizationdb_test>
+      <authorizationdb_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" check="all" check_existence="only_one_exists" comment="Test that the authorizationdb_object is supported with the right_name entity matching some value." id="oval:test:tst:3" version="2">
+            <object object_ref="oval:test:obj:3" />
+             <state state_ref="oval:test:ste:1" />
         </authorizationdb_test>
     </tests>
     <objects>
-        <authorizationdb_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" comment="system_wide_preferences_configure_object" id="oval:test:obj:1" version="1">
+        <authorizationdb_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" comment="Collect item(s) for right_name equal to 'system.preferences'." id="oval:test:obj:1" version="1">
             <right_name>system.preferences</right_name>
             <xpath>boolean(//key[text()="shared"]/following-sibling::false)</xpath>
         </authorizationdb_object>  
-        <authorizationdb_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" comment="system_wide_preferences_configure_object" id="oval:test:obj:2" version="1">
-            <right_name>appserver-admin</right_name>
-            <xpath>string(//key[text()="timeout"]/following-sibling::integer[1]/text())</xpath>
+        <authorizationdb_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" comment="Collect item(s) for right_name not equal to 'system.preferences'." id="oval:test:obj:2" version="1">
+            <right_name operation="not equal">system.preferences</right_name>
+            <xpath>boolean(//key[text()="shared"]/following-sibling::false)</xpath>
         </authorizationdb_object>  
-
+        <authorizationdb_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" comment="Collect item(s) for right_name matching 'system\.preferences'." id="oval:test:obj:3" version="1">
+            <right_name operation="pattern match">system.preferences</right_name>
+            <xpath>boolean(//key[text()="shared"]/following-sibling::false)</xpath>
+        </authorizationdb_object>  
     </objects>
     <states>
-    	<authorizationdb_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" comment="system_wide_preferences_configure_state" id="oval:test:ste:1" version="1">
+    	<authorizationdb_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" comment="Confirm expected value is collected." id="oval:test:ste:1" version="1">
           <value_of datatype="boolean" operation="equals">false</value_of>
-    	</authorizationdb_state>
-    	<authorizationdb_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" comment="system_wide_preferences_configure_state" id="oval:test:ste:2" version="1">
-          <value_of operation="pattern match">^\d+$</value_of>
     	</authorizationdb_state>
     </states>
     	

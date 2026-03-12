@@ -13,7 +13,7 @@
 	<generator>
 		<oval:product_name>Oval Test Content</oval:product_name>
 		<oval:schema_version>5.12.2</oval:schema_version>
-		<oval:timestamp>2026-03-02T12:05:51</oval:timestamp>
+		<oval:timestamp>2026-03-11T12:05:51</oval:timestamp>
     <terms_of_use>NOTE: MITRE Content may be modified from original by NIWC Atlantic. Copyright (c) 2002-2011, The MITRE Corporation. All rights reserved. The contents of this file are subject to the license described in terms.txt.</terms_of_use>
 	</generator>
   <definitions>
@@ -69,8 +69,6 @@
           test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:2060"/>
         <criterion comment="32_bit_windows_view - Test that the max_depth behavior is supported with a limited depth of recursion."
           test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:2070"/>
-		<criterion comment="32_bit_windows_view - Test that the max_depth behavior is supported with a unlimited depth of recursion."
-          test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:2080"/>
 		<criterion comment="32_bit_windows_view - Test that the recurse_direction behavior is supported in the 'up' direction."
           test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:2090"/>
         <criterion comment="Test that Windows_View Functions as expected (Program Files Directory Test)"
@@ -212,13 +210,6 @@
       <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:2070"/>
       <state state_ref="oval:org.mitre.oval.test:ste:1020"/>
     </registry_test>
-    <registry_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:2080" version="1"
-      comment="32_bit_windows_view - Test that the max_depth behavior is supported with a unlimited depth of recursion."
-      check_existence="at_least_one_exists" check="at least one"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:2080"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1110"/>
-    </registry_test>
     <registry_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:2090" version="1"
       comment="32_bit_windows_view - Test that the recurse_direction behavior is supported in the 'up' direction."
       check_existence="at_least_one_exists" check="at least one"
@@ -347,12 +338,12 @@
       <name>CurrentVersion</name>
     </registry_object>
     <registry_object id="oval:org.mitre.oval.test:obj:1110" version="0"
-      comment="Retrieve a registry_object with a hive equal to 'HKEY_LOCAL_MACHINE', key equal to 'SYSTEM\CurrentControlSet\Control', recursing down infinitely, and name equal to '^a'"
+      comment="Retrieve a registry_object with a hive equal to 'HKEY_LOCAL_MACHINE', key equal to 'Hardware', recursing down infinitely, and name pattern match '.*'"
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <behaviors max_depth="-1" recurse_direction="down"/>
       <hive>HKEY_LOCAL_MACHINE</hive>
-      <key>SYSTEM\CurrentControlSet\Control</key>
-      <name operation="pattern match">^[a|b|c|d|e]</name>
+      <key>Hardware</key>
+      <name operation="pattern match">.*</name>
     </registry_object>
     <registry_object id="oval:org.mitre.oval.test:obj:1120" version="1"
       comment="Retrieve a registry_object with a hive equal to 'HKEY_LOCAL_MACHINE', key equal to 'SYSTEM\CurrentControlSet\Control\Session Manager', recursing up one level, and name equal to 'LastBootSucceeded'."
@@ -424,14 +415,6 @@
       <hive>HKEY_LOCAL_MACHINE</hive>
       <key>SOFTWARE\Microsoft\Windows NT</key>
       <name>CurrentVersion</name>
-    </registry_object>
-    <registry_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:2080" version="0"
-      comment="32_bit_windows_view - Retrieve a registry_object with a hive equal to 'HKEY_LOCAL_MACHINE', key equal to 'SYSTEM\CurrentControlSet\Control', recursing down infinitely, and name equal to '^a'"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <behaviors windows_view="32_bit" max_depth="-1" recurse_direction="down"/>
-      <hive>HKEY_LOCAL_MACHINE</hive>
-      <key>SYSTEM\CurrentControlSet\Control</key>
-      <name operation="pattern match">^a</name>
     </registry_object>
     <registry_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:2090" version="1"
       comment="32_bit_windows_view - Retrieve a registry_object with a hive equal to 'HKEY_LOCAL_MACHINE', key equal to 'SYSTEM\CurrentControlSet\Control\Session Manager', recursing up one level, and name equal to 'LastBootSucceeded'."

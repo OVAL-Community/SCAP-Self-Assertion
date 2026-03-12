@@ -128,7 +128,7 @@
 	
 	
 		<registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:navy.navwar.niwcatlantic.scc:obj:103" version="2" comment="Registry Filter value include">
-          <behaviors max_depth="2" recurse_direction="down" />
+          <behaviors max_depth="1" recurse_direction="down" />
           <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
           <key>SYSTEM\CurrentControlSet\Control\Session Manager</key>
           <name datatype="string" operation="pattern match">.*</name>

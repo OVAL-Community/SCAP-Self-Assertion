@@ -62,7 +62,7 @@ xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independe
 		</selinuxsecuritycontext_test>
 	</tests>
 	<objects>
-		<selinuxsecuritycontext_object id="oval:org.mitre.oval.test:obj:1427" version="1" comment="Get context of the current process' pid (pid xsi:nil='true')." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+		<selinuxsecuritycontext_object id="oval:org.mitre.oval.test:obj:1427" version="1" comment="Retrieve context of the current process' pid (pid xsi:nil='true')." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
 			<pid datatype="int" xsi:nil="true" />
 		</selinuxsecuritycontext_object>
 		<selinuxsecuritycontext_object id="oval:org.mitre.oval.test:obj:491" version="1" comment="Retrieve context for a pid with operation of 'equals'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
