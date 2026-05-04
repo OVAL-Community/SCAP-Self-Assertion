@@ -45,7 +45,7 @@ xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independe
 			<version operation="pattern match">.*</version>
 			<release operation="pattern match">.*</release>
 			<arch operation="pattern match">.*</arch>
-			<filepath>/usr/bin/rpm</filepath>
+			<filepath operation="equals" var_check="at least one" var_ref="oval:navy.navwar.niwcatlantic.scc.test:var:1" />
 		</rpmverifyfile_object>
 		<rpmverifyfile_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:2" version="1" comment="Retrieve package file(s) with name operation of pattern match and filepath operation of equals." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
 			<name operation="pattern match">^rp[Mm]$</name>
@@ -53,7 +53,7 @@ xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independe
 			<version operation="pattern match">.*</version>
 			<release operation="pattern match">.*</release>
 			<arch operation="pattern match">.*</arch>
-			<filepath>/usr/bin/rpm</filepath>
+			<filepath operation="equals" var_check="at least one" var_ref="oval:navy.navwar.niwcatlantic.scc.test:var:1" />
 		</rpmverifyfile_object>
 		<rpmverifyfile_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:3" version="1" comment="Retrieve package file(s) with name operation of pattern match and filepath operation of pattern match." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
 			<name operation="pattern match">^r[Pp][Mm]$</name>
@@ -61,7 +61,7 @@ xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independe
 			<version operation="pattern match">.*</version>
 			<release operation="pattern match">.*</release>
 			<arch operation="pattern match">.*</arch>
-			<filepath operation="pattern match">/usr/bin/[Rr][Pp][Mm]</filepath>
+			<filepath operation="pattern match">/usr(/bin/)*[Rr][Pp][Mm]</filepath>
 		</rpmverifyfile_object>
 	</objects>
 	<states>
@@ -70,4 +70,12 @@ xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independe
 			<md5_differs>pass</md5_differs>
 		</rpmverifyfile_state>
 	</states>
+	
+	
+	  <variables>
+        <constant_variable id="oval:navy.navwar.niwcatlantic.scc.test:var:1" version="2" datatype="string" comment="Typical locations of rpm file, itself.">
+		  <value>/bin/rpm</value>
+		  <value>/usr/bin/rpm</value>
+        </constant_variable>
+  </variables>
 </oval_definitions>

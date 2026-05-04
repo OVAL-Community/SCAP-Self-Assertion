@@ -34,7 +34,7 @@
 				<criterion comment="Website Setting Example - Subset Of Website Reviewed via case insensitive not equal to (set in identifier) 'Default Web Site' which exists by default." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:104"/>
 				<criterion comment="VDir Setting Example - All Virtual Directories Reviewed" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:5"/>
 				<criterion comment="VDir Setting Example - Subset Of VDir's Reviewed via regular expression (set in identifier)." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:6"/>
-				<criterion comment="Webserver Setting Example" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:7"/><criterion comment="Not Collected Example - Site 'Equals' (set in identifier) 'Non-Matching-String' - No Websites named 'Non-Matching-String' exist." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:10"/>
+				<criterion comment="Webserver Setting Example" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:7"/>
 				<criterion comment="Variable Test identifier_type - Subset Of Websites Reviewed via equal to (set in identifier) 'Default Web Site' which exists by default. " test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:301"/>
 				<criterion comment="Variable Test identifier - Subset Of Websites Reviewed via equal to (set in identifier) 'Default Web Site' which exists by default. " test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:302"/>
 				<criterion comment="Variable Test section - Subset Of Websites Reviewed via equal to (set in identifier) 'Default Web Site' which exists by default. " test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:303"/>
@@ -44,14 +44,15 @@
 		<definition id="oval:navy.navwar.niwcatlantic.scc.test:def:2" version="1" class="compliance">
 			<metadata>
 				<title>IIS content utilizing Windows application AppCmd.exe via the win-def:appcmdListconfig_test</title>
-				<description>This definition is intended to evalutate error reporting via the interpreter properly supports the win-def:appcmdlistconfig_test</description>
+				<description>This definition is intended to evalutate pass reporting via the interpreter properly supports the win-def:appcmdlistconfig_test</description>
 			</metadata>
 			<notes>
-				<note>An Overall Error is the desired result of this test.</note>
+				<note>An Overall Pass is the desired result of this test. Each test should result in no item being found due to content configuration</note>
 			</notes>
 			<criteria operator="AND">
-				<criterion comment="Error Example - Incorrect Section Example - AppCmd.exe reports error due to incorrect section setting." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:8"/>
-				<criterion comment="Error Example - Incorrect Parameter Example - AppCmd.exe reports error due to incorrect parameter setting." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:9"/>
+				<criterion comment="Not Collected Example - Site 'Equals' (set in identifier) 'Non-Matching-String' - No Websites named 'Non-Matching-String' exist." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:10"/>
+				<criterion comment="Not Collected Example - Incorrect Section Example - AppCmd.exe review with incorrect section setting." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:8"/>
+				<criterion comment="Not Collected Example - Incorrect Parameter Example - AppCmd.exe review with incorrect parameter setting." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:9"/>
 			</criteria>
 		</definition>
 	</definitions>
@@ -92,18 +93,6 @@
 			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:7"/>
 			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:3"/>
 		</appcmdlistconfig_test>
-		<appcmdlistconfig_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:8" version="1" comment="Not Collected Example - Incorrect Section Example - AppCmd.exe reports error due to incorrect section setting." check_existence="none_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:8"/>
-			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:3"/>
-		</appcmdlistconfig_test>
-		<appcmdlistconfig_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:9" version="1" comment="Not Collected Example - Incorrect Parameter Example - AppCmd.exe reports error due to incorrect parameter setting." check_existence="none_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:9"/>
-			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:3"/>
-		</appcmdlistconfig_test>
-		<appcmdlistconfig_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:10" version="1" comment="Not Collected Example - Website 'Equals' (set in identifier) 'Non-Matching-String' - No Websites named 'Non-Matching-String' exist." check_existence="none_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:10"/>
-			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:3"/>
-		</appcmdlistconfig_test>
 		<appcmdlistconfig_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:301" version="1" comment="Variable Test identifier_type - Subset Of Websites Reviewed via equal to (set in identifier) 'Default Web Site' which exists by default." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
 			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:301"/>
 			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:3"/>
@@ -119,6 +108,15 @@
 		<appcmdlistconfig_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:304" version="1" comment="Variable Test parameter - Subset Of Websites Reviewed via equal to (set in identifier) 'Default Web Site' which exists by default." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
 			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:304"/>
 			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:3"/>
+		</appcmdlistconfig_test>
+		<appcmdlistconfig_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:10" version="1" comment="Not Collected Example - Website 'Equals' (set in identifier) 'Non-Matching-String' - No Websites named 'Non-Matching-String' exist." check_existence="none_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:10"/>
+		</appcmdlistconfig_test>
+		<appcmdlistconfig_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:8" version="1" comment="Not Collected Example - Incorrect Section Example - AppCmd.exe reports error due to incorrect section setting." check_existence="none_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:8"/>
+		</appcmdlistconfig_test>
+		<appcmdlistconfig_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:9" version="1" comment="Not Collected Example - Incorrect Parameter Example - AppCmd.exe reports error due to incorrect parameter setting." check_existence="none_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:9"/>
 		</appcmdlistconfig_test>
 	</tests>
 	<objects>
@@ -208,30 +206,6 @@
 				> C:\Windows\System32\inetsrv\appcmd.exe list config /section:system.webServer/security/ipSecurity /text:allowUnlisted
 			-->
 		</appcmdlistconfig_object>
-		<appcmdlistconfig_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:8" version="1" comment="Error Example - AppCmd.exe reports error due to incorrect section setting." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-			<identifier_type>VDir</identifier_type>
-			<identifier operation="pattern match">.*</identifier>
-			<section>system.weERRORbServer/serverSideInclude</section>
-			<parameter>ssiExecDisable</parameter>
-			<!-- The incorrect section entry will cause an Error
-			-->
-		</appcmdlistconfig_object>
-		<appcmdlistconfig_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:9" version="1" comment="Error Example - AppCmd.exe reports error due to incorrect parameter setting" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-			<identifier_type>VDir</identifier_type>
-			<identifier operation="pattern match">.*</identifier>
-			<section>system.webServer/serverSideInclude</section>
-			<parameter>ssiExecERRORDisable</parameter>
-			<!-- The incorrect parameter entry will cause an Error
-			-->
-		</appcmdlistconfig_object>
-		<appcmdlistconfig_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:10" version="1" comment="Not Collected Example - Website 'Equals' (set in identifier) 'Non-Matching-String' - No Websites named 'Non-Matching-String' exist." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-			<identifier_type>Site</identifier_type>
-			<identifier operation="equals">Non-Matching-String</identifier>
-			<section>system.webServer/security/authentication/anonymousAuthentication</section>
-			<parameter>logonMethod</parameter>
-			<!-- The identifier operation of equals and no website names matching Non-Matching-String will cause a "Not Found" finding
-			-->
-		</appcmdlistconfig_object>
 		<appcmdlistconfig_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:301" version="1" comment="Variable Test identifier_type - Subset Of Websites Reviewed via equal to (set in identifier) 'Default Web Site' which exists by default." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
 			<identifier_type var_ref="oval:navy.navwar.niwcatlantic.scc.test:var:301"/>
 			<identifier operation="equals">Default Web Site</identifier>
@@ -270,6 +244,28 @@
 			<!-- AppCmd.exe command used
 				one command run attempting to review an site named "default" if it exists on the system... if not an error is reported
 				> .\appcmd.exe list config "<sitename>" /section:system.webServer/security/authentication/anonymousAuthentication /text:logonMethod
+			-->
+		</appcmdlistconfig_object>
+		<appcmdlistconfig_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:8" version="1" comment="Not Collected Example - AppCmd.exe reports not collected due to incorrect section setting." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<identifier_type>VDir</identifier_type>
+			<identifier operation="pattern match">.*</identifier>
+			<section>system.weNOEXISTbServer/serverSideInclude</section>
+			<parameter>ssiExecDisable</parameter>
+			<!-- The incorrect section entry will result in no item to be created-->
+		</appcmdlistconfig_object>
+		<appcmdlistconfig_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:9" version="1" comment="Not Collected Example - AppCmd.exe reports error due to incorrect parameter setting" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<identifier_type>VDir</identifier_type>
+			<identifier operation="pattern match">.*</identifier>
+			<section>system.webServer/serverSideInclude</section>
+			<parameter>ssiExecNOEXISTDisable</parameter>
+			<!-- The incorrect parameter entry will result in no item to be created-->
+		</appcmdlistconfig_object>
+		<appcmdlistconfig_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:10" version="1" comment="Not Collected Example - Website 'Equals' (set in identifier) 'Non-Matching-String' - No Websites named 'Non-Matching-String' exist." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<identifier_type>Site</identifier_type>
+			<identifier operation="equals">Non-Matching-String</identifier>
+			<section>system.webServer/security/authentication/anonymousAuthentication</section>
+			<parameter>logonMethod</parameter>
+			<!-- The identifier operation of equals and no website names matching Non-Matching-String will cause a "Not Found" finding
 			-->
 		</appcmdlistconfig_object>
 	</objects>

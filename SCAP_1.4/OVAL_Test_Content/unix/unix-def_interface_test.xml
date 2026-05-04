@@ -18,78 +18,69 @@ xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independe
 				<note>Information regarding the interfaces on your particular machine can be found by running the 'ifconfig' utility.</note>
 			</notes>
 			<criteria operator="AND">
-				<criterion comment="Test that the interface_object is supported with the name entity equal to some value." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:782" />
-				<criterion comment="Test that the interface_object is supported with the name entity not equal to some value." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:725" />
-				<criterion comment="Test that the interface_object is supported with the name entity matching some regular expression." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:585" />
-				<criterion comment="Test that the interface_object is supported with the name entity equal to some value using the var_ref attribute." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:91" />
-				<criterion comment="Test that the interface_object is supported with the name entity not equal to some value using the var_ref attribute." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:414" />
-				<criterion comment="Test that the interface_object is supported with the name entity matching some regular expression using the var_ref attribute." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:443" />
+				<criterion comment="Test that the interface_object is supported with the name entity equal to some value." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:1" />
+				<criterion comment="Test that the interface_object is supported with the name entity not equal to some value." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:2" />
+				<criterion comment="Test that the interface_object is supported with the name entity matching some regular expression." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:3" />
+				<criterion comment="Test that the interface_object is supported with the name entity equal to some value using the var_ref attribute." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:4" />
+				<criterion comment="Test that the interface_object is supported with the name entity not equal to some value using the var_ref attribute." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:5" />
 			</criteria>
 		</definition>
 	</definitions>
 	<tests>
-		<interface_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:782" version="1" comment="Test that the interface_object is supported with the name entity equal to some value." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
-			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:555" />
-			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:813" />
+		<interface_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:1" version="1" comment="Test that the interface_object is supported with the name entity equal to some value." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:1" />
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1" />
 		</interface_test>
-		<interface_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:725" version="1" comment="Test that the interface_object is supported with the name entity not equal to some value." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
-			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:155" />
-			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:813" />
+		<interface_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:2" version="1" comment="Test that the interface_object is supported with the name entity not equal to some value." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:2" />
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1" />
 		</interface_test>
-		<interface_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:585" version="1" comment="Test that the interface_object is supported with the name entity matching some regular expression." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
-			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:655" />
-			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:346" />
+		<interface_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:3" version="1" comment="Test that the interface_object is supported with the name entity matching some regular expression." check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:3" />
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2" />
 		</interface_test>
-		<interface_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:91" version="1" comment="Test that the interface_object is supported with the name entity equal to some value using the var_ref attribute." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
-			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:637" />
-			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:813" />
+		<interface_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:4" version="1" comment="Test that the interface_object is supported with the name entity equal to some value using the var_ref attribute." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:4" />
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1" />
 		</interface_test>
-		<interface_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:414" version="1" comment="Test that the interface_object is supported with the name entity not equal to some value using the var_ref attribute." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
-			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:590" />
-			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:346" />
+		<interface_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:5" version="1" comment="Test that the interface_object is supported with the name entity not equal to some value using the var_ref attribute." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:5" />
+			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2" />
 		</interface_test>
-		<interface_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:443" version="1" comment="Test that the interface_object is supported with the name entity matching some regular expression using the var_ref attribute." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
-			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:502" />
-			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:243" />
-		</interface_test>
+
 	</tests>
 	<objects>
-		<interface_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:555" version="1" comment="This object represents an interface_object where the name equals 'lo'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
+		<interface_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:1" version="1" comment="This object represents an interface_object where the name equals 'lo'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
 			<name>lo</name>
 		</interface_object>
-		<interface_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:155" version="1" comment="This object represents an interface_object where the name is not equal to 'eth0'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
+		<interface_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:2" version="1" comment="This object represents an interface_object where the name is not equal to 'eth0'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
 			<name operation="not equal">eth0</name>
+			<oval-def:filter action="include">oval:navy.navwar.niwcatlantic.scc.test:ste:3</oval-def:filter>
 		</interface_object>
-		<interface_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:655" version="1" comment="This object represents an interface_object where the name matches the regular expression '^(?!lo)'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
+		<interface_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:3" version="1" comment="This object represents an interface_object where the name matches the regular expression '^(?!lo)'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
 			<name operation="pattern match">^(?!lo)</name>
 		</interface_object>
-		<interface_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:637" version="1" comment="This object represents an interface_object where the name equals 'lo' using the var_ref attribute." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
-			<name var_ref="oval:navy.navwar.niwcatlantic.scc.test:var:612" var_check="all" />
+		<interface_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:4" version="1" comment="This object represents an interface_object where the name equals 'lo' using the var_ref attribute." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
+			<name var_ref="oval:navy.navwar.niwcatlantic.scc.test:var:1" var_check="all" />
 		</interface_object>
-		<interface_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:590" version="1" comment="This object represents an interface_object where the name is not equal to 'lo' using the var_ref attribute." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
-			<name operation="not equal" var_ref="oval:navy.navwar.niwcatlantic.scc.test:var:612" var_check="all" />
-		</interface_object>
-		<interface_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:502" version="1" comment="This object represents an interface_object where the name matches the regular expression '^e.+0$' using the var_ref attribute." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
-			<name operation="pattern match" var_ref="oval:navy.navwar.niwcatlantic.scc.test:var:927" var_check="all" />
+		<interface_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:5" version="1" comment="This object represents an interface_object where the name is not equal to 'lo' using the var_ref attribute." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
+			<name operation="not equal" var_ref="oval:navy.navwar.niwcatlantic.scc.test:var:1" var_check="all" />
 		</interface_object>
 	</objects>
 	<states>
-		<interface_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:813" version="1" comment="This interface_state represents an interface_object where the inet_addr equals '127.0.0.1'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
+		<interface_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:1" version="1" comment="This interface_state represents an interface_object where the inet_addr equals '127.0.0.1'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
 			<inet_addr>127.0.0.1</inet_addr>
 		</interface_state>
-		<interface_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:346" version="1" comment="This interface_state represents an interface_object where the name equals 'eth0'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
-			<name>eth0</name>
+		<interface_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:2" version="1" comment="This interface_state represents an interface_object where the name equals 'eth0'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
+			<name operation="not equal">lo</name>
 		</interface_state>
-		<interface_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:243" version="1" comment="This interface_state represents an interface_object where the flag equals 'UP'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
-			<flag entity_check="at least one">UP</flag>
+		<interface_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:3" version="1" comment="This interface_state represents an interface_object where the name equals 'lo'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
+			<name>lo</name>
 		</interface_state>
 	</states>
 	<variables>
-		<constant_variable id="oval:navy.navwar.niwcatlantic.scc.test:var:612" version="1" comment="This constant_variable represents the string value 'lo'." datatype="string">
+		<constant_variable id="oval:navy.navwar.niwcatlantic.scc.test:var:1" version="1" comment="This constant_variable represents the string value 'lo'." datatype="string">
 			<value>lo</value>
-		</constant_variable>
-		<constant_variable id="oval:navy.navwar.niwcatlantic.scc.test:var:927" version="1" comment="This constant_variable represents the string value '^e.+0$'." datatype="string">
-			<value>^e.+0$</value>
 		</constant_variable>
 	</variables>
 </oval_definitions>

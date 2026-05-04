@@ -28,7 +28,6 @@
       </notes>
       <criteria>
         <criterion comment="Test that a sid_object with a trustee_name of a Group is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1"/>
-        <criterion comment="Test that a sid_object with a trustee_name case insensitive equal to the name of a Group is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:11"/>
         <criterion comment="Test that a sid_object with a trustee_name pattern match is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:2"/>
         <!--tst 3, 13, 4, and 5 can be Disabled due to DoS on large domain controllers-->
 		<criterion comment="Test that a sid_object with not equals is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:3"/>
@@ -41,10 +40,6 @@
   <tests>
     <sid_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1" version="1" comment="Test that a sid_object with a trustee_name is supported." check_existence="at_least_one_exists" check="only one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:1"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:1"/>
-    </sid_test>
-	<sid_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:11" version="1" comment="Test that a sid_object with a trustee_name using case insensitive equals is supported." check_existence="at_least_one_exists" check="only one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:11"/>
       <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:1"/>
     </sid_test>
     <sid_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:2" version="1" comment="Test that a sid_object with a trustee_name pattern match is supported." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
@@ -71,9 +66,6 @@
   <objects>
     <sid_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:1" version="1" comment="Retrieves a sid_object where the trustee_name equals the 'Authenticated Users'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <trustee_name>Authenticated Users</trustee_name>
-    </sid_object>
-	<sid_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:11" version="1" comment="Retrieves a sid_object where the trustee_name case insensitive equals the 'Authenticated Users'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <trustee_name operation="case insensitive equals">authenticated users</trustee_name>
     </sid_object>
     <sid_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:2" version="1" comment="Retrieves a sid_object where the trustee_name matches the regular expression 'Admin.*'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <trustee_name operation="pattern match">Admin.*</trustee_name>

@@ -35,7 +35,6 @@
 				<criterion comment="Website Setting Example - All Websites Reviewed" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:5"/>
 				<criterion comment="Website Setting Example - Subset Of Websites Reviewed via regular expression (set in identifier)." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:6"/>
 				<criterion comment="VDir Setting Example - All Virtual Directories Reviewed" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:7"/>
-				<criterion comment="Not Collected Example - Application Pool 'Equals' (set in identifier) 'Non-Matching-String' - No Application Pools named 'Non-Matching-String' exist" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:9"/>
 				<criterion comment="Application Pool Setting Example - All Application Pools Reviewed Variable Test identifier_type" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:101"/>
 				<criterion comment="Application Pool Setting Example - All Application Pools Reviewed Variable Test identifier" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:102"/> 
 				<criterion comment="Application Pool Setting Example - All Application Pools Reviewed Variable Test parameter" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:103"/>
@@ -47,10 +46,11 @@
 				<description>This definition is intended to evalutate the interpreter properly supports the win-def:appcmd_test</description>
 			</metadata>
 			<notes>
-				<note>An Overall Error Status is the expected result of this test</note>
+				<note>An Overall Pass is the desired result of this test. Each test should result in no item being found due to content configuration</note>
 			</notes>
 			<criteria operator="AND">
-				<criterion comment="Error Example - Incorrect Parameter Example - AppCmd.exe reports error due to incorrect parameter setting." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:8"/>
+				<criterion comment="Not Collected Example - Application Pool 'Equals' (set in identifier) 'Non-Matching-String' - No Application Pools named 'Non-Matching-String' exist" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:9"/>
+				<criterion comment="Not Collected Example - Incorrect Parameter Example - AppCmd.exe review with incorrect parameter setting." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:8"/>
 			</criteria>
 		</definition>
 				

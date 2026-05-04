@@ -52,7 +52,7 @@
     <inetlisteningservers_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:771" version="2" comment="This object represents a inetlisteningservers_object with the protocol equal to 'tcp', the local_address equal to '127.0.0.1', and the local_port greater than 1000." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
       <protocol>tcp</protocol>
       <local_address>127.0.0.1</local_address>
-      <local_port datatype="int" operation="greater than">1000</local_port>
+      <local_port datatype="int" operation="greater than">100</local_port>
     </inetlisteningservers_object>
 	
     <inetlisteningservers_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:221" version="2" comment="This object represents a inetlisteningservers_object with the protocol not equal to 'udp', the local_address not equal to '0.0.0.0', and the local_port not equal to '0'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
@@ -71,7 +71,7 @@
     <inetlisteningservers_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:653" version="2" comment="This inetlisteningservers_state represents an inetlisteningservers_item which has a protocol equal to 'tcp', a local_address equal to '127.0.0.1', and a local_port equal to '25'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
       <protocol>tcp</protocol>
       <local_address>127.0.0.1</local_address>
-      <local_port datatype="int" operation="greater than">1000</local_port>
+      <local_port datatype="int" operation="greater than">100</local_port>
     </inetlisteningservers_state>
     <inetlisteningservers_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:893" version="2" comment="This inetlisteningservers_state represents inetlisteningservers_items which have a protocol not equal to 'udp', a local_address not equal to '0.0.0.0', and a local_port not equal to '0'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
       <protocol operation="not equal">udp</protocol>

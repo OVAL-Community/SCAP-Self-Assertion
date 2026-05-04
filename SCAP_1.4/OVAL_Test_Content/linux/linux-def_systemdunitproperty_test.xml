@@ -42,7 +42,7 @@ xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independe
 	</tests>
 	<objects>
 		<systemdunitproperty_object comment="Retrieve the LoadState of unit 'home.mount'." version="1" id="oval:navy.navwar.niwcatlantic.scc.test:obj:1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
-			<unit>home.mount</unit>
+			<unit>systemd-journald.service</unit>
 			<property>LoadState</property>
 		</systemdunitproperty_object>
 		<systemdunitproperty_object comment="Retrieve the UnitFileState of unit 'home.mount'." version="1" id="oval:navy.navwar.niwcatlantic.scc.test:obj:2" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
@@ -50,11 +50,11 @@ xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independe
 			<property>UnitFileState</property>
 		</systemdunitproperty_object>
 		<systemdunitproperty_object comment="Retrieve the UnitFileState of unit 'home.mount' with operation of 'pattern match'." version="1" id="oval:navy.navwar.niwcatlantic.scc.test:obj:3" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
-			<unit operation="pattern match">^home\.mount$</unit>
+			<unit operation="pattern match">^systemd-journald\.service$</unit>
 			<property>UnitFileState</property>
 		</systemdunitproperty_object>
 		<systemdunitproperty_object comment="Retrieve the UnitFileState with operation of 'pattern match' for unit 'home.mount'." version="1" id="oval:navy.navwar.niwcatlantic.scc.test:obj:4" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
-			<unit>home.mount</unit>
+			<unit>systemd-journald.service</unit>
 			<property operation="pattern match">Unit[Ff]ile[Ss]tate</property>
 		</systemdunitproperty_object>
 	</objects>
@@ -66,9 +66,9 @@ xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independe
 			<unit operation="not equal">home.mount</unit>
 		</systemdunitproperty_state>
 		<systemdunitproperty_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:3" comment="Confirm unit 'home.mount' is included in object results." version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
-			<unit operation="equals">home.mount</unit>
+			<unit operation="equals">systemd-journald.service</unit>
 			<property>UnitFileState</property>
-			<value>generated</value>
+			<value operation="pattern match">static|enabled|disabled|indirect|generated</value>
 		</systemdunitproperty_state>
 	</states>
 </oval_definitions>

@@ -57,27 +57,27 @@
     </environmentvariable58_test>
   </tests>
   <objects>
-    <environmentvariable58_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:1" version="1" comment="Get the home directory of the current process' user" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+    <environmentvariable58_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:1" version="1" comment="Get the Windows directory" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
       <pid datatype="int" xsi:nil="true"/>
-      <name>HOMEPATH</name>
+      <name>WINDIR</name>
     </environmentvariable58_object>
-	<environmentvariable58_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:2" version="1" comment="Get the home directory of the current process' user using case insensitive equals" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+	<environmentvariable58_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:2" version="1" comment="Get the Windows directory using case insensitive equals" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
       <pid datatype="int" xsi:nil="true"/>
-      <name operation="case insensitive equals">homepath</name>
+      <name operation="case insensitive equals">windir</name>
     </environmentvariable58_object>
-    <environmentvariable58_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:3" version="1" comment="Get non-PATH env vars of a particular pid (curent process via var_ref.)" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+    <environmentvariable58_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:3" version="1" comment="Get windows directory of a particular pid (curent process via var_ref.)" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
       <oval-def:notes>
         <oval-def:note>There's no fixed pid to use here (cannot use 4: system)...Let's use the current process again (via var_ref.)</oval-def:note>
       </oval-def:notes>
       <pid  datatype="int" var_ref="oval:navy.navwar.niwcatlantic.scc.test:var:3" />
-      <name operation="case insensitive not equal">homepath</name>
+      <name operation="case insensitive not equal">windir</name>
     </environmentvariable58_object>
-	<environmentvariable58_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:4" version="1" comment="Get non-PATH env vars of a particular pid (curent process via var_ref.)" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+	<environmentvariable58_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:4" version="1" comment="Get WINDIR env vars of a particular pid (curent process via var_ref.)" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
       <oval-def:notes>
         <oval-def:note>There's no fixed pid to use here (cannot use 4: system)...Let's use the current process again (via var_ref.)</oval-def:note>
       </oval-def:notes>
       <pid  datatype="int" var_ref="oval:navy.navwar.niwcatlantic.scc.test:var:3" />
-      <name operation="not equal">HOMEPATH</name>
+      <name operation="not equal">WINDIR</name>
     </environmentvariable58_object>
     <environmentvariable58_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:5" version="1" comment="Get env vars of all processes which start with S" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
       <pid datatype="int" operation="greater than">4</pid>
@@ -85,11 +85,11 @@
     </environmentvariable58_object>
   </objects>
   <states>
-    <environmentvariable58_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:1" version="1" comment="name must be HOMEPATH" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
-      <name operation="case insensitive equals">homepath</name>
+    <environmentvariable58_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:1" version="1" comment="name must be WINDIR" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+      <name operation="case insensitive equals">windir</name>
     </environmentvariable58_state>
     <environmentvariable58_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:3" version="1" comment="name must not be PATH" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
-      <name operation="case insensitive not equal">path</name>
+      <name operation="case insensitive not equal">windir</name>
     </environmentvariable58_state>
     <environmentvariable58_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:5" version="1" comment="name must start with S" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
       <name operation="pattern match">^S.*$</name>

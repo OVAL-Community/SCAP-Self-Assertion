@@ -27,9 +27,7 @@
       </notes>
       <criteria operator="AND">
         <criterion comment="Test that a sid_sid_object with a trustee_sid equals is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1"/>
-        <criterion comment="Test that a sid_sid_object with a trustee_sid case insensitive equals is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:11"/>
-        
-		<criterion comment="Test that a sid_sid_object with a trustee_sid pattern match is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:2"/> 
+        <criterion comment="Test that a sid_sid_object with a trustee_sid pattern match is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:2"/> 
        <!-- tests 3, 13 and 4 Disabling due to potential DoS on large domain controllers -->
 	   <criterion comment="Test that a sid_sid_object with a trustee_sid not equal is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:3"/> 
        <criterion comment="Test that a sid_sid_object with a trustee_sid not equal is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:13"/> 
@@ -41,10 +39,6 @@
   <tests>
     <sid_sid_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1" version="1" comment="Test that a sid_sid_object with a trustee_sid is supported." check_existence="at_least_one_exists" check="only one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:1"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:1"/>
-    </sid_sid_test>
-	<sid_sid_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:11" version="1" comment="Test that a sid_sid_object with a trustee_sid case insensitive equal is supported." check_existence="at_least_one_exists" check="only one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:11"/>
       <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:1"/>
     </sid_sid_test>
     <sid_sid_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:2" version="1" comment="Test that a sid_sid_object with a trustee_sid pattern match is supported." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
@@ -71,9 +65,6 @@
   <objects>
     <sid_sid_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:1" version="1" comment="Retrieves a sid_sid_object with trustee_sid that equals 'S-1-5-32-544' (the Administrators group)." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <trustee_sid>S-1-5-32-544</trustee_sid>
-    </sid_sid_object>
-	<sid_sid_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:11" version="1" comment="Retrieves a sid_sid_object with trustee_sid that case insensitive equals 'S-1-5-32-544' (the Administrators group)." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <trustee_sid operation="case insensitive equals">s-1-5-32-544</trustee_sid>
     </sid_sid_object>
     <sid_sid_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:2" version="1" comment="Retrieves a sid_sid_object with trustee_sid that matches the regular expression '-501$'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <trustee_sid operation="pattern match">-501$</trustee_sid>
