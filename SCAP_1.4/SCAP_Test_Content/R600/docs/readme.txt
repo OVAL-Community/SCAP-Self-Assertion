@@ -11,18 +11,3 @@ Expected results:
 	benchmark: xccdf_gov.nist_benchmark_2
 		xccdf_gov.nist_rule_xccdf_gov.nist_rule-1 - unknown
 		xccdf_gov.nist_rule_xccdf_gov.nist_rule-2 - pass
-	
-Testing Status
-	Complete.
-
-Known Issues
-	None
-
-Scripts
-	None
-
-Configuration Instructions
-	None
-
-Cleanup Instructions 
-	None

@@ -2,7 +2,7 @@
 <ocil xmlns="http://scap.nist.gov/schema/ocil/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://scap.nist.gov/schema/ocil/2.0 http://scap.nist.gov/schema/ocil/2.0/ocil-2.0.xsd">
     <generator>
         <schema_version>2.0</schema_version>
-        <timestamp>2011-03-02T20:00:00</timestamp>
+        <timestamp>2026-03-20T20:00:00</timestamp>
     </generator>
     <document>
         <title>OCIL content validation program</title>
@@ -19,50 +19,36 @@
 
         <questionnaire id="ocil:validation_program:questionnaire:1">
             <title>
-                OCIL Validation Checklist
+                OCIL Validation Checklist Questionnaire 1 - Passing tests
             </title>
             <actions>
-
                 <test_action_ref>ocil:validation_program:testaction:1</test_action_ref>
                 <test_action_ref>ocil:validation_program:testaction:2</test_action_ref>
                 <test_action_ref>ocil:validation_program:testaction:3</test_action_ref>
                 <test_action_ref>ocil:validation_program:testaction:4</test_action_ref>
+                <test_action_ref>ocil:validation_program:testaction:9</test_action_ref>
+				<test_action_ref>ocil:validation_program:testaction:10</test_action_ref>
+                <test_action_ref>ocil:validation_program:testaction:12</test_action_ref>
+				<test_action_ref>ocil:validation_program:testaction:18</test_action_ref>
+                <test_action_ref>ocil:validation_program:testaction:21</test_action_ref>
+				<test_action_ref>ocil:validation_program:testaction:22</test_action_ref>
+            </actions>
+        </questionnaire>
+
+        <questionnaire id="ocil:validation_program:questionnaire:2">
+            <title>
+				OCIL Validation Checklist Questionnaire 2 - Failing tests
+			</title>
+            <actions>
                 <test_action_ref>ocil:validation_program:testaction:5</test_action_ref>
                 <test_action_ref>ocil:validation_program:testaction:6</test_action_ref>
                 <test_action_ref>ocil:validation_program:testaction:7</test_action_ref>
                 <test_action_ref>ocil:validation_program:testaction:8</test_action_ref>
-                <test_action_ref>ocil:validation_program:testaction:9</test_action_ref>
-                <test_action_ref>ocil:validation_program:testaction:10</test_action_ref>
-                <test_action_ref>ocil:validation_program:testaction:11</test_action_ref>
-                <test_action_ref>ocil:validation_program:testaction:12</test_action_ref>
-                <test_action_ref>ocil:validation_program:testaction:13</test_action_ref>
+				<test_action_ref>ocil:validation_program:testaction:19</test_action_ref>
                 <test_action_ref>ocil:validation_program:testaction:14</test_action_ref>
-                <test_action_ref>ocil:validation_program:testaction:15</test_action_ref>
                 <test_action_ref>ocil:validation_program:testaction:16</test_action_ref>
-                <test_action_ref>ocil:validation_program:testaction:17</test_action_ref>
-                <test_action_ref>ocil:validation_program:testaction:18</test_action_ref>
-                <test_action_ref>ocil:validation_program:testaction:19</test_action_ref>
-                <test_action_ref>ocil:validation_program:testaction:20</test_action_ref>
-                <test_action_ref>ocil:validation_program:testaction:21</test_action_ref>
-                <test_action_ref>ocil:validation_program:questionnaire:2</test_action_ref>
-                <test_action_ref>ocil:validation_program:questionnaire:3</test_action_ref>
-
-            </actions>
+			</actions>
         </questionnaire>
-
-        <questionnaire id="ocil:validation_program:questionnaire:2" child_only="true">
-            <title>Should be nested</title>
-            <actions>
-                <test_action_ref>ocil:validation_program:testaction:22</test_action_ref>
-            </actions>
-        </questionnaire>
-
-        <questionnaire id="ocil:validation_program:questionnaire:3" child_only="true">
-            <actions>
-                <test_action_ref>ocil:validation_program:testaction:22</test_action_ref>
-            </actions>
-        </questionnaire>
-
 
     </questionnaires>
     <!-- *********************************************************************
@@ -74,7 +60,7 @@
     <!-- PASSING TEST ACTIONS -->
     <test_actions>
         <choice_question_test_action id="ocil:validation_program:testaction:1" question_ref="ocil:validation_program:question:1">
-
+			<title>testaction:1 - Expected Result Pass</title>
             <when_choice>
                 <result>PASS</result>
                 <artifact_refs>
@@ -97,6 +83,7 @@
         </choice_question_test_action>
 
         <string_question_test_action id="ocil:validation_program:testaction:2" question_ref="ocil:validation_program:question:2">
+            <title>testaction:2 - Expected Result Pass</title>
             <when_pattern>
                 <result>PASS</result>
                 <pattern>pass</pattern>
@@ -108,6 +95,7 @@
         </string_question_test_action>
 
         <boolean_question_test_action question_ref="ocil:validation_program:question:3" id="ocil:validation_program:testaction:3">
+            <title>testaction:3 - Expected Result Pass</title>
             <when_true>
                 <result>PASS</result>
             </when_true>
@@ -117,15 +105,31 @@
         </boolean_question_test_action>
 
         <numeric_question_test_action question_ref="ocil:validation_program:question:4" id="ocil:validation_program:testaction:4">
+            <title>testaction:4 - Expected Result Pass</title>
             <when_equals>
                 <result>PASS</result>
                 <value>42</value>
             </when_equals>
+			<when_range>
+				<result>FAIL</result>
+				<range>
+					<min inclusive="false">0</min>
+					<max inclusive="false">41</max>			
+				</range>
+			</when_range>
+			<when_range>
+				<result>FAIL</result>
+				<range>
+					<min inclusive="false">43</min>
+					<max inclusive="false">99999999999999999999999999999999999999999999999</max>			
+				</range>
+			</when_range>
         </numeric_question_test_action>
 
         <!-- FAILING TEST ACTIONS -->
 
         <choice_question_test_action id="ocil:validation_program:testaction:5" question_ref="ocil:validation_program:question:5">
+            <title>testaction:5 - Expected Result Fail</title>
             <when_choice>
                 <result>PASS</result>
                 <choice_ref>ocil:validation_program:choice:1</choice_ref>
@@ -145,6 +149,7 @@
         </choice_question_test_action>
 
         <string_question_test_action id="ocil:validation_program:testaction:6" question_ref="ocil:validation_program:question:6">
+            <title>testaction:6 - Expected Result Fail</title>
             <when_pattern>
                 <result>PASS</result>
                 <pattern>pass</pattern>
@@ -161,6 +166,7 @@
         </string_question_test_action>
 
         <boolean_question_test_action question_ref="ocil:validation_program:question:7" id="ocil:validation_program:testaction:7">
+            <title>testaction:7 - Expected Result Fail</title>
             <when_true>
                 <result>PASS</result>
             </when_true>
@@ -170,14 +176,30 @@
         </boolean_question_test_action>
 
         <numeric_question_test_action question_ref="ocil:validation_program:question:8" id="ocil:validation_program:testaction:8">
+            <title>testaction:8 - Expected Result Fail</title>
             <when_equals>
                 <result>FAIL</result>
                 <value>13</value>
             </when_equals>
+			<when_range>
+				<result>PASS</result>
+				<range>
+					<min inclusive="false">0</min>
+					<max inclusive="false">12</max>			
+				</range>
+			</when_range>
+			<when_range>
+				<result>PASS</result>
+				<range>
+					<min inclusive="false">14</min>
+					<max inclusive="false">99999999999999999999999999999999999999999999999</max>			
+				</range>
+			</when_range>
         </numeric_question_test_action>
 
         <!-- Step  -->
         <boolean_question_test_action question_ref="ocil:validation_program:question:9" id="ocil:validation_program:testaction:9">
+            <title>testaction:9 - Expected Result Pass</title>
             <when_true>
                 <result>PASS</result>
             </when_true>
@@ -188,8 +210,9 @@
 
 
         <!-- Passing branching -->
-        <string_question_test_action id="ocil:validation_program:testaction:10" question_ref="ocil:validation_program:question:10">
-            <when_pattern>
+        <string_question_test_action question_ref="ocil:validation_program:question:10" id="ocil:validation_program:testaction:10">
+            <title>testaction: 10 - Expected Result Pass (nested with 11)</title>
+			<when_pattern>
                 <test_action_ref>ocil:validation_program:testaction:11</test_action_ref>
                 <pattern>pass</pattern>
             </when_pattern>
@@ -205,13 +228,25 @@
 
         <numeric_question_test_action question_ref="ocil:validation_program:question:11" id="ocil:validation_program:testaction:11">
             <when_equals>
-                <test_action_ref>ocil:validation_program:testaction:12</test_action_ref>
-                <value>1</value>
+                <result>PASS</result>
+				<value>1</value>
             </when_equals>
+			<when_equals>
+                <result>FAIL</result>
+				<value>0</value>
+            </when_equals>
+			<when_range>
+				<result>FAIL</result>
+				<range>
+					<min inclusive="false">2</min>
+					<max inclusive="false">99999999999999999999999999999999999999999999999</max>			
+				</range>
+			</when_range>
         </numeric_question_test_action>
 
         <boolean_question_test_action question_ref="ocil:validation_program:question:12" id="ocil:validation_program:testaction:12">
-            <when_true>
+            <title>testaction: 12 - Expected Result Pass (nested with 13)</title>
+			<when_true>
                 <test_action_ref>ocil:validation_program:testaction:13</test_action_ref>
             </when_true>
             <when_false>
@@ -241,7 +276,8 @@
 
         <!-- Failing branching -->
         <string_question_test_action id="ocil:validation_program:testaction:14" question_ref="ocil:validation_program:question:14">
-            <when_pattern>
+            <title>testaction: 14 - Expected Result Fail (nested with 15)</title>
+			<when_pattern>
                 <result>PASS</result>
                 <pattern>pass</pattern>
             </when_pattern>
@@ -256,17 +292,19 @@
         </string_question_test_action>
 
         <numeric_question_test_action question_ref="ocil:validation_program:question:15" id="ocil:validation_program:testaction:15">
-            <when_unknown>
-                <test_action_ref>ocil:validation_program:testaction:16</test_action_ref>
-            </when_unknown>
             <when_equals>
                 <result>PASS</result>
                 <value>1</value>
             </when_equals>
+			<when_equals>
+                <result>FAIL</result>
+                <value>2</value>
+            </when_equals>
         </numeric_question_test_action>
 
         <boolean_question_test_action question_ref="ocil:validation_program:question:16" id="ocil:validation_program:testaction:16">
-            <when_true>
+            <title>testaction: 16 - Expected Result Fail (nested with 17)</title>
+			<when_true>
                 <result>PASS</result>
             </when_true>
             <when_false>
@@ -295,19 +333,21 @@
 
         <!-- Multiple when patterns -->
         <string_question_test_action id="ocil:validation_program:testaction:18" question_ref="ocil:validation_program:question:18">
-            <when_pattern>
+            <title>testaction:18 - Expected Result Pass</title>
+			<when_pattern>
                 <result>PASS</result>
-                <pattern>[A-Z]</pattern>
+                <pattern>A</pattern>
             </when_pattern>
             <when_pattern>
-                <result>PASS</result>
-                <pattern>[A-N]</pattern>
+                <result>FAIL</result>
+                <pattern>[B-Z]|[a-z]</pattern>
             </when_pattern>
         </string_question_test_action>
 
         <!-- Exceptional Values -->
         <choice_question_test_action id="ocil:validation_program:testaction:19" question_ref="ocil:validation_program:question:19">
-            <when_choice>
+            <title>testaction:19 - Expected Result Not Applicable</title>
+			<when_choice>
                 <result>PASS</result>
                 <choice_ref>ocil:validation_program:choice:1</choice_ref>
             </when_choice>
@@ -325,20 +365,10 @@
             </when_choice>
         </choice_question_test_action>
 
-        <numeric_question_test_action question_ref="ocil:validation_program:question:20" id="ocil:validation_program:testaction:20">
-            <when_error>
-                <result>FAIL</result>
-            </when_error>
-            <when_equals>
-                <result>PASS</result>
-                <value>1</value>
-            </when_equals>
-        </numeric_question_test_action>
-
-
         <!-- Substitution -->
         <choice_question_test_action id="ocil:validation_program:testaction:21" question_ref="ocil:validation_program:question:21">
-            <when_choice>
+            <title>testaction:20 - Expected Result Pass</title>
+			<when_choice>
                 <result>PASS</result>
                 <choice_ref>ocil:validation_program:choice:1</choice_ref>
             </when_choice>
@@ -358,7 +388,8 @@
 
         <!-- Nesting    -->
         <boolean_question_test_action question_ref="ocil:validation_program:question:22" id="ocil:validation_program:testaction:22">
-            <when_true>
+            <title>testaction:22 - Expected Result Pass</title>
+			<when_true>
                 <result>PASS</result>
             </when_true>
             <when_false>
@@ -472,11 +503,6 @@
             <question_text>Select Not Applicable</question_text>
             <choice_group_ref>ocil:validation_program:choicegroup:1</choice_group_ref>
         </choice_question>
-
-        <numeric_question id="ocil:validation_program:question:20">
-            <question_text>Enter "fail" with no quotation marks</question_text>
-            <!-- this should generate an error -->
-        </numeric_question>
 
         <!-- Substitution -->
         <choice_question id="ocil:validation_program:question:21">

@@ -487,7 +487,7 @@
 
   <!-- DS2 - XCCDF component -->
   <component id="scap_6gA.9tIT5j86j.XFD97_comp_dasLtWvRrauvuruxlaQ5TULN.j" timestamp="2020-07-31T14:00:00">
-    <xccdf:Benchmark xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2" id="xccdf_6gA.9tIT5j86j.XFD97_benchmark_xccdf_gov.nist.validation_benchmark_filehash" style="SCAP_1.3" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd">
+    <xccdf:Benchmark xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2" id="xccdf_6gA.9tIT5j86j.XFD97_benchmark_R1300.3.3_xccdf_gov.nist.validation_benchmark_filehash" style="SCAP_1.3" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd">
       <xccdf:status date="2020-07-31">draft</xccdf:status>
       <xccdf:title>XCCDF Benchmark 2 that references the Validation Content for the R1300 requirement</xccdf:title>
       <xccdf:description>This XCCDF Benchmark 2 references the OVAL Defintitions in the validation content for the R1300 requirement.</xccdf:description>
