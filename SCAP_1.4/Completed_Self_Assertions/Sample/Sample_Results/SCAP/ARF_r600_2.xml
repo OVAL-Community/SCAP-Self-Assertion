@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SessionID:2026-05-15_074328,HostName:WIN2022-BASE,FileType:ARF,StreamName:r600_2-1-3.0.0.0,ErrorCount:0,WarnCount:0 -->
+
+<arf:asset-report-collection xsi:schemaLocation="http://scap.nist.gov/schema/reporting-core/1.1 https://csrc.nist.gov/schema/reporting-core/1.1/reporting-core_1.1.0.xsd http://scap.nist.gov/schema/asset-reporting-format/1.1 https://csrc.nist.gov/schema/asset-reporting-format/1.1/asset-reporting-format_1.1.0.xsd http://scap.nist.gov/schema/scap/constructs/1.2 https://csrc.nist.gov/schema/scap/1.2/scap-constructs_1.2.xsd http://scap.nist.gov/schema/asset-identification/1.1 https://csrc.nist.gov/schema/asset-identification/1.1/asset-identification_1.1.0.xsd" xmlns:arf="http://scap.nist.gov/schema/asset-reporting-format/1.1" xmlns:core="http://scap.nist.gov/schema/reporting-core/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5" xmlns:oval-res="http://oval.mitre.org/XMLSchema/oval-results-5" xmlns:oval-var="http://oval.mitre.org/XMLSchema/oval-variables-5" xmlns:inter="http://scap.nist.gov/schema/ocil/2.0" xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2" xmlns:arf-rel="http://scap.nist.gov/specifications/arf/vocabulary/relationships/1.0#" xmlns:scap-rel="http://scap.nist.gov/vocabulary/scap/relationships/1.0#" xmlns:ds="http://scap.nist.gov/schema/scap/source/1.2" xmlns:ai="http://scap.nist.gov/schema/asset-identification/1.1" xmlns:con="http://scap.nist.gov/schema/scap/constructs/1.2" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:unix-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" xmlns:linux-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" xmlns:solaris-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris" xmlns:ios-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#ios" xmlns:macos-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" xmlns:ind-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#independent" xmlns:win-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#windows" xmlns:unix-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#unix" xmlns:linux-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#linux" xmlns:solaris-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#solaris" xmlns:ios-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#ios" xmlns:iosxe-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#iosxe" xmlns:macos-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#macos">
+      <core:relationships>
+            <core:relationship type="arf-rel:isAbout" subject="scap_gov.nist_comp_r600_2-xccdf">
+                  <core:ref>SCC_WIN2022-BASE</core:ref>
+            </core:relationship>
+            <core:relationship type="arf-rel:isAbout" subject="scap_gov.nist_comp_r600-oval">
+                  <core:ref>scap_gov.nist_comp_r600_2-xccdf</core:ref>
+            </core:relationship>
+            <core:relationship type="arf-rel:isAbout" subject="scap_gov.nist_comp_r600-cpe-oval">
+                  <core:ref>SCC_WIN2022-BASE</core:ref>
+            </core:relationship>
+            <core:relationship type="scap-rel:checkContext" subject="scap_gov.nist_comp_r600-oval">
+                  <core:ref>scap_gov.nist_comp_r600_2-xccdf</core:ref>
+            </core:relationship>
+            <core:relationship type="scap-rel:checkContext" subject="scap_gov.nist_comp_r600-cpe-oval">
+                  <core:ref>scap_gov.nist_comp_r600_2-xccdf</core:ref>
+            </core:relationship>
+            <core:relationship type="scap-rel:checkContext" subject="scap_gov.nist_comp_r600-oval_variables">
+                  <core:ref>scap_gov.nist_comp_r600_2-xccdf</core:ref>
+            </core:relationship>
+            <core:relationship type="scap-rel:fromSource" subject="scap_gov.nist_comp_r600_2-xccdf">
+                  <core:ref>scap_gov.nist_datastream_r600-datastream</core:ref>
+            </core:relationship>
+            <core:relationship type="scap-rel:fromSource" subject="scap_gov.nist_comp_r600-oval">
+                  <core:ref>scap_gov.nist_datastream_r600-datastream</core:ref>
+            </core:relationship>
+            <core:relationship type="scap-rel:fromSource" subject="scap_gov.nist_comp_r600-cpe-oval">
+                  <core:ref>scap_gov.nist_datastream_r600-datastream</core:ref>
+            </core:relationship>
+            <core:relationship type="scap-rel:fromSource" subject="scap_gov.nist_comp_r600-oval_variables">
+                  <core:ref>scap_gov.nist_datastream_r600-datastream</core:ref>
+            </core:relationship>
+            <core:relationship type="scap-rel:associatedWith" subject="scap_gov.nist_comp_r600-oval_variables">
+                  <core:ref>scap_gov.nist_comp_r600-oval</core:ref>
+            </core:relationship>
+      </core:relationships>
+      <arf:report-requests>
+            <arf:report-request id="scap_gov.nist_datastream_r600-datastream">
+                  <arf:content>
+                        <ds:data-stream-collection schematron-version="1.3" id="scap_gov.nist_collection_r600-datastream">
+                              <ds:data-stream use-case="CONFIGURATION" scap-version="1.3" timestamp="2020-07-31T14:00:00" id="scap_gov.nist_datastream_r600-datastream">
+                                    <ds:dictionaries>
+                                          <ds:component-ref id="scap_gov.nist_cref_r600-cpe-dictionary" xlink:href="#scap_gov.nist_comp_r600-cpe-dictionary" xlink:type="simple"></ds:component-ref>
+                                    </ds:dictionaries>
+                                    <ds:checklists>
+                                          <ds:component-ref xlink:href="#scap_gov.nist_comp_r600_1-xccdf" id="scap_gov.nist_cref_r600_1-xccdf" xlink:type="simple"></ds:component-ref>
+                                          <ds:component-ref xlink:href="#scap_gov.nist_comp_r600_2-xccdf" id="scap_gov.nist_cref_r600_2-xccdf" xlink:type="simple"></ds:component-ref>
+                                    </ds:checklists>
+                                    <ds:checks>
+                                          <ds:component-ref xlink:href="#scap_gov.nist_comp_r600-oval" id="scap_gov.nist_cref_r600-oval" xlink:type="simple"></ds:component-ref>
+                                          <ds:component-ref id="scap_gov.nist_cref_r600-cpe-oval" xlink:href="#scap_gov.nist_comp_r600-cpe-oval" xlink:type="simple"></ds:component-ref>
+                                    </ds:checks>
+                              </ds:data-stream>
+                              <ds:component timestamp="2020-07-31T14:00:00" id="scap_gov.nist_comp_r600_1-xccdf">
+                                    <xccdf:Benchmark id="xccdf_gov.nist_benchmark_r600_1" style="SCAP_1.3" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd http://cpe.mitre.org/language/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-language_2.3.xsd">
+                                          <xccdf:status date="2020-07-31">draft</xccdf:status>
+                                          <xccdf:title>XCCDF Benchmark 1</xccdf:title>
+                                          <xccdf:description>This XCCDF Benchmark references the OVAL Defintitions in the validation content for the unknown test</xccdf:description>
+                                          <xccdf:version time="2020-07-31T14:00:00" update="http://scap.nist.gov/validation/resources.html">1-3.0.0.0</xccdf:version>
+                                          <xccdf:metadata>
+                                                <dc:contributor>National Institute of Standards and Technology</dc:contributor>
+                                                <dc:publisher>National Institute of Standards and Technology</dc:publisher>
+                                                <dc:creator>National Institute of Standards and Technology</dc:creator>
+                                                <dc:source>http://scap.nist.gov</dc:source>
+                                          </xccdf:metadata>
+                                          <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist_rule-1">
+                                                <xccdf:title>Benchmark 1 - Rule 1</xccdf:title>
+                                                <xccdf:description>Make sure the unknown test type returns properly</xccdf:description>
+                                                <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                                                      <xccdf:check-content-ref href="r600-oval" name="oval:nist.validation:def:1"></xccdf:check-content-ref>
+                                                </xccdf:check>
+                                          </xccdf:Rule>
+                                    </xccdf:Benchmark>
+                              </ds:component>
+                              <ds:component id="scap_gov.nist_comp_r600_2-xccdf" timestamp="2020-07-31T14:00:00">
+                                    <xccdf:Benchmark id="xccdf_gov.nist_benchmark_r600_2" style="SCAP_1.3" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd http://cpe.mitre.org/language/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-language_2.3.xsd">
+                                          <xccdf:status date="2020-07-31">draft</xccdf:status>
+                                          <xccdf:title>2nd XCCDF Benchmark</xccdf:title>
+                                          <xccdf:description>This XCCDF Benchmark references two OVAL Defintitions</xccdf:description>
+                                          <xccdf:version time="2020-07-31T14:00:00" update="http://scap.nist.gov/validation/resources.html">1-3.0.0.0</xccdf:version>
+                                          <xccdf:metadata>
+                                                <dc:contributor>National Institute of Standards and Technology</dc:contributor>
+                                                <dc:publisher>National Institute of Standards and Technology</dc:publisher>
+                                                <dc:creator>National Institute of Standards and Technology</dc:creator>
+                                                <dc:source>http://scap.nist.gov</dc:source>
+                                          </xccdf:metadata>
+                                          <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist_rule-1">
+                                                <xccdf:title>Benchmark 2 - Rule 1</xccdf:title>
+                                                <xccdf:description>Make sure the unknown test type returns properly</xccdf:description>
+                                                <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                                                      <xccdf:check-content-ref name="oval:nist.validation:def:1" href="r600-oval"></xccdf:check-content-ref>
+                                                </xccdf:check>
+                                          </xccdf:Rule>
+                                          <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist_rule-2">
+                                                <xccdf:title>Benchmark 2 - Rule 2</xccdf:title>
+                                                <xccdf:description>Make sure the value entity properly supports the greater than or equal operation.</xccdf:description>
+                                                <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                                                      <xccdf:check-content-ref href="r600-oval" name="oval:nist.validation:def:1000"></xccdf:check-content-ref>
+                                                </xccdf:check>
+                                          </xccdf:Rule>
+                                    </xccdf:Benchmark>
+                              </ds:component>
+                              <ds:component timestamp="2020-07-31T14:00:00" id="scap_gov.nist_comp_r600-oval">
+                                    <oval-def:oval_definitions>
+                                          <oval-def:generator>
+                                                <oval:product_name>NIST Validation Content Generation Script</oval:product_name>
+                                                <oval:product_version>1.3</oval:product_version>
+                                                <oval:schema_version>5.11.2</oval:schema_version>
+                                                <oval:timestamp>2020-07-31T14:00:00-05:00</oval:timestamp>
+                                          </oval-def:generator>
+                                          <oval-def:definitions>
+                                                <oval-def:definition class="compliance" version="1" id="oval:nist.validation:def:1">
+                                                      <oval-def:metadata>
+                                                            <oval-def:title>Test the unknown test type</oval-def:title>
+                                                            <oval-def:description>Test the unknown test type</oval-def:description>
+                                                      </oval-def:metadata>
+                                                      <oval-def:criteria applicability_check="false">
+                                                            <oval-def:criterion applicability_check="false" test_ref="oval:nist.validation:tst:1" comment="Unknown test type."></oval-def:criterion>
+                                                      </oval-def:criteria>
+                                                </oval-def:definition>
+                                                <oval-def:definition class="compliance" version="1" id="oval:nist.validation:def:1000">
+                                                      <oval-def:metadata>
+                                                            <oval-def:title>Test the value entity with the greater than or equal operation</oval-def:title>
+                                                            <oval-def:description>Make sure the value entity properly supports the greater than or equal operation.</oval-def:description>
+                                                      </oval-def:metadata>
+                                                      <oval-def:criteria applicability_check="false">
+                                                            <oval-def:criterion test_ref="oval:nist.validation:tst:1000" comment="Test to see that the value is greater than or equal to 1." applicability_check="false"></oval-def:criterion>
+                                                      </oval-def:criteria>
+                                                </oval-def:definition>
+                                          </oval-def:definitions>
+                                          <oval-def:tests>
+                                                <ind-def:unknown_test state_operator="AND" check="all" check_existence="at_least_one_exists" id="oval:nist.validation:tst:1" comment="Test the unknown test type" version="1">
+                                                      <oval-def:notes>
+                                                            <oval-def:note>This tests the unknown test type.</oval-def:note>
+                                                      </oval-def:notes>
+                                                </ind-def:unknown_test>
+                                                <ind-def:variable_test state_operator="AND" id="oval:nist.validation:tst:1000" check_existence="at_least_one_exists" comment="Test to see that the value is greater than or equal to 1." version="1" check="all">
+                                                      <ind-def:object object_ref="oval:nist.validation:obj:1000"></ind-def:object>
+                                                      <ind-def:state state_ref="oval:nist.validation:ste:1000"></ind-def:state>
+                                                </ind-def:variable_test>
+                                          </oval-def:tests>
+                                          <oval-def:objects>
+                                                <ind-def:variable_object version="1" id="oval:nist.validation:obj:1000">
+                                                      <ind-def:var_ref>oval:nist.validation:var:1000</ind-def:var_ref>
+                                                </ind-def:variable_object>
+                                          </oval-def:objects>
+                                          <oval-def:states>
+                                                <ind-def:variable_state version="1" id="oval:nist.validation:ste:1000">
+                                                      <ind-def:value operation="greater than or equal" datatype="int">1</ind-def:value>
+                                                </ind-def:variable_state>
+                                          </oval-def:states>
+                                          <oval-def:variables>
+                                                <oval-def:constant_variable version="1" datatype="int" comment="This variable contains the integer value '1'." id="oval:nist.validation:var:1000">
+                                                      <oval-def:value>1</oval-def:value>
+                                                </oval-def:constant_variable>
+                                          </oval-def:variables>
+                                    </oval-def:oval_definitions>
+                              </ds:component>
+                              <ds:component id="scap_gov.nist_comp_r600-cpe-oval" timestamp="2020-07-31T14:00:00">
+                                    <oval-def:oval_definitions>
+                                          <oval-def:generator>
+                                                <oval:product_name>National Institute of Standards and Technology</oval:product_name>
+                                                <oval:schema_version>5.11.2</oval:schema_version>
+                                                <oval:timestamp>2020-07-31T14:00:00-05:00</oval:timestamp>
+                                          </oval-def:generator>
+                                          <oval-def:definitions>
+                                                <oval-def:definition class="inventory" version="2" id="oval:gov.nist.validation.cpe.oval:def:2">
+                                                      <oval-def:metadata>
+                                                            <oval-def:title>Microsoft Windows 7 is installed</oval-def:title>
+                                                            <oval-def:affected family="windows">
+                                                                  <oval-def:platform>Microsoft Windows 7</oval-def:platform>
+                                                            </oval-def:affected>
+                                                            <oval-def:reference ref_id="cpe:/o:microsoft:windows_7" source="CPE"></oval-def:reference>
+                                                            <oval-def:description>The operating system installed on the system is Microsoft Windows 7</oval-def:description>
+                                                      </oval-def:metadata>
+                                                      <oval-def:criteria applicability_check="false">
+                                                            <oval-def:criterion applicability_check="false" test_ref="oval:org.mitre.oval:tst:99" comment="the installed operating system is part of the Microsoft Windows family"></oval-def:criterion>
+                                                            <oval-def:criterion test_ref="oval:org.mitre.oval:tst:10792" comment="Windows 7 is installed" applicability_check="false"></oval-def:criterion>
+                                                      </oval-def:criteria>
+                                                </oval-def:definition>
+                                                <oval-def:definition class="inventory" version="2" id="oval:gov.nist.validation.cpe.oval:def:100">
+                                                      <oval-def:metadata>
+                                                            <oval-def:title>Red Hat Enterprise Linux 3, 4, 5, 6, or 7</oval-def:title>
+                                                            <oval-def:affected family="unix">
+                                                                  <oval-def:platform>Red Hat Enterprise Linux</oval-def:platform>
+                                                            </oval-def:affected>
+                                                            <oval-def:reference source="CPE" ref_id="cpe:/o:redhat:enterprise_linux"></oval-def:reference>
+                                                            <oval-def:description>The operating system installed on the system is Red Hat Enterprise Linux 3, 4, 5, 6, or 7</oval-def:description>
+                                                      </oval-def:metadata>
+                                                      <oval-def:criteria applicability_check="false">
+                                                            <oval-def:criterion test_ref="oval:gov.nist.validation.cpe.oval:tst:100" comment="Installed operating system is part of the unix family" applicability_check="false"></oval-def:criterion>
+                                                            <oval-def:criterion applicability_check="false" test_ref="oval:gov.nist.validation.cpe.oval:tst:101" comment="Red Hat Enterprise Linux 3, 4, 5, 6, or 7 is installed"></oval-def:criterion>
+                                                      </oval-def:criteria>
+                                                </oval-def:definition>
+                                                <oval-def:definition id="oval:gov.nist.validation.cpe.oval:def:11" version="1" class="inventory">
+                                                      <oval-def:metadata>
+                                                            <oval-def:title>Apple Mac OS 10.11 is installed</oval-def:title>
+                                                            <oval-def:affected family="macos">
+                                                                  <oval-def:platform>Apple Mac OS X</oval-def:platform>
+                                                            </oval-def:affected>
+                                                            <oval-def:reference source="CPE" ref_id="cpe:/o:apple:mac_os:10:11"></oval-def:reference>
+                                                            <oval-def:description>The operating system installed on the system is Apple Mac OS 10.11.</oval-def:description>
+                                                      </oval-def:metadata>
+                                                      <oval-def:criteria applicability_check="false">
+                                                            <oval-def:criterion applicability_check="false" test_ref="oval:gov.nist.validation.cpe.oval:tst:1101" comment="The installed operating system is part of the Mac OS family"></oval-def:criterion>
+                                                            <oval-def:criterion applicability_check="false" comment="/System/Library/CoreServices/SystemVersion.plist!ProductVersion is greater than or equal to 10.11 and less than 10.12" test_ref="oval:gov.nist.validation.cpe.oval:tst:1102"></oval-def:criterion>
+                                                      </oval-def:criteria>
+                                                </oval-def:definition>
+                                          </oval-def:definitions>
+                                          <oval-def:tests>
+                                                <ind-def:family_test comment="the installed operating system is part of the Microsoft Windows family" id="oval:org.mitre.oval:tst:99" check_existence="at_least_one_exists" version="1" check="only one" state_operator="AND">
+                                                      <ind-def:object object_ref="oval:org.mitre.oval:obj:99"></ind-def:object>
+                                                      <ind-def:state state_ref="oval:org.mitre.oval:ste:99"></ind-def:state>
+                                                </ind-def:family_test>
+                                                <win-def:registry_test check="at least one" comment="Windows 7 is installed" check_existence="at_least_one_exists" id="oval:org.mitre.oval:tst:10792" version="4" state_operator="AND">
+                                                      <win-def:object object_ref="oval:org.mitre.oval:obj:5590"></win-def:object>
+                                                      <win-def:state state_ref="oval:org.mitre.oval:ste:5027"></win-def:state>
+                                                </win-def:registry_test>
+                                                <ind-def:family_test state_operator="AND" version="1" check_existence="at_least_one_exists" comment="installed operating system is part of the Unix family" id="oval:gov.nist.validation.cpe.oval:tst:100" check="only one">
+                                                      <ind-def:object object_ref="oval:gov.nist.validation.cpe.oval:obj:100"></ind-def:object>
+                                                      <ind-def:state state_ref="oval:gov.nist.validation.cpe.oval:ste:100"></ind-def:state>
+                                                </ind-def:family_test>
+                                                <linux-def:rpminfo_test state_operator="AND" check_existence="at_least_one_exists" id="oval:gov.nist.validation.cpe.oval:tst:101" comment="redhat-release is version 3, 4, 5, 6, or 7" version="2" check="at least one">
+                                                      <linux-def:object object_ref="oval:gov.nist.validation.cpe.oval:obj:101"></linux-def:object>
+                                                      <linux-def:state state_ref="oval:gov.nist.validation.cpe.oval:ste:101"></linux-def:state>
+                                                </linux-def:rpminfo_test>
+                                                <ind-def:family_test state_operator="AND" check="all" version="1" id="oval:gov.nist.validation.cpe.oval:tst:1101" check_existence="only_one_exists" comment="The installed operating system is part of the Mac OS family">
+                                                      <ind-def:object object_ref="oval:gov.nist.validation.cpe.oval:obj:1101"></ind-def:object>
+                                                      <ind-def:state state_ref="oval:gov.nist.validation.cpe.oval:ste:1101"></ind-def:state>
+                                                </ind-def:family_test>
+                                                <macos-def:plist510_test state_operator="AND" version="1" check_existence="only_one_exists" comment="/System/Library/CoreServices/SystemVersion.plist!ProductVersion is greater than or equal to 10.11 and less than 10.12" id="oval:gov.nist.validation.cpe.oval:tst:1102" check="all">
+                                                      <macos-def:object object_ref="oval:gov.nist.validation.cpe.oval:obj:1102"></macos-def:object>
+                                                      <macos-def:state state_ref="oval:gov.nist.validation.cpe.oval:ste:110201"></macos-def:state>
+                                                      <macos-def:state state_ref="oval:gov.nist.validation.cpe.oval:ste:110202"></macos-def:state>
+                                                </macos-def:plist510_test>
+                                          </oval-def:tests>
+                                          <oval-def:objects>
+                                                <ind-def:family_object version="1" id="oval:org.mitre.oval:obj:99" comment="This is the default family object. Only one family object should exist."></ind-def:family_object>
+                                                <win-def:registry_object version="1" comment="This registry key identifies the Windows ProductName" id="oval:org.mitre.oval:obj:5590">
+                                                      <win-def:hive>HKEY_LOCAL_MACHINE</win-def:hive>
+                                                      <win-def:key>SOFTWARE\Microsoft\Windows NT\CurrentVersion</win-def:key>
+                                                      <win-def:name>ProductName</win-def:name>
+                                                </win-def:registry_object>
+                                                <ind-def:family_object id="oval:gov.nist.validation.cpe.oval:obj:100" version="1"></ind-def:family_object>
+                                                <linux-def:rpminfo_object comment="the redhat-release rpm" id="oval:gov.nist.validation.cpe.oval:obj:101" version="2">
+                                                      <linux-def:name operation="pattern match">^redhat-release.*$</linux-def:name>
+                                                </linux-def:rpminfo_object>
+                                                <ind-def:family_object id="oval:gov.nist.validation.cpe.oval:obj:1101" comment="OS family" version="1"></ind-def:family_object>
+                                                <macos-def:plist510_object version="1" id="oval:gov.nist.validation.cpe.oval:obj:1102" comment="/System/Library/CoreServices/SystemVersion.plist!ProductVersion">
+                                                      <macos-def:key>ProductVersion</macos-def:key>
+                                                      <macos-def:filepath>/System/Library/CoreServices/SystemVersion.plist</macos-def:filepath>
+                                                      <macos-def:instance datatype="int" operation="greater than">0</macos-def:instance>
+                                                </macos-def:plist510_object>
+                                          </oval-def:objects>
+                                          <oval-def:states>
+                                                <ind-def:family_state version="2" id="oval:org.mitre.oval:ste:99" comment="Microsoft Windows family">
+                                                      <ind-def:family>windows</ind-def:family>
+                                                </ind-def:family_state>
+                                                <win-def:registry_state version="4" id="oval:org.mitre.oval:ste:5027" comment="The registry key matches with Windows 7">
+                                                      <win-def:value operation="pattern match">^[a-zA-Z0-9\(\)\s]*[Ww][Ii][Nn][Dd][Oo][Ww][Ss] 7[a-zA-Z0-9\(\)\s]*$</win-def:value>
+                                                </win-def:registry_state>
+                                                <ind-def:family_state version="1" id="oval:gov.nist.validation.cpe.oval:ste:100">
+                                                      <ind-def:family>unix</ind-def:family>
+                                                </ind-def:family_state>
+                                                <linux-def:rpminfo_state version="2" id="oval:gov.nist.validation.cpe.oval:ste:101">
+                                                      <linux-def:version operation="pattern match">^[3-7]\D</linux-def:version>
+                                                </linux-def:rpminfo_state>
+                                                <ind-def:family_state version="1" comment="OS family is Mac OS" id="oval:gov.nist.validation.cpe.oval:ste:1101">
+                                                      <ind-def:family>macos</ind-def:family>
+                                                </ind-def:family_state>
+                                                <macos-def:plist510_state comment="Value is greater than or equal to 10.11 (/System/Library/CoreServices/SystemVersion.plist!ProductVersion)" id="oval:gov.nist.validation.cpe.oval:ste:110201" version="1">
+                                                      <macos-def:value datatype="version" operation="greater than or equal">10.11</macos-def:value>
+                                                </macos-def:plist510_state>
+                                                <macos-def:plist510_state id="oval:gov.nist.validation.cpe.oval:ste:110202" comment="Value is less than 10.12 (/System/Library/CoreServices/SystemVersion.plist!ProductVersion)" version="1">
+                                                      <macos-def:value datatype="version" operation="less than">10.12</macos-def:value>
+                                                </macos-def:plist510_state>
+                                          </oval-def:states>
+                                    </oval-def:oval_definitions>
+                              </ds:component>
+                              <ds:component id="scap_gov.nist_comp_r600-cpe-dictionary" timestamp="2020-07-31T14:00:00">
+                                    <cpe_dict:cpe-list xsi:schemaLocation="http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd" xmlns:cpe_dict="http://cpe.mitre.org/dictionary/2.0">
+                                          <cpe_dict:cpe-item name="cpe:/o:microsoft:windows_7">
+                                                <cpe_dict:title>Microsoft Windows 7</cpe_dict:title>
+                                                <cpe_dict:notes>
+                                                      <cpe_dict:note>This CPE Name represents version 6.1.7600 of the Windows OS</cpe_dict:note>
+                                                </cpe_dict:notes>
+                                                <cpe_dict:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5" href="r600-cpe-oval">oval:gov.nist.validation.cpe.oval:def:2</cpe_dict:check>
+                                          </cpe_dict:cpe-item>
+                                          <cpe_dict:cpe-item name="cpe:/o:redhat:enterprise_linux">
+                                                <cpe_dict:title>Red Hat Enterprise Linux</cpe_dict:title>
+                                                <cpe_dict:notes>
+                                                      <cpe_dict:note>This CPE Name represents Red Hat Enterprise Linux OS</cpe_dict:note>
+                                                </cpe_dict:notes>
+                                                <cpe_dict:check href="r600-cpe-oval" system="http://oval.mitre.org/XMLSchema/oval-definitions-5">oval:gov.nist.validation.cpe.oval:def:100</cpe_dict:check>
+                                          </cpe_dict:cpe-item>
+                                          <cpe_dict:cpe-item name="cpe:/o:apple:mac_os:10:11">
+                                                <cpe_dict:title>Apple Mac OS 10.11</cpe_dict:title>
+                                                <cpe_dict:notes>
+                                                      <cpe_dict:note>This CPE Name represents OS X</cpe_dict:note>
+                                                </cpe_dict:notes>
+                                                <cpe_dict:check href="r600-cpe-oval" system="http://oval.mitre.org/XMLSchema/oval-definitions-5">oval:gov.nist.validation.cpe.oval:def:11</cpe_dict:check>
+                                          </cpe_dict:cpe-item>
+                                    </cpe_dict:cpe-list>
+                              </ds:component>
+                        </ds:data-stream-collection>
+                  </arf:content>
+            </arf:report-request>
+      </arf:report-requests>
+      <arf:assets>
+            <arf:asset id="SCC_WIN2022-BASE">
+                  <ai:computing-device>
+                        <ai:connections>
+                              <ai:connection>
+                                    <ai:ip-address>
+                                          <ai:ip-v4>10.0.6.24</ai:ip-v4>
+                                    </ai:ip-address>
+                                    <ai:mac-address>00:50:56:A5:06:73</ai:mac-address>
+                              </ai:connection>
+                        </ai:connections>
+                        <ai:fqdn>WIN2022-BASE.testdomain.gov</ai:fqdn>
+                        <ai:hostname>WIN2022-BASE</ai:hostname>
+                  </ai:computing-device>
+            </arf:asset>
+      </arf:assets>
+      <arf:reports>
+            <arf:report id="scap_gov.nist_comp_r600_2-xccdf">
+                  <arf:content>
+                        <xccdf:TestResult start-time="2026-05-15T04:44:41" id="xccdf_gov.nist_testresult_scap_gov.nist_comp_r600_2-xccdf-1" version="1-3.0.0.0" end-time="2026-05-15T04:44:41" test-system="cpe:/a:niwc:scc:5.14.1">
+                              <xccdf:benchmark href="#scap_gov.nist_comp_r600_2-xccdf" id="xccdf_gov.nist_benchmark_r600_2"></xccdf:benchmark>
+                              <xccdf:organization>NIWC Atlantic</xccdf:organization>
+                              <xccdf:identity privileged="true" authenticated="true">TESTDOMAIN\testuser</xccdf:identity>
+                              <xccdf:target>WIN2022-BASE</xccdf:target>
+                              <xccdf:target-address>10.0.6.24</xccdf:target-address>
+                              <xccdf:target-address>fd9d:4c4b:dc70:d536:0:f1e0:1c06:9d08</xccdf:target-address>
+                              <xccdf:target-facts>
+                                    <xccdf:fact type="string" name="urn:scap:fact:asset:identifier:host_name">WIN2022-BASE</xccdf:fact>
+                                    <xccdf:fact type="string" name="urn:scap:fact:asset:identifier:domain">testdomain.gov</xccdf:fact>
+                                    <xccdf:fact type="string" name="urn:scap:fact:asset:identifier:fqdn">WIN2022-BASE.testdomain.gov</xccdf:fact>
+                                    <xccdf:fact name="urn:scap:fact:asset:identifier:os_name" type="string">Microsoft Windows Server 2022 Standard</xccdf:fact>
+                                    <xccdf:fact name="urn:scap:fact:asset:identifier:os_version" type="string">21H2</xccdf:fact>
+                                    <xccdf:fact type="string" name="urn:scap:fact:asset:identifier:processor">Intel(R) Xeon(R) Silver 4309Y CPU @ 2.80GHz</xccdf:fact>
+                                    <xccdf:fact type="string" name="urn:scap:fact:asset:identifier:processor_architecture">Intel64 Family 6 Model 106 Stepping 6</xccdf:fact>
+                                    <xccdf:fact name="urn:scap:fact:asset:identifier:processor_mhz" type="string">2793</xccdf:fact>
+                                    <xccdf:fact name="urn:scap:fact:asset:identifier:physical_memory" type="string">4096</xccdf:fact>
+                                    <xccdf:fact name="urn:scap:fact:asset:identifier:manufacturer" type="string">VMware, Inc.</xccdf:fact>
+                                    <xccdf:fact name="urn:scap:fact:asset:identifier:ein" type="string">VMware-56 4d 2a 45 bd 40 16 99-e2 1e 23 ab a1 1c 19 b8</xccdf:fact>
+                                    <xccdf:fact name="urn:scap:fact:asset:identifier:bios_version" type="string">6.00</xccdf:fact>
+                                    <xccdf:fact type="string" name="urn:scap:fact:asset:identifier:model">VMware Virtual Platform</xccdf:fact>
+                                    <xccdf:fact name="urn:scap:fact:asset:identifier:role" type="string">Workstation</xccdf:fact>
+                                    <xccdf:fact type="string" name="urn:scap:fact:asset:identifier:os_service_pack"></xccdf:fact>
+                                    <xccdf:fact name="urn:scap:fact:asset:identifier:interface_name" type="string">[00000001] Intel(R) 82574L Gigabit Network Connection</xccdf:fact>
+                                    <xccdf:fact type="string" name="urn:scap:fact:asset:identifier:ipv4">10.0.6.24</xccdf:fact>
+                                    <xccdf:fact type="string" name="urn:scap:fact:asset:identifier:ipv6">fd9d:4c4b:dc70:d536:0:f1e0:1c06:9d08</xccdf:fact>
+                                    <xccdf:fact name="urn:scap:fact:asset:identifier:mac" type="string">00:50:56:A5:06:73</xccdf:fact>
+                              </xccdf:target-facts>
+                              <xccdf:target-id-ref system="http://scap.nist.gov/schema/asset-identification/1.1" href="" name="SCC_WIN2022-BASE"></xccdf:target-id-ref>
+                              <xccdf:rule-result role="full" version="" idref="xccdf_gov.nist_rule_xccdf_gov.nist_rule-1" severity="unknown" time="2026-05-15T04:44:41" weight="1.0">
+                                    <xccdf:result>unknown</xccdf:result>
+                                    <xccdf:message severity="info">Rule Result             : Unknown
+Criteria                : unknown (All child tests must be true. (AND))
+Test                    :   unknown (Test the unknown test type)
+
+---
+
+Test ID                 : oval:nist.validation:tst:1 (unknown_test)
+Result                  : unknown
+Test Title              : Test the unknown test type
+Check Existence         : One or more collected items must exist.
+Check                   : Result is based on check existence only.
+
+
+</xccdf:message>
+                                    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                                          <xccdf:check-content-ref name="oval:nist.validation:def:1" href="#scap_gov.nist_comp_r600-oval"></xccdf:check-content-ref>
+                                    </xccdf:check>
+                              </xccdf:rule-result>
+                              <xccdf:rule-result idref="xccdf_gov.nist_rule_xccdf_gov.nist_rule-2" version="" role="full" weight="1.0" time="2026-05-15T04:44:41" severity="unknown">
+                                    <xccdf:result>pass</xccdf:result>
+                                    <xccdf:message severity="info">Rule Result             : Pass
+Criteria                : true (All child tests must be true. (AND))
+Test                    :   true (Test to see that the value is greater than or equal to 1.)
+
+---
+
+Test ID                 : oval:nist.validation:tst:1000 (variable_test)
+Result                  : true
+Test Title              : Test to see that the value is greater than or equal to 1.
+Check Existence         : One or more collected items must exist.
+Check                   : All collected items must match the given state(s).
+
+Object ID               : oval:nist.validation:obj:1000 (variable_object)
+Object Comment          : 
+Object Requirement      :  check =  'var_ref' must be equal to 'oval:nist.validation:var:1000'
+
+State ID                : oval:nist.validation:ste:1000 (variable_state)
+State Comment           : 
+State Requirement       : check_existence = 'at_least_one_exists',  check = all 'value' must be greater than or equal to '1'
+
+Collected Item/State Result : true
+                        : var_ref equals 'oval:nist.validation:var:1000'
+                        : value equals '1'
+</xccdf:message>
+                                    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                                          <xccdf:check-content-ref name="oval:nist.validation:def:1000" href="#scap_gov.nist_comp_r600-oval"></xccdf:check-content-ref>
+                                    </xccdf:check>
+                              </xccdf:rule-result>
+                              <xccdf:score maximum="100" system="urn:xccdf:scoring:spawar-adjusted">50</xccdf:score>
+                              <xccdf:score maximum="100" system="urn:xccdf:scoring:spawar-original">50</xccdf:score>
+                              <xccdf:score maximum="100" system="urn:xccdf:scoring:default">50</xccdf:score>
+                              <xccdf:score maximum="2" system="urn:xccdf:scoring:flat">1</xccdf:score>
+                              <xccdf:score system="urn:xccdf:scoring:flat-unweighted" maximum="2">1</xccdf:score>
+                              <xccdf:score system="urn:xccdf:scoring:absolute" maximum="1">0</xccdf:score>
+                        </xccdf:TestResult>
+                  </arf:content>
+            </arf:report>
+            <arf:report id="scap_gov.nist_comp_r600-oval">
+                  <arf:content>
+                        <oval-res:oval_results xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-results-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-results-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/independent-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#linux https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/linux-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#windows https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/windows-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/solaris-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#macos https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/macos-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#unix https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/unix-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/independent-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#windows https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/windows-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#linux https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/linux-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#solaris https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/solaris-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#macos https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/macos-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#unix https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/unix-system-characteristics-schema.xsd http://scap.nist.gov/schema/scap/constructs/1.2 https://csrc.nist.gov/schema/scap/1.2/scap-constructs_1.2.xsd http://scap.nist.gov/schema/asset-reporting-format/1.1 https://csrc.nist.gov/schema/asset-reporting-format/1.1/asset-reporting-format_1.1.0.xsd http://scap.nist.gov/schema/reporting-core/1.1 https://csrc.nist.gov/schema/reporting-core/1.1/reporting-core_1.1.0.xsd">
+                              <oval-res:generator>
+                                    <oval:product_name>SCAP Compliance Checker</oval:product_name>
+                                    <oval:product_version>5.14.1</oval:product_version>
+                                    <oval:schema_version>5.12.2</oval:schema_version>
+                                    <oval:timestamp>2026-05-15T04:44:41</oval:timestamp>
+                              </oval-res:generator>
+                              <oval-res:directives>
+                                    <oval-res:definition_true reported="true" content="full"></oval-res:definition_true>
+                                    <oval-res:definition_false content="full" reported="true"></oval-res:definition_false>
+                                    <oval-res:definition_unknown reported="true" content="full"></oval-res:definition_unknown>
+                                    <oval-res:definition_error reported="true" content="full"></oval-res:definition_error>
+                                    <oval-res:definition_not_evaluated reported="true" content="full"></oval-res:definition_not_evaluated>
+                                    <oval-res:definition_not_applicable reported="true" content="full"></oval-res:definition_not_applicable>
+                              </oval-res:directives>
+                              <oval-def:oval_definitions>
+                                    <oval-def:generator>
+                                          <oval:product_name>NIST Validation Content Generation Script</oval:product_name>
+                                          <oval:product_version>1.3</oval:product_version>
+                                          <oval:schema_version>5.11.2</oval:schema_version>
+                                          <oval:timestamp>2020-07-31T14:00:00-05:00</oval:timestamp>
+                                    </oval-def:generator>
+                                    <oval-def:definitions>
+                                          <oval-def:definition id="oval:nist.validation:def:1" version="1" class="compliance">
+                                                <oval-def:metadata>
+                                                      <oval-def:title>Test the unknown test type</oval-def:title>
+                                                      <oval-def:description>Test the unknown test type</oval-def:description>
+                                                </oval-def:metadata>
+                                                <oval-def:criteria applicability_check="false">
+                                                      <oval-def:criterion test_ref="oval:nist.validation:tst:1" comment="Unknown test type." applicability_check="false"></oval-def:criterion>
+                                                </oval-def:criteria>
+                                          </oval-def:definition>
+                                          <oval-def:definition class="compliance" version="1" id="oval:nist.validation:def:1000">
+                                                <oval-def:metadata>
+                                                      <oval-def:title>Test the value entity with the greater than or equal operation</oval-def:title>
+                                                      <oval-def:description>Make sure the value entity properly supports the greater than or equal operation.</oval-def:description>
+                                                </oval-def:metadata>
+                                                <oval-def:criteria applicability_check="false">
+                                                      <oval-def:criterion applicability_check="false" test_ref="oval:nist.validation:tst:1000" comment="Test to see that the value is greater than or equal to 1."></oval-def:criterion>
+                                                </oval-def:criteria>
+                                          </oval-def:definition>
+                                    </oval-def:definitions>
+                                    <oval-def:tests>
+                                          <ind-def:unknown_test state_operator="AND" check="all" id="oval:nist.validation:tst:1" check_existence="at_least_one_exists" comment="Test the unknown test type" version="1">
+                                                <oval-def:notes>
+                                                      <oval-def:note>This tests the unknown test type.</oval-def:note>
+                                                </oval-def:notes>
+                                          </ind-def:unknown_test>
+                                          <ind-def:variable_test comment="Test to see that the value is greater than or equal to 1." check_existence="at_least_one_exists" id="oval:nist.validation:tst:1000" version="1" check="all" state_operator="AND">
+                                                <ind-def:object object_ref="oval:nist.validation:obj:1000"></ind-def:object>
+                                                <ind-def:state state_ref="oval:nist.validation:ste:1000"></ind-def:state>
+                                          </ind-def:variable_test>
+                                    </oval-def:tests>
+                                    <oval-def:objects>
+                                          <ind-def:variable_object version="1" id="oval:nist.validation:obj:1000">
+                                                <ind-def:var_ref>oval:nist.validation:var:1000</ind-def:var_ref>
+                                          </ind-def:variable_object>
+                                    </oval-def:objects>
+                                    <oval-def:states>
+                                          <ind-def:variable_state version="1" id="oval:nist.validation:ste:1000">
+                                                <ind-def:value datatype="int" operation="greater than or equal">1</ind-def:value>
+                                          </ind-def:variable_state>
+                                    </oval-def:states>
+                                    <oval-def:variables>
+                                          <oval-def:constant_variable comment="This variable contains the integer value '1'." id="oval:nist.validation:var:1000" datatype="int" version="1">
+                                                <oval-def:value>1</oval-def:value>
+                                          </oval-def:constant_variable>
+                                    </oval-def:variables>
+                              </oval-def:oval_definitions>
+                              <oval-res:results>
+                                    <oval-res:system>
+                                          <oval-res:definitions>
+                                                <oval-res:definition result="unknown" version="1" definition_id="oval:nist.validation:def:1">
+                                                      <oval-res:criteria operator="AND" applicability_check="false" result="unknown">
+                                                            <oval-res:criterion test_ref="oval:nist.validation:tst:1" version="1" applicability_check="false" result="unknown"></oval-res:criterion>
+                                                      </oval-res:criteria>
+                                                </oval-res:definition>
+                                                <oval-res:definition definition_id="oval:nist.validation:def:1000" version="1" result="true">
+                                                      <oval-res:criteria applicability_check="false" operator="AND" result="true">
+                                                            <oval-res:criterion applicability_check="false" result="true" test_ref="oval:nist.validation:tst:1000" version="1"></oval-res:criterion>
+                                                      </oval-res:criteria>
+                                                </oval-res:definition>
+                                          </oval-res:definitions>
+                                          <oval-res:tests>
+                                                <oval-res:test state_operator="AND" result="unknown" test_id="oval:nist.validation:tst:1" check="all" check_existence="at_least_one_exists" version="1">
+                                                      <oval-res:message level="info">check_existence</oval-res:message>
+                                                </oval-res:test>
+                                                <oval-res:test check="all" version="1" check_existence="at_least_one_exists" test_id="oval:nist.validation:tst:1000" result="true" state_operator="AND">
+                                                      <oval-res:tested_item item_id="1" result="true"></oval-res:tested_item>
+                                                </oval-res:test>
+                                          </oval-res:tests>
+                                          <oval-sc:oval_system_characteristics>
+                                                <oval-sc:generator>
+                                                      <oval:product_name>SCAP Compliance Checker</oval:product_name>
+                                                      <oval:product_version>5.14.1</oval:product_version>
+                                                      <oval:schema_version>5.12.2</oval:schema_version>
+                                                      <oval:timestamp>2026-05-15T04:44:41</oval:timestamp>
+                                                </oval-sc:generator>
+                                                <oval-sc:system_info>
+                                                      <oval-sc:os_name>Microsoft Windows Server 2022 Standard</oval-sc:os_name>
+                                                      <oval-sc:os_version>21H2</oval-sc:os_version>
+                                                      <oval-sc:architecture>Intel64 Family 6 Model 106 Stepping 6</oval-sc:architecture>
+                                                      <oval-sc:primary_host_name>WIN2022-BASE</oval-sc:primary_host_name>
+                                                      <oval-sc:interfaces>
+                                                            <oval-sc:interface>
+                                                                  <oval-sc:interface_name>[00000001] Intel(R) 82574L Gigabit Network Connection</oval-sc:interface_name>
+                                                                  <oval-sc:ip_address>10.0.6.24</oval-sc:ip_address>
+                                                                  <oval-sc:mac_address>00:50:56:A5:06:73</oval-sc:mac_address>
+                                                            </oval-sc:interface>
+                                                            <oval-sc:interface>
+                                                                  <oval-sc:interface_name>[00000001] Intel(R) 82574L Gigabit Network Connection</oval-sc:interface_name>
+                                                                  <oval-sc:ip_address>fd9d:4c4b:dc70:d536:0:f1e0:1c06:9d08</oval-sc:ip_address>
+                                                                  <oval-sc:mac_address>00:50:56:A5:06:73</oval-sc:mac_address>
+                                                            </oval-sc:interface>
+                                                      </oval-sc:interfaces>
+                                                      <con:asset-identification>
+                                                            <arf:object-ref ref-id="SCC_WIN2022-BASE" />
+                                                      </con:asset-identification>
+                                                </oval-sc:system_info>
+                                                <oval-sc:collected_objects>
+                                                      <oval-sc:object version="1" flag="complete" id="oval:nist.validation:obj:1000">
+                                                            <oval-sc:variable_value variable_id="oval:nist.validation:var:1000">1</oval-sc:variable_value>
+                                                            <oval-sc:reference item_ref="1"></oval-sc:reference>
+                                                      </oval-sc:object>
+                                                </oval-sc:collected_objects>
+                                                <oval-sc:system_data>
+                                                      <ind-sc:variable_item id="1" status="exists">
+                                                            <ind-sc:var_ref>oval:nist.validation:var:1000</ind-sc:var_ref>
+                                                            <ind-sc:value>1</ind-sc:value>
+                                                      </ind-sc:variable_item>
+                                                </oval-sc:system_data>
+                                          </oval-sc:oval_system_characteristics>
+                                    </oval-res:system>
+                              </oval-res:results>
+                        </oval-res:oval_results>
+                  </arf:content>
+            </arf:report>
+            <arf:report id="scap_gov.nist_comp_r600-cpe-oval">
+                  <arf:content>
+                        <oval-res:oval_results xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-results-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-results-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/independent-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#linux https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/linux-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#windows https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/windows-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/solaris-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#macos https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/macos-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#unix https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/unix-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/independent-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#windows https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/windows-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#linux https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/linux-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#solaris https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/solaris-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#macos https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/macos-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#unix https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/unix-system-characteristics-schema.xsd http://scap.nist.gov/schema/scap/constructs/1.2 https://csrc.nist.gov/schema/scap/1.2/scap-constructs_1.2.xsd http://scap.nist.gov/schema/asset-reporting-format/1.1 https://csrc.nist.gov/schema/asset-reporting-format/1.1/asset-reporting-format_1.1.0.xsd http://scap.nist.gov/schema/reporting-core/1.1 https://csrc.nist.gov/schema/reporting-core/1.1/reporting-core_1.1.0.xsd">
+                              <oval-res:generator>
+                                    <oval:product_name>SCAP Compliance Checker</oval:product_name>
+                                    <oval:product_version>5.14.1</oval:product_version>
+                                    <oval:schema_version>5.12.2</oval:schema_version>
+                                    <oval:timestamp>2026-05-15T04:44:41</oval:timestamp>
+                              </oval-res:generator>
+                              <oval-res:directives>
+                                    <oval-res:definition_true content="full" reported="true"></oval-res:definition_true>
+                                    <oval-res:definition_false reported="true" content="full"></oval-res:definition_false>
+                                    <oval-res:definition_unknown content="full" reported="true"></oval-res:definition_unknown>
+                                    <oval-res:definition_error content="full" reported="true"></oval-res:definition_error>
+                                    <oval-res:definition_not_evaluated content="full" reported="true"></oval-res:definition_not_evaluated>
+                                    <oval-res:definition_not_applicable content="full" reported="true"></oval-res:definition_not_applicable>
+                              </oval-res:directives>
+                              <oval-def:oval_definitions>
+                                    <oval-def:generator>
+                                          <oval:product_name>National Institute of Standards and Technology</oval:product_name>
+                                          <oval:schema_version>5.11.2</oval:schema_version>
+                                          <oval:timestamp>2020-07-31T14:00:00-05:00</oval:timestamp>
+                                    </oval-def:generator>
+                                    <oval-def:definitions>
+                                          <oval-def:definition class="inventory" version="2" id="oval:gov.nist.validation.cpe.oval:def:2">
+                                                <oval-def:metadata>
+                                                      <oval-def:title>Microsoft Windows 7 is installed</oval-def:title>
+                                                      <oval-def:affected family="windows">
+                                                            <oval-def:platform>Microsoft Windows 7</oval-def:platform>
+                                                      </oval-def:affected>
+                                                      <oval-def:reference ref_id="cpe:/o:microsoft:windows_7" source="CPE"></oval-def:reference>
+                                                      <oval-def:description>The operating system installed on the system is Microsoft Windows 7</oval-def:description>
+                                                </oval-def:metadata>
+                                                <oval-def:criteria applicability_check="false">
+                                                      <oval-def:criterion test_ref="oval:org.mitre.oval:tst:99" comment="the installed operating system is part of the Microsoft Windows family" applicability_check="false"></oval-def:criterion>
+                                                      <oval-def:criterion applicability_check="false" comment="Windows 7 is installed" test_ref="oval:org.mitre.oval:tst:10792"></oval-def:criterion>
+                                                </oval-def:criteria>
+                                          </oval-def:definition>
+                                          <oval-def:definition class="inventory" id="oval:gov.nist.validation.cpe.oval:def:100" version="2">
+                                                <oval-def:metadata>
+                                                      <oval-def:title>Red Hat Enterprise Linux 3, 4, 5, 6, or 7</oval-def:title>
+                                                      <oval-def:affected family="unix">
+                                                            <oval-def:platform>Red Hat Enterprise Linux</oval-def:platform>
+                                                      </oval-def:affected>
+                                                      <oval-def:reference ref_id="cpe:/o:redhat:enterprise_linux" source="CPE"></oval-def:reference>
+                                                      <oval-def:description>The operating system installed on the system is Red Hat Enterprise Linux 3, 4, 5, 6, or 7</oval-def:description>
+                                                </oval-def:metadata>
+                                                <oval-def:criteria applicability_check="false">
+                                                      <oval-def:criterion applicability_check="false" comment="Installed operating system is part of the unix family" test_ref="oval:gov.nist.validation.cpe.oval:tst:100"></oval-def:criterion>
+                                                      <oval-def:criterion comment="Red Hat Enterprise Linux 3, 4, 5, 6, or 7 is installed" test_ref="oval:gov.nist.validation.cpe.oval:tst:101" applicability_check="false"></oval-def:criterion>
+                                                </oval-def:criteria>
+                                          </oval-def:definition>
+                                          <oval-def:definition class="inventory" version="1" id="oval:gov.nist.validation.cpe.oval:def:11">
+                                                <oval-def:metadata>
+                                                      <oval-def:title>Apple Mac OS 10.11 is installed</oval-def:title>
+                                                      <oval-def:affected family="macos">
+                                                            <oval-def:platform>Apple Mac OS X</oval-def:platform>
+                                                      </oval-def:affected>
+                                                      <oval-def:reference source="CPE" ref_id="cpe:/o:apple:mac_os:10:11"></oval-def:reference>
+                                                      <oval-def:description>The operating system installed on the system is Apple Mac OS 10.11.</oval-def:description>
+                                                </oval-def:metadata>
+                                                <oval-def:criteria applicability_check="false">
+                                                      <oval-def:criterion applicability_check="false" test_ref="oval:gov.nist.validation.cpe.oval:tst:1101" comment="The installed operating system is part of the Mac OS family"></oval-def:criterion>
+                                                      <oval-def:criterion comment="/System/Library/CoreServices/SystemVersion.plist!ProductVersion is greater than or equal to 10.11 and less than 10.12" test_ref="oval:gov.nist.validation.cpe.oval:tst:1102" applicability_check="false"></oval-def:criterion>
+                                                </oval-def:criteria>
+                                          </oval-def:definition>
+                                    </oval-def:definitions>
+                                    <oval-def:tests>
+                                          <ind-def:family_test check_existence="at_least_one_exists" id="oval:org.mitre.oval:tst:99" comment="the installed operating system is part of the Microsoft Windows family" version="1" check="only one" state_operator="AND">
+                                                <ind-def:object object_ref="oval:org.mitre.oval:obj:99"></ind-def:object>
+                                                <ind-def:state state_ref="oval:org.mitre.oval:ste:99"></ind-def:state>
+                                          </ind-def:family_test>
+                                          <win-def:registry_test state_operator="AND" version="4" id="oval:org.mitre.oval:tst:10792" check_existence="at_least_one_exists" comment="Windows 7 is installed" check="at least one">
+                                                <win-def:object object_ref="oval:org.mitre.oval:obj:5590"></win-def:object>
+                                                <win-def:state state_ref="oval:org.mitre.oval:ste:5027"></win-def:state>
+                                          </win-def:registry_test>
+                                          <ind-def:family_test state_operator="AND" check="only one" version="1" comment="installed operating system is part of the Unix family" id="oval:gov.nist.validation.cpe.oval:tst:100" check_existence="at_least_one_exists">
+                                                <ind-def:object object_ref="oval:gov.nist.validation.cpe.oval:obj:100"></ind-def:object>
+                                                <ind-def:state state_ref="oval:gov.nist.validation.cpe.oval:ste:100"></ind-def:state>
+                                          </ind-def:family_test>
+                                          <linux-def:rpminfo_test state_operator="AND" check="at least one" version="2" comment="redhat-release is version 3, 4, 5, 6, or 7" id="oval:gov.nist.validation.cpe.oval:tst:101" check_existence="at_least_one_exists">
+                                                <linux-def:object object_ref="oval:gov.nist.validation.cpe.oval:obj:101"></linux-def:object>
+                                                <linux-def:state state_ref="oval:gov.nist.validation.cpe.oval:ste:101"></linux-def:state>
+                                          </linux-def:rpminfo_test>
+                                          <ind-def:family_test state_operator="AND" id="oval:gov.nist.validation.cpe.oval:tst:1101" comment="The installed operating system is part of the Mac OS family" check_existence="only_one_exists" version="1" check="all">
+                                                <ind-def:object object_ref="oval:gov.nist.validation.cpe.oval:obj:1101"></ind-def:object>
+                                                <ind-def:state state_ref="oval:gov.nist.validation.cpe.oval:ste:1101"></ind-def:state>
+                                          </ind-def:family_test>
+                                          <macos-def:plist510_test id="oval:gov.nist.validation.cpe.oval:tst:1102" comment="/System/Library/CoreServices/SystemVersion.plist!ProductVersion is greater than or equal to 10.11 and less than 10.12" check_existence="only_one_exists" version="1" check="all" state_operator="AND">
+                                                <macos-def:object object_ref="oval:gov.nist.validation.cpe.oval:obj:1102"></macos-def:object>
+                                                <macos-def:state state_ref="oval:gov.nist.validation.cpe.oval:ste:110201"></macos-def:state>
+                                                <macos-def:state state_ref="oval:gov.nist.validation.cpe.oval:ste:110202"></macos-def:state>
+                                          </macos-def:plist510_test>
+                                    </oval-def:tests>
+                                    <oval-def:objects>
+                                          <ind-def:family_object id="oval:org.mitre.oval:obj:99" comment="This is the default family object. Only one family object should exist." version="1"></ind-def:family_object>
+                                          <win-def:registry_object comment="This registry key identifies the Windows ProductName" id="oval:org.mitre.oval:obj:5590" version="1">
+                                                <win-def:hive>HKEY_LOCAL_MACHINE</win-def:hive>
+                                                <win-def:key>SOFTWARE\Microsoft\Windows NT\CurrentVersion</win-def:key>
+                                                <win-def:name>ProductName</win-def:name>
+                                          </win-def:registry_object>
+                                          <ind-def:family_object version="1" id="oval:gov.nist.validation.cpe.oval:obj:100"></ind-def:family_object>
+                                          <linux-def:rpminfo_object id="oval:gov.nist.validation.cpe.oval:obj:101" comment="the redhat-release rpm" version="2">
+                                                <linux-def:name operation="pattern match">^redhat-release.*$</linux-def:name>
+                                          </linux-def:rpminfo_object>
+                                          <ind-def:family_object comment="OS family" id="oval:gov.nist.validation.cpe.oval:obj:1101" version="1"></ind-def:family_object>
+                                          <macos-def:plist510_object version="1" comment="/System/Library/CoreServices/SystemVersion.plist!ProductVersion" id="oval:gov.nist.validation.cpe.oval:obj:1102">
+                                                <macos-def:key>ProductVersion</macos-def:key>
+                                                <macos-def:filepath>/System/Library/CoreServices/SystemVersion.plist</macos-def:filepath>
+                                                <macos-def:instance operation="greater than" datatype="int">0</macos-def:instance>
+                                          </macos-def:plist510_object>
+                                    </oval-def:objects>
+                                    <oval-def:states>
+                                          <ind-def:family_state version="2" id="oval:org.mitre.oval:ste:99" comment="Microsoft Windows family">
+                                                <ind-def:family>windows</ind-def:family>
+                                          </ind-def:family_state>
+                                          <win-def:registry_state id="oval:org.mitre.oval:ste:5027" comment="The registry key matches with Windows 7" version="4">
+                                                <win-def:value operation="pattern match">^[a-zA-Z0-9\(\)\s]*[Ww][Ii][Nn][Dd][Oo][Ww][Ss] 7[a-zA-Z0-9\(\)\s]*$</win-def:value>
+                                          </win-def:registry_state>
+                                          <ind-def:family_state version="1" id="oval:gov.nist.validation.cpe.oval:ste:100">
+                                                <ind-def:family>unix</ind-def:family>
+                                          </ind-def:family_state>
+                                          <linux-def:rpminfo_state version="2" id="oval:gov.nist.validation.cpe.oval:ste:101">
+                                                <linux-def:version operation="pattern match">^[3-7]\D</linux-def:version>
+                                          </linux-def:rpminfo_state>
+                                          <ind-def:family_state id="oval:gov.nist.validation.cpe.oval:ste:1101" comment="OS family is Mac OS" version="1">
+                                                <ind-def:family>macos</ind-def:family>
+                                          </ind-def:family_state>
+                                          <macos-def:plist510_state comment="Value is greater than or equal to 10.11 (/System/Library/CoreServices/SystemVersion.plist!ProductVersion)" id="oval:gov.nist.validation.cpe.oval:ste:110201" version="1">
+                                                <macos-def:value operation="greater than or equal" datatype="version">10.11</macos-def:value>
+                                          </macos-def:plist510_state>
+                                          <macos-def:plist510_state version="1" id="oval:gov.nist.validation.cpe.oval:ste:110202" comment="Value is less than 10.12 (/System/Library/CoreServices/SystemVersion.plist!ProductVersion)">
+                                                <macos-def:value operation="less than" datatype="version">10.12</macos-def:value>
+                                          </macos-def:plist510_state>
+                                    </oval-def:states>
+                              </oval-def:oval_definitions>
+                              <oval-res:results>
+                                    <oval-res:system>
+                                          <oval-res:definitions>
+                                                <oval-res:definition result="false" definition_id="oval:gov.nist.validation.cpe.oval:def:2" version="2">
+                                                      <oval-res:criteria result="false" operator="AND" applicability_check="false">
+                                                            <oval-res:criterion test_ref="oval:org.mitre.oval:tst:99" version="1" applicability_check="false" result="true"></oval-res:criterion>
+                                                            <oval-res:criterion applicability_check="false" result="false" test_ref="oval:org.mitre.oval:tst:10792" version="4"></oval-res:criterion>
+                                                      </oval-res:criteria>
+                                                </oval-res:definition>
+                                                <oval-res:definition result="false" version="2" definition_id="oval:gov.nist.validation.cpe.oval:def:100">
+                                                      <oval-res:criteria result="false" operator="AND" applicability_check="false">
+                                                            <oval-res:criterion test_ref="oval:gov.nist.validation.cpe.oval:tst:100" version="1" applicability_check="false" result="false"></oval-res:criterion>
+                                                            <oval-res:criterion test_ref="oval:gov.nist.validation.cpe.oval:tst:101" version="2" result="not applicable" applicability_check="false"></oval-res:criterion>
+                                                      </oval-res:criteria>
+                                                </oval-res:definition>
+                                                <oval-res:definition version="1" definition_id="oval:gov.nist.validation.cpe.oval:def:11" result="false">
+                                                      <oval-res:criteria result="false" applicability_check="false" operator="AND">
+                                                            <oval-res:criterion result="false" applicability_check="false" version="1" test_ref="oval:gov.nist.validation.cpe.oval:tst:1101"></oval-res:criterion>
+                                                            <oval-res:criterion test_ref="oval:gov.nist.validation.cpe.oval:tst:1102" version="1" result="not applicable" applicability_check="false"></oval-res:criterion>
+                                                      </oval-res:criteria>
+                                                </oval-res:definition>
+                                          </oval-res:definitions>
+                                          <oval-res:tests>
+                                                <oval-res:test state_operator="AND" test_id="oval:org.mitre.oval:tst:99" result="true" check="only one" check_existence="at_least_one_exists" version="1">
+                                                      <oval-res:tested_item item_id="1" result="true"></oval-res:tested_item>
+                                                </oval-res:test>
+                                                <oval-res:test version="4" check_existence="at_least_one_exists" check="at least one" result="false" test_id="oval:org.mitre.oval:tst:10792" state_operator="AND">
+                                                      <oval-res:message level="info">check</oval-res:message>
+                                                      <oval-res:tested_item result="false" item_id="2">
+                                                            <oval-res:message level="debug">'Windows Server 2022 Standard' failed test of 'pattern match' compared to '^[a-zA-Z0-9\(\)\s]*[Ww][Ii][Nn][Dd][Oo][Ww][Ss] 7[a-zA-Z0-9\(\)\s]*$' ;;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProductName\value</oval-res:message>
+                                                      </oval-res:tested_item>
+                                                </oval-res:test>
+                                                <oval-res:test state_operator="AND" result="false" test_id="oval:gov.nist.validation.cpe.oval:tst:100" version="1" check_existence="at_least_one_exists" check="only one">
+                                                      <oval-res:message level="info">check</oval-res:message>
+                                                      <oval-res:tested_item item_id="1" result="false">
+                                                            <oval-res:message level="debug">'windows' failed test of 'equals' compared to 'unix' ;;</oval-res:message>
+                                                      </oval-res:tested_item>
+                                                </oval-res:test>
+                                                <oval-res:test state_operator="AND" version="2" check_existence="at_least_one_exists" check="at least one" result="not applicable" test_id="oval:gov.nist.validation.cpe.oval:tst:101">
+                                                      <oval-res:message level="info">check_existence</oval-res:message>
+                                                </oval-res:test>
+                                                <oval-res:test result="false" test_id="oval:gov.nist.validation.cpe.oval:tst:1101" check_existence="only_one_exists" version="1" check="all" state_operator="AND">
+                                                      <oval-res:message level="info">check</oval-res:message>
+                                                      <oval-res:tested_item item_id="1" result="false">
+                                                            <oval-res:message level="debug">'windows' failed test of 'equals' compared to 'macos' ;;</oval-res:message>
+                                                      </oval-res:tested_item>
+                                                </oval-res:test>
+                                                <oval-res:test state_operator="AND" version="1" check_existence="only_one_exists" check="all" test_id="oval:gov.nist.validation.cpe.oval:tst:1102" result="not applicable">
+                                                      <oval-res:message level="info">check_existence</oval-res:message>
+                                                </oval-res:test>
+                                          </oval-res:tests>
+                                          <oval-sc:oval_system_characteristics>
+                                                <oval-sc:generator>
+                                                      <oval:product_name>SCAP Compliance Checker</oval:product_name>
+                                                      <oval:product_version>5.14.1</oval:product_version>
+                                                      <oval:schema_version>5.12.2</oval:schema_version>
+                                                      <oval:timestamp>2026-05-15T04:44:41</oval:timestamp>
+                                                </oval-sc:generator>
+                                                <oval-sc:system_info>
+                                                      <oval-sc:os_name>Microsoft Windows Server 2022 Standard</oval-sc:os_name>
+                                                      <oval-sc:os_version>21H2</oval-sc:os_version>
+                                                      <oval-sc:architecture>Intel64 Family 6 Model 106 Stepping 6</oval-sc:architecture>
+                                                      <oval-sc:primary_host_name>WIN2022-BASE</oval-sc:primary_host_name>
+                                                      <oval-sc:interfaces>
+                                                            <oval-sc:interface>
+                                                                  <oval-sc:interface_name>[00000001] Intel(R) 82574L Gigabit Network Connection</oval-sc:interface_name>
+                                                                  <oval-sc:ip_address>10.0.6.24</oval-sc:ip_address>
+                                                                  <oval-sc:mac_address>00:50:56:A5:06:73</oval-sc:mac_address>
+                                                            </oval-sc:interface>
+                                                            <oval-sc:interface>
+                                                                  <oval-sc:interface_name>[00000001] Intel(R) 82574L Gigabit Network Connection</oval-sc:interface_name>
+                                                                  <oval-sc:ip_address>fd9d:4c4b:dc70:d536:0:f1e0:1c06:9d08</oval-sc:ip_address>
+                                                                  <oval-sc:mac_address>00:50:56:A5:06:73</oval-sc:mac_address>
+                                                            </oval-sc:interface>
+                                                      </oval-sc:interfaces>
+                                                      <con:asset-identification>
+                                                            <arf:object-ref ref-id="SCC_WIN2022-BASE" />
+                                                      </con:asset-identification>
+                                                </oval-sc:system_info>
+                                                <oval-sc:collected_objects>
+                                                      <oval-sc:object version="1" flag="complete" id="oval:org.mitre.oval:obj:99">
+                                                            <oval-sc:reference item_ref="1"></oval-sc:reference>
+                                                      </oval-sc:object>
+                                                      <oval-sc:object id="oval:org.mitre.oval:obj:5590" version="1" flag="complete">
+                                                            <oval-sc:reference item_ref="2"></oval-sc:reference>
+                                                      </oval-sc:object>
+                                                      <oval-sc:object id="oval:gov.nist.validation.cpe.oval:obj:100" version="1" flag="complete">
+                                                            <oval-sc:reference item_ref="1"></oval-sc:reference>
+                                                      </oval-sc:object>
+                                                      <oval-sc:object id="oval:gov.nist.validation.cpe.oval:obj:101" version="2" flag="not applicable"></oval-sc:object>
+                                                      <oval-sc:object version="1" flag="complete" id="oval:gov.nist.validation.cpe.oval:obj:1101">
+                                                            <oval-sc:reference item_ref="1"></oval-sc:reference>
+                                                      </oval-sc:object>
+                                                      <oval-sc:object id="oval:gov.nist.validation.cpe.oval:obj:1102" version="1" flag="not applicable"></oval-sc:object>
+                                                </oval-sc:collected_objects>
+                                                <oval-sc:system_data>
+                                                      <ind-sc:family_item status="exists" id="1">
+                                                            <ind-sc:family>windows</ind-sc:family>
+                                                      </ind-sc:family_item>
+                                                      <win-sc:registry_item status="exists" id="2">
+                                                            <win-sc:hive>HKEY_LOCAL_MACHINE</win-sc:hive>
+                                                            <win-sc:key>SOFTWARE\Microsoft\Windows NT\CurrentVersion</win-sc:key>
+                                                            <win-sc:name>ProductName</win-sc:name>
+                                                            <win-sc:last_write_time datatype="int">134212521640000000</win-sc:last_write_time>
+                                                            <win-sc:type>reg_sz</win-sc:type>
+                                                            <win-sc:value>Windows Server 2022 Standard</win-sc:value>
+                                                            <win-sc:windows_view>64_bit</win-sc:windows_view>
+                                                      </win-sc:registry_item>
+                                                </oval-sc:system_data>
+                                          </oval-sc:oval_system_characteristics>
+                                    </oval-res:system>
+                              </oval-res:results>
+                        </oval-res:oval_results>
+                  </arf:content>
+            </arf:report>
+            <arf:report id="scap_gov.nist_comp_r600-oval_variables">
+                  <arf:content>
+                        <oval-var:oval_variables xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-variables-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-variables-schema.xsd">
+                              <oval-var:generator>
+                                    <oval:product_name>SCAP Compliance Checker</oval:product_name>
+                                    <oval:product_version>5.14.1</oval:product_version>
+                                    <oval:schema_version>5.12.2</oval:schema_version>
+                                    <oval:timestamp>2026-05-15T04:44:41</oval:timestamp>
+                              </oval-var:generator>
+                        </oval-var:oval_variables>
+                  </arf:content>
+            </arf:report>
+      </arf:reports>
+</arf:asset-report-collection>

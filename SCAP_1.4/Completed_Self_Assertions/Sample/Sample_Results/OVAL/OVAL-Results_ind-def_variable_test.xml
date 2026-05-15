@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SessionID:2026-05-15_074328,HostName:WIN2022-BASE,FileType:OVAL Results,StreamName:ind-def_variable_test,ErrorCount:0,WarnCount:0 -->
+
+<oval-res:oval_results xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-results-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-results-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/independent-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#linux https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/linux-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#windows https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/windows-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/solaris-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#macos https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/macos-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#unix https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/unix-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/independent-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#windows https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/windows-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#linux https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/linux-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#solaris https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/solaris-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#macos https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/macos-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#unix https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/unix-system-characteristics-schema.xsd http://scap.nist.gov/schema/scap/constructs/1.2 https://csrc.nist.gov/schema/scap/1.2/scap-constructs_1.2.xsd http://scap.nist.gov/schema/asset-reporting-format/1.1 https://csrc.nist.gov/schema/asset-reporting-format/1.1/asset-reporting-format_1.1.0.xsd http://scap.nist.gov/schema/reporting-core/1.1 https://csrc.nist.gov/schema/reporting-core/1.1/reporting-core_1.1.0.xsd" xmlns:oval-res="http://oval.mitre.org/XMLSchema/oval-results-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:oval-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5" xmlns:ind-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#independent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:win-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#windows" xmlns:linux-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" xmlns:linux-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#linux">
+      <oval-res:generator>
+            <oval:product_name>SCAP Compliance Checker</oval:product_name>
+            <oval:product_version>5.14.1</oval:product_version>
+            <oval:schema_version>5.12.2</oval:schema_version>
+            <oval:timestamp>2026-05-15T04:44:41</oval:timestamp>
+      </oval-res:generator>
+      <oval-res:directives>
+            <oval-res:definition_true reported="true" content="full"></oval-res:definition_true>
+            <oval-res:definition_false reported="true" content="full"></oval-res:definition_false>
+            <oval-res:definition_unknown reported="true" content="full"></oval-res:definition_unknown>
+            <oval-res:definition_error reported="true" content="full"></oval-res:definition_error>
+            <oval-res:definition_not_evaluated reported="true" content="full"></oval-res:definition_not_evaluated>
+            <oval-res:definition_not_applicable reported="true" content="full"></oval-res:definition_not_applicable>
+      </oval-res:directives>
+      <oval-def:oval_definitions>
+            <oval-def:generator>
+                  <oval:product_name>Oval Test Content</oval:product_name>
+                  <oval:schema_version>5.12.2</oval:schema_version>
+                  <oval:timestamp>2026-03-02T12:05:51</oval:timestamp>
+            </oval-def:generator>
+            <oval-def:definitions>
+                  <oval-def:definition class="miscellaneous" id="oval:org.mitre.oval.test:def:538" version="1">
+                        <oval-def:metadata>
+                              <oval-def:title>Evaluate to true if the ind-def:variable_test is properly supported</oval-def:title>
+                              <oval-def:description>This definition is intended to evalutate to true if the interpreter properly supports the ind-def:variable_test and all of its valid operations.</oval-def:description>
+                        </oval-def:metadata>
+                        <oval-def:notes>
+                              <oval-def:note>It is important to note that the values used in this test definition are specific to a particular machine, and may not necessarily apply to your system. As a result, in order to have the definition return a result of 'true', you must either change these values to the ones found on your particular system, or you must configure your system to use these values.</oval-def:note>
+                        </oval-def:notes>
+                        <oval-def:criteria applicability_check="false">
+                              <oval-def:criterion applicability_check="false" test_ref="oval:org.mitre.oval.test:tst:1" comment="Test that the variable_object is supported.(diff vars )"></oval-def:criterion>
+                              <oval-def:criterion comment="Test that the variable_object is supported.(diff vars alt)" test_ref="oval:org.mitre.oval.test:tst:2" applicability_check="false"></oval-def:criterion>
+                              <oval-def:criterion applicability_check="false" test_ref="oval:org.mitre.oval.test:tst:3" comment="Test that the variable_object is supported.(same vars)"></oval-def:criterion>
+                              <oval-def:criterion comment="Test that the variable_object is supported.(same vars alt)" test_ref="oval:org.mitre.oval.test:tst:4" applicability_check="false"></oval-def:criterion>
+                        </oval-def:criteria>
+                  </oval-def:definition>
+            </oval-def:definitions>
+            <oval-def:tests>
+                  <ind-def:variable_test state_operator="AND" version="1" check_existence="at_least_one_exists" comment="Test that the variable_object is supported." id="oval:org.mitre.oval.test:tst:1" check="at least one">
+                        <ind-def:object object_ref="oval:org.mitre.oval.test:obj:1"></ind-def:object>
+                        <ind-def:state state_ref="oval:org.mitre.oval.test:ste:2"></ind-def:state>
+                  </ind-def:variable_test>
+                  <ind-def:variable_test id="oval:org.mitre.oval.test:tst:2" check_existence="at_least_one_exists" comment="Test that the variable_object is supported." version="1" check="at least one" state_operator="AND">
+                        <ind-def:object object_ref="oval:org.mitre.oval.test:obj:2"></ind-def:object>
+                        <ind-def:state state_ref="oval:org.mitre.oval.test:ste:1"></ind-def:state>
+                  </ind-def:variable_test>
+                  <ind-def:variable_test state_operator="AND" check="at least one" version="1" comment="Test that the variable_object is supported." check_existence="at_least_one_exists" id="oval:org.mitre.oval.test:tst:3">
+                        <ind-def:object object_ref="oval:org.mitre.oval.test:obj:1"></ind-def:object>
+                        <ind-def:state state_ref="oval:org.mitre.oval.test:ste:1"></ind-def:state>
+                  </ind-def:variable_test>
+                  <ind-def:variable_test state_operator="AND" check="at least one" check_existence="at_least_one_exists" comment="Test that the variable_object is supported." id="oval:org.mitre.oval.test:tst:4" version="1">
+                        <ind-def:object object_ref="oval:org.mitre.oval.test:obj:2"></ind-def:object>
+                        <ind-def:state state_ref="oval:org.mitre.oval.test:ste:2"></ind-def:state>
+                  </ind-def:variable_test>
+            </oval-def:tests>
+            <oval-def:objects>
+                  <ind-def:variable_object version="1" comment="Variable object that references the string values 'a', 'b', and 'c'." id="oval:org.mitre.oval.test:obj:1">
+                        <ind-def:var_ref>oval:org.mitre.oval.test:var:1</ind-def:var_ref>
+                  </ind-def:variable_object>
+                  <ind-def:variable_object comment="Variable object that references the string values 'a', 'b', and 'c'." id="oval:org.mitre.oval.test:obj:2" version="1">
+                        <ind-def:var_ref>oval:org.mitre.oval.test:var:2</ind-def:var_ref>
+                  </ind-def:variable_object>
+            </oval-def:objects>
+            <oval-def:states>
+                  <ind-def:variable_state version="1" comment="This variable_state represents the variable_object where the var_ref equals 'oval:org.mitre.oval.test:var:1' and where only one of the values is 'a'." id="oval:org.mitre.oval.test:ste:1">
+                        <ind-def:value var_ref="oval:org.mitre.oval.test:var:1" var_check="at least one"></ind-def:value>
+                  </ind-def:variable_state>
+                  <ind-def:variable_state version="1" comment="This variable_state represents the variable_object where the var_ref equals 'oval:org.mitre.oval.test:var:2' " id="oval:org.mitre.oval.test:ste:2">
+                        <ind-def:value var_check="at least one" var_ref="oval:org.mitre.oval.test:var:2"></ind-def:value>
+                  </ind-def:variable_state>
+            </oval-def:states>
+            <oval-def:variables>
+                  <oval-def:constant_variable version="1" datatype="string" comment="This variable represents the string values 'a', 'b', and 'c'." id="oval:org.mitre.oval.test:var:1">
+                        <oval-def:value>a</oval-def:value>
+                        <oval-def:value>b</oval-def:value>
+                        <oval-def:value>c</oval-def:value>
+                        <oval-def:value>d</oval-def:value>
+                  </oval-def:constant_variable>
+                  <oval-def:constant_variable version="1" comment="This variable represents the string values 'a', 'b', and 'c'." datatype="string" id="oval:org.mitre.oval.test:var:2">
+                        <oval-def:value>a</oval-def:value>
+                        <oval-def:value>b</oval-def:value>
+                        <oval-def:value>c</oval-def:value>
+                        <oval-def:value>d</oval-def:value>
+                  </oval-def:constant_variable>
+            </oval-def:variables>
+      </oval-def:oval_definitions>
+      <oval-res:results>
+            <oval-res:system>
+                  <oval-res:definitions>
+                        <oval-res:definition definition_id="oval:org.mitre.oval.test:def:538" version="1" result="true">
+                              <oval-res:criteria operator="AND" applicability_check="false" result="true">
+                                    <oval-res:criterion result="true" applicability_check="false" version="1" test_ref="oval:org.mitre.oval.test:tst:1"></oval-res:criterion>
+                                    <oval-res:criterion version="1" test_ref="oval:org.mitre.oval.test:tst:2" result="true" applicability_check="false"></oval-res:criterion>
+                                    <oval-res:criterion test_ref="oval:org.mitre.oval.test:tst:3" version="1" result="true" applicability_check="false"></oval-res:criterion>
+                                    <oval-res:criterion test_ref="oval:org.mitre.oval.test:tst:4" version="1" applicability_check="false" result="true"></oval-res:criterion>
+                              </oval-res:criteria>
+                        </oval-res:definition>
+                  </oval-res:definitions>
+                  <oval-res:tests>
+                        <oval-res:test state_operator="AND" check="at least one" version="1" check_existence="at_least_one_exists" result="true" test_id="oval:org.mitre.oval.test:tst:1">
+                              <oval-res:tested_item result="true" item_id="1"></oval-res:tested_item>
+                              <oval-res:tested_variable variable_id="oval:org.mitre.oval.test:var:2">a</oval-res:tested_variable>
+                              <oval-res:tested_variable variable_id="oval:org.mitre.oval.test:var:2">b</oval-res:tested_variable>
+                              <oval-res:tested_variable variable_id="oval:org.mitre.oval.test:var:2">c</oval-res:tested_variable>
+                              <oval-res:tested_variable variable_id="oval:org.mitre.oval.test:var:2">d</oval-res:tested_variable>
+                        </oval-res:test>
+                        <oval-res:test test_id="oval:org.mitre.oval.test:tst:2" result="true" check_existence="at_least_one_exists" version="1" check="at least one" state_operator="AND">
+                              <oval-res:tested_item item_id="2" result="true"></oval-res:tested_item>
+                              <oval-res:tested_variable variable_id="oval:org.mitre.oval.test:var:1">a</oval-res:tested_variable>
+                              <oval-res:tested_variable variable_id="oval:org.mitre.oval.test:var:1">b</oval-res:tested_variable>
+                              <oval-res:tested_variable variable_id="oval:org.mitre.oval.test:var:1">c</oval-res:tested_variable>
+                              <oval-res:tested_variable variable_id="oval:org.mitre.oval.test:var:1">d</oval-res:tested_variable>
+                        </oval-res:test>
+                        <oval-res:test state_operator="AND" result="true" test_id="oval:org.mitre.oval.test:tst:3" version="1" check_existence="at_least_one_exists" check="at least one">
+                              <oval-res:tested_item result="true" item_id="1"></oval-res:tested_item>
+                              <oval-res:tested_variable variable_id="oval:org.mitre.oval.test:var:1">a</oval-res:tested_variable>
+                              <oval-res:tested_variable variable_id="oval:org.mitre.oval.test:var:1">b</oval-res:tested_variable>
+                              <oval-res:tested_variable variable_id="oval:org.mitre.oval.test:var:1">c</oval-res:tested_variable>
+                              <oval-res:tested_variable variable_id="oval:org.mitre.oval.test:var:1">d</oval-res:tested_variable>
+                        </oval-res:test>
+                        <oval-res:test result="true" test_id="oval:org.mitre.oval.test:tst:4" version="1" check_existence="at_least_one_exists" check="at least one" state_operator="AND">
+                              <oval-res:tested_item result="true" item_id="2"></oval-res:tested_item>
+                              <oval-res:tested_variable variable_id="oval:org.mitre.oval.test:var:2">a</oval-res:tested_variable>
+                              <oval-res:tested_variable variable_id="oval:org.mitre.oval.test:var:2">b</oval-res:tested_variable>
+                              <oval-res:tested_variable variable_id="oval:org.mitre.oval.test:var:2">c</oval-res:tested_variable>
+                              <oval-res:tested_variable variable_id="oval:org.mitre.oval.test:var:2">d</oval-res:tested_variable>
+                        </oval-res:test>
+                  </oval-res:tests>
+                  <oval-sc:oval_system_characteristics>
+                        <oval-sc:generator>
+                              <oval:product_name>SCAP Compliance Checker</oval:product_name>
+                              <oval:product_version>5.14.1</oval:product_version>
+                              <oval:schema_version>5.12.2</oval:schema_version>
+                              <oval:timestamp>2026-05-15T04:44:41</oval:timestamp>
+                        </oval-sc:generator>
+                        <oval-sc:system_info>
+                              <oval-sc:os_name>Microsoft Windows Server 2022 Standard</oval-sc:os_name>
+                              <oval-sc:os_version>21H2</oval-sc:os_version>
+                              <oval-sc:architecture>Intel64 Family 6 Model 106 Stepping 6</oval-sc:architecture>
+                              <oval-sc:primary_host_name>WIN2022-BASE</oval-sc:primary_host_name>
+                              <oval-sc:interfaces>
+                                    <oval-sc:interface>
+                                          <oval-sc:interface_name>[00000001] Intel(R) 82574L Gigabit Network Connection</oval-sc:interface_name>
+                                          <oval-sc:ip_address>10.0.6.24</oval-sc:ip_address>
+                                          <oval-sc:mac_address>00:50:56:A5:06:73</oval-sc:mac_address>
+                                    </oval-sc:interface>
+                                    <oval-sc:interface>
+                                          <oval-sc:interface_name>[00000001] Intel(R) 82574L Gigabit Network Connection</oval-sc:interface_name>
+                                          <oval-sc:ip_address>fd9d:4c4b:dc70:d536:0:f1e0:1c06:9d08</oval-sc:ip_address>
+                                          <oval-sc:mac_address>00:50:56:A5:06:73</oval-sc:mac_address>
+                                    </oval-sc:interface>
+                              </oval-sc:interfaces>
+                              <con:asset-identification xmlns:con="http://scap.nist.gov/schema/scap/constructs/1.2">
+                                    <arf:object-ref ref-id="SCC_WIN2022-BASE" xmlns:arf="http://scap.nist.gov/schema/asset-reporting-format/1.1" />
+                              </con:asset-identification>
+                        </oval-sc:system_info>
+                        <oval-sc:collected_objects>
+                              <oval-sc:object flag="complete" version="1" id="oval:org.mitre.oval.test:obj:1">
+                                    <oval-sc:variable_value variable_id="oval:org.mitre.oval.test:var:1">a</oval-sc:variable_value>
+                                    <oval-sc:variable_value variable_id="oval:org.mitre.oval.test:var:1">b</oval-sc:variable_value>
+                                    <oval-sc:variable_value variable_id="oval:org.mitre.oval.test:var:1">c</oval-sc:variable_value>
+                                    <oval-sc:variable_value variable_id="oval:org.mitre.oval.test:var:1">d</oval-sc:variable_value>
+                                    <oval-sc:reference item_ref="1"></oval-sc:reference>
+                              </oval-sc:object>
+                              <oval-sc:object version="1" flag="complete" id="oval:org.mitre.oval.test:obj:2">
+                                    <oval-sc:variable_value variable_id="oval:org.mitre.oval.test:var:2">a</oval-sc:variable_value>
+                                    <oval-sc:variable_value variable_id="oval:org.mitre.oval.test:var:2">b</oval-sc:variable_value>
+                                    <oval-sc:variable_value variable_id="oval:org.mitre.oval.test:var:2">c</oval-sc:variable_value>
+                                    <oval-sc:variable_value variable_id="oval:org.mitre.oval.test:var:2">d</oval-sc:variable_value>
+                                    <oval-sc:reference item_ref="2"></oval-sc:reference>
+                              </oval-sc:object>
+                        </oval-sc:collected_objects>
+                        <oval-sc:system_data>
+                              <ind-sc:variable_item id="1" status="exists">
+                                    <ind-sc:var_ref>oval:org.mitre.oval.test:var:1</ind-sc:var_ref>
+                                    <ind-sc:value>a</ind-sc:value>
+                                    <ind-sc:value>b</ind-sc:value>
+                                    <ind-sc:value>c</ind-sc:value>
+                                    <ind-sc:value>d</ind-sc:value>
+                              </ind-sc:variable_item>
+                              <ind-sc:variable_item id="2" status="exists">
+                                    <ind-sc:var_ref>oval:org.mitre.oval.test:var:2</ind-sc:var_ref>
+                                    <ind-sc:value>a</ind-sc:value>
+                                    <ind-sc:value>b</ind-sc:value>
+                                    <ind-sc:value>c</ind-sc:value>
+                                    <ind-sc:value>d</ind-sc:value>
+                              </ind-sc:variable_item>
+                        </oval-sc:system_data>
+                  </oval-sc:oval_system_characteristics>
+            </oval-res:system>
+      </oval-res:results>
+</oval-res:oval_results>

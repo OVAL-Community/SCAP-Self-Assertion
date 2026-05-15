@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SessionID:2026-05-15_074328,HostName:WIN2022-BASE,FileType:XCCDF Results,StreamName:r3010-1-1-3.0.0.0,ErrorCount:0,WarnCount:0 -->
+
+<cdf:Benchmark style="SCAP_1.3" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd http://cpe.mitre.org/language/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-language_2.3.xsd" resolved="1" id="xccdf_gov.nist_benchmark_r3010-1" xmlns:cdf="http://checklists.nist.gov/xccdf/1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <cdf:status date="2020-07-31">draft</cdf:status>
+      <cdf:title>XCCDF Benchmark That References the Validation Content for R.3010</cdf:title>
+      <cdf:description>This XCCDF Benchmark references the OVAL Definitions in the validation content for R.3010.</cdf:description>
+      <cpe2:platform-specification xmlns:cpe2="http://cpe.mitre.org/language/2.0">
+            <cpe2:platform id="platform_1">
+                  <cpe2:title>Test Platform 1</cpe2:title>
+                  <cpe2:logical-test negate="false" operator="AND">
+                        <cpe2:check-fact-ref href="r3010-oval" id-ref="oval:gov.nist.r3010.cpe:def:10" description="" system="http://oval.mitre.org/XMLSchema/oval-definitions-5"></cpe2:check-fact-ref>
+                  </cpe2:logical-test>
+            </cpe2:platform>
+            <cpe2:platform id="platform_2">
+                  <cpe2:title>Test Platform 2</cpe2:title>
+                  <cpe2:logical-test operator="AND" negate="false">
+                        <cpe2:check-fact-ref system="http://oval.mitre.org/XMLSchema/oval-definitions-5" description="" id-ref="oval:gov.nist.r3010.cpe:def:20" href="r3010-oval"></cpe2:check-fact-ref>
+                  </cpe2:logical-test>
+            </cpe2:platform>
+            <cpe2:platform id="platform_3">
+                  <cpe2:title>Test Platform 3</cpe2:title>
+                  <cpe2:logical-test operator="AND" negate="false">
+                        <cpe2:check-fact-ref href="r3010-oval" id-ref="oval:gov.nist.r3010.cpe:def:30" description="" system="http://oval.mitre.org/XMLSchema/oval-definitions-5"></cpe2:check-fact-ref>
+                  </cpe2:logical-test>
+            </cpe2:platform>
+            <cpe2:platform id="platform_4">
+                  <cpe2:title>Test Platform 4</cpe2:title>
+                  <cpe2:logical-test operator="AND" negate="false">
+                        <cpe2:check-fact-ref system="http://oval.mitre.org/XMLSchema/oval-definitions-5" description="" href="r3010-oval" id-ref="oval:gov.nist.r3010.cpe:def:10"></cpe2:check-fact-ref>
+                        <cpe2:check-fact-ref system="http://oval.mitre.org/XMLSchema/oval-definitions-5" href="r3010-oval" id-ref="oval:gov.nist.r3010.cpe:def:20" description=""></cpe2:check-fact-ref>
+                  </cpe2:logical-test>
+            </cpe2:platform>
+            <cpe2:platform id="platform_5">
+                  <cpe2:title>Test Platform 5</cpe2:title>
+                  <cpe2:logical-test operator="AND" negate="false">
+                        <cpe2:check-fact-ref system="http://oval.mitre.org/XMLSchema/oval-definitions-5" id-ref="oval:gov.nist.r3010.cpe:def:10" href="r3010-oval" description=""></cpe2:check-fact-ref>
+                        <cpe2:check-fact-ref href="r3010-oval" id-ref="oval:gov.nist.r3010.cpe:def:30" description="" system="http://oval.mitre.org/XMLSchema/oval-definitions-5"></cpe2:check-fact-ref>
+                  </cpe2:logical-test>
+            </cpe2:platform>
+            <cpe2:platform id="platform_6">
+                  <cpe2:title>Test Platform 6</cpe2:title>
+                  <cpe2:logical-test negate="false" operator="OR">
+                        <cpe2:check-fact-ref system="http://oval.mitre.org/XMLSchema/oval-definitions-5" id-ref="oval:gov.nist.r3010.cpe:def:10" href="r3010-oval" description=""></cpe2:check-fact-ref>
+                        <cpe2:check-fact-ref href="r3010-oval" id-ref="oval:gov.nist.r3010.cpe:def:20" description="" system="http://oval.mitre.org/XMLSchema/oval-definitions-5"></cpe2:check-fact-ref>
+                  </cpe2:logical-test>
+            </cpe2:platform>
+            <cpe2:platform id="platform_7">
+                  <cpe2:title>Test Platform 7</cpe2:title>
+                  <cpe2:logical-test negate="true" operator="AND">
+                        <cpe2:check-fact-ref href="r3010-oval" id-ref="oval:gov.nist.r3010.cpe:def:10" description="" system="http://oval.mitre.org/XMLSchema/oval-definitions-5"></cpe2:check-fact-ref>
+                  </cpe2:logical-test>
+            </cpe2:platform>
+      </cpe2:platform-specification>
+      <cdf:platform idref="#platform_1"></cdf:platform>
+      <cdf:version update="http://scap.nist.gov/validation/resources.html" time="2020-07-31T14:00:00">1-3.0.0.0</cdf:version>
+      <cdf:metadata>
+            <dc:contributor>National Institute of Standards and Technology</dc:contributor>
+            <dc:publisher>National Institute of Standards and Technology</dc:publisher>
+            <dc:creator>National Institute of Standards and Technology</dc:creator>
+            <dc:source>http://scap.nist.gov</dc:source>
+      </cdf:metadata>
+      <cdf:Group id="xccdf_gov.nist_group_1">
+            <cdf:title>Group 1</cdf:title>
+            <cdf:description>This Group is Always applicable</cdf:description>
+            <cdf:platform idref="#platform_1"></cdf:platform>
+            <cdf:Group id="xccdf_gov.nist_group_1_1">
+                  <cdf:title>Group 1_1</cdf:title>
+                  <cdf:description>Always applicable</cdf:description>
+                  <cdf:Rule id="xccdf_gov.nist_rule_r3010-1_4">
+                        <cdf:title>Test the Applicability processing capabilities</cdf:title>
+                        <cdf:description>Should be not applicable</cdf:description>
+                        <cdf:platform idref="#platform_5"></cdf:platform>
+                        <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5" negate="true">
+                              <cdf:check-content-ref href="r3010-oval" name="oval:gov.nist.r3010:def:1"></cdf:check-content-ref>
+                        </cdf:check>
+                  </cdf:Rule>
+                  <cdf:Rule id="xccdf_gov.nist_rule_r3010-1_5">
+                        <cdf:title>Test the Applicability processing capabilities</cdf:title>
+                        <cdf:description>Should Pass</cdf:description>
+                        <cdf:platform idref="#platform_4"></cdf:platform>
+                        <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                              <cdf:check-content-ref href="r3010-oval" name="oval:gov.nist.r3010:def:1"></cdf:check-content-ref>
+                        </cdf:check>
+                  </cdf:Rule>
+                  <cdf:Rule selected="false" id="xccdf_gov.nist_rule_r3010-1_6">
+                        <cdf:title>Test the Applicability processing capabilities</cdf:title>
+                        <cdf:description>Should Pass</cdf:description>
+                        <cdf:platform idref="#platform_6"></cdf:platform>
+                        <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                              <cdf:check-content-ref href="r3010-oval" name="oval:gov.nist.r3010:def:1"></cdf:check-content-ref>
+                        </cdf:check>
+                  </cdf:Rule>
+            </cdf:Group>
+            <cdf:Group id="xccdf_gov.nist_group_1_2">
+                  <cdf:title>Group 1_2</cdf:title>
+                  <cdf:description>Always NOT applicable</cdf:description>
+                  <cdf:platform idref="#platform_2"></cdf:platform>
+                  <cdf:Rule multiple="false" id="xccdf_gov.nist_rule_r3010-1_7">
+                        <cdf:title>Test the Applicability processing capabilities</cdf:title>
+                        <cdf:description>This rule is applicable, but its parent group is not.</cdf:description>
+                        <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                              <cdf:check-content-ref name="oval:gov.nist.r3010:def:1" href="r3010-oval"></cdf:check-content-ref>
+                        </cdf:check>
+                  </cdf:Rule>
+            </cdf:Group>
+            <cdf:Rule id="xccdf_gov.nist_rule_r3010-1_1">
+                  <cdf:title>Test the Applicability processing capabilities</cdf:title>
+                  <cdf:description>Should return pass</cdf:description>
+                  <cdf:platform idref="#platform_1"></cdf:platform>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref name="oval:gov.nist.r3010:def:1" href="r3010-oval"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+            <cdf:Rule id="xccdf_gov.nist_rule_r3010-1_2">
+                  <cdf:title>Test the Applicability processing capabilities</cdf:title>
+                  <cdf:description>should not be applicable</cdf:description>
+                  <cdf:platform idref="#platform_2"></cdf:platform>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref name="oval:gov.nist.r3010:def:1" href="r3010-oval"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+            <cdf:Rule selected="false" id="xccdf_gov.nist_rule_r3010-1_3">
+                  <cdf:title>Test the Applicability processing capabilities</cdf:title>
+                  <cdf:description>Should Pass</cdf:description>
+                  <cdf:platform idref="#platform_3"></cdf:platform>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref name="oval:gov.nist.r3010:def:1" href="r3010-oval"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_gov.nist_group_2">
+            <cdf:title>Applicability Group 2 - Not Applicable</cdf:title>
+            <cdf:description>Never Applicable</cdf:description>
+            <cdf:platform idref="#platform_7"></cdf:platform>
+            <cdf:Group id="xccdf_gov.nist_group_2_1">
+                  <cdf:title>Group 2_1</cdf:title>
+                  <cdf:description>Always applicable</cdf:description>
+                  <cdf:platform idref="#platform_1"></cdf:platform>
+                  <cdf:Rule id="xccdf_gov.nist_rule_r3010-2_4">
+                        <cdf:title>Test the Applicability processing capabilities</cdf:title>
+                        <cdf:description>Should be not applicable due to its parent group</cdf:description>
+                        <cdf:platform idref="#platform_5"></cdf:platform>
+                        <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5" negate="true">
+                              <cdf:check-content-ref name="oval:gov.nist.r3010:def:1" href="r3010-oval"></cdf:check-content-ref>
+                        </cdf:check>
+                  </cdf:Rule>
+                  <cdf:Rule id="xccdf_gov.nist_rule_r3010-2_5">
+                        <cdf:title>Test the Applicability processing capabilities</cdf:title>
+                        <cdf:description>Should be not applicable due to its parent group</cdf:description>
+                        <cdf:platform idref="#platform_4"></cdf:platform>
+                        <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                              <cdf:check-content-ref href="r3010-oval" name="oval:gov.nist.r3010:def:1"></cdf:check-content-ref>
+                        </cdf:check>
+                  </cdf:Rule>
+            </cdf:Group>
+            <cdf:Rule id="xccdf_gov.nist_rule_r3010-2_8">
+                  <cdf:title>Test the Applicability processing capabilities</cdf:title>
+                  <cdf:description>Should be not applicable due to its parent group</cdf:description>
+                  <cdf:platform idref="#platform_1"></cdf:platform>
+                  <cdf:check negate="true" system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref name="oval:gov.nist.r3010:def:1" href="r3010-oval"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+            <cdf:Rule id="xccdf_gov.nist_rule_r3010-2_9">
+                  <cdf:title>Test the Applicability processing capabilities (Applicable)</cdf:title>
+                  <cdf:description>Should be not applicable due to its parent group</cdf:description>
+                  <cdf:platform idref="#platform_2"></cdf:platform>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="r3010-oval" name="oval:gov.nist.r3010:def:1"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_gov.nist_group_3" selected="false">
+            <cdf:title>Group 1</cdf:title>
+            <cdf:description>This Group is Always applicable, but not selected</cdf:description>
+            <cdf:platform idref="#platform_1"></cdf:platform>
+            <cdf:Group id="xccdf_gov.nist_group_3_1">
+                  <cdf:title>Group 3_1</cdf:title>
+                  <cdf:description>Always applicable</cdf:description>
+                  <cdf:Rule id="xccdf_gov.nist_rule_r3010-3_3">
+                        <cdf:title>Test the Applicability processing capabilities</cdf:title>
+                        <cdf:description>Should be notselected</cdf:description>
+                        <cdf:platform idref="#platform_5"></cdf:platform>
+                        <cdf:check negate="true" system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                              <cdf:check-content-ref name="oval:gov.nist.r3010:def:1" href="r3010-oval"></cdf:check-content-ref>
+                        </cdf:check>
+                  </cdf:Rule>
+                  <cdf:Rule id="xccdf_gov.nist_rule_r3010-3_4" selected="false">
+                        <cdf:title>Test the Applicability processing capabilities</cdf:title>
+                        <cdf:description>Should Pass</cdf:description>
+                        <cdf:platform idref="#platform_6"></cdf:platform>
+                        <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                              <cdf:check-content-ref href="r3010-oval" name="oval:gov.nist.r3010:def:1"></cdf:check-content-ref>
+                        </cdf:check>
+                  </cdf:Rule>
+            </cdf:Group>
+            <cdf:Rule id="xccdf_gov.nist_rule_r3010-3_1">
+                  <cdf:title>Test the Applicability processing capabilities</cdf:title>
+                  <cdf:description>Should return pass</cdf:description>
+                  <cdf:platform idref="#platform_1"></cdf:platform>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="r3010-oval" name="oval:gov.nist.r3010:def:1"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+            <cdf:Rule selected="false" id="xccdf_gov.nist_rule_r3010-3_2">
+                  <cdf:title>Test the Applicability processing capabilities</cdf:title>
+                  <cdf:description>Should Pass</cdf:description>
+                  <cdf:platform idref="#platform_3"></cdf:platform>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="r3010-oval" name="oval:gov.nist.r3010:def:1"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Rule id="xccdf_gov.nist_rule_r3010-0_1">
+            <cdf:title>Test the Applicability processing capabilities</cdf:title>
+            <cdf:description>should be applicable</cdf:description>
+            <cdf:platform idref="#platform_1"></cdf:platform>
+            <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                  <cdf:check-content-ref name="oval:gov.nist.r3010:def:1" href="r3010-oval"></cdf:check-content-ref>
+            </cdf:check>
+      </cdf:Rule>
+      <cdf:Rule id="xccdf_gov.nist_rule_r3010-0_2">
+            <cdf:title>Test the Applicability processing capabilities</cdf:title>
+            <cdf:description>should be not applicable</cdf:description>
+            <cdf:platform idref="#platform_2"></cdf:platform>
+            <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                  <cdf:check-content-ref href="r3010-oval" name="oval:gov.nist.r3010:def:1"></cdf:check-content-ref>
+            </cdf:check>
+      </cdf:Rule>
+      <cdf:Rule selected="false" id="xccdf_gov.nist_rule_r3010-0_3">
+            <cdf:title>Test the Applicability processing capabilities (Applicable)</cdf:title>
+            <cdf:description>The result should be notselected</cdf:description>
+            <cdf:platform idref="cpe:/o:vendor:os:100"></cdf:platform>
+            <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                  <cdf:check-content-ref name="oval:gov.nist.r3010:def:1" href="r3010-oval"></cdf:check-content-ref>
+            </cdf:check>
+      </cdf:Rule>
+      <cdf:Rule id="xccdf_gov.nist_rule_r3010-0_4">
+            <cdf:title>Test the Applicability processing capabilities (Not Applicable)</cdf:title>
+            <cdf:description>should not be applicable</cdf:description>
+            <cdf:platform idref="cpe:/o:vendor:os:200"></cdf:platform>
+            <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                  <cdf:check-content-ref href="r3010-oval" name="oval:gov.nist.r3010:def:1"></cdf:check-content-ref>
+            </cdf:check>
+      </cdf:Rule>
+      <cdf:Rule id="xccdf_gov.nist_rule_r3010-0_5" role="unscored">
+            <cdf:title>Test the Applicability processing capabilities</cdf:title>
+            <cdf:description>SHALL return informational</cdf:description>
+            <cdf:platform idref="#platform_1"></cdf:platform>
+            <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                  <cdf:check-content-ref name="oval:gov.nist.r3010:def:1" href="r3010-oval"></cdf:check-content-ref>
+            </cdf:check>
+      </cdf:Rule>
+      <cdf:Rule id="xccdf_gov.nist_rule_r3010-0_6" role="unchecked">
+            <cdf:title>Test the Applicability processing capabilities</cdf:title>
+            <cdf:description>SHALL return notchecked</cdf:description>
+            <cdf:platform idref="#platform_1"></cdf:platform>
+            <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                  <cdf:check-content-ref href="r3010-oval" name="oval:gov.nist.r3010:def:1"></cdf:check-content-ref>
+            </cdf:check>
+      </cdf:Rule>
+      <cdf:TestResult start-time="2026-05-15T04:44:40" id="xccdf_gov.nist_testresult_scap_gov.nist_comp_r3010-xccdf1-1" version="1-3.0.0.0" end-time="2026-05-15T04:44:40" test-system="cpe:/a:niwc:scc:5.14.1">
+            <cdf:benchmark id="xccdf_gov.nist_benchmark_r3010-1" href="#scap_gov.nist_comp_r3010-xccdf1"></cdf:benchmark>
+            <cdf:organization>NIWC Atlantic</cdf:organization>
+            <cdf:identity privileged="true" authenticated="true">TESTDOMAIN\testuser</cdf:identity>
+            <cdf:target>WIN2022-BASE</cdf:target>
+            <cdf:target-address>10.0.6.24</cdf:target-address>
+            <cdf:target-address>fd9d:4c4b:dc70:d536:0:f1e0:1c06:9d08</cdf:target-address>
+            <cdf:target-facts>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:host_name">WIN2022-BASE</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:domain">testdomain.gov</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:fqdn" type="string">WIN2022-BASE.testdomain.gov</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:os_name">Microsoft Windows Server 2022 Standard</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:os_version">21H2</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:processor" type="string">Intel(R) Xeon(R) Silver 4309Y CPU @ 2.80GHz</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:processor_architecture">Intel64 Family 6 Model 106 Stepping 6</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:processor_mhz">2793</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:physical_memory" type="string">4096</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:manufacturer" type="string">VMware, Inc.</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:ein" type="string">VMware-56 4d 2a 45 bd 40 16 99-e2 1e 23 ab a1 1c 19 b8</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:bios_version" type="string">6.00</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:model">VMware Virtual Platform</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:role">Workstation</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:os_service_pack" type="string"></cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:interface_name">[00000001] Intel(R) 82574L Gigabit Network Connection</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:ipv4">10.0.6.24</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:ipv6" type="string">fd9d:4c4b:dc70:d536:0:f1e0:1c06:9d08</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:mac" type="string">00:50:56:A5:06:73</cdf:fact>
+            </cdf:target-facts>
+            <cdf:target-id-ref system="http://scap.nist.gov/schema/asset-identification/1.1" href="" name="SCC_WIN2022-BASE"></cdf:target-id-ref>
+            <cdf:platform idref="platform_1"></cdf:platform>
+            <cdf:platform idref="cpe:/o:vendor:os:100"></cdf:platform>
+            <cdf:platform idref="platform_3"></cdf:platform>
+            <cdf:platform idref="platform_5"></cdf:platform>
+            <cdf:platform idref="platform_6"></cdf:platform>
+            <cdf:platform idref="#platform_1"></cdf:platform>
+            <cdf:platform idref="#platform_3"></cdf:platform>
+            <cdf:platform idref="#platform_5"></cdf:platform>
+            <cdf:platform idref="#platform_6"></cdf:platform>
+            <cdf:rule-result idref="xccdf_gov.nist_rule_r3010-0_1" role="full" version="" weight="1.0" time="2026-05-15T04:44:40" severity="unknown">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:message severity="info">Rule Result             : Pass
+Criteria                : true (All child tests must be true. (AND))
+Test                    :   true (Should always return true)
+
+---
+
+Test ID                 : oval:gov.nist.r3010:tst:1 (variable_test)
+Result                  : true
+Test Title              : Should always return true
+Check Existence         : One or more collected items must exist.
+Check                   : All collected items must match the given state(s).
+
+Object ID               : oval:gov.nist.r3010:obj:1 (variable_object)
+Object Comment          : 
+Object Requirement      :  check =  'var_ref' must be equal to 'oval:gov.nist.r3010:var:1'
+
+State ID                : oval:gov.nist.r3010:ste:1 (variable_state)
+State Comment           : 
+State Requirement       : check_existence = 'at_least_one_exists',  check = all 'value' must be equal to '1'
+
+Collected Item/State Result : true
+                        : var_ref equals 'oval:gov.nist.r3010:var:1'
+                        : value equals '1'
+</cdf:message>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_gov.nist_comp_r3010-oval" name="oval:gov.nist.r3010:def:1"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result weight="1.0" severity="unknown" time="2026-05-15T04:44:40" role="full" version="" idref="xccdf_gov.nist_rule_r3010-0_2">
+                  <cdf:result>notapplicable</cdf:result>
+                  <cdf:message severity="info">Rule Result             : Not Applicable
+Criteria                : true (All child tests must be true. (AND))
+Test                    :   true (Should always return true)
+
+---
+
+Test ID                 : oval:gov.nist.r3010:tst:1 (variable_test)
+Result                  : true
+Test Title              : Should always return true
+Check Existence         : One or more collected items must exist.
+Check                   : All collected items must match the given state(s).
+
+Object ID               : oval:gov.nist.r3010:obj:1 (variable_object)
+Object Comment          : 
+Object Requirement      :  check =  'var_ref' must be equal to 'oval:gov.nist.r3010:var:1'
+
+State ID                : oval:gov.nist.r3010:ste:1 (variable_state)
+State Comment           : 
+State Requirement       : check_existence = 'at_least_one_exists',  check = all 'value' must be equal to '1'
+
+Collected Item/State Result : true
+                        : var_ref equals 'oval:gov.nist.r3010:var:1'
+                        : value equals '1'
+</cdf:message>
+            </cdf:rule-result>
+            <cdf:rule-result time="2026-05-15T04:44:40" severity="unknown" weight="1.0" idref="xccdf_gov.nist_rule_r3010-0_3" role="full" version="">
+                  <cdf:result>notselected</cdf:result>
+            </cdf:rule-result>
+            <cdf:rule-result severity="unknown" time="2026-05-15T04:44:40" weight="1.0" version="" role="full" idref="xccdf_gov.nist_rule_r3010-0_4">
+                  <cdf:result>notapplicable</cdf:result>
+                  <cdf:message severity="info">Rule Result             : Not Applicable
+Criteria                : true (All child tests must be true. (AND))
+Test                    :   true (Should always return true)
+
+---
+
+Test ID                 : oval:gov.nist.r3010:tst:1 (variable_test)
+Result                  : true
+Test Title              : Should always return true
+Check Existence         : One or more collected items must exist.
+Check                   : All collected items must match the given state(s).
+
+Object ID               : oval:gov.nist.r3010:obj:1 (variable_object)
+Object Comment          : 
+Object Requirement      :  check =  'var_ref' must be equal to 'oval:gov.nist.r3010:var:1'
+
+State ID                : oval:gov.nist.r3010:ste:1 (variable_state)
+State Comment           : 
+State Requirement       : check_existence = 'at_least_one_exists',  check = all 'value' must be equal to '1'
+
+Collected Item/State Result : true
+                        : var_ref equals 'oval:gov.nist.r3010:var:1'
+                        : value equals '1'
+</cdf:message>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_gov.nist_rule_r3010-0_5" role="unscored" version="" weight="1.0" time="2026-05-15T04:44:40" severity="unknown">
+                  <cdf:result>informational</cdf:result>
+                  <cdf:message severity="info">Rule Result             : Informational
+Criteria                : true (All child tests must be true. (AND))
+Test                    :   true (Should always return true)
+
+---
+
+Test ID                 : oval:gov.nist.r3010:tst:1 (variable_test)
+Result                  : true
+Test Title              : Should always return true
+Check Existence         : One or more collected items must exist.
+Check                   : All collected items must match the given state(s).
+
+Object ID               : oval:gov.nist.r3010:obj:1 (variable_object)
+Object Comment          : 
+Object Requirement      :  check =  'var_ref' must be equal to 'oval:gov.nist.r3010:var:1'
+
+State ID                : oval:gov.nist.r3010:ste:1 (variable_state)
+State Comment           : 
+State Requirement       : check_existence = 'at_least_one_exists',  check = all 'value' must be equal to '1'
+
+Collected Item/State Result : true
+                        : var_ref equals 'oval:gov.nist.r3010:var:1'
+                        : value equals '1'
+</cdf:message>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref name="oval:gov.nist.r3010:def:1" href="#scap_gov.nist_comp_r3010-oval"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_gov.nist_rule_r3010-0_6" version="" role="unchecked" time="2026-05-15T04:44:40" severity="unknown" weight="1.0">
+                  <cdf:result>notchecked</cdf:result>
+                  <cdf:message severity="info">Rule Result             : Not Checked
+Criteria                : true (All child tests must be true. (AND))
+Test                    :   true (Should always return true)
+
+---
+
+Test ID                 : oval:gov.nist.r3010:tst:1 (variable_test)
+Result                  : true
+Test Title              : Should always return true
+Check Existence         : One or more collected items must exist.
+Check                   : All collected items must match the given state(s).
+
+Object ID               : oval:gov.nist.r3010:obj:1 (variable_object)
+Object Comment          : 
+Object Requirement      :  check =  'var_ref' must be equal to 'oval:gov.nist.r3010:var:1'
+
+State ID                : oval:gov.nist.r3010:ste:1 (variable_state)
+State Comment           : 
+State Requirement       : check_existence = 'at_least_one_exists',  check = all 'value' must be equal to '1'
+
+Collected Item/State Result : true
+                        : var_ref equals 'oval:gov.nist.r3010:var:1'
+                        : value equals '1'
+</cdf:message>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_gov.nist_rule_r3010-1_1" version="" role="full" time="2026-05-15T04:44:40" severity="unknown" weight="1.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:message severity="info">Rule Result             : Pass
+Criteria                : true (All child tests must be true. (AND))
+Test                    :   true (Should always return true)
+
+---
+
+Test ID                 : oval:gov.nist.r3010:tst:1 (variable_test)
+Result                  : true
+Test Title              : Should always return true
+Check Existence         : One or more collected items must exist.
+Check                   : All collected items must match the given state(s).
+
+Object ID               : oval:gov.nist.r3010:obj:1 (variable_object)
+Object Comment          : 
+Object Requirement      :  check =  'var_ref' must be equal to 'oval:gov.nist.r3010:var:1'
+
+State ID                : oval:gov.nist.r3010:ste:1 (variable_state)
+State Comment           : 
+State Requirement       : check_existence = 'at_least_one_exists',  check = all 'value' must be equal to '1'
+
+Collected Item/State Result : true
+                        : var_ref equals 'oval:gov.nist.r3010:var:1'
+                        : value equals '1'
+</cdf:message>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref name="oval:gov.nist.r3010:def:1" href="#scap_gov.nist_comp_r3010-oval"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result role="full" version="" idref="xccdf_gov.nist_rule_r3010-1_2" severity="unknown" time="2026-05-15T04:44:40" weight="1.0">
+                  <cdf:result>notapplicable</cdf:result>
+                  <cdf:message severity="info">Rule Result             : Not Applicable
+Criteria                : true (All child tests must be true. (AND))
+Test                    :   true (Should always return true)
+
+---
+
+Test ID                 : oval:gov.nist.r3010:tst:1 (variable_test)
+Result                  : true
+Test Title              : Should always return true
+Check Existence         : One or more collected items must exist.
+Check                   : All collected items must match the given state(s).
+
+Object ID               : oval:gov.nist.r3010:obj:1 (variable_object)
+Object Comment          : 
+Object Requirement      :  check =  'var_ref' must be equal to 'oval:gov.nist.r3010:var:1'
+
+State ID                : oval:gov.nist.r3010:ste:1 (variable_state)
+State Comment           : 
+State Requirement       : check_existence = 'at_least_one_exists',  check = all 'value' must be equal to '1'
+
+Collected Item/State Result : true
+                        : var_ref equals 'oval:gov.nist.r3010:var:1'
+                        : value equals '1'
+</cdf:message>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_gov.nist_rule_r3010-1_3" version="" role="full" time="2026-05-15T04:44:40" severity="unknown" weight="1.0">
+                  <cdf:result>notselected</cdf:result>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_gov.nist_rule_r3010-1_4" version="" role="full" weight="1.0" time="2026-05-15T04:44:40" severity="unknown">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:message severity="info">Rule Result             : Fail
+Criteria                : true (All child tests must be true. (AND))
+Test                    :   true (Should always return true)
+
+---
+
+Test ID                 : oval:gov.nist.r3010:tst:1 (variable_test)
+Result                  : true
+Test Title              : Should always return true
+Check Existence         : One or more collected items must exist.
+Check                   : All collected items must match the given state(s).
+
+Object ID               : oval:gov.nist.r3010:obj:1 (variable_object)
+Object Comment          : 
+Object Requirement      :  check =  'var_ref' must be equal to 'oval:gov.nist.r3010:var:1'
+
+State ID                : oval:gov.nist.r3010:ste:1 (variable_state)
+State Comment           : 
+State Requirement       : check_existence = 'at_least_one_exists',  check = all 'value' must be equal to '1'
+
+Collected Item/State Result : true
+                        : var_ref equals 'oval:gov.nist.r3010:var:1'
+                        : value equals '1'
+</cdf:message>
+                  <cdf:check negate="true" system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_gov.nist_comp_r3010-oval" name="oval:gov.nist.r3010:def:1"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result weight="1.0" time="2026-05-15T04:44:40" severity="unknown" idref="xccdf_gov.nist_rule_r3010-1_5" role="full" version="">
+                  <cdf:result>notapplicable</cdf:result>
+                  <cdf:message severity="info">Rule Result             : Not Applicable
+Criteria                : true (All child tests must be true. (AND))
+Test                    :   true (Should always return true)
+
+---
+
+Test ID                 : oval:gov.nist.r3010:tst:1 (variable_test)
+Result                  : true
+Test Title              : Should always return true
+Check Existence         : One or more collected items must exist.
+Check                   : All collected items must match the given state(s).
+
+Object ID               : oval:gov.nist.r3010:obj:1 (variable_object)
+Object Comment          : 
+Object Requirement      :  check =  'var_ref' must be equal to 'oval:gov.nist.r3010:var:1'
+
+State ID                : oval:gov.nist.r3010:ste:1 (variable_state)
+State Comment           : 
+State Requirement       : check_existence = 'at_least_one_exists',  check = all 'value' must be equal to '1'
+
+Collected Item/State Result : true
+                        : var_ref equals 'oval:gov.nist.r3010:var:1'
+                        : value equals '1'
+</cdf:message>
+            </cdf:rule-result>
+            <cdf:rule-result time="2026-05-15T04:44:40" severity="unknown" weight="1.0" idref="xccdf_gov.nist_rule_r3010-1_6" version="" role="full">
+                  <cdf:result>notselected</cdf:result>
+            </cdf:rule-result>
+            <cdf:rule-result weight="1.0" time="2026-05-15T04:44:40" severity="unknown" idref="xccdf_gov.nist_rule_r3010-1_7" role="full" version="">
+                  <cdf:result>notapplicable</cdf:result>
+                  <cdf:message severity="info">Rule Result             : Not Applicable
+Criteria                : true (All child tests must be true. (AND))
+Test                    :   true (Should always return true)
+
+---
+
+Test ID                 : oval:gov.nist.r3010:tst:1 (variable_test)
+Result                  : true
+Test Title              : Should always return true
+Check Existence         : One or more collected items must exist.
+Check                   : All collected items must match the given state(s).
+
+Object ID               : oval:gov.nist.r3010:obj:1 (variable_object)
+Object Comment          : 
+Object Requirement      :  check =  'var_ref' must be equal to 'oval:gov.nist.r3010:var:1'
+
+State ID                : oval:gov.nist.r3010:ste:1 (variable_state)
+State Comment           : 
+State Requirement       : check_existence = 'at_least_one_exists',  check = all 'value' must be equal to '1'
+
+Collected Item/State Result : true
+                        : var_ref equals 'oval:gov.nist.r3010:var:1'
+                        : value equals '1'
+</cdf:message>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_gov.nist_rule_r3010-2_8" version="" role="full" time="2026-05-15T04:44:40" severity="unknown" weight="1.0">
+                  <cdf:result>notapplicable</cdf:result>
+                  <cdf:message severity="info">Rule Result             : Not Applicable
+Criteria                : true (All child tests must be true. (AND))
+Test                    :   true (Should always return true)
+
+---
+
+Test ID                 : oval:gov.nist.r3010:tst:1 (variable_test)
+Result                  : true
+Test Title              : Should always return true
+Check Existence         : One or more collected items must exist.
+Check                   : All collected items must match the given state(s).
+
+Object ID               : oval:gov.nist.r3010:obj:1 (variable_object)
+Object Comment          : 
+Object Requirement      :  check =  'var_ref' must be equal to 'oval:gov.nist.r3010:var:1'
+
+State ID                : oval:gov.nist.r3010:ste:1 (variable_state)
+State Comment           : 
+State Requirement       : check_existence = 'at_least_one_exists',  check = all 'value' must be equal to '1'
+
+Collected Item/State Result : true
+                        : var_ref equals 'oval:gov.nist.r3010:var:1'
+                        : value equals '1'
+</cdf:message>
+            </cdf:rule-result>
+            <cdf:rule-result weight="1.0" severity="unknown" time="2026-05-15T04:44:40" version="" role="full" idref="xccdf_gov.nist_rule_r3010-2_9">
+                  <cdf:result>notapplicable</cdf:result>
+                  <cdf:message severity="info">Rule Result             : Not Applicable
+Criteria                : true (All child tests must be true. (AND))
+Test                    :   true (Should always return true)
+
+---
+
+Test ID                 : oval:gov.nist.r3010:tst:1 (variable_test)
+Result                  : true
+Test Title              : Should always return true
+Check Existence         : One or more collected items must exist.
+Check                   : All collected items must match the given state(s).
+
+Object ID               : oval:gov.nist.r3010:obj:1 (variable_object)
+Object Comment          : 
+Object Requirement      :  check =  'var_ref' must be equal to 'oval:gov.nist.r3010:var:1'
+
+State ID                : oval:gov.nist.r3010:ste:1 (variable_state)
+State Comment           : 
+State Requirement       : check_existence = 'at_least_one_exists',  check = all 'value' must be equal to '1'
+
+Collected Item/State Result : true
+                        : var_ref equals 'oval:gov.nist.r3010:var:1'
+                        : value equals '1'
+</cdf:message>
+            </cdf:rule-result>
+            <cdf:rule-result role="full" version="" idref="xccdf_gov.nist_rule_r3010-2_4" severity="unknown" time="2026-05-15T04:44:40" weight="1.0">
+                  <cdf:result>notapplicable</cdf:result>
+                  <cdf:message severity="info">Rule Result             : Not Applicable
+Criteria                : true (All child tests must be true. (AND))
+Test                    :   true (Should always return true)
+
+---
+
+Test ID                 : oval:gov.nist.r3010:tst:1 (variable_test)
+Result                  : true
+Test Title              : Should always return true
+Check Existence         : One or more collected items must exist.
+Check                   : All collected items must match the given state(s).
+
+Object ID               : oval:gov.nist.r3010:obj:1 (variable_object)
+Object Comment          : 
+Object Requirement      :  check =  'var_ref' must be equal to 'oval:gov.nist.r3010:var:1'
+
+State ID                : oval:gov.nist.r3010:ste:1 (variable_state)
+State Comment           : 
+State Requirement       : check_existence = 'at_least_one_exists',  check = all 'value' must be equal to '1'
+
+Collected Item/State Result : true
+                        : var_ref equals 'oval:gov.nist.r3010:var:1'
+                        : value equals '1'
+</cdf:message>
+            </cdf:rule-result>
+            <cdf:rule-result time="2026-05-15T04:44:40" severity="unknown" weight="1.0" idref="xccdf_gov.nist_rule_r3010-2_5" role="full" version="">
+                  <cdf:result>notapplicable</cdf:result>
+                  <cdf:message severity="info">Rule Result             : Not Applicable
+Criteria                : true (All child tests must be true. (AND))
+Test                    :   true (Should always return true)
+
+---
+
+Test ID                 : oval:gov.nist.r3010:tst:1 (variable_test)
+Result                  : true
+Test Title              : Should always return true
+Check Existence         : One or more collected items must exist.
+Check                   : All collected items must match the given state(s).
+
+Object ID               : oval:gov.nist.r3010:obj:1 (variable_object)
+Object Comment          : 
+Object Requirement      :  check =  'var_ref' must be equal to 'oval:gov.nist.r3010:var:1'
+
+State ID                : oval:gov.nist.r3010:ste:1 (variable_state)
+State Comment           : 
+State Requirement       : check_existence = 'at_least_one_exists',  check = all 'value' must be equal to '1'
+
+Collected Item/State Result : true
+                        : var_ref equals 'oval:gov.nist.r3010:var:1'
+                        : value equals '1'
+</cdf:message>
+            </cdf:rule-result>
+            <cdf:rule-result time="2026-05-15T04:44:40" severity="unknown" weight="1.0" idref="xccdf_gov.nist_rule_r3010-3_1" role="full" version="">
+                  <cdf:result>notselected</cdf:result>
+            </cdf:rule-result>
+            <cdf:rule-result severity="unknown" time="2026-05-15T04:44:40" weight="1.0" role="full" version="" idref="xccdf_gov.nist_rule_r3010-3_2">
+                  <cdf:result>notselected</cdf:result>
+            </cdf:rule-result>
+            <cdf:rule-result weight="1.0" severity="unknown" time="2026-05-15T04:44:40" version="" role="full" idref="xccdf_gov.nist_rule_r3010-3_3">
+                  <cdf:result>notselected</cdf:result>
+            </cdf:rule-result>
+            <cdf:rule-result weight="1.0" severity="unknown" time="2026-05-15T04:44:40" version="" role="full" idref="xccdf_gov.nist_rule_r3010-3_4">
+                  <cdf:result>notselected</cdf:result>
+            </cdf:rule-result>
+            <cdf:score maximum="100" system="urn:xccdf:scoring:spawar-adjusted">66.67</cdf:score>
+            <cdf:score system="urn:xccdf:scoring:spawar-original" maximum="100">66.67</cdf:score>
+            <cdf:score maximum="100" system="urn:xccdf:scoring:default">17.3553719008264</cdf:score>
+            <cdf:score maximum="3" system="urn:xccdf:scoring:flat">2</cdf:score>
+            <cdf:score maximum="3" system="urn:xccdf:scoring:flat-unweighted">2</cdf:score>
+            <cdf:score system="urn:xccdf:scoring:absolute" maximum="1">0</cdf:score>
+      </cdf:TestResult>
+</cdf:Benchmark>

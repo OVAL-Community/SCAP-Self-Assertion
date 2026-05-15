@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SessionID:2026-05-15_074328,HostName:WIN2022-BASE,FileType:OVAL Results,StreamName:r600_1-1-3.0.0.0,ErrorCount:0,WarnCount:0 -->
+
+<oval-res:oval_results xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-results-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-results-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/independent-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#linux https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/linux-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#windows https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/windows-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/solaris-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#macos https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/macos-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#unix https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/unix-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/independent-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#windows https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/windows-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#linux https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/linux-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#solaris https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/solaris-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#macos https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/macos-system-characteristics-schema.xsd http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#unix https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/unix-system-characteristics-schema.xsd http://scap.nist.gov/schema/scap/constructs/1.2 https://csrc.nist.gov/schema/scap/1.2/scap-constructs_1.2.xsd http://scap.nist.gov/schema/asset-reporting-format/1.1 https://csrc.nist.gov/schema/asset-reporting-format/1.1/asset-reporting-format_1.1.0.xsd http://scap.nist.gov/schema/reporting-core/1.1 https://csrc.nist.gov/schema/reporting-core/1.1/reporting-core_1.1.0.xsd" xmlns:oval-res="http://oval.mitre.org/XMLSchema/oval-results-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:oval-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5" xmlns:ind-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#independent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:win-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#windows" xmlns:linux-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" xmlns:linux-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5#linux">
+      <oval-res:generator>
+            <oval:product_name>SCAP Compliance Checker</oval:product_name>
+            <oval:product_version>5.14.1</oval:product_version>
+            <oval:schema_version>5.12.2</oval:schema_version>
+            <oval:timestamp>2026-05-15T04:44:40</oval:timestamp>
+      </oval-res:generator>
+      <oval-res:directives>
+            <oval-res:definition_true reported="true" content="full"></oval-res:definition_true>
+            <oval-res:definition_false reported="true" content="full"></oval-res:definition_false>
+            <oval-res:definition_unknown reported="true" content="full"></oval-res:definition_unknown>
+            <oval-res:definition_error content="full" reported="true"></oval-res:definition_error>
+            <oval-res:definition_not_evaluated reported="true" content="full"></oval-res:definition_not_evaluated>
+            <oval-res:definition_not_applicable content="full" reported="true"></oval-res:definition_not_applicable>
+      </oval-res:directives>
+      <oval-def:oval_definitions>
+            <oval-def:generator>
+                  <oval:product_name>NIST Validation Content Generation Script</oval:product_name>
+                  <oval:product_version>1.3</oval:product_version>
+                  <oval:schema_version>5.11.2</oval:schema_version>
+                  <oval:timestamp>2020-07-31T14:00:00-05:00</oval:timestamp>
+            </oval-def:generator>
+            <oval-def:definitions>
+                  <oval-def:definition class="compliance" version="1" id="oval:nist.validation:def:1">
+                        <oval-def:metadata>
+                              <oval-def:title>Test the unknown test type</oval-def:title>
+                              <oval-def:description>Test the unknown test type</oval-def:description>
+                        </oval-def:metadata>
+                        <oval-def:criteria applicability_check="false">
+                              <oval-def:criterion test_ref="oval:nist.validation:tst:1" comment="Unknown test type." applicability_check="false"></oval-def:criterion>
+                        </oval-def:criteria>
+                  </oval-def:definition>
+                  <oval-def:definition version="1" id="oval:nist.validation:def:1000" class="compliance">
+                        <oval-def:metadata>
+                              <oval-def:title>Test the value entity with the greater than or equal operation</oval-def:title>
+                              <oval-def:description>Make sure the value entity properly supports the greater than or equal operation.</oval-def:description>
+                        </oval-def:metadata>
+                        <oval-def:criteria applicability_check="false">
+                              <oval-def:criterion test_ref="oval:nist.validation:tst:1000" comment="Test to see that the value is greater than or equal to 1." applicability_check="false"></oval-def:criterion>
+                        </oval-def:criteria>
+                  </oval-def:definition>
+            </oval-def:definitions>
+            <oval-def:tests>
+                  <ind-def:unknown_test check_existence="at_least_one_exists" comment="Test the unknown test type" id="oval:nist.validation:tst:1" version="1" check="all" state_operator="AND">
+                        <oval-def:notes>
+                              <oval-def:note>This tests the unknown test type.</oval-def:note>
+                        </oval-def:notes>
+                  </ind-def:unknown_test>
+                  <ind-def:variable_test state_operator="AND" check="all" comment="Test to see that the value is greater than or equal to 1." check_existence="at_least_one_exists" id="oval:nist.validation:tst:1000" version="1">
+                        <ind-def:object object_ref="oval:nist.validation:obj:1000"></ind-def:object>
+                        <ind-def:state state_ref="oval:nist.validation:ste:1000"></ind-def:state>
+                  </ind-def:variable_test>
+            </oval-def:tests>
+            <oval-def:objects>
+                  <ind-def:variable_object version="1" id="oval:nist.validation:obj:1000">
+                        <ind-def:var_ref>oval:nist.validation:var:1000</ind-def:var_ref>
+                  </ind-def:variable_object>
+            </oval-def:objects>
+            <oval-def:states>
+                  <ind-def:variable_state version="1" id="oval:nist.validation:ste:1000">
+                        <ind-def:value datatype="int" operation="greater than or equal">1</ind-def:value>
+                  </ind-def:variable_state>
+            </oval-def:states>
+            <oval-def:variables>
+                  <oval-def:constant_variable version="1" comment="This variable contains the integer value '1'." datatype="int" id="oval:nist.validation:var:1000">
+                        <oval-def:value>1</oval-def:value>
+                  </oval-def:constant_variable>
+            </oval-def:variables>
+      </oval-def:oval_definitions>
+      <oval-res:results>
+            <oval-res:system>
+                  <oval-res:definitions>
+                        <oval-res:definition version="1" definition_id="oval:nist.validation:def:1" result="unknown">
+                              <oval-res:criteria result="unknown" applicability_check="false" operator="AND">
+                                    <oval-res:criterion result="unknown" applicability_check="false" version="1" test_ref="oval:nist.validation:tst:1"></oval-res:criterion>
+                              </oval-res:criteria>
+                        </oval-res:definition>
+                  </oval-res:definitions>
+                  <oval-res:tests>
+                        <oval-res:test state_operator="AND" test_id="oval:nist.validation:tst:1" result="unknown" version="1" check_existence="at_least_one_exists" check="all">
+                              <oval-res:message level="info">check_existence</oval-res:message>
+                        </oval-res:test>
+                  </oval-res:tests>
+                  <oval-sc:oval_system_characteristics>
+                        <oval-sc:generator>
+                              <oval:product_name>SCAP Compliance Checker</oval:product_name>
+                              <oval:product_version>5.14.1</oval:product_version>
+                              <oval:schema_version>5.12.2</oval:schema_version>
+                              <oval:timestamp>2026-05-15T04:44:40</oval:timestamp>
+                        </oval-sc:generator>
+                        <oval-sc:system_info>
+                              <oval-sc:os_name>Microsoft Windows Server 2022 Standard</oval-sc:os_name>
+                              <oval-sc:os_version>21H2</oval-sc:os_version>
+                              <oval-sc:architecture>Intel64 Family 6 Model 106 Stepping 6</oval-sc:architecture>
+                              <oval-sc:primary_host_name>WIN2022-BASE</oval-sc:primary_host_name>
+                              <oval-sc:interfaces>
+                                    <oval-sc:interface>
+                                          <oval-sc:interface_name>[00000001] Intel(R) 82574L Gigabit Network Connection</oval-sc:interface_name>
+                                          <oval-sc:ip_address>10.0.6.24</oval-sc:ip_address>
+                                          <oval-sc:mac_address>00:50:56:A5:06:73</oval-sc:mac_address>
+                                    </oval-sc:interface>
+                                    <oval-sc:interface>
+                                          <oval-sc:interface_name>[00000001] Intel(R) 82574L Gigabit Network Connection</oval-sc:interface_name>
+                                          <oval-sc:ip_address>fd9d:4c4b:dc70:d536:0:f1e0:1c06:9d08</oval-sc:ip_address>
+                                          <oval-sc:mac_address>00:50:56:A5:06:73</oval-sc:mac_address>
+                                    </oval-sc:interface>
+                              </oval-sc:interfaces>
+                              <con:asset-identification xmlns:con="http://scap.nist.gov/schema/scap/constructs/1.2">
+                                    <arf:object-ref ref-id="SCC_WIN2022-BASE" xmlns:arf="http://scap.nist.gov/schema/asset-reporting-format/1.1" />
+                              </con:asset-identification>
+                        </oval-sc:system_info>
+                  </oval-sc:oval_system_characteristics>
+            </oval-res:system>
+      </oval-res:results>
+</oval-res:oval_results>
