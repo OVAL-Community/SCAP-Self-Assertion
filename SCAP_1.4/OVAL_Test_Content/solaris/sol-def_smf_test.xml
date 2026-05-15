@@ -5,7 +5,8 @@ xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independe
 		<oval:product_name>Oval Test Content</oval:product_name>
 		<oval:schema_version>5.12.2</oval:schema_version>
 		<oval:timestamp>2026-03-02T12:05:51</oval:timestamp>
-		<terms_of_use>NOTE: MITRE Content may be modified from original by NIWC Atlantic. Copyright (c) 2002-2011, The MITRE Corporation. All rights reserved. The contents of this file are subject to the license described in terms.txt.</terms_of_use>
+		<terms_of_use>Portions of this document were developed at Naval Information Warfare Center Atlantic by employees of the Federal Government in the course of their official duties. Pursuant to title 17 Section 105 of the United States Code this software is not subject to copyright protection and is in the public domain. The Government assumes no responsibility whatsoever for its use by other parties, and the software is provided "AS IS" without warranty or guarantee of any kind, express or implied, including, but not limited to, the warranties of merchantability and of fitness for a particular purpose. In no event shall the Government be liable for any claim, damages or other liability, whether in an action of contract, tort or other dealings in the software. The Government has no obligation hereunder to provide maintenance, support, updates, enhancements, or modifications. We would appreciate acknowledgement if the software is used. This software can be redistributed and/or
+		modified freely provided that any derivative works bear some notice that they are derived from it, and any modified versions bear some notice that they have been modified.</terms_of_use>
 	</generator>
 	<definitions>
 		<definition id="oval:org.mitre.oval.test:def:1" version="1" class="miscellaneous">
@@ -45,7 +46,7 @@ xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independe
 			<fmri operation="not equal">svc://localhost/network/ssh:default</fmri>
 		</smf_object>
 		<smf_object id="oval:org.mitre.oval.test:obj:3" version="1" comment="Retrieve smf_items with a Fault Managed Resource Identifier (FMRI) that matches the regular expression 'svc://localhost/network/ssh:.*'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
-			<fmri operation="pattern match">^svc://localhost.*</fmri>
+			<fmri operation="pattern match">^svc:/network/ssh:[Dd][Ee]fault</fmri>
 		</smf_object>
 	</objects>
 	<states>
@@ -58,7 +59,7 @@ xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independe
 			<service_state operation="pattern match" var_ref="oval:org.mitre.oval.test:var:3" />
 		</smf_state>
 		<smf_state id="oval:org.mitre.oval.test:ste:3" version="1" comment="This state represents smf_items that have a Fault Managed Resource Identifier (FMRI) that matches the regular expression '^svc://localhost/network/ssh:.*$' and a service_state that matches the regular expression '^(UNINITIALIZED|OFFLINE|ONLINE|DEGRADED|MAINTENANCE|DISABLED|LEGACY-RUN)$' which matches any valid state." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
-			<fmri operation="pattern match">^svc://localhost/network/ssh:.*$</fmri>
+			<fmri operation="pattern match">^svc:/.+work/ssh:.*$</fmri>
 			<service_state operation="pattern match" var_ref="oval:org.mitre.oval.test:var:3" />
 		</smf_state>
 	</states>

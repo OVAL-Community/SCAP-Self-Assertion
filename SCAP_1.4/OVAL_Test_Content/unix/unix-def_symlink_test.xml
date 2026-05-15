@@ -16,7 +16,7 @@ xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independe
 			</metadata>
 			<criteria operator="AND">
 				<criterion comment="Resolve multiple daisy chained links. Should produce statuses filepath 'exists' and canonical_path 'exists.'" test_ref="oval:navy.navwar.niwcatlantic.scc.unix.test:tst:1" />
-				<criterion comment="Attempt to resolve a regular file, not a link. Should produce statuses of 'dne' with result of 'false', negating to return 'true'" negate="true" test_ref="oval:navy.navwar.niwcatlantic.scc.unix.test:tst:3" />
+				<criterion comment="Attempt to resolve a regular file (not a link). Should produce statuses of 'dne' with result of 'false', negating to return 'true'" negate="true" test_ref="oval:navy.navwar.niwcatlantic.scc.unix.test:tst:3" />
 				<criterion comment="Attempt to resolve a filepath that does not exist. Expect a test result of 'false', negating to return 'true'" negate="true" test_ref="oval:navy.navwar.niwcatlantic.scc.unix.test:tst:5" />
 				<criterion comment="Resolve a simple working symbolic link. Expect 'true'." test_ref="oval:navy.navwar.niwcatlantic.scc.unix.test:tst:6" />
 			</criteria>
@@ -27,8 +27,8 @@ xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independe
 				<description></description>
 			</metadata>
 			<criteria operator="AND">
-				<criterion comment="Attempt to resolve a circular link. Should produce filepath status 'exists' and canonical path status 'error'" test_ref="oval:navy.navwar.niwcatlantic.scc.unix.test:tst:2" />
-				<criterion comment="Attempt to resolve a broken link. Should produce filepath status 'exists' and canonical path status of 'error and test result of 'error'.'" test_ref="oval:navy.navwar.niwcatlantic.scc.unix.test:tst:4" />
+				<criterion comment="Attempt to resolve a circular link. Should produce filepath status of 'exists' and canonical path status of 'error'" test_ref="oval:navy.navwar.niwcatlantic.scc.unix.test:tst:2" />
+				<criterion comment="Attempt to resolve a broken link. Should produce filepath status of 'exists' and canonical path status of 'error and test result of 'error'.'" test_ref="oval:navy.navwar.niwcatlantic.scc.unix.test:tst:4" />
 			</criteria>
 		</definition>
 	</definitions>
@@ -39,16 +39,16 @@ xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independe
 		<symlink_test id="oval:navy.navwar.niwcatlantic.scc.unix.test:tst:2" version="1" comment="Expected Result: 'error'. Resolve a circular link." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
 			<object object_ref="oval:navy.navwar.niwcatlantic.scc.unix.test:obj:2" />
 		</symlink_test>
-		<symlink_test id="oval:navy.navwar.niwcatlantic.scc.unix.test:tst:3" version="1" comment="Expected Result: 'false'. Resolve a regular file." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
+		<symlink_test id="oval:navy.navwar.niwcatlantic.scc.unix.test:tst:3" version="1" comment="Expected Result: 'false'(negates to 'true' in criterion). Resolve a regular file." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
 			<object object_ref="oval:navy.navwar.niwcatlantic.scc.unix.test:obj:3" />
 		</symlink_test>
 		<symlink_test id="oval:navy.navwar.niwcatlantic.scc.unix.test:tst:4" version="1" comment="Expected Result: 'error'. Resolve a broken link." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
 			<object object_ref="oval:navy.navwar.niwcatlantic.scc.unix.test:obj:4" />
 		</symlink_test>
-		<symlink_test id="oval:navy.navwar.niwcatlantic.scc.unix.test:tst:5" version="1" comment="Expected Result: 'false'. Resolve a non-existent file." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
+		<symlink_test id="oval:navy.navwar.niwcatlantic.scc.unix.test:tst:5" version="1" comment="Expected Result: 'false'(negates to 'true' in criterion). Resolve a non-existent file." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
 			<object object_ref="oval:navy.navwar.niwcatlantic.scc.unix.test:obj:5" />
 		</symlink_test>
-		<symlink_test id="oval:navy.navwar.niwcatlantic.scc.unix.test:tst:6" version="1" comment="Expected Resulet: 'true'. Resolve a working symbolic link." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
+		<symlink_test id="oval:navy.navwar.niwcatlantic.scc.unix.test:tst:6" version="1" comment="Expected Result: 'true'. Resolve a working symbolic link." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
 			<object object_ref="oval:navy.navwar.niwcatlantic.scc.unix.test:obj:6" />
 			<state state_ref="oval:navy.navwar.niwcatlantic.scc.unix.test:ste:6" />
 		</symlink_test>

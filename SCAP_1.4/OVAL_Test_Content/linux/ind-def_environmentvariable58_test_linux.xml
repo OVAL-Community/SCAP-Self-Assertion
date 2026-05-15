@@ -53,12 +53,16 @@
     </environmentvariable58_object>
     <environmentvariable58_object id="oval:org.mitre.oval.test:obj:1264" version="1" comment="Get non-PATH env vars of a particular pid (1 - init)." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
       <pid datatype="int">1</pid>
-      <name operation="case insensitive not equal">PATH</name>
+      <name operation="not equal">PATH</name>
     </environmentvariable58_object>
     <environmentvariable58_object id="oval:org.mitre.oval.test:obj:1032" version="1" comment="Get env vars of all processes which start with S." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
       <pid datatype="int" operation="greater than">0</pid>
       <name operation="pattern match">^S</name>
     </environmentvariable58_object>
+	<ind-def:process58_object>
+		<ind-def:command_line operation="pattern match">svc\.startd</ind-def:command_line>
+		<ind-def:pid operation="greater than">1</ind-def:pid>
+	</ind-def:process58_object>
   </objects>
   <states>
     <environmentvariable58_state id="oval:org.mitre.oval.test:ste:1074" version="1" comment="Name must be 'HOME'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">

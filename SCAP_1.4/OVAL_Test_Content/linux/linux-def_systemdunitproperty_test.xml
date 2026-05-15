@@ -19,6 +19,14 @@ xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independe
 				<criterion test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:2" comment="Test that systemdunitproperty test is supported with unit operation of 'not equals' and property operation of 'equals'." />
 				<criterion test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:3" comment="Test that systemdunitproperty test is supported with unit operation of 'pattern match' and property operation of 'equals'." />
 				<criterion test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:4" comment="Test that systemdunitproperty test is supported with unit operation of 'equals' and property operation of 'pattern match'." />
+				<!-- Some of these are functionally redundant but target different types of Units (e.g. unit templates) and units that were missed due to previous SCC bugs. -->
+				<criterion test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:5" comment="Test that systemdunitproperty test is supported with unit operation of 'equals' and property operation of 'equals'." />
+				<criterion test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:6" comment="Test that systemdunitproperty test is supported with unit operation of 'equals' and property operation of 'equals'." />
+				<criterion test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:7" comment="Test that systemdunitproperty test is supported with unit operation of 'equals' and property operation of 'equals'." />
+				<criterion test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:8" comment="Test that systemdunitproperty test retrieves units that are based on templates." />
+				<criterion test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:9" comment="Test that systemdunitproperty test retrieves units that are based on templates and has active instance." />
+				<criterion test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:10" comment="Test that systemdunitproperty test retrieves units that are based on templates and has no instances." />
+
 			</criteria>
 		</definition>
 	</definitions>
@@ -39,6 +47,24 @@ xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independe
 			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:4" />
 			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:3" />
 		</systemdunitproperty_test>
+		<systemdunitproperty_test check_existence="at_least_one_exists" version="1" id="oval:navy.navwar.niwcatlantic.scc.test:tst:5" check="all" comment="Test that systemdunitproperty test is supported with unit operation of 'equals' and property operation of 'equals'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:5" />
+		</systemdunitproperty_test>
+		<systemdunitproperty_test check_existence="at_least_one_exists" version="1" id="oval:navy.navwar.niwcatlantic.scc.test:tst:6" check="all" comment="Test that systemdunitproperty test is supported with unit operation of 'not equal' and property operation of 'equals'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:6" />
+		</systemdunitproperty_test>
+		<systemdunitproperty_test check_existence="at_least_one_exists" version="1" id="oval:navy.navwar.niwcatlantic.scc.test:tst:7" check="all" comment="Test that systemdunitproperty test is supported with unit operation of 'not equal' and property operation of 'equals'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:7" />
+		</systemdunitproperty_test>
+		<systemdunitproperty_test check_existence="at_least_one_exists" version="1" id="oval:navy.navwar.niwcatlantic.scc.test:tst:8" check="all" comment="Test that systemdunitproperty test is supported with unit operation of 'not equal' and property operation of 'equals'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:8" />
+		</systemdunitproperty_test>
+		<systemdunitproperty_test check_existence="at_least_one_exists" version="1" id="oval:navy.navwar.niwcatlantic.scc.test:tst:9" check="all" comment="Test that systemdunitproperty test is supported with unit operation of 'not equal' and property operation of 'equals'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:9" />
+		</systemdunitproperty_test>
+		<systemdunitproperty_test check_existence="at_least_one_exists" version="1" id="oval:navy.navwar.niwcatlantic.scc.test:tst:10" check="all" comment="Test that systemdunitproperty test is supported with unit operation of 'not equal' and property operation of 'equals'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:10" />
+		</systemdunitproperty_test>
 	</tests>
 	<objects>
 		<systemdunitproperty_object comment="Retrieve the LoadState of unit 'home.mount'." version="1" id="oval:navy.navwar.niwcatlantic.scc.test:obj:1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
@@ -56,6 +82,30 @@ xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independe
 		<systemdunitproperty_object comment="Retrieve the UnitFileState with operation of 'pattern match' for unit 'home.mount'." version="1" id="oval:navy.navwar.niwcatlantic.scc.test:obj:4" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
 			<unit>systemd-journald.service</unit>
 			<property operation="pattern match">Unit[Ff]ile[Ss]tate</property>
+		</systemdunitproperty_object>
+		<systemdunitproperty_object comment="Retrieve the Activestate of unit 'reboot.target'." version="1" id="oval:navy.navwar.niwcatlantic.scc.test:obj:5" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+			<unit>reboot.target</unit>
+			<property operation="pattern match">Names</property>
+		</systemdunitproperty_object>
+		<systemdunitproperty_object comment="Retrieve the Activestate of unit 'ctrl-alt-del.target'." version="1" id="oval:navy.navwar.niwcatlantic.scc.test:obj:6" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+			<unit>ctrl-alt-del.target</unit>
+			<property>Names</property>
+		</systemdunitproperty_object>
+		<systemdunitproperty_object comment="Retrieve the Activestate of unit 'boot.mount'." version="1" id="oval:navy.navwar.niwcatlantic.scc.test:obj:7" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+			<unit>boot.mount</unit>
+			<property>Names</property>
+		</systemdunitproperty_object>
+		<systemdunitproperty_object comment="Retrieve the Activestate of unit template instance." version="1" id="oval:navy.navwar.niwcatlantic.scc.test:obj:8" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+			<unit operation="pattern match">blockdev@\.target</unit>
+			<property>Names</property>
+		</systemdunitproperty_object>
+		<systemdunitproperty_object comment="Retrieve the Activestate of unit template instance." version="1" id="oval:navy.navwar.niwcatlantic.scc.test:obj:9" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+			<unit operation="pattern match">modprobe@\.service</unit>
+			<property operation="pattern match">.*</property>
+		</systemdunitproperty_object>
+		<systemdunitproperty_object comment="Retrieve the Activestate of unit template that has no instances." version="1" id="oval:navy.navwar.niwcatlantic.scc.test:obj:10" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+			<unit operation="pattern match">autovt@\.service</unit>
+			<property>Names</property>
 		</systemdunitproperty_object>
 	</objects>
 	<states>
