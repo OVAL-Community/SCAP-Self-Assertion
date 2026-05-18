@@ -1,5 +1,5 @@
 SCAP 1.4 Self Assertion Readme
-03/12/2026  (DRAFT)
+05/18/2026  (DRAFT)
 
 SCAP_1.4_Self_Assertion_Checklist_DRAFT.xlsx
 - This file contains all of the instructions, documentation and test cases to peform a self assessment.
