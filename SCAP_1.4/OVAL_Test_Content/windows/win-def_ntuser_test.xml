@@ -6,14 +6,14 @@
   xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"  
   xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
   xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" 
-		xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-definitions-schema.xsd 
-		http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-common-schema.xsd
-		http://oval.mitre.org/XMLSchema/oval-definitions-5#windows https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/windows-definitions-schema.xsd
-		http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/independent-definitions-schema.xsd" >	
+		xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-definitions-schema.xsd 
+		http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-common-schema.xsd
+		http://oval.mitre.org/XMLSchema/oval-definitions-5#windows https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/windows-definitions-schema.xsd
+		http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/independent-definitions-schema.xsd" >	
 	<generator>
 		<oval:product_name>Oval Test Content</oval:product_name>
-		<oval:schema_version>5.12.2</oval:schema_version>
-		<oval:timestamp>2026-03-02T12:05:51</oval:timestamp>
+		<oval:schema_version>5.12.3</oval:schema_version>
+		<oval:timestamp>2026-06-02T12:05:51</oval:timestamp>
 		<terms_of_use>Portions of this document were developed at Naval Information Warfare Center Atlantic by employees of the Federal Government in the course of their official duties. Pursuant to title 17 Section 105 of the United States Code this software is not subject to copyright protection and is in the public domain. The Government assumes no responsibility whatsoever for its use by other parties, and the software is provided "AS IS" without warranty or guarantee of any kind, express or implied, including, but not limited to, the warranties of merchantability and of fitness for a particular purpose. In no event shall the Government be liable for any claim, damages or other liability, whether in an action of contract, tort or other dealings in the software. The Government has no obligation hereunder to provide maintenance, support, updates, enhancements, or modifications. We would appreciate acknowledgement if the software is used. This software can be redistributed and/or modified freely provided that any derivative works bear some notice that they are derived from it, and any modified versions bear some notice that they have been modified.</terms_of_use>
 	</generator>
   <definitions>
@@ -28,316 +28,288 @@
         <note>Information regarding the registry on your particular machine can be found by navigating to Start->Run... and by typing 'regedit'.</note>
       </notes>
       <criteria>
-        <criterion comment="Test if a ntuser_object with a  key is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1000"/>
-        <criterion comment="Test if a ntuser_object with a  key, and name is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1001"/>
-        <criterion comment="Test if a ntuser_object with a  key, and name pattern match is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1002"/>
-        <criterion comment="Test if a ntuser_object with a  key pattern match, and name pattern match is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1003"/>
-        <criterion comment="Test if a ntuser_object with a  key pattern match, and name is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1004"/>
-        <criterion comment="Test if a ntuser_object with a key pattern match and name is an empty string." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1005"/>
-        <criterion comment="Test that the max_depth behavior is supported with a limited depth of recursion and that the ntuser_object with the account_type element to domain is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1006"/>
-        <criterion comment="Test that the max_depth behavior is supported with a unlimited depth of recursion and that the ntuser_object with the account_type element to domain is supported" test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1007"/>
-        <criterion comment="Test that the recurse_direction behavior is supported in the 'up' direction and that the ntuser_object with the account_type element to domain is supported" test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1008"/>
-        <criterion comment="Test that the max_depth behavior is supported with a limited depth of recursion and that the ntuser_object with the account_type element to local is supported" test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1009"/>
-        <criterion comment="Test that the max_depth behavior is supported with a unlimited depth of recursion and that the ntuser_object with the account_type element to local is supported" test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1010"/>
-        <criterion comment="Test that the recurse_direction behavior is supported in the 'up' direction and that the ntuser_object with the account_type element to local is supported" test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1011"/>
-        <criterion comment="Test that the ntuser_object with the account_type element to local is supported" test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1012"/>
-        <criterion comment="Test if a ntuser_object with the logged_in element equal to true is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1013"/>
-        <criterion comment="Test if a ntuser_object with the logged_in element equal to false is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1014"/>
-        <criterion comment="Test if a ntuser_object with an enabled element equal to true is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1015"/>
-        <criterion comment="Test if a ntuser_object with a date_modified element equal to true is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1017"/>
-        <criterion comment="Test if a ntuser_object with a date_modified element false to true is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1018"/>
-        <criterion comment="Test if a ntuser_object with a filepath element set to pattern match." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1019"/>
-        <criterion comment="Test if a ntuser_object with last_time_write element with a less than operation is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1020"/>
-        <criterion comment="Test if a ntuser_object with last_time_write element with a greater than operation is supported" test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1021"/>
-        <criterion comment="Test if a ntuser_object with a type element is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1022"/>
-        <criterion comment="Test if a ntuser_object with a value element is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1023"/>
-        <criterion comment="Filter out users who have not logged in 30 days and later days_since_last_login attribute" test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:21000"/>	
-		<criterion comment="Test if a ntuser_object with a key, and name (with both having case insensistive equals) is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:2001"/>
+        <criterion comment="Test if a ntuser_object with a key is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1"/>
+        <criterion comment="Test if a ntuser_object with a key, and name is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:2"/>
+        <criterion comment="Test if a ntuser_object with a key, and name pattern match is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:3"/>
+        <criterion comment="Test if a ntuser_object with a key pattern match, and name pattern match is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:4"/>
+        <criterion comment="Test if a ntuser_object with a key pattern match, and name is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:5"/>
+        <criterion comment="Test if a ntuser_object with a key pattern match and name is an empty string." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:6"/>
+        <criterion comment="Test that the max_depth behavior is supported with a limited depth of recursion and that the ntuser_object with the account_type element to domain is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:7"/>
+        <criterion comment="Test that the max_depth behavior is supported with a unlimited depth of recursion and that the ntuser_object with the account_type element to domain is supported" test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:8"/>
+        <criterion comment="Test that the ntuser_object with the account_type element is supported" test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:13"/>
+        <criterion comment="Test if a ntuser_object with the logged_in element is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:14"/>
+        <criterion comment="Test if a ntuser_object with an enabled element equal to true is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:16"/>
+        <criterion comment="Test if a ntuser_object with a date_modified element is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:17"/>
+        <criterion comment="Test if a ntuser_object with a filepath element set to pattern match." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:19"/>
+        <criterion comment="Test if a ntuser_object with last_time_write element is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:20"/>
+        <criterion comment="Test if a ntuser_object with a type element is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:22"/>
+        <criterion comment="Test if a ntuser_object with a value element is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:23"/>
+        <criterion comment="Filter out users who have not logged in 30 days and later days_since_last_login attribute" test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:24"/>	
+		<criterion comment="Test if a ntuser_object with a key, and name (with both having case insensistive equals) is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:25"/>
+		<criterion comment="Test if a ntuser_object with a non-existent key creates items when the item_creation behavior is set to 'every_ntuser'" test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:26"/>
+		<criterion comment="Test if a ntuser_object with a user_has_signed_into_explorer element is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:28"/>
 	  </criteria>
     </definition>
   </definitions>
   <tests>
-    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1000" version="1" comment="Test if a ntuser_object with a  key is supported." check_existence="at_least_one_exists" check="at least one"
+    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1" version="1" comment="Test if a ntuser_object with a  key is supported." check_existence="at_least_one_exists" check="at least one"
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:223"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:944"/>
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:1"/>
+      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:1"/>
     </ntuser_test>
-    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1001" version="1" comment="Test if a ntuser_object with a  key, and name is supported." check_existence="at_least_one_exists" check="at least one"
+    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:2" version="1" comment="Test if a ntuser_object with a  key, and name is supported." check_existence="at_least_one_exists" check="at least one"
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:563"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:1256"/>
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:2"/>
+      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:2"/>
     </ntuser_test>
-    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1002" version="1" comment="Test if a ntuser_object with a  key, and name pattern match is supported." check_existence="at_least_one_exists"
+    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:3" version="1" comment="Test if a ntuser_object with a  key, and name pattern match is supported." check_existence="at_least_one_exists"
       check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:713"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:947"/>
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:3"/>
+      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:3"/>
     </ntuser_test>
-    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1003" version="1" comment="Test if a ntuser_object with a  key pattern match, and name pattern match is supported."
+    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:4" version="1" comment="Test if a ntuser_object with a  key pattern match, and name pattern match is supported."
       check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:342"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:1211"/>
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:4"/>
+      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:4"/>
     </ntuser_test>
-    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1004" version="1" comment="Test if a ntuser_object with a  key pattern match, and name is supported." check_existence="at_least_one_exists"
+    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:5" version="1" comment="Test if a ntuser_object with a  key pattern match, and name is supported." check_existence="at_least_one_exists"
       check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:428"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:1148"/>
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:5"/>
+      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:5"/>
     </ntuser_test>
-    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1005" version="1" comment="Test if a ntuser_object is supported with a empty string for a registry key name." check_existence="at_least_one_exists"
+    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:6" version="1" comment="Test if a ntuser_object is supported with a empty string for a registry key name." check_existence="at_least_one_exists"
       check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:185"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:287"/>
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:6"/>
+      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:6"/>
     </ntuser_test>
-    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1006" version="1" comment="Test that the max_depth behavior is supported with a limited depth of recursion with the account_type equal to domain" check_existence="at_least_one_exists"
+    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:7" version="1" comment="Test that the max_depth behavior is supported with a limited depth of recursion" check_existence="at_least_one_exists"
       check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:479"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17721"/>
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:7"/>
+      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:7"/>
     </ntuser_test>
-    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1007" version="1" comment="Test that the max_depth behavior is supported with a unlimited depth of recursion with the account_type equal to domain" check_existence="at_least_one_exists"
+    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:8" version="1" comment="Test that the max_depth behavior is supported with a unlimited depth of recursion" check_existence="at_least_one_exists"
       check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:288"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17721"/>
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:8"/>
+      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:7"/>
     </ntuser_test>
-    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1008" version="1" comment="Test that the recurse_direction behavior is supported in the 'up' direction with the account_type equal to domain" check_existence="at_least_one_exists"
-      check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:711"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17721"/>
-    </ntuser_test>
-    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1009" version="1" comment="Test that the max_depth behavior is supported with a limited depth of recursion with the account_type equal to local" check_existence="at_least_one_exists"
-      check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:479"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17722"/>
-    </ntuser_test>
-    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1010" version="1" comment="Test that the max_depth behavior is supported with a unlimited depth of recursion with the account_type equal to local" check_existence="at_least_one_exists"
-      check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:288"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17722"/>
-    </ntuser_test>
-    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1011" version="1" comment="Test that the recurse_direction behavior is supported in the 'up' direction with the account_type equal to local" check_existence="at_least_one_exists"
-      check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:711"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17722"/>
-    </ntuser_test>
-    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1012" version="1" comment="Test that the account_type is supported with a local account" check_existence="at_least_one_exists" check="at least one"
+
+    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:13" version="1" comment="Test that the account_type is supported" check_existence="at_least_one_exists" check="at least one" state_operator="OR"
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:5645"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:944"/>
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:13"/>
+      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:13"/>
+	  <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:10"/>
     </ntuser_test>
-    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1013" version="1" comment="Test if a ntuser_object with the logged_in element is supported" check_existence="at_least_one_exists" check="at least one"
+    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:14" version="1" comment="Test if a ntuser_object with the logged_in element is supported" check_existence="at_least_one_exists" check="at least one" state_operator="OR"
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:563"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17723"/>
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:2"/>
+      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:14"/>
+	  <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:15"/>
     </ntuser_test>
-    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1014" version="1" comment="Test if a ntuser_object with the logged_in element equal to false is supported." check_existence="at_least_one_exists" check="at least one"
+
+    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:16" version="1" comment="Test if a ntuser_object with an enabled element equal to true is supported." check_existence="at_least_one_exists" check="at least one"
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:563"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17724"/>
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:2"/>
+      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:16"/>
     </ntuser_test>
-    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1015" version="1" comment="Test if a ntuser_object with an enabled element equal to true is supported." check_existence="at_least_one_exists" check="at least one"
+    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:17" version="1" comment="Test if a ntuser_object with a date_modified element is supported." check_existence="at_least_one_exists" check="at least one"
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:563"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17725"/>
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:2"/>
+      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17"/>
     </ntuser_test>
-    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1016" version="1" comment="Test if a ntuser_object with an enabled element equal to false is supported." check_existence="at_least_one_exists" check="at least one"
+    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:19" version="1" comment="Test if a ntuser_object with a filepath element set to pattern match." check_existence="at_least_one_exists" check="at least one"
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:563"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17726"/>
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:2"/>
+      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:19"/>
     </ntuser_test>
-    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1017" version="1" comment="Test if a ntuser_object with a date_modified element equal to true is supported." check_existence="at_least_one_exists" check="at least one"
+    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:20" version="1" comment="Test if a ntuser_object with last_time_write element is supported." check_existence="at_least_one_exists" check="at least one"
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:563"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17727"/>
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:2"/>
+      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:20"/>
     </ntuser_test>
-    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1018" version="1" comment="Test if a ntuser_object with a date_modified element set to false is supported." check_existence="at_least_one_exists" check="at least one"
+    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:22" version="1" comment="Test if a ntuser_object with a type element is supported." check_existence="at_least_one_exists" check="at least one"
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:563"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17728"/>
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:2"/>
+      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:22"/>
     </ntuser_test>
-    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1019" version="1" comment="Test if a ntuser_object with a filepath element set to pattern match." check_existence="at_least_one_exists" check="at least one"
+    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:23" version="1" comment="Test if a ntuser_object with a value element is supported." check_existence="at_least_one_exists" check="at least one"
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:563"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17729"/>
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:2"/>
+      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:23"/>
     </ntuser_test>
-    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1020" version="1" comment="Test if a ntuser_object with last_time_write element with a less than operation is supported." check_existence="at_least_one_exists" check="at least one"
+	<ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:24" version="1" comment="Filter out users who have not logged in 30 days and later days_since_last_login attribute" check_existence="all_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:24"/>
+    </ntuser_test>
+	<ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:25" version="1" comment="Test if a ntuser_object with a  key, and name is supported uaing operation=case insensitive equals" check_existence="at_least_one_exists" check="at least one"
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:563"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17730"/>
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:25"/>
+      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:2"/>
     </ntuser_test>
-    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1021" version="1" comment="Test if a ntuser_object with last_time_write element with a less than operation is supported." check_existence="at_least_one_exists" check="at least one"
+	<ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:26" version="1" comment="Test if ntuser_object with a non-existent key creates items when the behavior is present" check_existence="at_least_one_exists" check="all" state_operator="OR"
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:563"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17731"/>
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:26"/>
+      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:26"/>
+	  <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:27"/>
     </ntuser_test>
-    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1022" version="1" comment="Test if a ntuser_object with a type element is supported." check_existence="at_least_one_exists" check="at least one"
+	<ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:28" version="1" comment="Test if a ntuser_object with a user_has_signed_into_explorer element is supported." check_existence="at_least_one_exists" check="at least one" state_operator="OR"
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:563"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17732"/>
-    </ntuser_test>
-    <ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1023" version="1" comment="Test if a ntuser_object with a value element is supported." check_existence="at_least_one_exists" check="at least one"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:563"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17733"/>
-    </ntuser_test>
-	<ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:21000" version="1" comment="Filter out users who have not logged in 30 days and later days_since_last_login attribute" check_existence="all_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:21000"/>
-    </ntuser_test>
-	<ntuser_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:2001" version="1" comment="Test if a ntuser_object with a  key, and name is supported uaing operation=case insensitive equals" check_existence="at_least_one_exists" check="at least one"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:2563"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:1256"/>
-    </ntuser_test>
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:28"/>
+      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:28"/>
+	  <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:29"/>
+    </ntuser_test>	
+	
   </tests>
   <objects>
-    <ntuser_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:223" version="1" comment="Retrieve a ntuser_object  key equal to 'Control Panel\Desktop'."
+    <ntuser_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:1" version="1" comment="Retrieve a ntuser_object  key equal to 'Control Panel\Desktop'."
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <key>Control Panel\Desktop</key>
       <name xsi:nil="true"/>
     </ntuser_object>
-    <ntuser_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:563" version="1" comment="Retrieve a ntuser_object with a  key equal to 'Control Panel\Desktop', and name equal to 'ScreenSaveActive'."
+    <ntuser_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:2" version="1" comment="Retrieve a ntuser_object with a  key equal to 'Control Panel\Desktop', and name equal to 'ScreenSaveActive'."
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <key>Control Panel\Desktop</key>
       <name>ScreenSaveActive</name>
     </ntuser_object>
-    <ntuser_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:713" version="1" comment="Retrieve a ntuser_object with a  key equal to 'Control Panel\Desktop', and name matches a regular expression'."
+    <ntuser_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:3" version="1" comment="Retrieve a ntuser_object with a  key equal to 'Control Panel\Desktop', and name matches a regular expression'."
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <key>Control Panel\Desktop</key>
       <name operation="pattern match">ScreenSaveActi.*</name>
     </ntuser_object>
-    <ntuser_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:342" version="1"
+    <ntuser_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:4" version="1"
       comment="Retrieve a ntuser_object with a key pattern matches a regular expressoin, and name pattern matches a regular expression'."
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <key operation="pattern match">Control Panel\\Deskt.*</key>
       <name operation="pattern match">ScreenSaveActi.*</name>
     </ntuser_object>
-    <ntuser_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:428" version="1" comment="Retrieve a ntuser_object with a  key pattern matches a regular expression, and name equals 'ScreenSaveActive'."
+    <ntuser_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:5" version="1" comment="Retrieve a ntuser_object with a  key pattern matches a regular expression, and name equals 'ScreenSaveActive'."
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <key operation="pattern match">Control Panel\\Deskt.*</key>
       <name>ScreenSaveActive</name>
     </ntuser_object>
-    <ntuser_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:185" version="1" comment="Retrieve a ntuser_object with a key equal to 'Control Panel', and name equal to ''."
+    <ntuser_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:6" version="1" comment="Retrieve a ntuser_object with a key equal to 'Control Panel', and name equal to ''."
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <key>Control Panel\Desktop</key>
       <name/>
     </ntuser_object>
-    <ntuser_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:479" version="1"
+    <ntuser_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:7" version="1"
       comment="Retrieve a ntuser_object with a  key equal to 'Control Panel\Desktop', recursing down one level, and name equal to 'ScreenSaveActive'."
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <behaviors max_depth="1" recurse_direction="down"/>
-      <key>Control Panel\Desktop</key>
+      <key>Control Panel</key>
       <name>ScreenSaveActive</name>
     </ntuser_object>
-    <ntuser_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:288" version="1"
+    <ntuser_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:8" version="1"
       comment="Retrieve a ntuser_object with a  key equal to 'Control Panel\Desktop', recursing down infinitely, and name equal to 'ScreenSaveActive'."
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <behaviors max_depth="-1" recurse_direction="down"/>
-      <key>Control Panel\Desktop</key>
-      <name>ScreenSaveActive</name>
+      <key>Control Panel</key>
+      <name>TimeToWait</name>
     </ntuser_object>
-    <ntuser_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:711" version="1"
-      comment="Retrieve a ntuser_object with a  key equal to ''Control Panel\Desktop', recursing up one level, and name equal to 'ScreenSaveActive'."
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <behaviors max_depth="1" recurse_direction="up"/>
-      <key>Control Panel\Desktop</key>
-      <name>ScreenSaveActive</name>
-    </ntuser_object>
-    <ntuser_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:5645" version="1" comment="Retrieve a ntuser_object with a  key pattern matches a regular expression'."
+    <ntuser_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:13" version="1" comment="Retrieve a ntuser_object with a  key pattern matches a regular expression'."
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <key operation="pattern match">Control Panel\\Deskt.*</key>
       <name xsi:nil="true"/>
     </ntuser_object>
-    <ntuser_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:21000" version="1" comment="Test only ntuser.dat files for users that have logged in the last 30 days"
+    <ntuser_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:24" version="1" comment="Test only ntuser.dat files for users that have logged in the last 30 days"
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <key>Control Panel\Desktop</key>
       <name>ScreenSaveActive</name>
-      <oval-def:filter action="exclude">oval:navy.navwar.niwcatlantic.scc.windows.test:ste:21000</oval-def:filter>
+      <oval-def:filter action="exclude">oval:navy.navwar.niwcatlantic.scc.windows.test:ste:24</oval-def:filter>
     </ntuser_object>
-	<ntuser_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:2563" version="1" comment="Retrieve a ntuser_object with a key equal to 'Control Panel\Desktop', and name equal to 'ScreenSaveActive' uaing operation=case insensitive equals"
+	<ntuser_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:25" version="1" comment="Retrieve a ntuser_object with a key equal to 'Control Panel\Desktop', and name equal to 'ScreenSaveActive' uaing operation=case insensitive equals"
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <key operation="case insensitive equals">Control Panel\Desktop</key>
       <name operation="case insensitive equals">ScreenSaveActive</name>
     </ntuser_object>
+	<ntuser_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:26" version="1" comment="Create an ntuser object for all ntuser.dat files that exist"
+      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+	  <behaviors item_creation="every_ntuser"/>
+      <key>ShouldNotExist</key>
+      <name>ShouldNotExist</name>
+    </ntuser_object>
+	<ntuser_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:28" version="1" comment="Create an ntuser object for any registry key in the ntuser.dat file"
+      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+	  <behaviors item_creation="every_ntuser"/>
+      <key>Control Panel\Desktop</key>
+      <name>WallPaper</name>
+    </ntuser_object>
   </objects>
 
   <states>
-    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:944" version="1" comment="This ntuser_state represents a ntuser_object  key equal to 'Control Panel\Desktop'."
+    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:1" version="1" comment="This ntuser_state represents a ntuser_object  key equal to 'Control Panel\Desktop'."
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <key>Control Panel\Desktop</key>
     </ntuser_state>
-    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:1256" version="1"
+    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:2" version="1"
       comment="This ntuser_state represents a ntuser_object with a  key equal to 'Control Panel\Desktop', and name equal to 'CurrentVersion'."
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <key>Control Panel\Desktop</key>
       <name>ScreenSaveActive</name>
     </ntuser_state>
-    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:947" version="1"
+    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:3" version="1"
       comment="This ntuser_state represents a ntuser_object with a  key equal to 'Control Panel\Desktop', and name pattern matches a regular expression."
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <key>Control Panel\Desktop</key>
       <name operation="pattern match">ScreenSaveAct.*</name>
       <sid operation="pattern match">.*</sid>
     </ntuser_state>
-    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:1211" version="1"
+    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:4" version="1"
       comment="This ntuser_state represents a ntuser_object with a key pattern matches a regular expression, and name pattern matches a regular expression."
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <key operation="pattern match">Control Panel\\Deskt.*</key>
       <name operation="pattern match">.*</name>
       <username operation="pattern match">.*</username>
     </ntuser_state>
-    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:1148" version="1"
+    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:5" version="1"
       comment="This ntuser_state represents a ntuser_object with a  key pattern matches a regular expression, and name equals 'CurrentVersion'."
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <key operation="pattern match">Control Panel\\Deskt.*</key>
       <name>ScreenSaveActive</name>
     </ntuser_state>
-    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:287" version="1" comment="This ntuser_state represents a ntuser_object with a  key equal to 'Control Panel', and name equal to ''."
+    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:6" version="1" comment="This ntuser_state represents a ntuser_object with a  key equal to 'Control Panel', and name equal to ''."
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <key>Control Panel\Desktop</key>
       <name/>
     </ntuser_state>
-    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17721" version="1" comment="domain account" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:7" version="1" comment="Test if a ntuser_object with a value element is supported"
+      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <value datatype="int" operation="greater than">0</value>
+    </ntuser_state>
+    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:13" version="1" comment="domain account" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <account_type>domain</account_type>
     </ntuser_state>
-    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17722" version="1" comment="local account" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:10" version="1" comment="local account" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <account_type>local</account_type>
     </ntuser_state>
-    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17723" version="1" comment="Test if a ntuser_object with the logged_in element is supported" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:14" version="1" comment="Test if a ntuser_object logged_on = 'true'" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <logged_on datatype="boolean">true</logged_on>
     </ntuser_state>
-    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17724" version="1" comment="Test if a ntuser_object with the logged_in element equal to false is supported." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:15" version="1" comment="Test if a ntuser_object logged_on = 'false'" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <logged_on datatype="boolean">false</logged_on>
     </ntuser_state>
-    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17725" version="1" comment="Test if a ntuser_object with an enabled element equal to true is supported." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:16" version="1" comment="Test if a ntuser_object with an enabled element equal to true is supported." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <enabled datatype="boolean">true</enabled>
     </ntuser_state>
     <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17726" version="1" comment="Test if a ntuser_object with an enabled element equal to false is supported." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <enabled datatype="boolean">false</enabled>
     </ntuser_state>
-    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17727" version="1" comment="Test if a ntuser_object with a date_modified element equal to true is supported."
+    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17" version="1" comment="Test if a ntuser_object with a date_modified element equal to true is supported."
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <date_modified datatype="int" operation="greater than">0</date_modified>
     </ntuser_state>
-    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17728" version="1" comment="Test if a ntuser_object with a date_modified element set to false is supported"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <date_modified datatype="int" operation="less than">135499144020000000</date_modified>
-      <!-- 1463000000 is timestamp for May 19, 2030 -->
-    </ntuser_state>
-    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17729" version="1" comment="Test if a ntuser_object with a filepath element set to pattern match"
+    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:19" version="1" comment="Test if a ntuser_object with a filepath element set to pattern match"
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <filepath datatype="string" operation="pattern match">.*\\.*ntuser.*</filepath>
     </ntuser_state>
-    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17730" version="1" comment="Test if a ntuser_object with last_time_write element with a less than operation is supported"
+    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:20" version="1" comment="Test if a ntuser_object with last_time_write element with a less than operation is supported"
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <last_write_time datatype="int" operation="less than">135499144020000000</last_write_time>
       <!-- 1463000000 is timestamp for May 19, 2030 -->
     </ntuser_state>
-    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17731" version="1" comment="Test if a ntuser_object with last_time_write element with a greater than operation is supported"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <last_write_time datatype="int" operation="greater than">0</last_write_time>
-    </ntuser_state>
-    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17732" version="1" comment="Test if a ntuser_object with a type element is supported"
+    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:22" version="1" comment="Test if a ntuser_object with a type element is supported"
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <type>reg_sz</type>
     </ntuser_state>
-    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:17733" version="1" comment="Test if a ntuser_object with a value element is supported"
+    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:23" version="1" comment="Test if a ntuser_object with a value element is supported"
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <value>1</value>
     </ntuser_state>
@@ -345,10 +317,26 @@
       <username operation="pattern match">.*</username>
       <enabled datatype="boolean">true</enabled>
     </ntuser_state>
-	<ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:21000" version="1" comment="Exclude Users that have logged on in the last 30 days"
+	<ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:24" version="1" comment="Exclude Users that have logged on in the last 30 days"
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <days_since_last_logon datatype="int" operation="greater than or equal">30</days_since_last_logon>
     </ntuser_state>	
+    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:26" version="1" comment="Test if a ntuser_object items are created for logged_on users when key/name/value does not exist"
+      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+	  <logged_on datatype="boolean">true</logged_on>
+    </ntuser_state>
+    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:27" version="1" comment="Test if a ntuser_object items are created for not logged on users when key/name/value does not exist"
+      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+	  <logged_on datatype="boolean">false</logged_on>
+    </ntuser_state>
+    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:28" version="1" comment="Test if a ntuser_object items contain a user_has_signed_into_explorer element = 'true'"
+      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+	  <user_has_signed_into_explorer datatype="boolean">true</user_has_signed_into_explorer>
+    </ntuser_state>
+    <ntuser_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:29" version="1" comment="Test if a ntuser_object items contain a user_has_signed_into_explorer element = 'false'"
+      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+	  <user_has_signed_into_explorer datatype="boolean">false</user_has_signed_into_explorer>
+    </ntuser_state>
   </states>
   
 </oval_definitions>

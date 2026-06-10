@@ -6,14 +6,14 @@
   xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"  
   xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
   xmlns:unix-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix"
-  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/independent-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-definitions-5#unix  https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/unix-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-common-schema.xsd" >		
+  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/independent-definitions-schema.xsd
+  	http://oval.mitre.org/XMLSchema/oval-definitions-5#unix  https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/unix-definitions-schema.xsd
+  	http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-definitions-schema.xsd
+  	http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-common-schema.xsd" >		
 	<generator>
 		<oval:product_name>Oval Test Content</oval:product_name>
-		<oval:schema_version>5.12.2</oval:schema_version>
-		<oval:timestamp>2026-03-02T12:05:51</oval:timestamp>
+		<oval:schema_version>5.12.3</oval:schema_version>
+		<oval:timestamp>2026-06-10T12:05:51</oval:timestamp>
     <terms_of_use>NOTE: MITRE Content may be modified from original by NIWC Atlantic. Copyright (c) 2002-2011, The MITRE Corporation. All rights reserved. The contents of this file are subject to the license described in terms.txt.</terms_of_use>
 	</generator>
   <definitions>

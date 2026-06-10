@@ -6,14 +6,14 @@
   xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"  
   xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
   xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" 
-  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/independent-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-definitions-5#windows  https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/windows-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-common-schema.xsd" >	
+  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/independent-definitions-schema.xsd
+  	http://oval.mitre.org/XMLSchema/oval-definitions-5#windows  https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/windows-definitions-schema.xsd
+  	http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-definitions-schema.xsd
+  	http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-common-schema.xsd" >	
 	<generator>
 		<oval:product_name>Oval Test Content</oval:product_name>
-		<oval:schema_version>5.12.2</oval:schema_version>
-		<oval:timestamp>2026-03-02T12:05:51</oval:timestamp>
+		<oval:schema_version>5.12.3</oval:schema_version>
+		<oval:timestamp>2026-06-10T12:05:51</oval:timestamp>
     <terms_of_use>NOTE: MITRE Content may be modified from original by NIWC Atlantic. Copyright (c) 2002-2011, The MITRE Corporation. All rights reserved. The contents of this file are subject to the license described in terms.txt.</terms_of_use>
 	</generator>
   <definitions>
@@ -31,10 +31,12 @@
         <criterion comment="Test that the textfilecontent54_object with a path, filename pattern match, and line is supported." test_ref="oval:org.mitre.oval.test:tst:657"/>
         <criterion comment="Test that the max_depth behavior is supported for a limited depth of recursion." test_ref="oval:org.mitre.oval.test:tst:372"/>
         <criterion comment="Test that the max_depth behavior is supported for a unlimited depth of recursion." test_ref="oval:org.mitre.oval.test:tst:60"/>
-        <criterion comment="Test that the recurse direction behavior is supported." test_ref="oval:org.mitre.oval.test:tst:268"/>
         <criterion comment="Test that the ignore_case behavior is supported." test_ref="oval:org.mitre.oval.test:tst:61"/>
         <criterion comment="Test that the singleline behavior is supported." test_ref="oval:org.mitre.oval.test:tst:1053"/>
         <criterion comment="Test that the multiline behavior is supported." test_ref="oval:org.mitre.oval.test:tst:952"/>
+		<criterion comment="Test that the textfilecontent54 test is supported with behavior 'item_creation' set to 'filepath_exists' and looking for a pattern that does not exist. Should produce one item with no matching text." test_ref="oval:navy.navwar.niwcatlantic.scc:tst:3" />
+		<criterion comment="Test that the textfilecontent54 test is supported with behavior 'item_creation' set to default and looking for a pattern that does not exist. Should NOT produce an item." test_ref="oval:navy.navwar.niwcatlantic.scc:tst:4" />
+
       </criteria>
     </definition>
   </definitions>
@@ -59,10 +61,6 @@
       <object object_ref="oval:org.mitre.oval.test:obj:267"/>
       <state state_ref="oval:org.mitre.oval.test:ste:854"/>
     </textfilecontent54_test>
-    <textfilecontent54_test id="oval:org.mitre.oval.test:tst:268" version="2" comment="Test that the recurse direction behavior is supported." check_existence="all_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
-      <object object_ref="oval:org.mitre.oval.test:obj:111"/>
-      <state state_ref="oval:org.mitre.oval.test:ste:854"/>
-    </textfilecontent54_test>
     <textfilecontent54_test id="oval:org.mitre.oval.test:tst:61" version="1" comment="Test that the ignore_case behavior is supported." check_existence="all_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
       <object object_ref="oval:org.mitre.oval.test:obj:481"/>
       <state state_ref="oval:org.mitre.oval.test:ste:258"/>
@@ -74,6 +72,14 @@
     <textfilecontent54_test id="oval:org.mitre.oval.test:tst:952" version="1" comment="Test that the multiline behavior is supported." check_existence="none_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
       <object object_ref="oval:org.mitre.oval.test:obj:676"/>
     </textfilecontent54_test>
+	<textfilecontent54_test id="oval:navy.navwar.niwcatlantic.scc:tst:3" version="1" comment="Expect 'true' with 1 Item and no pattern match. Item_creation behavior set to 'filepath_exists' and looking for a pattern that does not exist." check_existence="all_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+		<object object_ref="oval:navy.navwar.niwcatlantic.scc:obj:3" />
+		<state state_ref="oval:navy.navwar.niwcatlantic.scc:ste:3" />
+	</textfilecontent54_test>
+	<textfilecontent54_test id="oval:navy.navwar.niwcatlantic.scc:tst:4" version="1" comment="Expect 'true' with 0 Items. Identical to tst:3 except default behavior. Item_creation behavior set to default and looking for a pattern that does not exist. Should not produce an item." check_existence="none_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+		<object object_ref="oval:navy.navwar.niwcatlantic.scc:obj:4" />
+		<state state_ref="oval:navy.navwar.niwcatlantic.scc:ste:3" />
+	</textfilecontent54_test>
   </tests>
   <objects>
     <textfilecontent54_object id="oval:org.mitre.oval.test:obj:804" version="1" comment="This textfilecontent54_object retrieves all lines that match the regular expression 'OVAL Interpreter' in the file where the path equals 'C:\support\txt\txtfile', the filename equals 'build.win32.txt', and the instance is greater than or equal to '1'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
@@ -108,13 +114,6 @@
       <pattern operation="pattern match">OVAL Interpreter</pattern>
       <instance datatype="int" operation="greater than or equal">1</instance>
     </textfilecontent54_object>
-    <textfilecontent54_object id="oval:org.mitre.oval.test:obj:111" version="1" comment="This textfilecontent54_object retrieves all lines that match the regular expression 'OVAL Interpreter' in the file where the path equals 'C:\support\txt\txtfile\subtxtfile', recursing up one level, the filename equals 'build.win32.txt', and the instance is greater than or equal to '1'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
-      <behaviors max_depth="1" recurse_direction="up"/>
-      <path>C:\support\txt\txtfile\subtxtfile</path>
-      <filename>build.win32.txt</filename>
-      <pattern operation="pattern match">OVAL Interpreter</pattern>
-      <instance datatype="int" operation="greater than or equal">1</instance>
-    </textfilecontent54_object>
     <textfilecontent54_object id="oval:org.mitre.oval.test:obj:481" version="1" comment="This textfilecontent54_object retrieves all lines that match the regular expression 'OVAL Interpreter', where case is ignored, in the file where the path equals 'C:\support\txt\txtfile', recursing up one level, the filename equals 'build.win32.txt', and the instance is greater than or equal to '1'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
       <behaviors ignore_case="true"/>
       <path>C:\support\txt\txtfile</path>
@@ -136,6 +135,20 @@
       <pattern operation="pattern match">To report a problem.*definitions file.</pattern>
       <instance datatype="int" operation="greater than or equal">1</instance>
     </textfilecontent54_object>
+
+	<textfilecontent54_object id="oval:navy.navwar.niwcatlantic.scc:obj:3" version="1" comment="This textfilecontent54_object retrieves all lines that match the regular expression 'OVAL Interpreter' in the file where the path equals '/opt/support/txt/txtfile', the filename equals 'build.win32.txt', and the instance is greater than or equal to '1'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+		<ind-def:behaviors item_creation="filepath_exists" />
+		<path>C:\support\txt\txtfile</path>
+		<filename>build.win32.txt</filename>
+		<pattern operation="pattern match">STRING DOES NOT EXIST IN TARGET FILE</pattern>
+		<instance datatype="int" operation="greater than or equal">1</instance>
+	</textfilecontent54_object>
+	<textfilecontent54_object id="oval:navy.navwar.niwcatlantic.scc:obj:4" version="1" comment="This textfilecontent54_object retrieves all lines that match the regular expression 'OVAL Interpreter' in the file where the path equals '/opt/support/txt/txtfile', the filename equals 'build.win32.txt', and the instance is greater than or equal to '1'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+		<path>C:\support\txt\txtfile</path>
+		<filename>build.win32.txt</filename>
+		<pattern operation="pattern match">STRING DOES NOT EXIST IN TARGET FILE</pattern>
+		<instance datatype="int" operation="greater than or equal">1</instance>
+	</textfilecontent54_object>
   </objects>
   <states>
     <textfilecontent54_state id="oval:org.mitre.oval.test:ste:113" version="1" comment="This textfilecontent54_state represents a textfilecontent54_object where the path equals 'C:\support\txt\txtfile', filename equals 'build.win32.txt', pattern matches the regular expression 'OVAL Interpreter', instance is greater than or equal to '1', and text equals 'OVAL Interpreter'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
@@ -166,5 +179,10 @@
       <instance datatype="int" operation="greater than or equal">1</instance>
       <text operation="pattern match">OVAL Definition Interpreter</text>
     </textfilecontent54_state>
+	<textfilecontent54_state id="oval:navy.navwar.niwcatlantic.scc:ste:3" version="1" comment="This textfilecontent54_state represents a textfilecontent54_item where the path equals '/opt/support/txt/txtfile', filename equals 'build.win32.txt', pattern matches the regular expression 'oval interpreter', instance is greater than or equal to '1', and text matches the regular expression '(OVAL Interpreter|OVAL INTERPRETER)'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+		<path>C:\support\txt\txtfile</path>
+		<filename>build.win32.txt</filename>
+		<text check_existence="none_exist" />
+	</textfilecontent54_state>
   </states>
 </oval_definitions>

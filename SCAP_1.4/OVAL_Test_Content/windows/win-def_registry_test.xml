@@ -6,13 +6,13 @@
   xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"  
   xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
   xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" 
-  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/independent-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-definitions-5#windows  https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/windows-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-common-schema.xsd" >	
+  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/independent-definitions-schema.xsd
+  	http://oval.mitre.org/XMLSchema/oval-definitions-5#windows  https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/windows-definitions-schema.xsd
+  	http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-definitions-schema.xsd
+  	http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-common-schema.xsd" >	
 	<generator>
 		<oval:product_name>Oval Test Content</oval:product_name>
-		<oval:schema_version>5.12.2</oval:schema_version>
+		<oval:schema_version>5.12.3</oval:schema_version>
 		<oval:timestamp>2026-03-11T12:05:51</oval:timestamp>
     <terms_of_use>NOTE: MITRE Content may be modified from original by NIWC Atlantic. Copyright (c) 2002-2011, The MITRE Corporation. All rights reserved. The contents of this file are subject to the license described in terms.txt.</terms_of_use>
 	</generator>
@@ -33,60 +33,21 @@
           navigating to Start->Run... and by typing 'regedit'.</note>
       </notes>
       <criteria>
-        <criterion comment="Test if a registry_object with a hive is supported."
-          test_ref="oval:org.mitre.oval.test:tst:1000"/>
-        <criterion comment="Test if a registry_object with a hive key is supported."
-          test_ref="oval:org.mitre.oval.test:tst:1010"/>
-        <criterion comment="Test if a registry_object with a hive, key, and name is supported."
-          test_ref="oval:org.mitre.oval.test:tst:1020"/>
-		<criterion comment="Test if a registry_object with a hive, key, and name is supported. All using operation=case insensitive equals"
-          test_ref="oval:org.mitre.oval.test:tst:5020"/>
-        <criterion comment="Test if a registry_object with a hive, key, and name pattern match is supported."
-          test_ref="oval:org.mitre.oval.test:tst:1030"/>
-        <criterion comment="Test if a registry_object with a hive, key pattern match, and name pattern match is supported."
-          test_ref="oval:org.mitre.oval.test:tst:1040"/>
-		<criterion comment="Test if a registry_object with a hive, key pattern match with $, and name is supported."
-			test_ref="oval:org.mitre.oval.test:tst:1080"/>
-		<criterion comment="Test if a registry_object is supported with a empty string for a registry value name."
-          test_ref="oval:org.mitre.oval.test:tst:1090"/>
-        <criterion comment="Test that the max_depth behavior is supported with a limited depth of recursion."
-          test_ref="oval:org.mitre.oval.test:tst:1100"/>
-		<criterion comment="Test that the max_depth behavior is supported with a unlimited depth of recursion."
-		  test_ref="oval:org.mitre.oval.test:tst:1110"/>
-		<criterion comment="Test that the recurse_direction behavior is supported in the 'up' direction."
-          test_ref="oval:org.mitre.oval.test:tst:1120"/>
-		<criterion comment="32_bit_windows_view - Test if a registry_object with a hive is supported."
-          test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:2000"/>
-        <criterion comment="32_bit_windows_view - Test if a registry_object with a hive key is supported."
-          test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:2010"/>
-        <criterion comment="32_bit_windows_view - Test if a registry_object with a hive, key, and name is supported."
-          test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:2020"/>
-        <criterion comment="32_bit_windows_view - Test if a registry_object with a hive, key, and name pattern match is supported."
-          test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:2030"/>
-        <criterion comment="32_bit_windows_view - Test if a registry_object with a hive, key pattern match, and name pattern match is supported."
-          test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:2040"/>
-        <criterion comment="32_bit_windows_view - Test if a registry_object is supported with a empty string for a registry key name."
-          test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:2060"/>
-        <criterion comment="32_bit_windows_view - Test that the max_depth behavior is supported with a limited depth of recursion."
-          test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:2070"/>
-		<criterion comment="32_bit_windows_view - Test that the recurse_direction behavior is supported in the 'up' direction."
-          test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:2090"/>
-        <criterion comment="Test that Windows_View Functions as expected (Program Files Directory Test)"
-          test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:2100"/>
-        <criterion comment="Test that Windows_View Functions as expected (Program Files Directory Test 32_bit_windows_view)"
-            test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:2110"/>
-        <criterion comment="Get PROCESSOR_ARCHITECTURE, auto pass"
-            test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:2120"/>
-        <criterion comment="Test reg_expand_sz type registry key on HKLM - State has expanded_value"
-          test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:3000"/>
-        <criterion comment="Test HKCU is supported"
-          test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:3010"/>
-		<criterion comment="Test use of hive variable"
-          test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:4000"/>
-		<criterion comment="Test use of key variable"
-          test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:4010"/>
-		<criterion comment="Test use of value variable"
-          test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:4020"/>
+        <criterion comment="Test if a registry_object with a hive is supported."       test_ref="oval:org.mitre.oval.test:tst:1000"/>
+        <criterion comment="Test if a registry_object with a hive key is supported."   test_ref="oval:org.mitre.oval.test:tst:1010"/>
+        <criterion comment="Test if a registry_object with a hive, key, and name is supported."      test_ref="oval:org.mitre.oval.test:tst:1020"/>
+		<criterion comment="Test if a registry_object with a hive, key, and name is supported. All using operation=case insensitive equals"     test_ref="oval:org.mitre.oval.test:tst:5020"/>
+        <criterion comment="Test if a registry_object with a hive, key, and name pattern match is supported."    test_ref="oval:org.mitre.oval.test:tst:1030"/>
+        <criterion comment="Test if a registry_object with a hive, key pattern match, and name pattern match is supported."    test_ref="oval:org.mitre.oval.test:tst:1040"/>
+		<criterion comment="Test if a registry_object with a hive, key pattern match with $, and name is supported."  test_ref="oval:org.mitre.oval.test:tst:1080"/>
+		<criterion comment="Test if a registry_object is supported with a empty string for a registry value name."    test_ref="oval:org.mitre.oval.test:tst:1090"/>
+        <criterion comment="Test that the max_depth behavior is supported with a limited depth of recursion."         test_ref="oval:org.mitre.oval.test:tst:1100"/>
+		<criterion comment="Test that the max_depth behavior is supported with a unlimited depth of recursion." 	  test_ref="oval:org.mitre.oval.test:tst:1110"/>
+        <criterion comment="Test reg_expand_sz type registry key on HKLM - State has expanded_value"  test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:3000"/>
+        <criterion comment="Test HKCU is supported"      test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:3010"/>
+		<criterion comment="Test use of hive variable"   test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:4000"/>
+		<criterion comment="Test use of key variable"    test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:4010"/>
+		<criterion comment="Test use of value variable"  test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:4020"/>
       </criteria>
     </definition>
   </definitions>
@@ -153,90 +114,6 @@
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <object object_ref="oval:org.mitre.oval.test:obj:1110"/>
       <state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1110"/>
-    </registry_test>
-    <registry_test id="oval:org.mitre.oval.test:tst:1120" version="1"
-      comment="Test that the recurse_direction behavior is supported in the 'up' direction."
-      check_existence="at_least_one_exists" check="at least one"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:org.mitre.oval.test:obj:1120"/>
-      <state state_ref="oval:org.mitre.oval.test:ste:1120"/>
-    </registry_test>
-    <registry_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:2000" version="1"
-      comment="32_bit_windows_view - Test if a registry_object with a hive is supported."
-      check_existence="at_least_one_exists" check="only one"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:2000"/>
-      <state state_ref="oval:org.mitre.oval.test:ste:1000"/>
-    </registry_test>
-    <registry_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:2010" version="1"
-      comment="32_bit_windows_view - Test if a registry_object with a hive key is supported."
-      check_existence="at_least_one_exists" check="only one"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:2010"/>
-      <state state_ref="oval:org.mitre.oval.test:ste:1010"/>
-    </registry_test>
-    <registry_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:2020" version="1"
-      comment="32_bit_windows_view - Test if a registry_object with a hive, key, and name is supported."
-      check_existence="at_least_one_exists" check="only one"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:2020"/>
-      <state state_ref="oval:org.mitre.oval.test:ste:1020"/>
-    </registry_test>
-    <registry_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:2030" version="1"
-      comment="32_bit_windows_view - Test if a registry_object with a hive, key, and name pattern match is supported."
-      check_existence="at_least_one_exists" check="at least one"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:2030"/>
-      <state state_ref="oval:org.mitre.oval.test:ste:1030"/>
-    </registry_test>
-    <registry_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:2040" version="1"
-      comment="32_bit_windows_view - Test if a registry_object with a hive, key pattern match, and name pattern match is supported."
-      check_existence="at_least_one_exists" check="at least one"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:2040"/>
-      <state state_ref="oval:org.mitre.oval.test:ste:1040"/>
-    </registry_test>
-    <registry_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:2060" version="1"
-      comment="32_bit_windows_view - Test if a registry_object is supported with a empty string for a registry key name."
-      check_existence="any_exist" check="at least one"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:2060"/>
-      <state state_ref="oval:org.mitre.oval.test:ste:1090"/>
-    </registry_test>
-    <registry_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:2070" version="1"
-      comment="32_bit_windows_view - Test that the max_depth behavior is supported with a limited depth of recursion."
-      check_existence="at_least_one_exists" check="at least one"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:2070"/>
-      <state state_ref="oval:org.mitre.oval.test:ste:1020"/>
-    </registry_test>
-    <registry_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:2090" version="1"
-      comment="32_bit_windows_view - Test that the recurse_direction behavior is supported in the 'up' direction."
-      check_existence="at_least_one_exists" check="at least one"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:2090"/>
-      <state state_ref="oval:org.mitre.oval.test:ste:1120"/>
-    </registry_test>
-    <registry_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:2100" version="1"
-      comment="Test that Windows_View Functions as expected (Program Files Directory Test)"
-      check_existence="at_least_one_exists" check="only one"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:2100"/>
-      <state state_ref="oval:org.mitre.oval.test:ste:2100"/>
-    </registry_test>
-    <registry_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:2110" version="1"
-      comment="Test that Windows_View Functions as expected (Program Files Directory Test)"
-      check_existence="at_least_one_exists" check="only one"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:2110"/>
-      <state state_ref="oval:org.mitre.oval.test:ste:2110"/>
-    </registry_test>
-    <registry_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:2120" version="1"
-      comment="Get PROCESSOR_ARCHITECTURE, auto pass"
-      check_existence="at_least_one_exists" check="only one"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:2120"/>
-      <state state_ref="oval:org.mitre.oval.test:ste:2120"/>
     </registry_test>
     <registry_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:3000" version="1"
       comment="Test reg_expand_sz type registry key on HKLM - State has expanded_value" check_existence="at_least_one_exists"
@@ -344,100 +221,6 @@
       <key>Hardware</key>
       <name operation="pattern match">.*</name>
     </registry_object>
-    <registry_object id="oval:org.mitre.oval.test:obj:1120" version="1"
-      comment="Retrieve a registry_object with a hive equal to 'HKEY_LOCAL_MACHINE', key equal to 'SYSTEM\CurrentControlSet\Control\Session Manager', recursing up one level, and name equal to 'LastBootSucceeded'."
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <behaviors max_depth="1" recurse_direction="up"/>
-      <hive>HKEY_LOCAL_MACHINE</hive>
-      <key>SYSTEM\CurrentControlSet\Control\Session Manager</key>
-      <name>LastBootSucceeded</name>
-    </registry_object>
-    <registry_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:2100" version="1"
-      comment="Retrieve a registry_object with a hive equal to 'HKEY_LOCAL_MACHINE', key equal to 'SOFTWARE\Microsoft\Windows\CurrentVersion', and name equal to 'ProgramFilesDir'."
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <hive>HKEY_LOCAL_MACHINE</hive>
-      <key>SOFTWARE\Microsoft\Windows\CurrentVersion</key>
-      <name>ProgramFilesDir</name>
-    </registry_object>
-    <registry_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:2000" version="1"
-      comment="32_bit_windows_view - Retrieve a registry_object with a hive equal to 'HEKY_LOCAL_MACHINE'."
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <behaviors windows_view="32_bit"/>
-      <hive>HKEY_LOCAL_MACHINE</hive>
-      <key xsi:nil="true"/>
-      <name xsi:nil="true"/>
-    </registry_object>
-    <registry_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:2010" version="1"
-      comment="32_bit_windows_view - Retrieve a registry_object with a hive equal to 'HKEY_LOCAL_MACHINE' and key equal to 'SOFTWARE\Microsoft\Windows NT\CurrentVersion'."
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <behaviors windows_view="32_bit"/>
-      <hive>HKEY_LOCAL_MACHINE</hive>
-      <key>SOFTWARE\Microsoft\Windows NT\CurrentVersion</key>
-      <name xsi:nil="true"/>
-    </registry_object>
-    <registry_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:2020" version="1"
-      comment="32_bit_windows_view - Retrieve a registry_object with a hive equal to 'HKEY_LOCAL_MACHINE', key equal to 'SOFTWARE\Microsoft\Windows NT\CurrentVersion', and name equal to 'CurrentVersion'."
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <behaviors windows_view="32_bit"/>
-      <hive>HKEY_LOCAL_MACHINE</hive>
-      <key>SOFTWARE\Microsoft\Windows NT\CurrentVersion</key>
-      <name>CurrentVersion</name>
-    </registry_object>
-    <registry_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:2030" version="1"
-      comment="32_bit_windows_view - Retrieve a registry_object with a hive equal to 'HEKY_LOCAL_MACHINE', key equal to 'SOFTWARE\Microsoft\Windows NT\CurrentVersion', and name matches a regular expression'."
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <behaviors windows_view="32_bit"/>
-      <hive>HKEY_LOCAL_MACHINE</hive>
-      <key>SOFTWARE\Microsoft\Windows NT\CurrentVersion</key>
-      <name operation="pattern match">CurrentVersi.*</name>
-    </registry_object>
-    <registry_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:2040" version="1"
-      comment="32_bit_windows_view - Retrieve a registry_object with a equal to 'HKEY_LOCAL_MACHINE', key pattern matches a regular expression, and name pattern matches a regular expression'."
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <behaviors windows_view="32_bit"/>
-      <hive>HKEY_LOCAL_MACHINE</hive>
-      <key operation="pattern match">SOFTWARE\\Microsoft\\Windows NT\\CurrentVersi.*</key>
-      <name operation="pattern match">CurrentVersi.*</name>
-    </registry_object>
-    <registry_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:2060" version="1"
-      comment="32_bit_windows_view - Retrieve a registry_object with a hive equal to 'HKEY_LOCAL_MACHINE' and key equal to 'SOFTWARE\classes\regedit\shell\open\command', and name equal to ''."
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <behaviors windows_view="32_bit"/>
-      <hive>HKEY_LOCAL_MACHINE</hive>
-      <key>SOFTWARE\classes\regedit\shell\open\command</key>
-      <name/>
-    </registry_object>
-    <registry_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:2070" version="1"
-      comment="32_bit_windows_view - Retrieve a registry_object with a hive equal to 'HKEY_LOCAL_MACHINE', key equal to 'SOFTWARE\Microsoft\Windows NT', recursing down one level, and name equal to 'CurrentVersion'."
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <behaviors windows_view="32_bit" max_depth="1" recurse_direction="down"/>
-      <hive>HKEY_LOCAL_MACHINE</hive>
-      <key>SOFTWARE\Microsoft\Windows NT</key>
-      <name>CurrentVersion</name>
-    </registry_object>
-    <registry_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:2090" version="1"
-      comment="32_bit_windows_view - Retrieve a registry_object with a hive equal to 'HKEY_LOCAL_MACHINE', key equal to 'SYSTEM\CurrentControlSet\Control\Session Manager', recursing up one level, and name equal to 'LastBootSucceeded'."
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <behaviors windows_view="32_bit" max_depth="1" recurse_direction="up"/>
-      <hive>HKEY_LOCAL_MACHINE</hive>
-      <key>SYSTEM\CurrentControlSet\Control\Session Manager</key>
-      <name>LastBootSucceeded</name>
-    </registry_object>
-    <registry_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:2110" version="1"
-      comment="Retrieve a registry_object with a hive equal to 'HKEY_LOCAL_MACHINE', key equal to 'SOFTWARE\Microsoft\Windows\CurrentVersion', and name equal to 'ProgramFilesDir'."
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <behaviors windows_view="32_bit"/>
-      <hive>HKEY_LOCAL_MACHINE</hive>
-      <key>SOFTWARE\Microsoft\Windows\CurrentVersion</key>
-      <name>ProgramFilesDir</name>
-    </registry_object>
-    <registry_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:2120" version="1"
-      comment="Retrieve Processor Archetecture"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <hive>HKEY_LOCAL_MACHINE</hive>
-      <key>SYSTEM\CurrentControlSet\Control\Session Manager\Environment</key>
-      <name>PROCESSOR_ARCHITECTURE</name>
-    </registry_object>
     <registry_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:3000" version="1"
       comment="Get all registry keys three layers deep from HKLM\SOFTWARE\Classes\Applications"
       xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
@@ -544,22 +327,6 @@
       <key operation="case insensitive equals">SOFTWARE\Microsoft\Windows\CurrentVersion</key>
       <name>ProgramFilesDir</name>
       <value>C:\Program Files</value>
-    </registry_state>
-    <registry_state id="oval:org.mitre.oval.test:ste:2110" version="1"
-      comment="This registry_state represents a registry_object with a hive equal to 'HKEY_LOCAL_MACHINE', key equal to 'SOFTWARE\Microsoft\Windows\CurrentVersion', and name equal to 'ProgramFilesDir'."
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <hive>HKEY_LOCAL_MACHINE</hive>
-      <key operation="case insensitive equals">SOFTWARE\Microsoft\Windows\CurrentVersion</key>
-      <name>ProgramFilesDir</name>
-      <value>C:\Program Files (x86)</value>
-    </registry_state>
-    <registry_state id="oval:org.mitre.oval.test:ste:2120" version="1"
-      comment="Get PROCESSOR_ARCHITECTURE, auto pass"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <hive>HKEY_LOCAL_MACHINE</hive>
-      <key operation="case insensitive equals">SYSTEM\CurrentControlSet\Control\Session Manager\Environment</key>
-      <name>PROCESSOR_ARCHITECTURE</name>
-      <value operation="pattern match">.*</value>
     </registry_state>
     <registry_state id="oval:org.mitre.oval.test:ste:3000" version="1"
       comment="Autopass if any key found with expanded_value defined HKLM"

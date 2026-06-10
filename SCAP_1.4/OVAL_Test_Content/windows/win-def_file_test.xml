@@ -6,14 +6,14 @@
   xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"  
   xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
   xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" 
-  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/independent-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-definitions-5#windows  https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/windows-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-common-schema.xsd" >
+  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/independent-definitions-schema.xsd
+  	http://oval.mitre.org/XMLSchema/oval-definitions-5#windows  https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/windows-definitions-schema.xsd
+  	http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-definitions-schema.xsd
+  	http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-common-schema.xsd" >
 	<generator>
 		<oval:product_name>Oval Test Content</oval:product_name>
-		<oval:schema_version>5.12.2</oval:schema_version>
-		<oval:timestamp>2026-03-02T12:05:51</oval:timestamp>
+		<oval:schema_version>5.12.3</oval:schema_version>
+		<oval:timestamp>2026-06-10T12:05:51</oval:timestamp>
     <terms_of_use>NOTE: MITRE Content may be modified from original by NIWC Atlantic. Copyright (c) 2002-2011, The MITRE Corporation. All rights reserved. The contents of this file are subject to the license described in terms.txt.</terms_of_use>
 	</generator>
   <definitions>
@@ -32,7 +32,6 @@
         <criterion comment="Test that a file_object with a path and filename pattern match is supported." test_ref="oval:org.mitre.oval.test:tst:1189"/>
         <criterion comment="Test that a file_object with a path pattern match and filename pattern match is supported." test_ref="oval:org.mitre.oval.test:tst:891"/>
         <criterion comment="Test that the max_depth behavior is supported for limited depth of recursion." test_ref="oval:org.mitre.oval.test:tst:1255"/>
-		<criterion comment="(32-bit view) Test that the max_depth behavior is supported for limited depth of recursion." test_ref="oval:org.mitre.oval.test:tst:991255"/>
         <criterion comment="Test that the max_depth behavior is supported for unlimited depth of recursion." test_ref="oval:org.mitre.oval.test:tst:713"/>
       </criteria>
     </definition>
@@ -60,10 +59,6 @@
     </file_test>
     <file_test id="oval:org.mitre.oval.test:tst:1255" version="2" comment="Test that the max_depth behavior is supported for limited depth of recursion." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <object object_ref="oval:org.mitre.oval.test:obj:765"/>
-      <state state_ref="oval:org.mitre.oval.test:ste:216"/>
-    </file_test>
-	<file_test id="oval:org.mitre.oval.test:tst:991255" version="2" comment="(Windows_View=32) Test that the max_depth behavior is supported for limited depth of recursion." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:org.mitre.oval.test:obj:99765"/>
       <state state_ref="oval:org.mitre.oval.test:ste:216"/>
     </file_test>
     <file_test id="oval:org.mitre.oval.test:tst:713" version="2" comment="Test that the max_depth behavior is supported for unlimited depth of recursion." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
@@ -94,11 +89,6 @@
     </file_object>
     <file_object id="oval:org.mitre.oval.test:obj:765" version="1" comment="Retrieve file object with path starting at 'C:\Program Files', recursing down 1 level, and filename equals 'iexplore.exe'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <behaviors max_depth="1" recurse_direction="down"/>
-      <path operation="case insensitive equals">c:\program files</path>
-      <filename operation="case insensitive equals">iexplore.exe</filename>
-    </file_object>
-	 <file_object id="oval:org.mitre.oval.test:obj:99765" version="1" comment="Retrieve file object with path starting at 'C:\Program Files', recursing down 1 level, and filename equals 'iexplore.exe'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <behaviors windows_view="32_bit" max_depth="1" recurse_direction="down"/>
       <path operation="case insensitive equals">c:\program files</path>
       <filename operation="case insensitive equals">iexplore.exe</filename>
     </file_object>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:unix-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix"
-xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/independent-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#unix https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/unix-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-common-schema.xsd">
+xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/independent-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#unix https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/unix-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-common-schema.xsd">
 	<generator>
 		<oval:product_name>Oval Test Content</oval:product_name>
-		<oval:schema_version>5.12.2</oval:schema_version>
-		<oval:timestamp>2026-03-02T12:05:51</oval:timestamp>
+		<oval:schema_version>5.12.3</oval:schema_version>
+		<oval:timestamp>2026-06-10T12:05:51</oval:timestamp>
 		<terms_of_use>NOTE: MITRE Content may be modified from original by NIWC Atlantic. Copyright (c) 2002-2011, The MITRE Corporation. All rights reserved. The contents of this file are subject to the license described in terms.txt.</terms_of_use>
 	</generator>
 	<definitions>
@@ -41,7 +41,7 @@ xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independe
 	
 	<objects>
 		<interface_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:1" version="1" comment="This object represents an interface_object where the name equals 'lo'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
-			<name>lo0</name>
+			<name>net0</name>
 		</interface_object>
 		<interface_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:2" version="1" comment="This object represents an interface_object where the name is not equal to 'eth0'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
 			<name operation="not equal">lo0</name>
@@ -52,8 +52,8 @@ xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independe
 	</objects>
 	
 	<states>
-		<interface_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:1" version="1" comment="This interface_state represents an interface_object where the inet_addr equals '127.0.0.1'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
-			<inet_addr>127.0.0.1</inet_addr>
+		<interface_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:1" version="1" comment="This interface_state performs a coarse check that the IPv4 address appears to be an IPv4 address." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
+			<inet_addr operation="pattern match">^\d\d*\d*\.\d\d*\d*\.\d\d*\d*\.\d\d*\d*$</inet_addr>
 		</interface_state>
 		<interface_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:2" version="1" comment="This interface_state represents an interface_object where the name equals 'eth0'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
 			<name operation="not equal">lo</name>

@@ -6,14 +6,14 @@
   xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"  
   xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
   xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" 
-  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/independent-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-definitions-5#windows  https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/windows-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-common-schema.xsd" >	
+  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/independent-definitions-schema.xsd
+  	http://oval.mitre.org/XMLSchema/oval-definitions-5#windows  https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/windows-definitions-schema.xsd
+  	http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-definitions-schema.xsd
+  	http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-common-schema.xsd" >	
 	<generator>
 		<oval:product_name>Oval Test Content</oval:product_name>
-		<oval:schema_version>5.12.2</oval:schema_version>
-		<oval:timestamp>2026-03-02T12:05:51</oval:timestamp>
+		<oval:schema_version>5.12.3</oval:schema_version>
+		<oval:timestamp>2026-06-10T12:05:51</oval:timestamp>
     <terms_of_use>NOTE: MITRE Content may be modified from original by NIWC Atlantic. Copyright (c) 2002-2011, The MITRE Corporation. All rights reserved. The contents of this file are subject to the license described in terms.txt.</terms_of_use>
 	</generator>
   <definitions>
@@ -31,7 +31,6 @@
         <criterion comment="Test that a regkeyeffectiverights53_object with a hive pattern match, key, and trustee_sid is supported." test_ref="oval:org.mitre.oval.test:tst:525"/>
         <criterion comment="Test that the max_depth behavior is supported for limited depth of recursion." test_ref="oval:org.mitre.oval.test:tst:1006"/>
         <criterion comment="Test that the max_depth behavior is supported for unlimited depth of recursion." test_ref="oval:org.mitre.oval.test:tst:680"/>
-        <criterion comment="Test that the recurse_direction behavior is supported in the 'up' direction." test_ref="oval:org.mitre.oval.test:tst:1187"/>
         <criterion comment="Test that the include_group behavior is supported." test_ref="oval:org.mitre.oval.test:tst:1474"/>
         <criterion comment="Test that the resolve_group behavior is supported." test_ref="oval:org.mitre.oval.test:tst:1141"/>
       </criteria>
@@ -57,10 +56,6 @@
     <regkeyeffectiverights53_test id="oval:org.mitre.oval.test:tst:680" version="1" comment="Test that the max_depth behavior is supported for unlimited depth of recursion." check_existence="at_least_one_exists" check="only one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <object object_ref="oval:org.mitre.oval.test:obj:785"/>
       <state state_ref="oval:org.mitre.oval.test:ste:1221"/>
-    </regkeyeffectiverights53_test>
-    <regkeyeffectiverights53_test id="oval:org.mitre.oval.test:tst:1187" version="1" comment="Test that the recurse_direction behavior is supported in the 'up' direction." check_existence="at_least_one_exists" check="only one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:org.mitre.oval.test:obj:985"/>
-      <state state_ref="oval:org.mitre.oval.test:ste:933"/>
     </regkeyeffectiverights53_test>
     <regkeyeffectiverights53_test id="oval:org.mitre.oval.test:tst:1474" version="1" comment="Test that the include_group behavior is supported." check_existence="at_least_one_exists" check="only one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <object object_ref="oval:org.mitre.oval.test:obj:305"/>
@@ -95,12 +90,6 @@
     </regkeyeffectiverights53_object>
     <regkeyeffectiverights53_object id="oval:org.mitre.oval.test:obj:785" version="1" comment="This regkeyeffectiverights53_object with hive starting at 'HKEY_LOCAL_MACHINE', recursing down infinitely, and key equals 'SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon' and trustee_sid equals 'S-1-5-32-544'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <behaviors max_depth="-1" recurse_direction="down"/>
-      <hive>HKEY_LOCAL_MACHINE</hive>
-      <key>SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon</key>
-      <trustee_sid>S-1-5-32-544</trustee_sid>
-    </regkeyeffectiverights53_object>
-    <regkeyeffectiverights53_object id="oval:org.mitre.oval.test:obj:985" version="1" comment="This regkeyeffectiverights53_object with hive starting at 'HKEY_LOCAL_MACHINE', recursing up 1 level, and key equals 'SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon', and trustee_sid equals 'S-1-5-32-544'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <behaviors max_depth="1" recurse_direction="up"/>
       <hive>HKEY_LOCAL_MACHINE</hive>
       <key>SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon</key>
       <trustee_sid>S-1-5-32-544</trustee_sid>
