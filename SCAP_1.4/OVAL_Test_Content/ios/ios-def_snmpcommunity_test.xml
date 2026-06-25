@@ -8,8 +8,8 @@
   <definitions>
     <definition id="oval:org.joval.ios.test:def:1" version="1" class="miscellaneous">
       <metadata>
-        <title>Evaluate to version if the ios-def:snmpcommunity_test is properly supported</title>
-        <description>This definition is intended to evaluate to version if the interpreter properly supports the ios-def:snmpcommunity_test and all of its valid operations.</description>
+        <title>Evaluate to true if the ios-def:snmpcommunity_test is properly supported</title>
+        <description>This definition is intended to evaluate to true if the interpreter properly supports the ios-def:snmpcommunity_test and all of its valid operations.</description>
       </metadata>
       <notes>
         <note>It is important to note that the values used in this test definition are specific to a particular machine, and may not necessarily apply to your system. As a result, in order to have the definition return a result of 'true', you must either change these values to the ones found on your particular system, or you must configure your system to use these values.</note>
