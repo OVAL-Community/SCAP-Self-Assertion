@@ -1,4 +1,3 @@
 Test content is needed for the following OVAL 5.12.2 unix tests
 
-sshd_test
 ind-def_yamlfilecontent (unix specific version)

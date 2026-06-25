@@ -1,5 +1,0 @@
-Test content is needed for the following OVAL 5.12.2 linux tests
-
-< apparmorstatus_test >
-< kernelmodule_test >
-< sestatus_test >

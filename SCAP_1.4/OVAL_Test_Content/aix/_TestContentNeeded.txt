@@ -1,0 +1,7 @@
+Test content is needed for the following OVAL 5.12.2 aws tests
+
+deviceattribute_test
+inittab_test
+securitystanza_test
+useraccount_test
+nfso_test

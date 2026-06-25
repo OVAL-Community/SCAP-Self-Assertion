@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions
+        xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5 oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#independent independent-definitions-schema.xsd"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5"
+        xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5">
+  <generator>
+    <oval:schema_version>5.12.3</oval:schema_version>
+    <oval:timestamp>2026-06-25T10:29:00-04:00</oval:timestamp>
+    <terms_of_use>(c) 2026 Arctic Wolf Networks, Inc. f/k/a Joval</terms_of_use>
+  </generator>
+    <definitions>
+        <definition id="oval:org.joval.panos.test:def:1" version="1" class="miscellaneous">
+        <metadata>
+            <title>Evaluate to true if the panos:version_test is properly supported.</title>
+            <description>This definition is intended to evaluate to true if the interpreter properly supports the panos:version_test for Palo Alto PAN-OS devices.</description>
+        </metadata>
+        <criteria>
+            <criterion comment="Test that the panos:version_test is supported" test_ref="oval:org.joval.panos.test:tst:1"/>
+        </criteria>
+    </definition>
+    </definitions>
+  <tests>
+      <version_test id="oval:org.joval.panos.test:tst:1" check="all" check_existence="at_least_one_exists" comment="Test that the panos:version_test is supported" version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#panos">
+          <object object_ref="oval:org.joval.panos.test:obj:1"/>
+          <state state_ref="oval:org.joval.panos.test:ste:1"/>
+      </version_test>
+  </tests>
+  <objects>
+      <version_object id="oval:org.joval.panos.test:obj:1" comment="Test that the panos:version_test is supported" version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#panos"/>
+  </objects>
+  <states>
+      <version_state id="oval:org.joval.panos.test:ste:1" comment="Test that the panos:version_test is supported" version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#panos">
+          <major_version datatype="int" operation="greater than">0</major_version>
+          <minor_version datatype="int" operation="greater than or equal">0</minor_version>
+          <release datatype="int" operation="greater than or equal">0</release>
+          <version_string datatype="string" operation="pattern match">^(\d+)\.(\d+)\.(\d+)(?:-[a-zA-Z](\d+))?$</version_string>
+          <model_name datatype="string" operation="pattern match">^.+$</model_name>
+      </version_state>
+  </states>
+</oval_definitions>

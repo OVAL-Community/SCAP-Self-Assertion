@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions
+        xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5 oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#macos macos-definitions-schema.xsd"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5"
+        xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5">
+  <generator>
+    <oval:schema_version>5.10.1</oval:schema_version>
+    <oval:timestamp>2010-12-05T10:41:00-05:00</oval:timestamp>
+    <terms_of_use>NOTE: MITRE Content may be modified from original by Arctic Wolf Networks, Inc. f/k/a Joval. Copyright (c) 2002-2012, The MITRE Corporation. All rights reserved. The contents of this file are subject to the license described in terms.txt.</terms_of_use>
+  </generator>
+  <definitions>
+    <definition id="oval:org.mitre.oval.test:def:448" version="1" class="miscellaneous">
+      <metadata>
+        <title>Evaluate to true if the macos-def:nvram512_test is properly supported</title>
+        <description>This definition is intended to evaluate to true if the interpreter properly supports the macos-def:nvram512_test.</description>
+      </metadata>
+      <notes>
+        <note>It is important to note that the values used in this test definition are specific to a particular machine, and may not necessarily apply to your system. As a result, in order to have the definition return a result of 'true', you must either change these values to the ones found on your particular system, or you must configure your system to use these values.</note>
+      </notes>
+      <criteria operator="AND">
+        <criteria operator="OR">
+          <criterion comment="MacOS 10.15.X (Catalina) is not installed." test_ref="oval:com.jovalcm.macos.inventory:tst:1000001600001" negate="true"/>
+          <criteria operator="AND">
+            <criterion comment="MacOS 10.15.X (Catalina) is installed." test_ref="oval:com.jovalcm.macos.inventory:tst:1000001600001"/>
+            <criterion comment="Test that the nvram_object can find the nvram_var entity equal to 94b73556-2197-4702-82a8-3e1337dafbfb:AppleSecureBootPolicy." test_ref="oval:org.mitre.oval.test:tst:865"/>
+          </criteria>
+        </criteria>
+        <criterion comment="Test that the nvram512_object is supported with the variable entity equal to some non-existent value." test_ref="oval:org.joval.oval.test:tst:865"/>
+        <criterion comment="Test that the nvram512_object is supported with the variable entity not equal to some value." test_ref="oval:org.mitre.oval.test:tst:486"/>
+        <criterion comment="Test that the nvram512_object is supported with the variable entity matching some regular expression." test_ref="oval:org.mitre.oval.test:tst:308"/>
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <plist511_test id="oval:com.jovalcm.macos.inventory:tst:1000001600001" version="1" check="all" comment="Apple OS version is 10.15.x" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
+      <object object_ref="oval:com.jovalcm.macos.inventory:obj:1000000100001"/>
+      <state state_ref="oval:com.jovalcm.macos.inventory:ste:1000001600001"/>
+    </plist511_test>
+    <nvram512_test id="oval:org.mitre.oval.test:tst:865" version="1" comment="Test that the nvram512_object is supported with the variable entity equal to some value." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
+      <object object_ref="oval:org.mitre.oval.test:obj:754"/>
+      <state state_ref="oval:org.mitre.oval.test:ste:994"/>
+    </nvram512_test>
+    <nvram512_test id="oval:org.joval.oval.test:tst:865" version="1" comment="Test that the nvram512_object is supported with the variable entity equal to some value that does not exist." check_existence="none_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
+      <object object_ref="oval:org.joval.oval.test:obj:754"/>
+    </nvram512_test>
+    <nvram512_test id="oval:org.mitre.oval.test:tst:486" version="1" comment="Test that the nvram512_object is supported with the variable entity not equal to some value." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
+      <object object_ref="oval:org.mitre.oval.test:obj:202"/>
+      <state state_ref="oval:org.mitre.oval.test:ste:569"/>
+    </nvram512_test>
+    <nvram512_test id="oval:org.mitre.oval.test:tst:308" version="1" comment="Test that the nvram512_object is supported with the variable entity matching some regular expression." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
+      <object object_ref="oval:org.mitre.oval.test:obj:588"/>
+      <state state_ref="oval:org.mitre.oval.test:ste:943"/>
+    </nvram512_test>
+  </tests>
+  <objects>
+    <plist511_object id="oval:com.jovalcm.macos.inventory:obj:1000000100001" version="1" comment="Apple OS version number" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
+      <filepath>/System/Library/CoreServices/SystemVersion.plist</filepath>
+      <xpath>//key[text()=&#39;ProductVersion&#39;]/following-sibling::string[1]/text()</xpath>
+    </plist511_object>
+    <nvram512_object id="oval:org.mitre.oval.test:obj:754" version="1" comment="This object represents a nvram512_object with the nvram variable name equal to '94b73556-2197-4702-82a8-3e1337dafbfb:AppleSecureBootPolic'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
+      <variable>94b73556-2197-4702-82a8-3e1337dafbfb:AppleSecureBootPolicy</variable>
+    </nvram512_object>
+    <nvram512_object id="oval:org.joval.oval.test:obj:754" version="1" comment="This object represents a nvram512_object with the nvram variable name equal to 'foobar'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
+      <variable>foobar</variable>
+    </nvram512_object>
+    <nvram512_object id="oval:org.mitre.oval.test:obj:202" version="1" comment="This object represents a nvram512_object with the nvram variable name not equal to 'SystemAudioVolume'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
+      <variable operation="not equal">SystemAudioVolume</variable>
+    </nvram512_object>
+    <nvram512_object id="oval:org.mitre.oval.test:obj:588" version="1" comment="This object represents a nvram512_object with the nvram variable name matching the regular expression '^efi-'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
+      <variable operation="pattern match">^efi-</variable>
+    </nvram512_object>
+  </objects>
+  <states>
+    <plist511_state id="oval:com.jovalcm.macos.inventory:ste:1000001600001" version="1" comment="Is 10.15.x" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
+      <value_of datatype="string" operation="pattern match">^10\.15(\.|$)</value_of>
+    </plist511_state>
+    <nvram512_state id="oval:org.mitre.oval.test:ste:994" version="1" comment="This nvram512_state represents an nvram512_item which has a nvram variable name equal to 'SystemAudioVolume' and a nvram value that matches the regular expression '.*'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
+      <variable>94b73556-2197-4702-82a8-3e1337dafbfb:AppleSecureBootPolicy</variable>
+      <value datatype="binary" operation="not equal">00</value>
+    </nvram512_state>
+    <nvram512_state id="oval:org.mitre.oval.test:ste:569" version="1" comment="This nvram512_state represents nvram512_items which have a nvram variable name not equal to 'SystemAudioVolume' and a nvram value that matches the regular expression '.*'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
+      <variable operation="not equal">SystemAudioVolume</variable>
+      <value datatype="binary" operation="not equal">00</value>
+    </nvram512_state>
+    <nvram512_state id="oval:org.mitre.oval.test:ste:943" version="1" comment="This nvram512_state represents nvram512_items which have a nvram variable name that matches the regular expression '^efi-' and a nvram value that matches the regular expression '.*'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
+      <variable operation="pattern match">^efi-</variable>
+      <value datatype="binary" operation="not equal">00</value>
+    </nvram512_state>
+  </states>
+</oval_definitions>
