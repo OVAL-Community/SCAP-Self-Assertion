@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<oval_definitions
-        xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5 oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#independent independent-definitions-schema.xsd"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5"
-        xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5">
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
+                  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-definitions-schema.xsd
+                    http://oval.mitre.org/XMLSchema/oval-definitions-5#panos https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/panos-definitions-schema.xsd
+                    http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-common-schema.xsd">
   <generator>
     <oval:schema_version>5.12.3</oval:schema_version>
     <oval:timestamp>2023-07-24T14:30:20.988-05:00</oval:timestamp>
@@ -25,7 +26,7 @@
   <tests>
     <config_test id="oval:org.mitre.oval.test:tst:621" version="1" comment="Test that the config_object is supported." check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#panos">
       <object object_ref="oval:org.mitre.oval.test:obj:751"/>
-      <state state_ref="oval:org.mitre.oval.test:ste:255"></state>
+      <state state_ref="oval:org.mitre.oval.test:ste:255"/>
     </config_test>
   </tests>
   <objects>

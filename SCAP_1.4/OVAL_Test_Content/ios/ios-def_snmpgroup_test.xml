@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5">
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
+                  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-definitions-schema.xsd
+                    http://oval.mitre.org/XMLSchema/oval-definitions-5#ios https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/ios-definitions-schema.xsd
+                    http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-common-schema.xsd">
   <generator>
     <oval:schema_version>5.12.3</oval:schema_version>
     <oval:timestamp>2026-06-25T10:29:00-04:00</oval:timestamp>
@@ -26,7 +31,7 @@
   </tests>
   <objects>
     <snmpgroup_object id="oval:org.joval.ios.test:obj:1" version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#ios">
-        <name operation="pattern match">.*</name>
+      <name operation="pattern match">.*</name>
     </snmpgroup_object>
   </objects>
 </oval_definitions>

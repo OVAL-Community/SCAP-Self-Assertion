@@ -2,7 +2,9 @@
 <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5"
                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
-                  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5 oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#macos macos-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-common-5 oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#unix unix-definitions-schema.xsd">
+                  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-definitions-schema.xsd
+                    http://oval.mitre.org/XMLSchema/oval-definitions-5#macos https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/macos-definitions-schema.xsd
+                    http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-common-schema.xsd">
   <generator>
     <oval:schema_version>5.12.3</oval:schema_version>
     <oval:timestamp>2026-06-25T10:29:00-04:00</oval:timestamp>
@@ -11,13 +13,11 @@
   <definitions>
     <definition id="oval:org.joval.oval:def:20002" version="0" class="compliance">
       <metadata>
-        <title>Sample definition.</title>
+        <title>Evaluate to true if the macos-def:pwpolicy512_test is properly supported</title>
         <affected family="macos">
           <platform>Apple Mac OS X</platform>
         </affected>
-        <description>
-          Verify the pwpolicy512_test implementation.
-        </description>
+        <description>Verify the pwpolicy512_test implementation.</description>
       </metadata>
       <criteria>
         <criterion comment="Verify the pwpolicy512_test implementation for user policy." test_ref="oval:org.joval.oval:tst:20002"/>
@@ -35,7 +35,7 @@
   </tests>
   <objects>
     <pwpolicy512_object id="oval:org.joval.oval:obj:20002" version="1" comment="This pwpolicy512_object represents a pwpolicy_item with the username entity equal to 'root', and the directory_node entity equal to '/Local/Default'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
-      <username>joval_lab</username>
+      <username>root</username>
       <authenticator xsi:nil="true"></authenticator>
       <authenticator_password xsi:nil="true"></authenticator_password>
       <directory_node>/Local/Default</directory_node>

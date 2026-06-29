@@ -3,7 +3,9 @@
                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
                   xmlns:macos-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos"
-                  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5 oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#macos macos-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-common-5 oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#unix unix-definitions-schema.xsd">
+                  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-definitions-schema.xsd
+                    http://oval.mitre.org/XMLSchema/oval-definitions-5#macos https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/macos-definitions-schema.xsd
+                    http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-common-schema.xsd">
   <generator>
     <oval:schema_version>5.12.3</oval:schema_version>
     <oval:timestamp>2026-06-25T10:29:00-04:00</oval:timestamp>
@@ -12,7 +14,7 @@
   <definitions>
     <definition id="oval:com.jovalcm.macos:def:20002" version="0" class="compliance">
       <metadata>
-        <title>Install History</title>
+        <title>Evaluate to true if the macos-def:installhistory_test is properly supported</title>
         <affected family="macos">
           <platform>Apple Mac OS X</platform>
         </affected>
