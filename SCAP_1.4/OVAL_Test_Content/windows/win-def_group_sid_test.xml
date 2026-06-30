@@ -56,8 +56,7 @@
     <group_sid_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:6" version="1" comment="Test that subgroup item/state is supported." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:1"/>
       <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:6"/>
-    </group_sid_test>  
-
+    </group_sid_test>
   </tests>
   <objects>
     <group_sid_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:1" version="1" comment="Retrieves a group_sid_object that has a SID equal to 'S-1-5-32-544'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">

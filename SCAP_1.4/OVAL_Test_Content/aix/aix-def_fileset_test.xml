@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<oval_definitions
-        xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5 oval-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5#aix aix-definitions-schema.xsd"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5"
-        xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5">
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
+                  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-definitions-schema.xsd
+                    http://oval.mitre.org/XMLSchema/oval-definitions-5#aix https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/aix-definitions-schema.xsd
+                    http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-common-schema.xsd">
     <generator>
-        <oval:schema_version>5.9</oval:schema_version>
-        <oval:timestamp>2010-12-05T10:41:00-05:00</oval:timestamp>
+        <oval:schema_version>5.12.3</oval:schema_version>
+        <oval:timestamp>2026-06-25T10:29:00-04:00</oval:timestamp>
         <terms_of_use>NOTE: MITRE Content may be modified from original by Arctic Wolf Networks, Inc. f/k/a Joval. Copyright (c) 2002-2012, The MITRE Corporation. All rights reserved. The contents of this file are subject to the license described in terms.txt.</terms_of_use>
     </generator>
     <definitions>

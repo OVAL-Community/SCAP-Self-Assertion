@@ -1,123 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:unix-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix"
-xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/independent-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#unix https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/unix-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/solaris-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-common-schema.xsd">
-	<generator>
-		<oval:product_name>Oval Test Content</oval:product_name>
-		<oval:schema_version>5.12.3</oval:schema_version>
-		<oval:timestamp>2026-06-10T12:05:51</oval:timestamp>
-		<terms_of_use>Portions of this document were developed at Naval Information Warfare Center Atlantic by employees of the Federal Government in the course of their official duties. Pursuant to title 17 Section 105 of the United States Code this software is not subject to copyright protection and is in the public domain. The Government assumes no responsibility whatsoever for its use by other parties, and the software is provided "AS IS" without warranty or guarantee of any kind, express or implied, including, but not limited to, the warranties of merchantability and of fitness for a particular purpose. In no event shall the Government be liable for any claim, damages or other liability, whether in an action of contract, tort or other dealings in the software. The Government has no obligation hereunder to provide maintenance, support, updates, enhancements, or modifications. We would appreciate acknowledgement if the software is used. This software can be redistributed and/or
-		modified freely provided that any derivative works bear some notice that they are derived from it, and any modified versions bear some notice that they have been modified.</terms_of_use>
-	</generator>
-	<definitions>
-		<definition id="oval:navy.navwar.niwcatlantic.scc.test:def:1" version="0" class="inventory">
-			<metadata>
-				<title>Evaluate to true if the independent the package511 test is properly supported.</title>
-				<affected family="unix">
-					<platform>Sun Solaris 11</platform>
-				</affected>
-				<description>This definition is intended to evalutate to true if the interpreter properly supports the solaris package511 test.</description>
-			</metadata>
-			<criteria>
-				<criterion comment="Test that the package511 test is supported with publisher operation of 'equals'." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:1" />
-				<criterion comment="Test that the package511 test is supported with publisher operation of 'not equal'." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:2" />
-				<criterion comment="Test that the package511 test is supported with publisher operation of 'pattern match'." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:3" />
-				<criterion comment="Test that the package511 test is supported with name operation of 'equals'." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:4" />
-				<criterion comment="Test that the package511 test is supported with name operation of 'not equal'." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:5" />
-				<criterion comment="Test that the package511 test is supported with name operation of 'pattern match'." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:6" />
-			</criteria>
-		</definition>
-	</definitions>
-	<tests>
-		<package511_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:1" version="0" comment="Test that the package511 test is supported with publisher operation of 'equals'." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
-			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:1" />
-			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1" />
-		</package511_test>
-		<package511_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:2" version="0" comment="Test that the package511 test is supported with publisher operation of 'not equal'." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
-			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:2" />
-			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2" />
-		</package511_test>
-		<package511_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:3" version="0" comment="Test that the package511 test is supported with publisher operation of 'pattern match'." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
-			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:3" />
-			<state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1" />
-		</package511_test>
-		<package511_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:4" version="0" comment="Test that the package511 test is supported with name operation of 'equals'." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
-			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:4" />
-		</package511_test>
-		<package511_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:5" version="0" comment="Test that the package511 test is supported with name operation of 'not equal'." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
-			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:5" />
-		</package511_test>
-		<package511_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:6" version="0" comment="Test that the package511 test is supported with name operation of 'pattern match'." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
-			<object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:6" />
-		</package511_test>
-	</tests>
-	<objects>
-		<package511_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:1" comment="Retrieve package (compress/gzip) info for publisher operation 'equals'." version="0" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
-			<publisher>solaris</publisher>
-			<name>compress/gzip</name>
-			<!-- As we cannot know what version of a package may be installed, use shellcommand to retrieve it. -->
-			<version datatype="version" var_ref="oval:navy.navwar.niwcatlantic.scc.test:var:2" />
-			<timestamp operation="pattern match">\d</timestamp>
-		</package511_object>
-		<package511_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:2" comment="Retrieve package (compress/gzip) info for publisher operation 'not equal'." version="0" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
-			<publisher operation="not equal">NotSolaris</publisher>
-			<name operation="not equal">compress/gzip</name>
-			<version datatype="version" var_ref="oval:navy.navwar.niwcatlantic.scc.test:var:1" />
-			<timestamp operation="pattern match">\d</timestamp>
-		</package511_object>
-		<package511_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:3" comment="Retrieve package (compress/gzip) info for publisher operation 'pattern match'." version="0" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
-			<publisher operation="pattern match">^[Ss]ol[ar]+is$</publisher>
-			<name>compress/gzip</name>
-			<version datatype="version" var_ref="oval:navy.navwar.niwcatlantic.scc.test:var:2" />
-			<timestamp operation="pattern match">.*</timestamp>
-		</package511_object>
-		<package511_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:4" comment="Retrieve package (compress/gzip) info for name operation 'equals'." version="0" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
-			<publisher>solaris</publisher>
-			<name>compress/gzip</name>
-			<version datatype="version">1.8</version>
-			<timestamp operation="pattern match">.*</timestamp>
-		</package511_object>
-		<package511_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:5" comment="Retrieve package (compress/gzip) info for name operation 'not equal'." version="0" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
-			<publisher>solaris</publisher>
-			<name operation="not equal">compress/NOTgzip</name>
-			<version datatype="version" var_ref="oval:navy.navwar.niwcatlantic.scc.test:var:2" />
-			<timestamp operation="pattern match">.*</timestamp>
-		</package511_object>
-		<package511_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:6" comment="Retrieve package (compress/gzip) info for name operation 'pattern match'." version="0" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
-			<publisher operation="pattern match">^[Ss]olaris</publisher>
-			<name operation="pattern match">^compress\/[Ggzip]{4}</name>
-			<version datatype="version" var_ref="oval:navy.navwar.niwcatlantic.scc.test:var:2" />
-			<timestamp operation="pattern match">.*</timestamp>
-		</package511_object>
-		<shellcommand_object id="oval:navy.navwar.niwcatlantic.scc:obj:7" comment="Gather version for compress/zip package." version="0" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
-			<shell>bash</shell>
-			<command>pkg info compress/zip</command>
-			<pattern>Version:\s+(\S+)$</pattern>
-		</shellcommand_object>
-		<shellcommand_object id="oval:navy.navwar.niwcatlantic.scc:obj:8" comment="Gather version for compress/zip package." version="0" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
-			<shell>bash</shell>
-			<command>pkg info compress/gzip</command>
-			<pattern>Version:\s+(\S+)$</pattern>
-		</shellcommand_object>
-	</objects>
-	<states>
-		<package511_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:1" comment="Confirm publisher and name are as expected." version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
-			<publisher>solaris</publisher>
-			<name>compress/gzip</name>
-		</package511_state>
-		<package511_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:2" comment="Confirm publisher and name (not 'compress/gzip') are as expected." version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
-			<publisher>solaris</publisher>
-			<name operation="pattern match">^compress\/zip</name>
-		</package511_state>
-		<package511_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:7" comment="Need meaningful comment, here." version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
-			<name operation="pattern match">compress\/.*</name>
-		</package511_state>
-	</states>
-	<variables>
-		<local_variable id="oval:navy.navwar.niwcatlantic.scc.test:var:1" version="1" datatype="string" comment="Retrieve the version value for the compress/zip package.">
-			<object_component object_ref="oval:navy.navwar.niwcatlantic.scc:obj:7" item_field="subexpression" />
-		</local_variable>
-		<local_variable id="oval:navy.navwar.niwcatlantic.scc.test:var:2" version="1" datatype="string" comment="Retrieve the version value for the compress/zip package.">
-			<object_component object_ref="oval:navy.navwar.niwcatlantic.scc:obj:8" item_field="subexpression" />
-		</local_variable>
-	</variables>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
+                  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-definitions-schema.xsd
+                    http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/solaris-definitions-schema.xsd
+                    http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/independent-definitions-schema.xsd
+                    http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-common-schema.xsd">
+  <generator>
+    <oval:product_name>Oval Test Content</oval:product_name>
+    <oval:schema_version>5.12.3</oval:schema_version>
+    <oval:timestamp>2026-06-10T12:05:51</oval:timestamp>
+    <terms_of_use>Portions of this document were developed at Naval Information Warfare Center Atlantic by employees of the Federal Government in the course of their official duties. Pursuant to title 17 Section 105 of the United States Code this software is not subject to copyright protection and is in the public domain. The Government assumes no responsibility whatsoever for its use by other parties, and the software is provided "AS IS" without warranty or guarantee of any kind, express or implied, including, but not limited to, the warranties of merchantability and of fitness for a particular purpose. In no event shall the Government be liable for any claim, damages or other liability, whether in an action of contract, tort or other dealings in the software. The Government has no obligation hereunder to provide maintenance, support, updates, enhancements, or modifications. We would appreciate acknowledgement if the software is used. This software can be redistributed and/or
+    modified freely provided that any derivative works bear some notice that they are derived from it, and any modified versions bear some notice that they have been modified.</terms_of_use>
+  </generator>
+  <definitions>
+    <definition id="oval:navy.navwar.niwcatlantic.scc.test:def:1" version="0" class="inventory">
+      <metadata>
+        <title>Evaluate to true if the independent the package511 test is properly supported.</title>
+        <affected family="unix">
+          <platform>Sun Solaris 11</platform>
+        </affected>
+        <description>This definition is intended to evaluate to true if the interpreter properly supports the solaris package511 test.</description>
+      </metadata>
+      <criteria>
+        <criterion comment="Test that the package511 test is supported with publisher operation of 'equals'." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:1" />
+        <criterion comment="Test that the package511 test is supported with publisher operation of 'not equal'." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:2" />
+        <criterion comment="Test that the package511 test is supported with publisher operation of 'pattern match'." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:3" />
+        <criterion comment="Test that the package511 test is supported with name operation of 'equals'." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:4" />
+        <criterion comment="Test that the package511 test is supported with name operation of 'not equal'." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:5" />
+        <criterion comment="Test that the package511 test is supported with name operation of 'pattern match'." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:6" />
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <package511_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:1" version="0" comment="Test that the package511 test is supported with publisher operation of 'equals'." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:1" />
+      <state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1" />
+    </package511_test>
+    <package511_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:2" version="0" comment="Test that the package511 test is supported with publisher operation of 'not equal'." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:2" />
+      <state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2" />
+    </package511_test>
+    <package511_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:3" version="0" comment="Test that the package511 test is supported with publisher operation of 'pattern match'." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:3" />
+      <state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:1" />
+    </package511_test>
+    <package511_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:4" version="0" comment="Test that the package511 test is supported with name operation of 'equals'." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:4" />
+    </package511_test>
+    <package511_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:5" version="0" comment="Test that the package511 test is supported with name operation of 'not equal'." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:5" />
+    </package511_test>
+    <package511_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:6" version="0" comment="Test that the package511 test is supported with name operation of 'pattern match'." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
+      <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:6" />
+    </package511_test>
+  </tests>
+  <objects>
+    <package511_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:1" comment="Retrieve package (compress/gzip) info for publisher operation 'equals'." version="0" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
+      <publisher>solaris</publisher>
+      <name>compress/gzip</name>
+      <!-- As we cannot know what version of a package may be installed, use shellcommand to retrieve it. -->
+      <version datatype="version" var_ref="oval:navy.navwar.niwcatlantic.scc.test:var:2" />
+      <timestamp operation="pattern match">\d</timestamp>
+    </package511_object>
+    <package511_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:2" comment="Retrieve package (compress/gzip) info for publisher operation 'not equal'." version="0" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
+      <publisher operation="not equal">NotSolaris</publisher>
+      <name operation="not equal">compress/gzip</name>
+      <version datatype="version" var_ref="oval:navy.navwar.niwcatlantic.scc.test:var:1" />
+      <timestamp operation="pattern match">\d</timestamp>
+    </package511_object>
+    <package511_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:3" comment="Retrieve package (compress/gzip) info for publisher operation 'pattern match'." version="0" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
+      <publisher operation="pattern match">^[Ss]ol[ar]+is$</publisher>
+      <name>compress/gzip</name>
+      <version datatype="version" var_ref="oval:navy.navwar.niwcatlantic.scc.test:var:2" />
+      <timestamp operation="pattern match">.*</timestamp>
+    </package511_object>
+    <package511_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:4" comment="Retrieve package (compress/gzip) info for name operation 'equals'." version="0" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
+      <publisher>solaris</publisher>
+      <name>compress/gzip</name>
+      <version datatype="version">1.8</version>
+      <timestamp operation="pattern match">.*</timestamp>
+    </package511_object>
+    <package511_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:5" comment="Retrieve package (compress/gzip) info for name operation 'not equal'." version="0" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
+      <publisher>solaris</publisher>
+      <name operation="not equal">compress/NOTgzip</name>
+      <version datatype="version" var_ref="oval:navy.navwar.niwcatlantic.scc.test:var:2" />
+      <timestamp operation="pattern match">.*</timestamp>
+    </package511_object>
+    <package511_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:6" comment="Retrieve package (compress/gzip) info for name operation 'pattern match'." version="0" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
+      <publisher operation="pattern match">^[Ss]olaris</publisher>
+      <name operation="pattern match">^compress\/[Ggzip]{4}</name>
+      <version datatype="version" var_ref="oval:navy.navwar.niwcatlantic.scc.test:var:2" />
+      <timestamp operation="pattern match">.*</timestamp>
+    </package511_object>
+    <shellcommand_object id="oval:navy.navwar.niwcatlantic.scc:obj:7" comment="Gather version for compress/zip package." version="0" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+      <shell>bash</shell>
+      <command>pkg info compress/zip</command>
+      <pattern>Version:\s+(\S+)$</pattern>
+    </shellcommand_object>
+    <shellcommand_object id="oval:navy.navwar.niwcatlantic.scc:obj:8" comment="Gather version for compress/zip package." version="0" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+      <shell>bash</shell>
+      <command>pkg info compress/gzip</command>
+      <pattern>Version:\s+(\S+)$</pattern>
+    </shellcommand_object>
+  </objects>
+  <states>
+    <package511_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:1" comment="Confirm publisher and name are as expected." version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
+      <publisher>solaris</publisher>
+      <name>compress/gzip</name>
+    </package511_state>
+    <package511_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:2" comment="Confirm publisher and name (not 'compress/gzip') are as expected." version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
+      <publisher>solaris</publisher>
+      <name operation="pattern match">^compress\/zip</name>
+    </package511_state>
+    <package511_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:7" comment="Need meaningful comment, here." version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris">
+      <name operation="pattern match">compress\/.*</name>
+    </package511_state>
+  </states>
+  <variables>
+    <local_variable id="oval:navy.navwar.niwcatlantic.scc.test:var:1" version="1" datatype="string" comment="Retrieve the version value for the compress/zip package.">
+      <object_component object_ref="oval:navy.navwar.niwcatlantic.scc:obj:7" item_field="subexpression" />
+    </local_variable>
+    <local_variable id="oval:navy.navwar.niwcatlantic.scc.test:var:2" version="1" datatype="string" comment="Retrieve the version value for the compress/zip package.">
+      <object_component object_ref="oval:navy.navwar.niwcatlantic.scc:obj:8" item_field="subexpression" />
+    </local_variable>
+  </variables>
 </oval_definitions>
