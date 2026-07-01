@@ -1,9 +1,0 @@
-Test content is needed for the following OVAL 5.12.2 ios-xe tests
-
-< section_test >
-< bgpneighbor_test >
-< routingprotocolauthintf_test >
-< snmphost_test >
-< snmpcommunity_test >
-< snmpuser_test >
-< snmpgroup_test >

@@ -2,18 +2,16 @@
 <oval_definitions
   xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-  xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5"  
-  xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"  
   xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
   xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/independent-definitions-schema.xsd
   	http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-definitions-schema.xsd
   	http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.2/oval-schemas/oval-common-schema.xsd" >	
-	<generator>
-		<oval:product_name>Oval Test Content</oval:product_name>
-		<oval:schema_version>5.12.2</oval:schema_version>
-		<oval:timestamp>2026-03-02T12:05:51</oval:timestamp>
+  <generator>
+    <oval:product_name>Oval Test Content</oval:product_name>
+    <oval:schema_version>5.12.2</oval:schema_version>
+    <oval:timestamp>2026-03-02T12:05:51</oval:timestamp>
     <terms_of_use>NOTE: MITRE Content may be modified from original by NIWC Atlantic. Copyright (c) 2002-2011, The MITRE Corporation. All rights reserved. The contents of this file are subject to the license described in terms.txt.</terms_of_use>
-	</generator>
+  </generator>
   <definitions>
     <definition id="oval:org.mitre.oval.test:def:95" version="1" class="miscellaneous">
       <metadata>
@@ -44,8 +42,8 @@
     </family_state>
   </states>
   <variables>
-    <constant_variable id="oval:org.mitre.oval.test:var:403" version="2" comment="This variable contains a regular expression that matches the regular expression '(vmware_infrastructure|panos|junos|aws|iosxe|ios|macos|unix|windows)'." datatype="string">
-      <value>(vmware_infrastructure|panos|junos|aws|iosxe|ios|macos|unix|windows)</value>
+    <constant_variable id="oval:org.mitre.oval.test:var:403" version="2" comment="This variable contains a regular expression that matches the regular expression '(vmware_infrastructure|panos|aix|junos|aws|iosxe|ios|macos|unix|windows)'." datatype="string">
+      <value>(vmware_infrastructure|panos|aix|junos|aws|iosxe|ios|macos|unix|windows)</value>
     </constant_variable>
   </variables>
 </oval_definitions>

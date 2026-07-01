@@ -1,68 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<oval_definitions
-  xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-  xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5"  
-  xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"  
-  xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
-  xmlns:macos-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos"
-  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/independent-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-definitions-5#macos  https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/macos-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-common-schema.xsd" >	
-	<generator>
-		<oval:product_name>Oval Test Content</oval:product_name>
-		<oval:schema_version>5.12.3</oval:schema_version>
-		<oval:timestamp>2026-06-10T12:05:51</oval:timestamp>
-		<terms_of_use>Portions of this document were developed at Naval Information Warfare Center Atlantic by employees of the Federal Government in the course of their official duties. Pursuant to title 17 Section 105 of the United States Code this software is not subject to copyright protection and is in the public domain. The Government assumes no responsibility whatsoever for its use by other parties, and the software is provided "AS IS" without warranty or guarantee of any kind, express or implied, including, but not limited to, the warranties of merchantability and of fitness for a particular purpose. In no event shall the Government be liable for any claim, damages or other liability, whether in an action of contract, tort or other dealings in the software. The Government has no obligation hereunder to provide maintenance, support, updates, enhancements, or modifications. We would appreciate acknowledgement if the software is used. This software can be redistributed and/or modified freely provided that any derivative works bear some notice that they are derived from it, and any modified versions bear some notice that they have been modified.</terms_of_use>
-	</generator>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
+                  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-definitions-schema.xsd
+                    http://oval.mitre.org/XMLSchema/oval-definitions-5#macos https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/macos-definitions-schema.xsd
+                    http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-common-schema.xsd">
+  <generator>
+    <oval:product_name>Oval Test Content</oval:product_name>
+    <oval:schema_version>5.12.3</oval:schema_version>
+    <oval:timestamp>2026-06-10T12:05:51</oval:timestamp>
+    <terms_of_use>Portions of this document were developed at Naval Information Warfare Center Atlantic by employees of the Federal Government in the course of their official duties. Pursuant to title 17 Section 105 of the United States Code this software is not subject to copyright protection and is in the public domain. The Government assumes no responsibility whatsoever for its use by other parties, and the software is provided "AS IS" without warranty or guarantee of any kind, express or implied, including, but not limited to, the warranties of merchantability and of fitness for a particular purpose. In no event shall the Government be liable for any claim, damages or other liability, whether in an action of contract, tort or other dealings in the software. The Government has no obligation hereunder to provide maintenance, support, updates, enhancements, or modifications. We would appreciate acknowledgement if the software is used. This software can be redistributed and/or modified freely provided that any derivative works bear some notice that they are derived from it, and any modified versions bear some notice that they have been modified.</terms_of_use>
+  </generator>
   <definitions>
     <definition id="oval:org.mitre.oval.test:def:1" version="1" class="compliance">
       <metadata>
         <title>Evaluate to true if the macos-def:authorizaiondb_test is properly supported</title>
-        <description>This definition is intended to evalutate to true if the interpreter properly supports the macos-def:authorizaiondb_test.</description>
+        <description>This definition is intended to evaluate to true if the interpreter properly supports the macos-def:authorizaiondb_test.</description>
       </metadata>
       <notes>
         <note>It is important to note that the values used in this test definition are specific to a particular machine, and may not necessarily apply to your system. As a result, in order to have the definition return a result of 'true', you must either change these values to the ones found on your particular system, or you must configure your system to use these values.</note>
       </notes>
-             <criteria>
-                <criterion comment="Test that the authorizationdb_object is supported with the right_name entity equal to some value." test_ref="oval:test:tst:1" />
-                <criterion comment="Test that the authorizationdb_object is supported with the right_name entity not equal to some value." test_ref="oval:test:tst:2" />
-                <criterion comment="Test that the authorizationdb_object is supported with the right_name entity matching some value." test_ref="oval:test:tst:3" />
-            </criteria>
-        </definition> 
-    </definitions> 
-    <tests>
-      <authorizationdb_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" check="all" check_existence="only_one_exists" comment="Test that the authorizationdb_object is supported with the right_name entity equal to some value." id="oval:test:tst:1" version="2">
-            <object object_ref="oval:test:obj:1" />
-             <state state_ref="oval:test:ste:1" />
-        </authorizationdb_test>
-      <authorizationdb_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" check="all" check_existence="at_least_one_exists" comment="Test that the authorizationdb_object is supported with the right_name entity not equal to some value." id="oval:test:tst:2" version="2">
-            <object object_ref="oval:test:obj:2" />
-        </authorizationdb_test>
-      <authorizationdb_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" check="all" check_existence="only_one_exists" comment="Test that the authorizationdb_object is supported with the right_name entity matching some value." id="oval:test:tst:3" version="2">
-            <object object_ref="oval:test:obj:3" />
-             <state state_ref="oval:test:ste:1" />
-        </authorizationdb_test>
-    </tests>
-    <objects>
-        <authorizationdb_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" comment="Collect item(s) for right_name equal to 'system.preferences'." id="oval:test:obj:1" version="1">
-            <right_name>system.preferences</right_name>
-            <xpath>boolean(//key[text()="shared"]/following-sibling::false)</xpath>
-        </authorizationdb_object>  
-        <authorizationdb_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" comment="Collect item(s) for right_name not equal to 'system.preferences'." id="oval:test:obj:2" version="1">
-            <right_name operation="not equal">system.preferences</right_name>
-            <xpath>boolean(//key[text()="shared"]/following-sibling::false)</xpath>
-        </authorizationdb_object>  
-        <authorizationdb_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" comment="Collect item(s) for right_name matching 'system\.preferences'." id="oval:test:obj:3" version="1">
-            <right_name operation="pattern match">system.preferences</right_name>
-            <xpath>boolean(//key[text()="shared"]/following-sibling::false)</xpath>
-        </authorizationdb_object>  
-    </objects>
-    <states>
-    	<authorizationdb_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" comment="Confirm expected value is collected." id="oval:test:ste:1" version="1">
-          <value_of datatype="boolean" operation="equals">false</value_of>
-    	</authorizationdb_state>
-    </states>
-    	
+      <criteria>
+        <criterion comment="Test that the authorizationdb_object is supported with the right_name entity equal to some value." test_ref="oval:test:tst:1" />
+        <criterion comment="Test that the authorizationdb_object is supported with the right_name entity not equal to some value." test_ref="oval:test:tst:2" />
+        <criterion comment="Test that the authorizationdb_object is supported with the right_name entity matching some value." test_ref="oval:test:tst:3" />
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <authorizationdb_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" check="all" check_existence="only_one_exists" comment="Test that the authorizationdb_object is supported with the right_name entity equal to some value." id="oval:test:tst:1" version="2">
+      <object object_ref="oval:test:obj:1" />
+      <state state_ref="oval:test:ste:1" />
+    </authorizationdb_test>
+    <authorizationdb_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" check="all" check_existence="at_least_one_exists" comment="Test that the authorizationdb_object is supported with the right_name entity not equal to some value." id="oval:test:tst:2" version="2">
+      <object object_ref="oval:test:obj:2" />
+    </authorizationdb_test>
+    <authorizationdb_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" check="all" check_existence="only_one_exists" comment="Test that the authorizationdb_object is supported with the right_name entity matching some value." id="oval:test:tst:3" version="2">
+      <object object_ref="oval:test:obj:3" />
+      <state state_ref="oval:test:ste:1" />
+    </authorizationdb_test>
+  </tests>
+  <objects>
+    <authorizationdb_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" comment="Collect item(s) for right_name equal to 'system.preferences'." id="oval:test:obj:1" version="1">
+      <right_name>system.preferences</right_name>
+      <xpath>boolean(//key[text()="shared"]/following-sibling::false)</xpath>
+    </authorizationdb_object>
+    <authorizationdb_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" comment="Collect item(s) for right_name not equal to 'system.preferences'." id="oval:test:obj:2" version="1">
+      <right_name operation="not equal">system.preferences</right_name>
+      <xpath>boolean(//key[text()="shared"]/following-sibling::false)</xpath>
+    </authorizationdb_object>
+    <authorizationdb_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" comment="Collect item(s) for right_name matching 'system\.preferences'." id="oval:test:obj:3" version="1">
+      <right_name operation="pattern match">system.preferences</right_name>
+      <xpath>boolean(//key[text()="shared"]/following-sibling::false)</xpath>
+    </authorizationdb_object>
+  </objects>
+  <states>
+    <authorizationdb_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" comment="Confirm expected value is collected." id="oval:test:ste:1" version="1">
+      <value_of datatype="boolean" operation="equals">false</value_of>
+    </authorizationdb_state>
+  </states>
 </oval_definitions>

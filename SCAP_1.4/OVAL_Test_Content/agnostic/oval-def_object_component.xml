@@ -2,46 +2,44 @@
 <oval_definitions
   xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-  xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5"  
-  xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"  
   xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
   xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/independent-definitions-schema.xsd
   	http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-definitions-schema.xsd
   	http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-common-schema.xsd" >	
-	<generator>
-		<oval:product_name>Oval Test Content</oval:product_name>
-		<oval:schema_version>5.12.3</oval:schema_version>
-		<oval:timestamp>2026-06-10T12:05:51</oval:timestamp>
+  <generator>
+    <oval:product_name>Oval Test Content</oval:product_name>
+    <oval:schema_version>5.12.3</oval:schema_version>
+    <oval:timestamp>2026-06-10T12:05:51</oval:timestamp>
     <terms_of_use>NOTE: MITRE Content may be modified from original by NIWC Atlantic. Copyright (c) 2002-2011, The MITRE Corporation. All rights reserved. The contents of this file are subject to the license described in terms.txt.</terms_of_use>
-	</generator>
+  </generator>
   <definitions>
     <definition id="oval:org.mitre.oval.test:def:670" version="1" class="miscellaneous">
       <metadata>
         <title>Evaluate to true if the oval-def:object_component construct is properly supported</title>
-        <description>This definition is intended to evalutate to true if the interpreter properly supports the oval-def:object_component construct.</description>
+        <description>This definition is intended to evaluate to true if the interpreter properly supports the oval-def:object_component construct.</description>
       </metadata>
       <criteria operator="AND">
-        <criterion comment="Test that the object_component is supported with a object_ref attritbute that specifies an object which references a single item and an item_field attribute that specifies a field in an item that occurs only once." test_ref="oval:org.mitre.oval.test:tst:373"/>
-        <criterion comment="Test that the object_component is supported with a object_ref attritbute that specifies an object which references multiple items and an item_field attribute that specifies a field in an item that that occurs only once." test_ref="oval:org.mitre.oval.test:tst:63"/>
-        <criterion comment="Test that the object_component is supported with a object_ref attritbute that specifies an object which references a single item and an item_field attribute that specifies a field in an item that that occurs multiple times." test_ref="oval:org.mitre.oval.test:tst:65"/>
-        <criterion comment="Test that the object_component is supported with a object_ref attritbute that specifies an object which references multiple items and an item_field attribute that specifies a field in an item that that occurs multiple times." test_ref="oval:org.mitre.oval.test:tst:295"/>
+        <criterion comment="Test that the object_component is supported with a object_ref attribute that specifies an object which references a single item and an item_field attribute that specifies a field in an item that occurs only once." test_ref="oval:org.mitre.oval.test:tst:373"/>
+        <criterion comment="Test that the object_component is supported with a object_ref attribute that specifies an object which references multiple items and an item_field attribute that specifies a field in an item that that occurs only once." test_ref="oval:org.mitre.oval.test:tst:63"/>
+        <criterion comment="Test that the object_component is supported with a object_ref attribute that specifies an object which references a single item and an item_field attribute that specifies a field in an item that that occurs multiple times." test_ref="oval:org.mitre.oval.test:tst:65"/>
+        <criterion comment="Test that the object_component is supported with a object_ref attribute that specifies an object which references multiple items and an item_field attribute that specifies a field in an item that that occurs multiple times." test_ref="oval:org.mitre.oval.test:tst:295"/>
       </criteria>
     </definition>
   </definitions>
   <tests>
-    <variable_test id="oval:org.mitre.oval.test:tst:373" version="1" comment="Test that the object_component is supported with a object_ref attritbute that specifies an object which references a single item and an item_field attribute that specifies a field in an item that occurs only once." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+    <variable_test id="oval:org.mitre.oval.test:tst:373" version="1" comment="Test that the object_component is supported with a object_ref attribute that specifies an object which references a single item and an item_field attribute that specifies a field in an item that occurs only once." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
       <object object_ref="oval:org.mitre.oval.test:obj:226"/>
       <state state_ref="oval:org.mitre.oval.test:ste:152"/>
     </variable_test>
-    <variable_test id="oval:org.mitre.oval.test:tst:63" version="1" comment="Test that the object_component is supported with a object_ref attritbute that specifies an object which references multiple items and an item_field attribute that specifies a field in an item that that occurs only once." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+    <variable_test id="oval:org.mitre.oval.test:tst:63" version="1" comment="Test that the object_component is supported with a object_ref attribute that specifies an object which references multiple items and an item_field attribute that specifies a field in an item that that occurs only once." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
       <object object_ref="oval:org.mitre.oval.test:obj:644"/>
       <state state_ref="oval:org.mitre.oval.test:ste:152"/>
     </variable_test>
-    <variable_test id="oval:org.mitre.oval.test:tst:65" version="1" comment="Test that the object_component is supported with a object_ref attritbute that specifies an object which references a single item and an item_field attribute that specifies a field in an item that that occurs multiple times." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+    <variable_test id="oval:org.mitre.oval.test:tst:65" version="1" comment="Test that the object_component is supported with a object_ref attribute that specifies an object which references a single item and an item_field attribute that specifies a field in an item that that occurs multiple times." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
       <object object_ref="oval:org.mitre.oval.test:obj:833"/>
       <state state_ref="oval:org.mitre.oval.test:ste:1"/>
     </variable_test>
-    <variable_test id="oval:org.mitre.oval.test:tst:295" version="1" comment="Test that the object_component is supported with a object_ref attritbute that specifies an object which references multiple items and an item_field attribute that specifies a field in an item that that occurs multiple times." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+    <variable_test id="oval:org.mitre.oval.test:tst:295" version="1" comment="Test that the object_component is supported with a object_ref attribute that specifies an object which references multiple items and an item_field attribute that specifies a field in an item that that occurs multiple times." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
       <object object_ref="oval:org.mitre.oval.test:obj:802"/>
       <state state_ref="oval:org.mitre.oval.test:ste:1"/>
     </variable_test>

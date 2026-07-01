@@ -2,25 +2,21 @@
 <oval_definitions
   xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-  xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5"  
-  xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"  
   xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
-  xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" 
-  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/independent-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-definitions-5#windows  https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/windows-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-common-schema.xsd" >
-	<generator>
-		<oval:product_name>Oval Test Content</oval:product_name>
-		<oval:schema_version>5.12.3</oval:schema_version>
-		<oval:timestamp>2026-06-10T12:05:51</oval:timestamp>
-		<terms_of_use>Portions of this document were developed at Naval Information Warfare Center Atlantic by employees of the Federal Government in the course of their official duties. Pursuant to title 17 Section 105 of the United States Code this software is not subject to copyright protection and is in the public domain. The Government assumes no responsibility whatsoever for its use by other parties, and the software is provided "AS IS" without warranty or guarantee of any kind, express or implied, including, but not limited to, the warranties of merchantability and of fitness for a particular purpose. In no event shall the Government be liable for any claim, damages or other liability, whether in an action of contract, tort or other dealings in the software. The Government has no obligation hereunder to provide maintenance, support, updates, enhancements, or modifications. We would appreciate acknowledgement if the software is used. This software can be redistributed and/or modified freely provided that any derivative works bear some notice that they are derived from it, and any modified versions bear some notice that they have been modified.</terms_of_use>
-	</generator>
+  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows  https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/windows-definitions-schema.xsd
+    http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-definitions-schema.xsd
+    http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-common-schema.xsd" >
+  <generator>
+    <oval:product_name>Oval Test Content</oval:product_name>
+    <oval:schema_version>5.12.3</oval:schema_version>
+    <oval:timestamp>2026-06-10T12:05:51</oval:timestamp>
+    <terms_of_use>Portions of this document were developed at Naval Information Warfare Center Atlantic by employees of the Federal Government in the course of their official duties. Pursuant to title 17 Section 105 of the United States Code this software is not subject to copyright protection and is in the public domain. The Government assumes no responsibility whatsoever for its use by other parties, and the software is provided "AS IS" without warranty or guarantee of any kind, express or implied, including, but not limited to, the warranties of merchantability and of fitness for a particular purpose. In no event shall the Government be liable for any claim, damages or other liability, whether in an action of contract, tort or other dealings in the software. The Government has no obligation hereunder to provide maintenance, support, updates, enhancements, or modifications. We would appreciate acknowledgement if the software is used. This software can be redistributed and/or modified freely provided that any derivative works bear some notice that they are derived from it, and any modified versions bear some notice that they have been modified.</terms_of_use>
+  </generator>
   <definitions>
     <definition id="oval:navy.navwar.niwcatlantic.scc.test:def:100" version="1" class="miscellaneous">
       <metadata>
         <title>Evaluate to true if the win-def:service_test is properly supported.</title>
-        <description>This definition is intended to evalutate to true if the interpreter properly supports the win-def:service_test.</description>
+        <description>This definition is intended to evaluate to true if the interpreter properly supports the win-def:service_test.</description>
       </metadata>
       <notes>
         <note>It is important to note that the values used in this test definition are specific to a particular machine, and may not necessarily apply to your system. As a result, in order to have the
@@ -30,75 +26,55 @@
         <criterion comment="Test that a service_object with a service_name is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:100"/>
         <criterion comment="Test that a service_object with a service_name not equals is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:101"/>
         <criterion comment="Test that a service_object with a service_name with a pattern match is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:102"/>
-		<criterion comment="Test that a service_object with a service_name case insensitive is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:200"/>
+        <criterion comment="Test that a service_object with a service_name case insensitive is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:200"/>
         <criterion comment="Test that a service_object with a service_name case insensitive not equals is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:201"/>
       </criteria>
     </definition>
   </definitions>
   <tests>
-    <service_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:100" version="1" comment="Test that a service_object with a service_name is supported."
-      check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+    <service_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:100" version="1" comment="Test that a service_object with a service_name is supported." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:100"/>
       <state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:100"/>
     </service_test>
-    <service_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:101" version="1" comment="Test that a service_object with a service_name not equals is supported."
-      check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+    <service_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:101" version="1" comment="Test that a service_object with a service_name not equals is supported." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:101"/>
       <state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:101"/>
     </service_test>
-    <service_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:102" version="1"
-      comment="Test that a service_object with a service_name with a pattern match is supported." check_existence="at_least_one_exists" check="all"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+    <service_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:102" version="1" comment="Test that a service_object with a service_name with a pattern match is supported." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:102"/>
       <state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:100"/>
     </service_test>
-	<service_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:200" version="1" comment="Test that a service_object with a service_name case insensitive equals is supported."
-      check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+  <service_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:200" version="1" comment="Test that a service_object with a service_name case insensitive equals is supported." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:200"/>
       <state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:100"/>
     </service_test>
-    <service_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:201" version="1" comment="Test that a service_object with a service_name case insensitive not equals is supported."
-      check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+    <service_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:201" version="1" comment="Test that a service_object with a service_name case insensitive not equals is supported." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:201"/>
       <state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:101"/>
     </service_test>
   </tests>
   <objects>
-    <service_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:100" version="1"
-      comment="This object represents a service_object with a service_name equal to 'EventLog'"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+    <service_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:100" version="1" comment="This object represents a service_object with a service_name equal to 'EventLog'" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <service_name>EventLog</service_name>
     </service_object>
-    <service_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:101" version="1"
-      comment="This object represents a service_object with a service_name equal to 'EventLog'"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+    <service_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:101" version="1" comment="This object represents a service_object with a service_name equal to 'EventLog'" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <service_name operation="not equal">EventLog</service_name>
     </service_object>
-    <service_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:102" version="1"
-      comment="This object represents a service_object with a service_name equal to 'EventLog'"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+    <service_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:102" version="1" comment="This object represents a service_object with a service_name equal to 'EventLog'" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <service_name operation="pattern match">^EventLog$</service_name>
     </service_object>
-	<service_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:200" version="1"
-      comment="This object represents a service_object with a service_name equal to 'EventLog'"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+  <service_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:200" version="1" comment="This object represents a service_object with a service_name equal to 'EventLog'" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <service_name operation="case insensitive equals">EventLog</service_name>
     </service_object>
-    <service_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:201" version="1"
-      comment="This object represents a service_object with a service_name equal to 'EventLog'"
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+    <service_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:201" version="1" comment="This object represents a service_object with a service_name equal to 'EventLog'" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <service_name operation="case insensitive not equal">EventLog</service_name>
     </service_object>
   </objects>
   <states>
-    <service_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:100" version="1"
-      comment="This state represents a service_object which has a service_name equal to 'EventLog'."
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+    <service_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:100" version="1" comment="This state represents a service_object which has a service_name equal to 'EventLog'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <service_name>EventLog</service_name>
     </service_state>
-    <service_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:101" version="1"
-      comment="This state represents a service_object which has a service_name not equal to 'Eventlog'."
-      xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+    <service_state id="oval:navy.navwar.niwcatlantic.scc.test:ste:101" version="1" comment="This state represents a service_object which has a service_name not equal to 'Eventlog'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <service_name operation="not equal">EventLog</service_name>
     </service_state>
   </states>

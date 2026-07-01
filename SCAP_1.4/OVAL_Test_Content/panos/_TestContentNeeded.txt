@@ -1,3 +1,0 @@
-Test content is needed for the following OVAL 5.12.2 panos tests
-
-< config_test >

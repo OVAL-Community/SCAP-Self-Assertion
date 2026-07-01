@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
+                  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-definitions-schema.xsd
+                    http://oval.mitre.org/XMLSchema/oval-definitions-5#macos https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/macos-definitions-schema.xsd
+                    http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-common-schema.xsd">
+  <generator>
+    <oval:schema_version>5.12.3</oval:schema_version>
+    <oval:timestamp>2026-06-25T10:29:00-04:00</oval:timestamp>
+    <terms_of_use>(c) 2026 Arctic Wolf Networks, Inc. f/k/a Joval</terms_of_use>
+  </generator>
+  <definitions>
+    <definition id="oval:org.joval.oval:def:20002" version="0" class="compliance">
+      <metadata>
+        <title>Evaluate to true if the macos-def:pwpolicy512_test is properly supported</title>
+        <affected family="macos">
+          <platform>Apple Mac OS X</platform>
+        </affected>
+        <description>Verify the pwpolicy512_test implementation.</description>
+      </metadata>
+      <criteria>
+        <criterion comment="Verify the pwpolicy512_test implementation for user policy." test_ref="oval:org.joval.oval:tst:20002"/>
+        <criterion comment="Verify the pwpolicy512_test implementation for global policy." test_ref="oval:org.joval.oval:tst:20003"/>
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <pwpolicy512_test id="oval:org.joval.oval:tst:20002" version="0" comment="Verify the pwpolicy512_test implementation for user policy." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
+      <object object_ref="oval:org.joval.oval:obj:20002"/>
+    </pwpolicy512_test>
+    <pwpolicy512_test id="oval:org.joval.oval:tst:20003" version="0" comment="Verify the pwpolicy512_test implementation for global policy." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
+      <object object_ref="oval:org.joval.oval:obj:20003"/>
+    </pwpolicy512_test>
+  </tests>
+  <objects>
+    <pwpolicy512_object id="oval:org.joval.oval:obj:20002" version="1" comment="This pwpolicy512_object represents a pwpolicy_item with the username entity equal to 'root', and the directory_node entity equal to '/Local/Default'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
+      <username>root</username>
+      <authenticator xsi:nil="true"></authenticator>
+      <authenticator_password xsi:nil="true"></authenticator_password>
+      <directory_node>/Local/Default</directory_node>
+      <xpath>//key</xpath>
+    </pwpolicy512_object>
+    <pwpolicy512_object id="oval:org.joval.oval:obj:20003" version="1" comment="This pwpolicy512_object represents a pwpolicy_item with the target_user xsi:nil='true', and the directory_node entity equal to '/Local/Default'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
+      <username xsi:nil="true"/>
+      <authenticator xsi:nil="true"/>
+      <authenticator_password xsi:nil="true"/>
+      <directory_node>/Local/Default</directory_node>
+      <xpath>//key[text()="en"]/following-sibling::string[1]/text()</xpath>
+    </pwpolicy512_object>
+  </objects>
+</oval_definitions>

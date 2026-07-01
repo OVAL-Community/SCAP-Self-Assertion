@@ -1,4 +1,0 @@
-Test content is needed for the following OVAL 5.12.2 junos tests
-
-< xml_config_test >
-< show_test >

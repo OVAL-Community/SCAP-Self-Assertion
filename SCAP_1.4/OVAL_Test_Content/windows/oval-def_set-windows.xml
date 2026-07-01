@@ -2,34 +2,15 @@
 <oval_definitions
   xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-  xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5"  
-  xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"  
   xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
-  xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" 
-  xmlns:unix-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix"
-  xmlns:linux-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux"
-  xmlns:macos-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos"
-  xmlns:ios-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#ios"
-  xmlns:aix-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#aix"
-  xmlns:hpux-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#hpux"
-  xmlns:freebsd-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#freebsd"
-  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/independent-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-definitions-5#windows  https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/windows-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-definitions-5#unix  https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/unix-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-definitions-5#linux  https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/linux-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris  https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/solaris-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-definitions-5#macos  https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/macos-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-definitions-5#freebsd  https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/freebsd-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-definitions-5#hpux  https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/hpux-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-definitions-5#aix  https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/aix-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-definitions-5#ios  https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/ios-definitions-schema.xsd
+  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows  https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/windows-definitions-schema.xsd
   	http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-definitions-schema.xsd
-  	http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-common-schema.xsd" >	<generator>
-		<oval:product_name>Oval Test Content</oval:product_name>
-		<oval:schema_version>5.12.3</oval:schema_version>
-		<oval:timestamp>2026-06-10T12:05:51</oval:timestamp>
+  	http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-common-schema.xsd" >  <generator>
+    <oval:product_name>Oval Test Content</oval:product_name>
+    <oval:schema_version>5.12.3</oval:schema_version>
+    <oval:timestamp>2026-06-10T12:05:51</oval:timestamp>
     <terms_of_use>NOTE: MITRE Content may be modified from original by NIWC Atlantic. Copyright (c) 2002-2011, The MITRE Corporation. All rights reserved. The contents of this file are subject to the license described in terms.txt.</terms_of_use>
-	</generator>
+  </generator>
   <definitions>
     <definition id="oval:org.mitre.oval.test:def:276" version="1" class="miscellaneous">
       <metadata>
