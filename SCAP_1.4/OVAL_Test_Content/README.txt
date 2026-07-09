@@ -1,5 +1,5 @@
-Version 1.0 (DRAFT)
-03/12/2026
+Version 1.0 (RC3)
+07/09/2026
 
 ****************************************************
 
@@ -37,15 +37,15 @@ ATLANTIC, SEE NIWC-TermsOfUse.txt
 -- CONTENTS --
 	
   I     SUPPORTED PLATFORMS
-         A. Linux 
-         B. Sun Solaris
-         C. Microsoft Windows
-         D. MacOS
-		 E. Cisco IOS and IOS XE
+	 A. Linux 
+	 B. Sun Solaris
+	 C. Microsoft Windows
+	 D. MacOS
+	 E. Cisco IOS and IOS XE
   II    USING THE OVAL TEST CONTENT
-         A. Preparing the System
-         B. Running the Content
-         C. Expected Results
+	 A. Preparing the System
+	 B. Running the Content
+	 C. Expected Results
   III   REPORTING ISSUES
   IV    CONTRIBUTING
 
@@ -108,17 +108,16 @@ ATLANTIC, SEE NIWC-TermsOfUse.txt
 	  There are several directories of OVAL test content:
 	  
 	  - agnostic:	applicable to all platforms/OS
-	  - aws:		applicable to all aws systems
-	  - ios: 		applicable to Cisco IOS router/switch
-	  - iosxe: 		applicable to Cisco IOS-XE router/switch
-	  - junos: 		applicable to JunOS systems
-	  - linux: 		applicable to linux systems
-	  - macos: 		applicable to macOS systems
+	  - aws:	applicable to all aws systems
+	  - ios: 	applicable to Cisco IOS router/switch
+	  - iosxe: 	applicable to Cisco IOS-XE router/switch
+	  - junos: 	applicable to JunOS systems
+	  - linux: 	applicable to linux systems
+	  - macos: 	applicable to macOS systems
 	  - panos:      applicable to all PanOS systems
 	  - solaris:  	applicable to Sun Solaris systems
  	  - unix:    	applicable to all macOS, Linux and Solaris systems
 	  - windows:    applicable to all Microsoft Windows systems
-
 	  
   C. Expected Results
 
