@@ -34,6 +34,10 @@ WITH THE OVAL TEST CONTENT.
 PORTIONS OF THE OVAL TEST CONTENT HAVE BEEN DEVELOPED AND/OR UPDATED BY NIWC 
 ATLANTIC, SEE NIWC-TermsOfUse.txt
 
+Other portions of the OVAL test content may be developed by others, refer
+to the namespace prefix for each definition/test/object to determine
+the contributing person/organization/company.
+
 -- CONTENTS --
 	
   I     SUPPORTED PLATFORMS
@@ -41,7 +45,9 @@ ATLANTIC, SEE NIWC-TermsOfUse.txt
 	 B. Sun Solaris
 	 C. Microsoft Windows
 	 D. MacOS
-	 E. Cisco IOS and IOS XE
+	 E. Cisco IOS, IOS XE and ASA
+	 F. JunOS
+	 G. PanOS
   II    USING THE OVAL TEST CONTENT
 	 A. Preparing the System
 	 B. Running the Content
@@ -75,10 +81,20 @@ ATLANTIC, SEE NIWC-TermsOfUse.txt
 	  The OVAL Test Content is currently developed and tested on 
 	  - macOS 13 or later.
 	  
-  E. Cisco IOS and IOS-XE
+  E. Cisco IOS, IOS-XE and ASA
   
 	  The OVAL test content is currently developed and tested 
-	  against Cisco IOS 15 and Cisco IOS XE 17
+	  against Cisco IOS 15, Cisco IOS XE 17 and Cisco ASA (TBD)
+
+  E. JunOS
+  
+	  The OVAL test content is currently developed and tested 
+	  against JunOS (TBD)
+
+  E. PanOS
+  
+	  The OVAL test content is currently developed and tested 
+	  against PanOS (TBD)
 
 -- II -- USING THE OVAL TEST CONTENT --
 
@@ -109,6 +125,7 @@ ATLANTIC, SEE NIWC-TermsOfUse.txt
 	  
 	  - agnostic:	applicable to all platforms/OS
 	  - aws:	applicable to all aws systems
+	  - asa:	applicable to all Cisco asa systems
 	  - ios: 	applicable to Cisco IOS router/switch
 	  - iosxe: 	applicable to Cisco IOS-XE router/switch
 	  - junos: 	applicable to JunOS systems
