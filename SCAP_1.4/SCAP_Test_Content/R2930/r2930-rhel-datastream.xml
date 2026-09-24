@@ -12767,7 +12767,7 @@
                     </metadata>
                     <criteria>
                         <criterion comment="Installed operating system is part of the unix family" test_ref="oval:gov.nist.validation.cpe.oval:tst:100"/>
-                        <criterion comment="Red Hat Enterprise Linux 3, 4, 5, 6, or 7 is installed" test_ref="oval:gov.nist.validation.cpe.oval:tst:101"/>
+                        <criterion comment="Red Hat Enterprise Linux is installed" test_ref="oval:gov.nist.validation.cpe.oval:tst:101"/>
                     </criteria>
                 </definition>
             </definitions>
@@ -12801,7 +12801,7 @@
                     <family>unix</family>
                 </family_state>
                 <rpminfo_state id="oval:gov.nist.validation.cpe.oval:ste:101" version="2" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
-                    <version operation="pattern match">^[3-7]\D</version>
+                    <version operation="pattern match">^\d+</version>
                 </rpminfo_state>
             </states>
             <!-- ==================================================================================================== -->
@@ -12816,7 +12816,7 @@
                 <notes xml:lang="en-US">
                     <note>This CPE Name represents Red Hat Enterprise Linux OS</note>
                 </notes>
-                <check href="r2930-rhel-cpe-oval.xml" system="http://oval.mitre.org/XMLSchema/oval-definitions-5">oval:gov.nist.validation.cpe.oval:def:100</check>
+                <check href="r2930-rhel-cpe-" system="http://oval.mitre.org/XMLSchema/oval-definitions-5">oval:gov.nist.validation.cpe.oval:def:100</check>
             </cpe-item>
         </cpe-list>
     </component>

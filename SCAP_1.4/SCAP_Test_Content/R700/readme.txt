@@ -1,4 +1,4 @@
-This testcase contains SCAP 1.4 content obtained from the NIWC Atlantic SCAP 1.4 repository, as of 03/02/2026.
+This testcase contains SCAP 1.4 content obtained from the NIWC Atlantic SCAP 1.4 repository, as of 09/24/2026.
 
 https://github.com/niwc-atlantic/scap-content-library
 
