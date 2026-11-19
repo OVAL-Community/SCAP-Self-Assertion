@@ -62,17 +62,17 @@
       <pid datatype="int" xsi:nil="true"/>
       <name operation="case insensitive equals">windir</name>
     </environmentvariable58_object>
-    <environmentvariable58_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:3" version="1" comment="Get windows directory of a particular pid (curent process via var_ref.)" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
-      <oval-def:notes>
-        <oval-def:note>There's no fixed pid to use here (cannot use 4: system)...Let's use the current process again (via var_ref.)</oval-def:note>
-      </oval-def:notes>
+    <environmentvariable58_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:3" version="2" comment="Get windows directory of a particular pid (curent process via var_ref.)" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+      <oval:notes>
+        <oval:note>There's no fixed pid to use here (cannot use 4: system)...Let's use the current process again (via var_ref.)</oval:note>
+      </oval:notes>
       <pid  datatype="int" var_ref="oval:navy.navwar.niwcatlantic.scc.test:var:3" />
       <name operation="case insensitive not equal">windir</name>
     </environmentvariable58_object>
-    <environmentvariable58_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:4" version="1" comment="Get WINDIR env vars of a particular pid (curent process via var_ref.)" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
-      <oval-def:notes>
-        <oval-def:note>There's no fixed pid to use here (cannot use 4: system)...Let's use the current process again (via var_ref.)</oval-def:note>
-      </oval-def:notes>
+    <environmentvariable58_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:4" version="2" comment="Get WINDIR env vars of a particular pid (curent process via var_ref.)" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+      <oval:notes>
+        <oval:note>There's no fixed pid to use here (cannot use 4: system)...Let's use the current process again (via var_ref.)</oval:note>
+      </oval:notes>
       <pid  datatype="int" var_ref="oval:navy.navwar.niwcatlantic.scc.test:var:3" />
       <name operation="not equal">WINDIR</name>
     </environmentvariable58_object>
