@@ -14,7 +14,7 @@
     modified freely provided that any derivative works bear some notice that they are derived from it, and any modified versions bear some notice that they have been modified.</terms_of_use>
   </generator>
   <definitions>
-    <definition id="oval:navy.navwar.niwcatlantic.scc.test:def:1" version="1" class="miscellaneous">
+    <definition id="oval:navy.navwar.niwcatlantic.scc.test:def:1" version="2" class="miscellaneous">
       <metadata>
         <title>Evaluate to true if the ind-def:environmentvariable58_test is properly supported</title>
         <description>This definition is intended to evaluate to true if the interpreter properly supports the ind-def:environmentvariable58_test and all of its valid operations.</description>
@@ -78,7 +78,7 @@
   </states>
 
   <variables>
-    <local_variable id="oval:navy.navwar.niwcatlantic.scc.test:var:2" version="0" datatype="boolean" comment="represents the current value of the seboolena">
+    <local_variable id="oval:navy.navwar.niwcatlantic.scc.test:var:2" version="1" datatype="int" comment="represents the PID of the selected process">
       <object_component object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:4" item_field="pid" />
     </local_variable>
   </variables>
