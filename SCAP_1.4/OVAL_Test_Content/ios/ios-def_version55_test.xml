@@ -20,7 +20,7 @@
         <criterion test_ref="oval:navy.navwar.niwcatlantic.scc.ios:tst:1" comment="Test ios version55 test 'version_string' with a pattern match"/>
         <criterion test_ref="oval:navy.navwar.niwcatlantic.scc.ios:tst:2" comment="Test ios version55 test 'major_version' with operation greater than 0"/>
         <criterion test_ref="oval:navy.navwar.niwcatlantic.scc.ios:tst:3" comment="Test ios version55 test 'minor_version' with operation greater than or equal to 0"/>
-        <criterion test_ref="oval:navy.navwar.niwcatlantic.scc.ios:tst:5" comment="Test ios version55 test 'train_identifier' with a pattern match"/>
+        <criterion test_ref="oval:navy.navwar.niwcatlantic.scc.ios:tst:5" comment="Test ios version55 test 'train_identifier' equal to one of mainline, T, S, or E"/>
       </criteria>
     </definition>
   </definitions>
@@ -40,7 +40,7 @@
       <state state_ref="oval:navy.navwar.niwcatlantic.scc.ios:ste:3" />
     </version55_test>
     
-    <version55_test id="oval:navy.navwar.niwcatlantic.scc.ios:tst:5" version="2" comment="Test ios version55 test 'train_identifier' with a pattern match" check_existence="at_least_one_exists" check="all" state_operator="OR" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#ios" >
+    <version55_test id="oval:navy.navwar.niwcatlantic.scc.ios:tst:5" version="2" comment="Test ios version55 test 'train_identifier' equal to one of mainline, T, S, or E" check_existence="at_least_one_exists" check="all" state_operator="OR" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#ios" >
       <object object_ref="oval:navy.navwar.niwcatlantic.scc.ios:obj:1" />
       <state state_ref="oval:navy.navwar.niwcatlantic.scc.ios:ste:5" />
       <state state_ref="oval:navy.navwar.niwcatlantic.scc.ios:ste:6" />
@@ -49,7 +49,7 @@
     </version55_test>
   </tests>
   <objects>
-    <version55_object id="oval:navy.navwar.niwcatlantic.scc.ios:obj:1" version="2" comment="show running-config" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#ios" >
+    <version55_object id="oval:navy.navwar.niwcatlantic.scc.ios:obj:1" version="2" comment="Retrieves the current Cisco IOS software version." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#ios" >
     </version55_object>
   </objects>
   <states>
@@ -65,19 +65,19 @@
       <minor_version datatype="int" operation="greater than or equal">0</minor_version>
     </version55_state>
     
-    <version55_state id="oval:navy.navwar.niwcatlantic.scc.ios:ste:5" version="2" comment="train_identifier matches mainline" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#ios" >
+    <version55_state id="oval:navy.navwar.niwcatlantic.scc.ios:ste:5" version="2" comment="train_identifier equals mainline" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#ios" >
       <train_identifier>mainline</train_identifier>
     </version55_state>
     
-    <version55_state id="oval:navy.navwar.niwcatlantic.scc.ios:ste:6" version="2" comment="train_identifier matches T" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#ios" >
+    <version55_state id="oval:navy.navwar.niwcatlantic.scc.ios:ste:6" version="2" comment="train_identifier equals T" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#ios" >
       <train_identifier>T</train_identifier>
     </version55_state>
     
-    <version55_state id="oval:navy.navwar.niwcatlantic.scc.ios:ste:7" version="2" comment="train_identifier matches S" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#ios" >
+    <version55_state id="oval:navy.navwar.niwcatlantic.scc.ios:ste:7" version="2" comment="train_identifier equals S" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#ios" >
       <train_identifier>S</train_identifier>
     </version55_state>
     
-    <version55_state id="oval:navy.navwar.niwcatlantic.scc.ios:ste:8" version="2" comment="train_identifier matches E" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#ios" >
+    <version55_state id="oval:navy.navwar.niwcatlantic.scc.ios:ste:8" version="2" comment="train_identifier equals E" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#ios" >
       <train_identifier>E</train_identifier>
     </version55_state>
   </states>
