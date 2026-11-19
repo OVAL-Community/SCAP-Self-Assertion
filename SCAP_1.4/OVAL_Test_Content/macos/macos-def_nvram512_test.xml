@@ -59,7 +59,7 @@
       <filepath>/System/Library/CoreServices/SystemVersion.plist</filepath>
       <xpath>//key[text()=&#39;ProductVersion&#39;]/following-sibling::string[1]/text()</xpath>
     </plist511_object>
-    <nvram512_object id="oval:org.mitre.oval.test:obj:754" version="1" comment="This object represents a nvram512_object with the nvram variable name equal to '94b73556-2197-4702-82a8-3e1337dafbfb:AppleSecureBootPolic'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
+    <nvram512_object id="oval:org.mitre.oval.test:obj:754" version="2" comment="This object represents a nvram512_object with the nvram variable name equal to '94b73556-2197-4702-82a8-3e1337dafbfb:AppleSecureBootPolicy'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
       <variable>94b73556-2197-4702-82a8-3e1337dafbfb:AppleSecureBootPolicy</variable>
     </nvram512_object>
     <nvram512_object id="oval:org.joval.oval.test:obj:754" version="1" comment="This object represents a nvram512_object with the nvram variable name equal to 'foobar'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
@@ -76,15 +76,15 @@
     <plist511_state id="oval:com.jovalcm.macos.inventory:ste:1000001600001" version="1" comment="Is 10.15.x" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
       <value_of datatype="string" operation="pattern match">^10\.15(\.|$)</value_of>
     </plist511_state>
-    <nvram512_state id="oval:org.mitre.oval.test:ste:994" version="1" comment="This nvram512_state represents an nvram512_item which has a nvram variable name equal to 'SystemAudioVolume' and a nvram value that matches the regular expression '.*'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
+    <nvram512_state id="oval:org.mitre.oval.test:ste:994" version="2" comment="This nvram512_state represents an nvram512_item which has a nvram variable name equal to '94b73556-2197-4702-82a8-3e1337dafbfb:AppleSecureBootPolicy' and a nvram binary value that is not equal to '00'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
       <variable>94b73556-2197-4702-82a8-3e1337dafbfb:AppleSecureBootPolicy</variable>
       <value datatype="binary" operation="not equal">00</value>
     </nvram512_state>
-    <nvram512_state id="oval:org.mitre.oval.test:ste:569" version="1" comment="This nvram512_state represents nvram512_items which have a nvram variable name not equal to 'SystemAudioVolume' and a nvram value that matches the regular expression '.*'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
+    <nvram512_state id="oval:org.mitre.oval.test:ste:569" version="2" comment="This nvram512_state represents nvram512_items which have a nvram variable name not equal to 'SystemAudioVolume' and a nvram binary value that is not equal to '00'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
       <variable operation="not equal">SystemAudioVolume</variable>
       <value datatype="binary" operation="not equal">00</value>
     </nvram512_state>
-    <nvram512_state id="oval:org.mitre.oval.test:ste:943" version="1" comment="This nvram512_state represents nvram512_items which have a nvram variable name that matches the regular expression '^efi-' and a nvram value that matches the regular expression '.*'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
+    <nvram512_state id="oval:org.mitre.oval.test:ste:943" version="2" comment="This nvram512_state represents nvram512_items which have a nvram variable name that matches the regular expression '^efi-' and a nvram binary value that is not equal to '00'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos">
       <variable operation="pattern match">^efi-</variable>
       <value datatype="binary" operation="not equal">00</value>
     </nvram512_state>
