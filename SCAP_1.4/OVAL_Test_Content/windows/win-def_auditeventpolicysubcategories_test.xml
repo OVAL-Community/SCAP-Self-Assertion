@@ -13,7 +13,7 @@
     <terms_of_use>NOTE: MITRE Content may be modified from original by NIWC Atlantic. Copyright (c) 2002-2011, The MITRE Corporation. All rights reserved. The contents of this file are subject to the license described in terms.txt.</terms_of_use>
   </generator>
   <definitions>
-    <definition id="oval:org.mitre.oval.test:def:708" version="1" class="miscellaneous">
+    <definition id="oval:org.mitre.oval.test:def:708" version="2" class="miscellaneous">
       <metadata>
         <title>Evaluate to true if the win-def:auditeventpolicysubcategories_test is properly supported.</title>
         <description>This definition is intended to evaluate to true if the interpreter properly supports the win-def:auditeventpolicysubcategories_test.</description>
@@ -36,11 +36,10 @@
     <auditeventpolicysubcategories_object id="oval:org.mitre.oval.test:obj:248" version="1" comment="Retrieves a auditeventpolicysubcategories_object." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows"/>
   </objects>
   <states>
-    <auditeventpolicysubcategories_state id="oval:org.mitre.oval.test:ste:1195" version="1" comment="This auditeventpolicysubcategories_state represents any configuration of the audit event policy." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+    <auditeventpolicysubcategories_state id="oval:org.mitre.oval.test:ste:1195" version="2" comment="This auditeventpolicysubcategories_state represents any configuration of the audit event policy." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <credential_validation operation="pattern match"  var_ref="oval:org.mitre.oval.test:var:68" var_check="all"/> 
       <kerberos_authentication_service operation="pattern match"  var_ref="oval:org.mitre.oval.test:var:68" var_check="all"/>
       <kerberos_service_ticket_operations operation="pattern match"  var_ref="oval:org.mitre.oval.test:var:68" var_check="all"/>
-      <kerberos_ticket_events operation="pattern match"  var_ref="oval:org.mitre.oval.test:var:68" var_check="all"/>
       <other_account_logon_events operation="pattern match"  var_ref="oval:org.mitre.oval.test:var:68" var_check="all"/>
       <application_group_management operation="pattern match"  var_ref="oval:org.mitre.oval.test:var:68" var_check="all"/>
       <computer_account_management operation="pattern match"  var_ref="oval:org.mitre.oval.test:var:68" var_check="all"/>
