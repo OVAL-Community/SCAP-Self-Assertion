@@ -88,15 +88,15 @@
       <filename operation="pattern match">^i.*</filename>
       <trustee_sid>S-1-5-32-544</trustee_sid>
     </fileeffectiverights53_object>
-    <fileeffectiverights53_object id="oval:org.mitre.oval.test:obj:272" version="1" comment="File object with path starting at 'C:\Program Files', recursing down 1 level, and filename equals 'iexplore.exe' and trustee_sid equals 'S-1-5-32-544'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+    <fileeffectiverights53_object id="oval:org.mitre.oval.test:obj:272" version="2" comment="File object with path starting at 'C:\Program Files', recursing down 1 level, and filename equals 'iexplore.exe' and trustee_sid equals 'S-1-5-32-544'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <behaviors max_depth="1" recurse_direction="down"/>
-      <path operation="case insensitive equals">c:\program files</path>
+      <path operation="equals">c:\program files</path>
       <filename operation="case insensitive equals">iexplore.exe</filename>
       <trustee_sid>S-1-5-32-544</trustee_sid>
     </fileeffectiverights53_object>
-    <fileeffectiverights53_object id="oval:org.mitre.oval.test:obj:246" version="1" comment="File object with path starting at 'C:\Program Files', recursing down infinitely, and filename equals 'install.ins' and trustee_sid equals 'S-1-5-32-544'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+    <fileeffectiverights53_object id="oval:org.mitre.oval.test:obj:246" version="2" comment="File object with path starting at 'C:\Program Files', recursing down infinitely, and filename equals 'install.ins' and trustee_sid equals 'S-1-5-32-544'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <behaviors max_depth="-1" recurse_direction="down"/>
-      <path operation="case insensitive equals">c:\program files</path>
+      <path operation="equals">c:\program files</path>
       <filename operation="case insensitive equals">install.ins</filename>
       <trustee_sid>S-1-5-32-544</trustee_sid>
     </fileeffectiverights53_object>

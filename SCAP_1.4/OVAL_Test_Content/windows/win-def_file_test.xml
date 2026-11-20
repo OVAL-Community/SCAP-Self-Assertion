@@ -83,14 +83,14 @@
       <path operation="pattern match">^C:\\Program Files\\[iI]nternet Explorer.*</path>
       <filename operation="pattern match">^i.*</filename>
     </file_object>
-    <file_object id="oval:org.mitre.oval.test:obj:765" version="1" comment="Retrieve file object with path starting at 'C:\Program Files', recursing down 1 level, and filename equals 'iexplore.exe'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+    <file_object id="oval:org.mitre.oval.test:obj:765" version="2" comment="Retrieve file object with path starting at 'C:\Program Files', recursing down 1 level, and filename equals 'iexplore.exe'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <behaviors max_depth="1" recurse_direction="down"/>
-      <path operation="case insensitive equals">c:\program files</path>
+      <path operation="equals">c:\program files</path>
       <filename operation="case insensitive equals">iexplore.exe</filename>
     </file_object>
-    <file_object id="oval:org.mitre.oval.test:obj:130" version="1" comment="Retrieve file object with path starting at 'C:\Program Files', recursing down infinitely, and filename equals 'install.ins'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+    <file_object id="oval:org.mitre.oval.test:obj:130" version="2" comment="Retrieve file object with path starting at 'C:\Program Files', recursing down infinitely, and filename equals 'install.ins'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <behaviors max_depth="-1" recurse_direction="down"/>
-      <path operation="case insensitive equals">c:\program files</path>
+      <path operation="equals">c:\program files</path>
       <filename operation="case insensitive equals">install.ins</filename>
     </file_object>
   </objects>
