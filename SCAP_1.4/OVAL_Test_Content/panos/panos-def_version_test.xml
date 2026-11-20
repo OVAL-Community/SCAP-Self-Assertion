@@ -4,7 +4,7 @@
                   xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
                   xmlns:panos="http://oval.mitre.org/XMLSchema/oval-definitions-5#panos"
                   xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-definitions-schema.xsd
-                    http://oval.mitre.org/XMLSchema/oval-definitions-5#panos file:///Users/adam.biggs/Dev/workspaces/jovaldev-maven/jOVAL-Commercial/scap-schemas/3rd-party/OVAL/oval-schemas/panos-definitions-schema.xsd.bak
+                    http://oval.mitre.org/XMLSchema/oval-definitions-5#panos https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/panos-definitions-schema.xsd
                     http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-common-schema.xsd">
   <generator>
     <oval:schema_version>5.12.3</oval:schema_version>
