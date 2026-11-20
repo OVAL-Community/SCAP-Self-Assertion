@@ -13,7 +13,7 @@
     <terms_of_use>NOTE: MITRE Content may be modified from original by NIWC Atlantic. Copyright (c) 2002-2011, The MITRE Corporation. All rights reserved. The contents of this file are subject to the license described in terms.txt.</terms_of_use>
   </generator>
   <definitions>
-    <definition id="oval:navy.navwar.niwcatlantic.scc.windows.test:def:1" version="1" class="miscellaneous">
+    <definition id="oval:navy.navwar.niwcatlantic.scc.windows.test:def:1" version="2" class="miscellaneous">
       <metadata>
         <title>Evaluate to true if the win-def:sid_sid_test is properly supported</title>
         <description>This definition is intended to evaluate to true if the interpreter properly supports the win-def:sid_sid_test.</description>
@@ -26,9 +26,7 @@
         <criterion comment="Test that a sid_sid_object with a trustee_sid pattern match is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:2"/> 
        <!-- tests 3, 13 and 4 Disabling due to potential DoS on large domain controllers -->
        <criterion comment="Test that a sid_sid_object with a trustee_sid not equal is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:3"/>
-       <criterion comment="Test that a sid_sid_object with a trustee_sid not equal is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:13"/> 
-       <criterion comment="Test a sid_sid object with operation 'equals' that the resolve_group behavior = true is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:4"/>
-       <criterion comment="Test a sid_sid object with operation 'equals' that the resolve_group behavior = false is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:5"/>
+       <criterion comment="Test that a sid_sid_object with a trustee_sid not equal is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:13"/>
       </criteria>
     </definition>
   </definitions>
@@ -49,14 +47,6 @@
       <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:13"/>
       <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:3"/>
     </sid_sid_test>
-    <sid_sid_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:4" version="1" comment="Test that the include_group behavior (disabled)  is supported." check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:4"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:4"/>
-    </sid_sid_test>
-    <sid_sid_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:5" version="1" comment="Test that the resolve_group (disabled)  behavior is supported." check_existence="at_least_one_exists" check="only one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:5"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:5"/>
-    </sid_sid_test>
   </tests>
   <objects>
     <sid_sid_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:1" version="1" comment="Retrieves a sid_sid_object with trustee_sid that equals 'S-1-5-32-544' (the Administrators group)." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
@@ -70,14 +60,6 @@
     </sid_sid_object>
     <sid_sid_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:13" version="1" comment="Retrieves a sid_sid_object with trustee_sid that is case insensitive not equal to 'S-1-5-32-544'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <trustee_sid operation="case insensitive not equal">s-1-5-32-544</trustee_sid>
-    </sid_sid_object>
-    <sid_sid_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:4" version="1" comment="Retrieves a sid_sid_object with trustee_sid equals 'S-1-5-32-544' and with include_group behavior set to false and resolve_group behavior set to true." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <behaviors resolve_group="true" include_group="false"/>
-      <trustee_sid>S-1-5-32-544</trustee_sid>
-    </sid_sid_object>
-    <sid_sid_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:5" version="1" comment="Retrieves a sid_sid_object with trustee_sid equals 'S-1-5-32-544' and with resolve_group behavior set to false (should not return members of group) and include group set to true." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <behaviors resolve_group="false" include_group="true"/>
-      <trustee_sid>S-1-5-32-544</trustee_sid>
     </sid_sid_object>
   </objects>
   <states>
@@ -93,16 +75,6 @@
     </sid_sid_state>
     <sid_sid_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:3" version="1" comment="This represents a sid_sid_state which has a trustee_sid that is not equal to 'S-1-5-32-544'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <trustee_sid operation="not equal">S-1-5-32-544</trustee_sid>
-      <trustee_name operation="pattern match">.+</trustee_name>
-      <trustee_domain operation="pattern match">.+</trustee_domain>
-    </sid_sid_state>
-    <sid_sid_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:4" version="1" comment="This represents a sid_sid_state which has a trustee_sid that is not equal to 'S-1-5-32-544'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <trustee_sid operation="not equal">S-1-5-32-544</trustee_sid>
-      <trustee_name operation="pattern match">.+</trustee_name>
-      <trustee_domain operation="pattern match">.+</trustee_domain>
-    </sid_sid_state>
-    <sid_sid_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:5" version="1" comment="This represents a sid_sid_state which has a trustee_sid that equals 'S-1-5-32-544'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <trustee_sid>S-1-5-32-544</trustee_sid>
       <trustee_name operation="pattern match">.+</trustee_name>
       <trustee_domain operation="pattern match">.+</trustee_domain>
     </sid_sid_state>

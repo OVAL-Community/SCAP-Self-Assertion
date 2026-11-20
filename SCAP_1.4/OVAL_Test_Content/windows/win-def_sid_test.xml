@@ -13,7 +13,7 @@
     <terms_of_use>NOTE: MITRE Content may be modified from original by NIWC Atlantic. Copyright (c) 2002-2011, The MITRE Corporation. All rights reserved. The contents of this file are subject to the license described in terms.txt.</terms_of_use>
   </generator>
   <definitions>
-    <definition id="oval:navy.navwar.niwcatlantic.scc.windows.test:def:1" version="1" class="miscellaneous">
+    <definition id="oval:navy.navwar.niwcatlantic.scc.windows.test:def:1" version="2" class="miscellaneous">
       <metadata>
         <title>Evaluate to true if the win-def:sid_test is properly supported.</title>
         <description>This definition is intended to evaluate to true if the interpreter properly supports the win-def:sid_test.</description>
@@ -28,8 +28,6 @@
         <!--tst 3, 13, 4, and 5 can be Disabled due to DoS on large domain controllers-->
         <criterion comment="Test that a sid_object with not equals is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:3"/>
         <criterion comment="Test that a sid_object with case insensitive not equals is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:13"/>
-        <criterion comment="Test that the include_group behavior is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:4"/>
-        <criterion comment="Test that the resolve_group behavior is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:5"/>
       </criteria>
     </definition>
   </definitions>
@@ -50,14 +48,6 @@
       <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:13"/>
       <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:3"/>
     </sid_test>
-    <sid_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:4" version="1" comment="Test that the include_group behavior is supported." check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:4"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:4"/>
-    </sid_test>
-    <sid_test id="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:5" version="1" comment="Test that the resolve_group behavior is supported." check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <object object_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:5"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:5"/>
-    </sid_test>
   </tests>
   <objects>
     <sid_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:1" version="1" comment="Retrieves a sid_object where the trustee_name equals the 'Authenticated Users'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
@@ -71,14 +61,6 @@
     </sid_object>
     <sid_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:13" version="1" comment="Retrieves a sid_object where the trustee_name does case insensitve not equal 'ADMINISTRATOR'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <trustee_name operation="case insensitive not equal">administrator</trustee_name>
-    </sid_object>
-    <sid_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:4" version="1" comment="Retrieves a sid_object where the trustee_name equals 'Guests', resolve_group = true, and include_group = true." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <behaviors resolve_group="true" include_group="true"/>
-      <trustee_name>Guests</trustee_name>
-    </sid_object>
-    <sid_object id="oval:navy.navwar.niwcatlantic.scc.windows.test:obj:5" version="1" comment="Retrieves a sid_object where the trustee_name equals 'Guests', and resolve_group = true." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <behaviors resolve_group="true"/>
-      <trustee_name>Guests</trustee_name>
     </sid_object>
   </objects>
   <states>
@@ -94,12 +76,6 @@
     </sid_state>
     <sid_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:3" version="1" comment="This state represents a sid_object where the trustee_name is not equal to 'ADMINISTRATOR'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <trustee_name operation="not equal">ADMINISTRATOR</trustee_name>
-    </sid_state>
-    <sid_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:4" version="1" comment="This state represents a sid_object where the trustee_name matches the regular expression '.*Guest', resolve_group = true, and include_group = true." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <trustee_name operation="pattern match">.*Guest</trustee_name>
-    </sid_state>
-    <sid_state id="oval:navy.navwar.niwcatlantic.scc.windows.test:ste:5" version="1" comment="This state represents a sid_object where the trustee_name matches the regular expression '.*Guest', and resolve_group = true." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
-      <trustee_name operation="pattern match">.*Guest</trustee_name>
     </sid_state>
   </states>
 </oval_definitions>
