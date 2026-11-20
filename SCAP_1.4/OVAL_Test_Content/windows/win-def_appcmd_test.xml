@@ -13,14 +13,14 @@
     <terms_of_use>Portions of this document were developed at Naval Information Warfare Center Atlantic by employees of the Federal Government in the course of their official duties. Pursuant to title 17 Section 105 of the United States Code this software is not subject to copyright protection and is in the public domain. The Government assumes no responsibility whatsoever for its use by other parties, and the software is provided "AS IS" without warranty or guarantee of any kind, express or implied, including, but not limited to, the warranties of merchantability and of fitness for a particular purpose. In no event shall the Government be liable for any claim, damages or other liability, whether in an action of contract, tort or other dealings in the software. The Government has no obligation hereunder to provide maintenance, support, updates, enhancements, or modifications. We would appreciate acknowledgement if the software is used. This software can be redistributed and/or modified freely provided that any derivative works bear some notice that they are derived from it, and any modified versions bear some notice that they have been modified.</terms_of_use>
   </generator>
   <definitions>
-    <definition id="oval:navy.navwar.niwcatlantic.scc.test:def:1" version="1" class="compliance">
+    <definition id="oval:navy.navwar.niwcatlantic.scc.test:def:1" version="2" class="compliance">
       <metadata>
         <title>IIS content utilizing Windows application AppCmd.exe via the win-def:appcmd_test</title>
         <description>This definition is intended to evaluate the interpreter properly supports the win-def:appcmd_test</description>
       </metadata>
-      <notes>
-        <note>An Overall Pass or Fail Status is not the desired result of this test. The goal is for results gathered to be accurate based on IIS Server Configuration.</note>
-      </notes>
+      <oval:notes>
+        <oval:note>An Overall Pass or Fail Status is not the desired result of this test. The goal is for results gathered to be accurate based on IIS Server Configuration.</oval:note>
+      </oval:notes>
       <criteria operator="AND">
         <criterion comment="Application Pool Setting Example - All Application Pools Reviewed" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:1"/>
         <criterion comment="Application Pool Setting Example - Subset Of Application Pools Reviewed via regular expression (set in identifier)." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:2"/>
@@ -36,14 +36,14 @@
         <criterion comment="Application Pool Setting Example - All Application Pools Reviewed Variable Test parameter" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:103"/>
       </criteria>
     </definition>
-    <definition id="oval:navy.navwar.niwcatlantic.scc.test:def:2" version="1" class="compliance">
+    <definition id="oval:navy.navwar.niwcatlantic.scc.test:def:2" version="2" class="compliance">
       <metadata>
         <title>IIS content utilizing Windows application AppCmd.exe via the win-def:appcmd_test</title>
         <description>This definition is intended to evaluate the interpreter properly supports the win-def:appcmd_test</description>
       </metadata>
-      <notes>
-        <note>An Overall Pass is the desired result of this test. Each test should result in no item being found due to content configuration</note>
-      </notes>
+      <oval:notes>
+        <oval:note>An Overall Pass is the desired result of this test. Each test should result in no item being found due to content configuration</oval:note>
+      </oval:notes>
       <criteria operator="AND">
         <criterion comment="Not Collected Example - Application Pool 'Equals' (set in identifier) 'Non-Matching-String' - No Application Pools named 'Non-Matching-String' exist" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:9"/>
         <criterion comment="Not Collected Example - Incorrect Parameter Example - AppCmd.exe review with incorrect parameter setting." test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:8"/>

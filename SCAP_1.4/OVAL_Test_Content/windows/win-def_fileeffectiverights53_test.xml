@@ -13,14 +13,14 @@
     <terms_of_use>NOTE: MITRE Content may be modified from original by NIWC Atlantic. Copyright (c) 2002-2011, The MITRE Corporation. All rights reserved. The contents of this file are subject to the license described in terms.txt.</terms_of_use>
   </generator>
   <definitions>
-    <definition id="oval:org.mitre.oval.test:def:604" version="3" class="miscellaneous">
+    <definition id="oval:org.mitre.oval.test:def:604" version="4" class="miscellaneous">
       <metadata>
         <title>Evaluate to true if the win-def:fileeffectiverights53_test is properly supported</title>
         <description>This definition is intended to evaluate to true if the interpreter properly supports the win-def:fileeffectiverights53_test.</description>
       </metadata>
-      <notes>
-        <note>It is important to note that the values used in this test definition are specific to a particular machine, and may not necessarily apply to your system. As a result, in order to have the definition return a result of 'true', you must either change these values to the ones found on your particular system, or you must configure your system to use these values.</note>
-      </notes>
+      <oval:notes>
+        <oval:note>It is important to note that the values used in this test definition are specific to a particular machine, and may not necessarily apply to your system. As a result, in order to have the definition return a result of 'true', you must either change these values to the ones found on your particular system, or you must configure your system to use these values.</oval:note>
+      </oval:notes>
       <criteria operator="AND">
         <criterion comment="Test that a fileeffectiverights53_object with a path and trustee_sid is supported." test_ref="oval:org.mitre.oval.test:tst:1244"/>
         <criterion comment="Test that a fileeffectiverights53_object with a path, filename, and trustee_sid is supported." test_ref="oval:org.mitre.oval.test:tst:757"/>
