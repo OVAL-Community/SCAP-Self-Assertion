@@ -13,7 +13,7 @@
     <terms_of_use>NOTE: MITRE Content may be modified from original by NIWC Atlantic. Copyright (c) 2002-2011, The MITRE Corporation. All rights reserved. The contents of this file are subject to the license described in terms.txt.</terms_of_use>
   </generator>
   <definitions>
-    <definition id="oval:org.mitre.oval.test:def:620" version="1" class="miscellaneous">
+    <definition id="oval:org.mitre.oval.test:def:620" version="2" class="miscellaneous">
       <metadata>
         <title>Evaluate to true</title>
         <description>This definition is intended to always evaluate to true.</description>
@@ -22,7 +22,7 @@
         <criterion comment="This test always evaluates to true." test_ref="oval:org.mitre.oval.test:tst:833"/>
       </criteria>
     </definition>
-    <definition id="oval:org.mitre.oval.test:def:997" version="1" class="miscellaneous">
+    <definition id="oval:org.mitre.oval.test:def:997" version="2" class="miscellaneous">
       <metadata>
         <title>Evaluate to false</title>
         <description>This definition is intended to always evaluate to false.</description>
@@ -67,7 +67,7 @@
     </variable_state>
   </states>
   <variables>
-    <constant_variable id="oval:org.mitre.oval.test:var:945" version="1" comment="This variable represents the boolean value 'true'." datatype="binary">
+    <constant_variable id="oval:org.mitre.oval.test:var:945" version="2" comment="This variable represents the boolean value 'true'." datatype="boolean">
       <value>true</value>
     </constant_variable>
   </variables>
