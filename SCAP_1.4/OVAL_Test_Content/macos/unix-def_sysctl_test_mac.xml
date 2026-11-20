@@ -13,14 +13,14 @@
     modified freely provided that any derivative works bear some notice that they are derived from it, and any modified versions bear some notice that they have been modified.</terms_of_use>
   </generator>
   <definitions>
-    <definition id="oval:navy.navwar.niwcatlantic.scc.unix.test:def:1" version="1" class="miscellaneous">
+    <definition id="oval:navy.navwar.niwcatlantic.scc.unix.test:def:1" version="2" class="miscellaneous">
       <metadata>
         <title>Evaluate to true if the unix-def:sysctl_test is properly supported</title>
         <description></description>
       </metadata>
-      <notes>
-        <note></note>
-      </notes>
+      <oval:notes>
+        <oval:note></oval:note>
+      </oval:notes>
       <criteria operator="AND">
         <criterion comment="Test that the sysctl test is supported with the name entity with operation of 'equals'." test_ref="oval:navy.navwar.niwcatlantic.scc.unix.test:tst:1" />
         <criterion comment="Test that the sysctl test is supported with the name entity with operation of 'not equal'." test_ref="oval:navy.navwar.niwcatlantic.scc.unix.test:tst:2" />

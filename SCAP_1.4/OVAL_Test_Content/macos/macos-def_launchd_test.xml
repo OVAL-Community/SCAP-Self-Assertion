@@ -13,14 +13,14 @@
     modified freely provided that any derivative works bear some notice that they are derived from it, and any modified versions bear some notice that they have been modified.</terms_of_use>
   </generator>
   <definitions>
-    <definition id="oval:navy.navwar.niwcatlantic.scc.test:def:1" version="1" class="miscellaneous">
+    <definition id="oval:navy.navwar.niwcatlantic.scc.test:def:1" version="2" class="miscellaneous">
       <metadata>
         <title>Evaluate to true if the macos-def:launchd_test is properly supported</title>
         <description>The definition should evaluate to true if the tool supports the macos-def:launchd_test properly.</description>
       </metadata>
-      <notes>
-        <note>This definition checks the functionality of the macos-def:launchd_test and may require adjustment of the launchd_object or launchd_state paramaters based on the configuration of the system being tested.</note>
-      </notes>
+      <oval:notes>
+        <oval:note>This definition checks the functionality of the macos-def:launchd_test and may require adjustment of the launchd_object or launchd_state paramaters based on the configuration of the system being tested.</oval:note>
+      </oval:notes>
       <criteria operator="AND">
         <criterion test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:1" comment="Test that the launchd_object is supported with the label entity equal to some value." />
         <criterion test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:2" comment="Test that the launchd_object is supported with the label entity not equal to some value." />

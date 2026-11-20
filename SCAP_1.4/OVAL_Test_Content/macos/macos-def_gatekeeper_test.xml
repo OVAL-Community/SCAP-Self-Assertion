@@ -13,14 +13,14 @@
     modified freely provided that any derivative works bear some notice that they are derived from it, and any modified versions bear some notice that they have been modified.</terms_of_use>
   </generator>
   <definitions>
-    <definition id="oval:navy.navwar.niwcatlantic.scc:def:1" version="1" class="miscellaneous">
+    <definition id="oval:navy.navwar.niwcatlantic.scc:def:1" version="2" class="miscellaneous">
       <metadata>
         <title>Evaluate to true if the macos-def:gatekeeper_test is properly supported.</title>
         <description>The definition should evaluate to true if the tool supports the macos-def:launchd_test properly and no unlabeled applications exist.</description>
       </metadata>
-      <notes>
-        <note>This definition checks the functionality of the macos-def:gatekeeper_test and may require adjustment of the gatekeeper_object or gatekeeper_state paramaters based on the configuration of the system being tested.</note>
-      </notes>
+      <oval:notes>
+        <oval:note>This definition checks the functionality of the macos-def:gatekeeper_test and may require adjustment of the gatekeeper_object or gatekeeper_state paramaters based on the configuration of the system being tested.</oval:note>
+      </oval:notes>
       <criteria operator="AND">
         <criterion test_ref="oval:navy.navwar.niwcatlantic.scc:tst:1" comment="Test that the gatekeeper_test is supported with a state entity existence check of 'none exist'." />
         <!-- NOTE THAT THE OVAL GATEKEEPER OBJECT HAS NO SUBELEMENTS AND PRODUCES A SINGLE OVAL ITEM.  -->
