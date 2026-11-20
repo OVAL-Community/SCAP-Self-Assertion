@@ -85,8 +85,7 @@
       <path>/opt/support/txt</path>
       <filename xsi:nil="true" />
     </file_object>
-    <file_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:2" version="1" comment="Retrieve file_items with a path that matches the regular expression '^/opt/sup.ort/txt'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
-      <behaviors recurse_direction="down" />
+    <file_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:2" version="2" comment="Retrieve file_items with a path that matches the regular expression '^/opt/sup.ort/txt'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix">
       <path operation="pattern match">^/opt/sup.ort/txt</path>
       <filename xsi:nil="true" />
     </file_object>
