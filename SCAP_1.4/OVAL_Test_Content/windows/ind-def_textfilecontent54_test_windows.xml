@@ -73,9 +73,8 @@
 		<object object_ref="oval:navy.navwar.niwcatlantic.scc:obj:3" />
 		<state state_ref="oval:navy.navwar.niwcatlantic.scc:ste:3" />
 	</textfilecontent54_test>
-	<textfilecontent54_test id="oval:navy.navwar.niwcatlantic.scc:tst:4" version="1" comment="Expect 'true' with 0 Items. Identical to tst:3 except default behavior. Item_creation behavior set to default and looking for a pattern that does not exist. Should not produce an item." check_existence="none_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+	<textfilecontent54_test id="oval:navy.navwar.niwcatlantic.scc:tst:4" version="2" comment="Expect 'true' with 0 Items. Identical to tst:3 except default behavior. Item_creation behavior set to default and looking for a pattern that does not exist. Should not produce an item." check_existence="none_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
 		<object object_ref="oval:navy.navwar.niwcatlantic.scc:obj:4" />
-		<state state_ref="oval:navy.navwar.niwcatlantic.scc:ste:3" />
 	</textfilecontent54_test>
   </tests>
   <objects>

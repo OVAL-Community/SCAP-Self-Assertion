@@ -88,13 +88,11 @@
       <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:7"/>
       <state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2"/>
     </appcmd_test>
-    <appcmd_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:8" version="1" comment="Error Example - Incorrect Parameter Example - AppCmd.exe reports error due to incorrect parameter setting." check_existence="none_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+    <appcmd_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:8" version="2" comment="Error Example - Incorrect Parameter Example - AppCmd.exe reports error due to incorrect parameter setting." check_existence="none_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:8"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2"/>
     </appcmd_test>
-    <appcmd_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:9" version="1" comment="Not Collected Example - Application Pool 'Equals' (set in identifier) 'Non-Matching-String' - No Application Pools named 'Non-Matching-String' exist" check_existence="none_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+    <appcmd_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:9" version="2" comment="Not Collected Example - Application Pool 'Equals' (set in identifier) 'Non-Matching-String' - No Application Pools named 'Non-Matching-String' exist" check_existence="none_exist" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:9"/>
-      <state state_ref="oval:navy.navwar.niwcatlantic.scc.test:ste:2"/>
     </appcmd_test>
     <appcmd_test id="oval:navy.navwar.niwcatlantic.scc.test:tst:101" version="1" comment="Application Pool Setting Example - All Application Pools Reviewed Variable Test identifier_type" check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
       <object object_ref="oval:navy.navwar.niwcatlantic.scc.test:obj:101"/>
