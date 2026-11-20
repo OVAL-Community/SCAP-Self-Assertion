@@ -68,8 +68,7 @@
       <filename>section1.xml</filename>
       <xpath>//*/grades/grade[@type='test']/text()</xpath>
     </xmlfilecontent_object>
-	<xmlfilecontent_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:2" version="1" comment="This object represents a xmlfilecontent_object with a path that matches the regular expression '^C:\\support\\xml\\classes\\Class[0-9]$', a filename equal to 'section1.xml', and an xpath query equal to '//*/student[@status='full-time']/name/text()'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
-      <behaviors max_depth="-1" recurse_direction="down" recurse="directories" recurse_file_system="local"/>
+	<xmlfilecontent_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:2" version="2" comment="This object represents a xmlfilecontent_object with a path that matches the regular expression '^C:\\support\\xml\\classes\\Class[0-9]$', a filename equal to 'section1.xml', and an xpath query equal to '//*/student[@status='full-time']/name/text()'." xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
       <path operation="pattern match" >^C:\\support\\xml\\classes\\class[0-9]$</path>
       <filename>section1.xml</filename>
       <xpath>//*/student[@status='full-time']/name/text()</xpath>
