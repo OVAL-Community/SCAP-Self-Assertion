@@ -14,14 +14,14 @@
     <terms_of_use>NOTE: MITRE Content may be modified from original by NIWC Atlantic. Copyright (c) 2002-2011, The MITRE Corporation. All rights reserved. The contents of this file are subject to the license described in terms.txt.</terms_of_use>
   </generator>
   <definitions>
-    <definition id="oval:org.mitre.oval.test:def:360" version="1" class="miscellaneous">
+    <definition id="oval:org.mitre.oval.test:def:360" version="2" class="miscellaneous">
       <metadata>
         <title>Evaluate to true if the ind-def:environmentvariable58_test is properly supported</title>
         <description>This definition is intended to evaluate to true if the interpreter properly supports the ind-def:environmentvariable58_test and all of its valid operations.</description>
       </metadata>
-      <notes>
-        <note>It is important to note that the values used in this test definition are specific to a particular machine, and may not necessarily apply to your system. As a result, in order to have the definition return a result of 'true', you must either change these values to the ones found on your particular system, or you must configure your system to use these values.</note>
-      </notes>
+      <oval:notes>
+        <oval:note>It is important to note that the values used in this test definition are specific to a particular machine, and may not necessarily apply to your system. As a result, in order to have the definition return a result of 'true', you must either change these values to the ones found on your particular system, or you must configure your system to use these values.</oval:note>
+      </oval:notes>
       <criteria operator="AND">
         <criterion comment="Test that the current process can be queried using a nil pid" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:1"/>
         <criterion comment="Test that the current process can be queried using a nil pid, with case insensitive equals" test_ref="oval:navy.navwar.niwcatlantic.scc.test:tst:2"/>
@@ -62,17 +62,17 @@
       <pid datatype="int" xsi:nil="true"/>
       <name operation="case insensitive equals">windir</name>
     </environmentvariable58_object>
-    <environmentvariable58_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:3" version="1" comment="Get windows directory of a particular pid (curent process via var_ref.)" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
-      <oval-def:notes>
-        <oval-def:note>There's no fixed pid to use here (cannot use 4: system)...Let's use the current process again (via var_ref.)</oval-def:note>
-      </oval-def:notes>
+    <environmentvariable58_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:3" version="2" comment="Get windows directory of a particular pid (curent process via var_ref.)" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+      <oval:notes>
+        <oval:note>There's no fixed pid to use here (cannot use 4: system)...Let's use the current process again (via var_ref.)</oval:note>
+      </oval:notes>
       <pid  datatype="int" var_ref="oval:navy.navwar.niwcatlantic.scc.test:var:3" />
       <name operation="case insensitive not equal">windir</name>
     </environmentvariable58_object>
-    <environmentvariable58_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:4" version="1" comment="Get WINDIR env vars of a particular pid (curent process via var_ref.)" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
-      <oval-def:notes>
-        <oval-def:note>There's no fixed pid to use here (cannot use 4: system)...Let's use the current process again (via var_ref.)</oval-def:note>
-      </oval-def:notes>
+    <environmentvariable58_object id="oval:navy.navwar.niwcatlantic.scc.test:obj:4" version="2" comment="Get WINDIR env vars of a particular pid (curent process via var_ref.)" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+      <oval:notes>
+        <oval:note>There's no fixed pid to use here (cannot use 4: system)...Let's use the current process again (via var_ref.)</oval:note>
+      </oval:notes>
       <pid  datatype="int" var_ref="oval:navy.navwar.niwcatlantic.scc.test:var:3" />
       <name operation="not equal">WINDIR</name>
     </environmentvariable58_object>
