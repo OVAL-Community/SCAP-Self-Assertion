@@ -459,7 +459,7 @@
       <value>04-02-2004</value>
       <value>04-02-2004</value>
     </constant_variable>
-    <local_variable id="oval:org.mitre.oval.test:var:561" version="1" comment="An array of time difference values that consists of elements formed by the time_difference function being applied to the Cartesian product of a set of month_day_year timedate values and a set of day_month_year timedate values." datatype="string">
+    <local_variable id="oval:org.mitre.oval.test:var:561" version="2" comment="An array of integer time difference values formed by the time_difference function applied to a Cartesian product of month_day_year and day_month_year timedate values." datatype="int">
       <time_difference format_1="month_day_year" format_2="day_month_year">
         <object_component object_ref="oval:org.mitre.oval.test:obj:986" item_field="value"/>
         <object_component object_ref="oval:org.mitre.oval.test:obj:815" item_field="value"/>

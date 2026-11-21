@@ -92,13 +92,13 @@
   </states>
 
   <variables>
-    <local_variable comment="merge integer variables, sorting naturally" datatype="int" id="oval:navy.navwar.niwcatlantic.scc:var:1" version="1">
+    <local_variable comment="merge integer variables to their string representation, sorting naturally" datatype="string" id="oval:navy.navwar.niwcatlantic.scc:var:1" version="2">
       <merge delimiter=":" sort="natural">
         <object_component object_ref="oval:navy.navwar.niwcatlantic.scc:obj:100" item_field="value" />
       </merge>
     </local_variable>
 
-	<local_variable comment="merge integer list, no sorting" datatype="int" id="oval:navy.navwar.niwcatlantic.scc:var:2" version="1">
+	<local_variable comment="merge integer list to its string representation, no sorting" datatype="string" id="oval:navy.navwar.niwcatlantic.scc:var:2" version="2">
       <merge delimiter=":" sort="document">
         <object_component object_ref="oval:navy.navwar.niwcatlantic.scc:obj:100" item_field="value" />
       </merge>

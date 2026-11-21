@@ -187,7 +187,7 @@
         <literal_component datatype="float">1.1</literal_component>
       </arithmetic>
     </local_variable>
-    <local_variable id="oval:org.mitre.oval.test:var:589" version="1" comment="Adding the multiple-value variables" datatype="float">
+    <local_variable id="oval:org.mitre.oval.test:var:589" version="2" comment="Adding the multiple-value integer variables" datatype="int">
       <arithmetic arithmetic_operation="add">
         <variable_component var_ref="oval:org.mitre.oval.test:var:66"/>
         <variable_component var_ref="oval:org.mitre.oval.test:var:485"/>
