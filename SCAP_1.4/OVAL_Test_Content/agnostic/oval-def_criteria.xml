@@ -118,13 +118,13 @@
         <criterion comment="This test is intended to evaluate to false." test_ref="oval:org.mitre.oval.test:tst:966"/>
       </criteria>
     </definition>
-    <definition id="oval:org.mitre.oval.test:def:903" version="1" class="miscellaneous">
+    <definition id="oval:org.mitre.oval.test:def:903" version="2" class="miscellaneous">
       <metadata>
         <title>Evaluate to true if the oval-def:criteria element is properly supported with one level of nesting</title>
         <description>This definition is intended to evaluate to true if the interpreter properly supports one level of nested oval-def:criteria elements.</description>
-        <notes>
-          <note>XOR ( AND ( T ) , ONE ( T , T , T ) , OR ( F , F ) ) = T</note>
-        </notes>
+        <oval:notes>
+          <oval:note>XOR ( AND ( T ) , ONE ( T , T , T ) , OR ( F , F ) ) = T</oval:note>
+        </oval:notes>
       </metadata>
       <criteria>
         <criteria operator="XOR">
@@ -143,13 +143,13 @@
         </criteria>
       </criteria>
     </definition>
-    <definition id="oval:org.mitre.oval.test:def:388" version="1" class="miscellaneous">
+    <definition id="oval:org.mitre.oval.test:def:388" version="2" class="miscellaneous">
       <metadata>
         <title>Evaluate to true if the oval-def:criteria element is properly supported with two levels of nesting</title>
         <description>This definition is intended to evaluate to true if the interpreter properly supports two levels of nested oval-def:criteria elements.</description>
-        <notes>
-          <note>OR ( AND ( T , T , XOR ( T , F ) ) , ONE ( AND ( T ) , ONE ( T , F ) , F ) ) = T</note>
-        </notes>
+        <oval:notes>
+          <oval:note>OR ( AND ( T , T , XOR ( T , F ) ) , ONE ( AND ( T ) , ONE ( T , F ) , F ) ) = T</oval:note>
+        </oval:notes>
       </metadata>
       <criteria operator="OR">
         <criteria operator="AND">
@@ -172,13 +172,13 @@
         </criteria>
       </criteria>
     </definition>
-    <definition id="oval:org.mitre.oval.test:def:962" version="1" class="miscellaneous">
+    <definition id="oval:org.mitre.oval.test:def:962" version="2" class="miscellaneous">
       <metadata>
         <title>Evaluate to true if the oval-def:criteria element is properly supported with three levels of nesting</title>
         <description>This definition is intended to evaluate to true if the interpreter properly supports three levels of nested oval-def:criteria elements.</description>
-        <notes>
-          <note>XOR ( AND ( T , T , XOR ( T , XOR ( F ) , F ) ) , ONE ( AND ( T ) , ONE ( OR ( T , F , F ) , F , F ) , F ) ) = T</note>
-        </notes>
+        <oval:notes>
+          <oval:note>XOR ( AND ( T , T , XOR ( T , XOR ( F ) , F ) ) , ONE ( AND ( T ) , ONE ( OR ( T , F , F ) , F , F ) , F ) ) = T</oval:note>
+        </oval:notes>
       </metadata>
       <criteria operator="XOR">
         <criteria operator="AND">

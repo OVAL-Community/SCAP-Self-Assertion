@@ -13,14 +13,14 @@
     modified freely provided that any derivative works bear some notice that they are derived from it, and any modified versions bear some notice that they have been modified.</terms_of_use>
   </generator>
   <definitions>
-    <definition id="oval:navy.navwar.niwcatlantic.scc.rhel7:def:1" version="1" class="compliance">
+    <definition id="oval:navy.navwar.niwcatlantic.scc.rhel7:def:1" version="2" class="compliance">
       <metadata>
         <title>Evaluate to true if the independent shellcommand test is properly supported</title>
         <description>This definition is intended to evaluate to true if the interpreter properly supports the independent shellcommand test.</description>
       </metadata>
-      <notes>
-        <note>This test definition requires the presence of target files in /opt/support.  For more information, see the accompanying README.</note>
-      </notes>
+      <oval:notes>
+        <oval:note>This test definition requires the presence of target files in /opt/support.  For more information, see the accompanying README.</oval:note>
+      </oval:notes>
       <criteria>
         <criterion test_ref="oval:navy.navwar.niwcatlantic.scc:tst:1" comment="Simple execution of a system command, 'ls -l'." />
         <criterion test_ref="oval:navy.navwar.niwcatlantic.scc:tst:2" comment="Employ an object pattern to filter STDOUT results." />
