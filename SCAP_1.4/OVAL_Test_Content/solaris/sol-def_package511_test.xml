@@ -118,10 +118,10 @@
     </package511_state>
   </states>
   <variables>
-    <local_variable id="oval:navy.navwar.niwcatlantic.scc.test:var:1" version="1" datatype="string" comment="Retrieve the version value for the compress/zip package.">
+    <local_variable id="oval:navy.navwar.niwcatlantic.scc.test:var:1" version="1" datatype="version" comment="Retrieve the version value for the compress/zip package.">
       <object_component object_ref="oval:navy.navwar.niwcatlantic.scc:obj:7" item_field="subexpression" />
     </local_variable>
-    <local_variable id="oval:navy.navwar.niwcatlantic.scc.test:var:2" version="1" datatype="string" comment="Retrieve the version value for the compress/zip package.">
+    <local_variable id="oval:navy.navwar.niwcatlantic.scc.test:var:2" version="1" datatype="version" comment="Retrieve the version value for the compress/zip package.">
       <object_component object_ref="oval:navy.navwar.niwcatlantic.scc:obj:8" item_field="subexpression" />
     </local_variable>
   </variables>
