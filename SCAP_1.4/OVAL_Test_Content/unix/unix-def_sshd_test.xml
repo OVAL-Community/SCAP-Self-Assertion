@@ -6,12 +6,12 @@
                     http://oval.mitre.org/XMLSchema/oval-definitions-5#unix https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/unix-definitions-schema.xsd
                     http://oval.mitre.org/XMLSchema/oval-common-5 https://raw.githubusercontent.com/OVAL-Community/OVAL/refs/tags/v5.12.3/oval-schemas/oval-common-schema.xsd">
   <generator>
-    <oval:schema_version>5.11.2</oval:schema_version>
+    <oval:schema_version>5.12.3</oval:schema_version>
     <oval:timestamp>2009-08-07T17:25:07-05:00</oval:timestamp>
     <terms_of_use>NOTE: MITRE Content may be modified from original by Arctic Wolf Networks, Inc. f/k/a Joval. Copyright (c) 2002-2012, The MITRE Corporation. All rights reserved. The contents of this file are subject to the license described in terms.txt.</terms_of_use>
   </generator>
   <definitions>
-    <definition id="oval:org.mitre.oval.test:def:963" version="1" class="compliance">
+    <definition id="oval:org.mitre.oval.test:def:963" version="2" class="compliance">
       <metadata>
         <title>Evaluate to true if the unix-def:sshd_test is properly supported</title>
         <description>This definition is intended to evaluate to true if the interpreter properly supports unix-def:sshd_test.</description>
@@ -19,7 +19,7 @@
       <criteria operator="AND">
         <criterion comment="SSHD parameter Ciphers does not include weak cipher suites" test_ref="oval:org.mitre.oval.test:tst:492"/>
         <criterion comment="SSHD parameter LogLevel is either VERBOSE or INFO" test_ref="oval:org.mitre.oval.test:tst:70"/>
-        <!-- criterion comment="SSHD parameter ClientAliveInterval is between 1 and 300" test_ref="oval:org.mitre.oval.test:tst:483"/ -->
+        <criterion comment="SSHD parameter ClientAliveInterval is between 1 and 300" test_ref="oval:org.mitre.oval.test:tst:483"/>
         <criterion comment="SSHD parameter ClientAliveCountMax is 3 or less" test_ref="oval:org.mitre.oval.test:tst:484"/>
       </criteria>
     </definition>
