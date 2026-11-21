@@ -194,7 +194,7 @@
         <variable_component var_ref="oval:org.mitre.oval.test:var:962"/>
       </arithmetic>
     </local_variable>
-    <local_variable id="oval:org.mitre.oval.test:var:898" version="1" comment="Multiplying the multiple-value variables" datatype="float">
+    <local_variable id="oval:org.mitre.oval.test:var:898" version="2" comment="Multiplying the multiple-value integer variables" datatype="int">
       <arithmetic arithmetic_operation="multiply">
         <variable_component var_ref="oval:org.mitre.oval.test:var:66"/>
         <variable_component var_ref="oval:org.mitre.oval.test:var:485"/>
