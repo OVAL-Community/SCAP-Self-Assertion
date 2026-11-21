@@ -13,15 +13,15 @@
     <terms_of_use>NOTE: MITRE Content may be modified from original by NIWC Atlantic. Copyright (c) 2002-2011, The MITRE Corporation. All rights reserved. The contents of this file are subject to the license described in terms.txt.</terms_of_use>
   </generator>
   <definitions>
-    <definition id="oval:navy.navwar.niwcatlantic.scc.windows.test:def:1" version="1" class="miscellaneous">
+    <definition id="oval:navy.navwar.niwcatlantic.scc.windows.test:def:1" version="2" class="miscellaneous">
       <metadata>
         <title>Evaluate to true if the win-def:sid_test is properly supported.</title>
         <description>This definition is intended to evaluate to true if the interpreter properly supports the win-def:sid_test.</description>
       </metadata>
-      <notes>
-        <note>It is important to note that the following test assumes the test system's local administrator account has not been renamed</note>
-        <note>Information regarding the groups and users on your particular machine can be found by navigating to Start -> Run... and by typing 'mmc' and adding the Local Users and Groups Snap-in by navigating to File -> Add/Remove Snap-in -> Add -> Local Users and Groups.</note>
-      </notes>
+      <oval:notes>
+        <oval:note>It is important to note that the following test assumes the test system's local administrator account has not been renamed</oval:note>
+        <oval:note>Information regarding the groups and users on your particular machine can be found by navigating to Start -> Run... and by typing 'mmc' and adding the Local Users and Groups Snap-in by navigating to File -> Add/Remove Snap-in -> Add -> Local Users and Groups.</oval:note>
+      </oval:notes>
       <criteria>
         <criterion comment="Test that a sid_object with a trustee_name of a Group is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1"/>
         <criterion comment="Test that a sid_object with a trustee_name pattern match is supported." test_ref="oval:navy.navwar.niwcatlantic.scc.windows.test:tst:2"/>
